@@ -3,8 +3,10 @@ lazy val `scalalaz-gen` = project
   .enablePlugins(AutomateHeaderPlugin, GitVersioning)
 
 libraryDependencies ++= Vector(
-  Library.scalaTest % "test"
+  Library.scalaTest % "test",
+  Library.laika
 )
 
-initialCommands := """|import default.scalalaz.gen._
+initialCommands := """|import ru.scalalaz.gen._
                       |""".stripMargin
+

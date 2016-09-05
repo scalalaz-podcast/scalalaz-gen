@@ -16,7 +16,7 @@ object Build extends AutoPlugin {
     ScalaFmtPlugin.autoImport.reformatOnCompileSettings ++
     Vector(
       // Core settings
-      organization := "default", 
+      organization := "ru",
       licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0")),
       mappings.in(Compile, packageBin) += baseDirectory.in(ThisBuild).value / "LICENSE" -> "LICENSE",
       scalaVersion := Version.Scala,
@@ -39,5 +39,6 @@ object Build extends AutoPlugin {
 
       // Header settings
       HeaderPlugin.autoImport.headers := Map("scala" -> Apache2_0("2016", "evgeniy"))
+
     )
 }
