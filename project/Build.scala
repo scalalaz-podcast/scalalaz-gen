@@ -38,7 +38,7 @@ object Build extends AutoPlugin {
       GitPlugin.autoImport.git.useGitDescribe := true,
 
       // Header settings
-      HeaderPlugin.autoImport.headers := Map("scala" -> Apache2_0("2016", "evgeniy"))
+      HeaderPlugin.autoImport.headers := Map("scala" -> Apache2_0("2016", "Scalalaz Podcast Team"))
 
     )
 }
