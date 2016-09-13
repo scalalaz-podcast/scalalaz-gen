@@ -28,7 +28,6 @@ trait Rss {
   case class RssTags(tags: Seq[RssTag])
 
   // parsers
-  val any          = P(AnyChar.rep)
   val ws           = P(" ".rep)
   val value        = P(CharIn('a' to 'z', "_", "-").rep(1).!)
   val tagParameter = P("tag=")
@@ -39,8 +38,14 @@ trait Rss {
   val rssTag   = content.map(v => RssTag(v._1, v._2))
   val markdown = ((!rssTag ~ AnyChar).rep ~ rssTag.!).rep
 
-  def parseRssTags(lines: String): Option[TypedTag[String]] = {
-
+  /**
+    * It doing parsing and xml tag generation from [[RssTag]]s.
+    * TODO: xml tag generations should be handled at different function, after content is parsed.
+    * @param filename
+    * @param lines Markdown with rssTagsStart/End markup
+    * @return rss tags if it founded at markdown
+    */
+  def parseRssTags(filename: String, lines: String): Option[TypedTag[String]] = {
     val parsed = markdown.parse(lines)
 
     val r = parsed match {
@@ -52,7 +57,7 @@ trait Rss {
         }
 
         if (rssTags.exists(_.name.length > 0))
-          Option(writeRssTag(rssTags))
+          Option(makeRssItemTags(filename, rssTags))
         else
           None
 
@@ -63,58 +68,80 @@ trait Rss {
     r
   }
 
-  def writeRssTag(tags: Seq[RssTag]): TypedTag[String] = {
-    val xmlItem = tag("item") {
-      tags.map { t =>
-        tag(t.name)(t.content)
-      }
-    }
-    xmlItem
-  }
-
   def getListOfMdFiles(dir: String): List[File] = {
     val files: List[File] = new java.io.File(dir).listFiles.toList
     files.filter(_.getName.endsWith(".md"))
   }
 
+  def makeRssItemTags(filename: String, tags: Seq[RssTag]): TypedTag[String] = {
+    val xmlItem = tag("item")(tags.map { t =>
+                                tag(t.name)(t.content)
+                              },
+                              tag("guid")(attr("isPermaLink") := "false")(
+                                  s"http://scalalaz.ru/$filename"
+                              ))
+    xmlItem
+  }
+
+  /**
+    * It forming final RSS xml
+    * @param rssItems rss items tags
+    * @return
+    */
+  def BuildRssXml(rssItems: List[TypedTag[String]]): TypedTag[String] = {
+    tag("rss")(
+        attr("version") := "2.0",
+        attr("xmlns:itunes") := "http://www.w3.org/2005/Atom",
+        attr("xmlns:atom") := "http://www.itunes.com/dtds/podcast-1.0.dtd"
+    )(
+        tag("channel")(tag("title")("Scalalaz Podcast"),
+                       tag("description")(
+                           "Подкаст о программировании на языке Scala (16+)"
+                       ),
+                       tag("link")("http://scalalaz.ru"),
+                       tag("language")("ru-RU"),
+                       rssItems)
+    )
+  }
+
+  def parseFiles(files: List[File]): List[TypedTag[String]] = {
+    val parsed = for (f <- files) yield {
+      val source = scala.io.Source.fromFile(f.getAbsolutePath)
+      val lines = try {
+        Option(source.mkString)
+      } finally {
+        source.close()
+        None
+      }
+
+      // replacing `md` extention with `html`
+      val filename = f.getName.split('.').init ++ Seq("html") mkString "."
+
+      // actual parsing
+      lines.flatMap {
+        parseRssTags(filename, _)
+      }
+    }
+
+    val xmlResult = parsed.filter(_.isDefined).map(_.get)
+    xmlResult
+  }
 }
 
 object Rss extends Rss {
 
   def apply(inPath: String, outPath: String) = {
-    def parseFiles(files: List[File]): List[Option[TypedTag[String]]] = {
-      for (f <- files) yield {
-        val source = scala.io.Source.fromFile(f.getAbsolutePath)
-        val lines = try {
-          Option(source.mkString)
-        } finally {
-          source.close()
-          None
-        }
-
-        lines.flatMap {
-          parseRssTags
-        }
-      }
-    }
-
     val files: List[File] = getListOfMdFiles(inPath)
 
-    val parsed    = parseFiles(files)
-    val xmlResult = parsed.filter(_.isDefined).map(_.get)
+    val parsed  = parseFiles(files) // parsing
+    val xml     = BuildRssXml(parsed) // xml generation
+    val xmlHead = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
 
-    val xml = BuildRssXml(xmlResult)
-
+    // writing
     val file = new File(s"$outPath/rss.xml")
     val bw   = new BufferedWriter(new FileWriter(file))
-    bw.write(xml.toString())
+    bw.write(xmlHead + xml.toString())
     bw.close()
-
   }
 
-  def BuildRssXml(xmlResult: List[TypedTag[String]]): TypedTag[String] = {
-    tag("channel") {
-      xmlResult
-    }
-  }
 }
