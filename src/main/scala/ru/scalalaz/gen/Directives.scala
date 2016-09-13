@@ -17,17 +17,19 @@
 package ru.scalalaz.gen
 
 import com.typesafe.config.ConfigFactory
-import laika.directive.Directives.{ Default, Spans, _ }
-import laika.tree.Elements.RawContent
+import laika.directive.Directives.{ Default, _ }
+import laika.tree.Elements._
 import laika.util.Builders._
 
 trait Directives {
 
   val config     = ConfigFactory.load()
   val disqusCode = config.getString("disqus.disqusCode")
+  val siteUrl    = config.getString("scalalazUrl")
 
   val audioControlTagName = "audioControls"
   val disqusTagName       = "disqus"
+  val rssTagName          = "rss"
 
   lazy val audioControlsBlock: Blocks.Directive =
     Blocks.create(audioControlTagName) {
@@ -63,6 +65,21 @@ trait Directives {
     }
   }
 
+  lazy val rssStartBlock: Blocks.Directive = Blocks.create("rssTagStart") {
+    import Blocks.Combinators._
+
+    (attribute("tag") ~ body(Default)) { (value, content) =>
+      RawContent(Seq("html"), "") // empty block
+    }
+  }
+
+  lazy val rssEndBlock: Blocks.Directive = Blocks.create("rssTagEnd") {
+    import Blocks.Combinators._
+
+    (attribute("tag") ~ body(Default).optional) { (value, content) =>
+      RawContent(Seq("html"), "") // empty block
+    }
+  }
 }
 
 object Directives extends Directives

@@ -4,7 +4,9 @@ lazy val `scalalaz-gen` = project
 
 libraryDependencies ++= Vector(
   Library.scalaTest % "test",
-  Library.laika
+  Library.laika,
+  Library.scalatags,
+  Library.fastParse
 )
 
 initialCommands := """|import ru.scalalaz.gen._
