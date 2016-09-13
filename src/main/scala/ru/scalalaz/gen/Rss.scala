@@ -138,7 +138,7 @@ object Rss extends Rss {
     val xmlHead = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
 
     // writing
-    val file = new File(s"$outPath/rss.xml")
+    val file = new File(s"$outPath/feed.xml")
     val bw   = new BufferedWriter(new FileWriter(file))
     bw.write(xmlHead + xml.toString())
     bw.close()
