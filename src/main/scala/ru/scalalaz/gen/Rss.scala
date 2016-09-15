@@ -18,11 +18,15 @@ package ru.scalalaz.gen
 
 import java.io.{ BufferedWriter, File, FileWriter }
 
+import com.typesafe.config.ConfigFactory
+
 import scalatags.Text.TypedTag
 import scalatags.Text.all._
 
 trait Rss {
   import fastparse.all._
+
+  val config = ConfigFactory.load()
 
   case class RssTag(name: String, content: String)
   case class RssTags(tags: Seq[RssTag])
@@ -74,12 +78,10 @@ trait Rss {
   }
 
   def makeRssItemTags(filename: String, tags: Seq[RssTag]): TypedTag[String] = {
+    val link = config.getString("rss.channel.link")
     val xmlItem = tag("item")(tags.map { t =>
-                                tag(t.name)(t.content)
-                              },
-                              tag("guid")(attr("isPermaLink") := "false")(
-                                  s"http://scalalaz.ru/$filename"
-                              ))
+      tag(t.name)(t.content)
+    }, tag("guid")(attr("isPermaLink") := "false")(s"$link/$filename"))
     xmlItem
   }
 
@@ -89,17 +91,20 @@ trait Rss {
     * @return
     */
   def BuildRssXml(rssItems: List[TypedTag[String]]): TypedTag[String] = {
+    val title       = config.getString("rss.channel.title")
+    val description = config.getString("rss.channel.description")
+    val link        = config.getString("rss.channel.link")
+    val language    = config.getString("rss.channel.language")
+
     tag("rss")(
         attr("version") := "2.0",
         attr("xmlns:itunes") := "http://www.w3.org/2005/Atom",
         attr("xmlns:atom") := "http://www.itunes.com/dtds/podcast-1.0.dtd"
     )(
-        tag("channel")(tag("title")("Scalalaz Podcast"),
-                       tag("description")(
-                           "Подкаст о программировании на языке Scala (16+)"
-                       ),
-                       tag("link")("http://scalalaz.ru"),
-                       tag("language")("ru-RU"),
+        tag("channel")(tag("title")(title),
+                       tag("description")(description),
+                       tag("link")(link),
+                       tag("language")(language),
                        rssItems)
     )
   }
