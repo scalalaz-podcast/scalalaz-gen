@@ -98,14 +98,19 @@ trait Rss {
 
     tag("rss")(
         attr("version") := "2.0",
-        attr("xmlns:itunes") := "http://www.w3.org/2005/Atom",
-        attr("xmlns:atom") := "http://www.itunes.com/dtds/podcast-1.0.dtd"
+        attr("xmlns:itunes") := "http://www.itunes.com/dtds/podcast-1.0.dtd",
+        attr("xmlns:atom") := "http://www.w3.org/2005/Atom"
     )(
-        tag("channel")(tag("title")(title),
-                       tag("description")(description),
-                       tag("link")(link),
-                       tag("language")(language),
-                       rssItems)
+        tag("channel")(
+            tag("title")(title),
+            tag("description")(description),
+            tag("link")(link),
+            tag("language")(language),
+            raw(
+                s"""<atom:link href="$link/feed.xml" rel="self" type="application/rss+xml" />"""
+            ),
+            rssItems
+        )
     )
   }
 
