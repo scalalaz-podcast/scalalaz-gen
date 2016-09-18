@@ -28,18 +28,37 @@ trait Rss {
 
   val config = ConfigFactory.load()
 
-  case class RssTag(name: String, content: String)
+  case class RssTag(name: String,
+                    content: String,
+                    attributes: Option[Seq[(String, String)]])
   case class RssTags(tags: Seq[RssTag])
 
   // parsers
-  val ws           = P(" ".rep)
-  val value        = P(CharIn('a' to 'z', "_", "-").rep(1).!)
-  val tagParameter = P("tag=")
-  val start        = P("@:rssTagStart" ~ ws ~ tagParameter ~ value ~ ":")
-  val end          = P("@:rssTagEnd" ~ ws ~ tagParameter ~ value ~ ".")
+  val ws            = P(" ".rep)
+  val dot           = P(".")
+  val quote         = P("\"")
+  val colon         = P(":")
+  val semi          = P(";")
+  val leftBrace     = P("(")
+  val rightBrace    = P(")")
+  val emptyBody     = P("{}")
+  val value         = P(CharIn('a' to 'z', "_", "-").rep(1))
+  val tagParameter  = P("tag=")
+  val attrParameter = P("attr=")
+  val attrName      = P(CharIn('a' to 'z', "_", "-").rep(1)) // attr. like "url()"
+  val attrValue = P(
+      (attrName.! ~ leftBrace ~ (!rightBrace ~ AnyChar)
+            .rep(1)
+            .! ~ rightBrace ~ semi.?).rep
+  )
+  val start = P(
+      "@:rssTagStart" ~ ws ~ tagParameter ~ value.! ~ ws.? ~ attrParameter.? ~ quote.? ~ attrValue.? ~ quote.? ~ colon ~ ws.? ~ emptyBody.?
+  )
+  val end = P("@:rssTagEnd" ~ ws ~ tagParameter ~ value.! ~ dot)
   val content =
-    P(start ~ (!end ~ AnyChar).rep(1).! ~ end).filter(v => v._1 == v._3)
-  val rssTag   = content.map(v => RssTag(v._1, v._2))
+    P(start ~ (!end ~ AnyChar).rep(1).! ~ end).filter(v => v._1 == v._4)
+
+  val rssTag   = content.map(v => RssTag(v._1, v._3, v._2))
   val markdown = ((!rssTag ~ AnyChar).rep ~ rssTag.!).rep
 
   /**
@@ -80,7 +99,13 @@ trait Rss {
   def makeRssItemTags(filename: String, tags: Seq[RssTag]): TypedTag[String] = {
     val link = config.getString("rss.channel.link")
     val xmlItem = tag("item")(tags.map { t =>
-      tag(t.name)(t.content)
+      t.attributes match {
+        case Some(attributes) =>
+          val x = for (a <- attributes) yield attr(a._1) := a._2
+          // TODO: add handler for 'enclosure' tag which will generate 'length' attribute for mp3 file
+          tag(t.name)(x)(t.content)
+        case None => tag(t.name)(t.content)
+      }
     }, tag("guid")(attr("isPermaLink") := "false")(s"$link/$filename"))
     xmlItem
   }

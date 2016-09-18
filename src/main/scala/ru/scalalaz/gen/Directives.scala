@@ -68,8 +68,9 @@ trait Directives {
   lazy val rssStartBlock: Blocks.Directive = Blocks.create("rssTagStart") {
     import Blocks.Combinators._
 
-    (attribute("tag") ~ body(Default)) { (value, content) =>
-      RawContent(Seq("html"), "") // empty block
+    (attribute("tag") ~ attribute("attr").optional ~ body(Default).optional) {
+      (value, attr, content) =>
+        RawContent(Seq("html"), "") // empty block
     }
   }
 

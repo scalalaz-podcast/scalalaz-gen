@@ -80,32 +80,83 @@ class RssSpec extends FlatSpec with Matchers {
     r shouldBe true
   }
 
+  "rssTag parser" should "parse single rss tag with attributes" in {
+    val parsed = rssTag.parse(
+        """@:rssTagStart tag=enclosure attr=url(/mp3/scalalaz-podcast-3.mp3);type(audio/mpeg):
+        |@:rssTagEnd tag=enclosure.
+      """.stripMargin
+    )
+
+    val r = parsed match {
+      case Parsed.Success(_, _)    => true
+      case Parsed.Failure(_, _, _) => false
+    }
+
+    r shouldBe true
+  }
+
+  "rssTag parser" should "parse single rss tag with attributes and explicit empty body" in {
+    val parsed = rssTag.parse(
+        """@:rssTagStart tag=enclosure attr=url(/mp3/scalalaz-podcast-3.mp3);type(audio/mpeg):{}
+        |@:rssTagEnd tag=enclosure.
+      """.stripMargin
+    )
+
+    val r = parsed match {
+      case Parsed.Success(_, _)    => true
+      case Parsed.Failure(_, _, _) => false
+    }
+
+    r shouldBe true
+  }
+
+  "rssTag parser" should "parse single rss tag with attribute" in {
+    val parsed = rssTag.parse(
+        """@:rssTagStart tag=enclosure attr=link(/mp3/scalalaz-podcast-3.mp3):
+        |@:rssTagEnd tag=enclosure.
+      """.stripMargin
+    )
+
+    val r = parsed match {
+      case Parsed.Success(_, _)    => true
+      case Parsed.Failure(_, _, _) => false
+    }
+
+    r shouldBe true
+  }
+
   "parser" should "parse markdown with few rss tags" in {
     val parsed = markdown.parse(
-        """Paragraph:
+        """@:disqus.
+          |
+          |@:rssTagStart tag=enclosure attr="url(/mp3/scalalaz-podcast-3mp3);type(audio/mpeg)":
+          |@:rssTagEnd tag=enclosure.
+          |
+          |@:rssTagStart tag=title:
+          |    Выпуск 03
+          |@:rssTagEnd tag=title.
+          |
+          |@:rssTagStart tag=description:
+          |    Новости:
+          |
+          |    - [Multi-OS Engine](https://software.intel.com/en-us/multi-os-engine?utm_source=Multi+OS+Engine+EBlast&utm_medium=Email&utm_campaign=cmd_12657-01&utm_con$)
+          |    - [Multi-OS Engine GitHUb](https://github.com/multi-os-engine/multi-os-engine)
+          |    - [Akka Stream Integration - Alpakka](http://blog.akka.io/integrations/2016/08/23/intro-alpakka)
+          |    - [Akka Http - stable, growing and tons of opportunity](https://github.com/akka/akka-meta/issues/27)
+          |    - [Подкаст интервью с Konrad Malawski](http://softwareengineeringdaily.com/2016/08/22/akka-reactive-streams-with-konrad-malawski/)
+          |
+          |@:rssTagEnd tag=description.
+          |
         |
-        |@:disqus.
-        |
-        |@:rssTagStart tag=title:
-        |    Выпуск 02
-        |@:rssTagEnd tag=title.
-        |
-        |@:rssTagStart tag=description:
-        |    Темы:
-        |
-        |    - [Scala library index](http://scala-lang.org/blog/2016/08/09/the-scala-library-index-reaches-beta.html)
-        |    - [Scala js](http://www.lihaoyi.com/post/FromfirstprinciplesWhyIbetonScalajs.html)
-        |    - [August sip meeting results](http://www.scala-lang.org/blog/2016/08/15/sip-meeting-august-results.html) |
-        |@:rssTagEnd tag=description.
-        |
-        |@:disqus.
         |""".stripMargin
     )
 
     println(parsed)
 
     val r = parsed match {
-      case Parsed.Success(_, _)    => true
+      case Parsed.Success(x, y) =>
+        println(x.size)
+        x.size == 3
       case Parsed.Failure(_, _, _) => false
     }
 
