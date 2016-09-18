@@ -26,7 +26,7 @@ content between marks should has indent.
 
 If this tag need to has attributes it should specified by this way:
 ```
-@:rssTagStart tag=enclosure attr="url(/mp3/scalalaz-podcast-3mp3);type(audio/mpeg)":
+@:rssTagStart tag=enclosure attr="url(/mp3/scalalaz-podcast-3mp3);type(audio/mpeg)":{}
 @:rssTagEnd tag=enclosure.
 ```
 
