@@ -174,8 +174,23 @@ h3 {
     }
 }
 .custom-restricted-width {
-    /* To limit the menu width to the content of the menu: */
-    display: inline-block;
-    /* Or set the width explicitly: */
-    /* width: 10em; */
+     /* To limit the menu width to the content of the menu: */
+     display: inline-block;
+     /* Or set the width explicitly: */
+     /* width: 10em; */
+     text-align: left;
+
+     /*
+     border: 2px solid rgb(96, 118, 130);
+     border-radius: 4px;
+     */
+
+     padding-bottom: 20px;
+     padding-left: 0px;
+     padding-right: 18px;
+     padding-top: 12px;
+}
+
+.toc ul{
+    list-style-type: circle;
 }

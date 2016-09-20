@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Scalalaz Podcast</title>
+        <link>http://scalalaz.ru</link>
+        <description>Подкаст о программировании на языке Scala (16+)</description>
+        <language>ru-RU</language>
+        <atom:link href="http://scalalaz.ru/feed.xml" rel="self" type="application/rss+xml"/>
+        <itunes:image href="http://scalalaz.ru/files/scalalaz.jpg" />
+        <itunes:owner>
+            <itunes:name>Scalalaz Podcast</itunes:name>
+            <itunes:email>info@scalalaz.ru</itunes:email>
+        </itunes:owner>
+        <itunes:category text="Technology" />
+        <itunes:explicit>no</itunes:explicit>
+        <managingEditor>info@scalalaz.ru (Scalalaz Podcast)</managingEditor>
+        <item>
+            <title>
+                Выпуск 01
+            </title>
+            <description>
+                Темы:
+                - Релиз-кандидат Akka
+                - Релиз Spark
+                - О Sbt
+                - Pants
+
+                Ссылки:
+
+                - Sbt build settings
+
+                Полезняшки:
+
+                - sbt-fresh
+                - линзы:
+                - quicklens
+                - sauron
+                - lens
+                - sourcecode
+
+                Ведущие:
+
+                - Алексей Романчук - http://github.com/13h3r
+                - Вадим Челышов - http://github.com/dos65
+                - Евгений Токарев - http://github.com/strobe
+                - Виктор Тараненко - http://github.com/viktortnk
+                - Алексей Фомкин - http://github.com/fomkin
+
+            </description>
+            <enclosure url="http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3" type="audio/mpeg" length="63337733"/>
+            <guid isPermaLink="false">http://scalalaz.ru/series-01.html</guid>
+            <pubDate>Sun, 7 Aug 2016 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>
+                Выпуск 02
+            </title>
+            <description>
+                Темы:
+
+                - Scala library index
+                - Scala js
+                - August sip meeting results
+                - Akka antipatterns
+                - О Scaladays 2016
+                - Зачем Lagom
+
+                События:
+
+                - Moscow Scala Meetup #4
+
+                Ссылки:
+
+                - Scala Days 2016
+                - Eff Monad
+                - Principles of Elegance - by JonPretty
+                - Roll Your Own Shapeless - by DanielSpiewak
+
+                Полезняшки:
+
+                - scala-csv
+                - scopt
+                - atmos
+
+                Ведущие:
+
+                - Алексей Романчук - http://github.com/13h3r
+                - Вадим Челышов - http://github.com/dos65
+                - Евгений Токарев - http://github.com/strobe
+                - Алексей Фомкин - http://github.com/fomkin
+
+            </description>
+            <enclosure url="http://scalalaz.ru/mp3/scalalaz-podcast-2.mp3" type="audio/mpeg" length="70977833"/>
+            <guid isPermaLink="false">http://scalalaz.ru/series-02.html</guid>
+            <pubDate>Sun, 21 Aug 2016 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>
+                Выпуск 03
+            </title>
+            <description>
+                Новости:
+
+                - Multi-OSEngine
+                - Multi-OS Engine GitHUb
+                - Akka Stream Integration -Alpakka
+                - Akka Http - stable, growing and tons of opportunity
+                - Подкаст интервью с Konrad Malawski
+                - ScalaTest и Scalactic 3.0.0
+
+                Темы:
+
+                - Города и встречи в них
+                - Функциональщина Scalaz/Cats
+
+
+                Полезняшки:
+
+                - scalactic
+                - high kinded types
+                - migration manager
+
+
+                Ведущие:
+
+                - Алексей Романчук - http://github.com/13h3r
+                - Вадим Челышов - http://github.com/dos65
+                - Евгений Токарев - http://github.com/strobe
+                - Алексей Фомкин - http://github.com/fomkin
+
+            </description>
+            <enclosure url="http://scalalaz.ru/mp3/scalalaz-podcast-3.mp3" type="audio/mpeg" length="55527205"/>
+            <guid isPermaLink="false">http://scalalaz.ru/series-03.html</guid>
+            <pubDate>Mon, 5 Sep 2016 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>
+                Выпуск 04
+            </title>
+            <description>
+                Новости
+
+                - Scala Fiddle
+                - Scala 2.12 RC
+                - SIP-NN Inline/meta
+
+                Блоги
+
+                - Li Haoyi: Easy Parsing with Parser Combinators
+
+                Темы
+
+                - Scala для бизнеса. В чем профит? Как продемонстрировать профит основателям
+                - Удаленная работа. За и против
+
+                Полезняшки:
+
+                - The Type Astronaut's Guide to Shapeless
+                - Scala Starter Kit
+                - Scala Exercises is an Open Source project for learning different technologies based in the Scala
+                - Longevity - A Persistence Framework for Scala and NoSQL
+                - A conflict-free replicated JSON datatype (CRDT) in Scala
+
+                Прочее
+
+                - http://scastie.org
+                - https://zalando.github.io/tech-radar/
+                - https://habrahabr.ru/post/127727/
+                - http://codeforces.com/
+
+            </description>
+            <enclosure url="http://scalalaz.ru/mp3/scalalaz-podcast-4.mp3" type="audio/mpeg" length="45582510"/>
+            <guid isPermaLink="false">http://scalalaz.ru/series-04.html</guid>
+            <pubDate>Tue, 20 Sep 2016 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
