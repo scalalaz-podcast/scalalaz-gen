@@ -173,5 +173,29 @@
             <guid isPermaLink="false">http://scalalaz.ru/series-04.html</guid>
             <pubDate>Tue, 20 Sep 2016 00:00:00 GMT</pubDate>
         </item>
+        <item>
+            <title>
+                Выпуск 05
+            </title>
+            <description>
+                Новости
+
+                - SIP-27 - Trailling commas
+
+                Темы
+
+                - Can we make concurrency in Scala safer?—Philipp Haller 
+                - Spores
+                - Все что вы хотите знать про Scala.js
+
+                Полезняшки:
+
+                - scalapuzzlers
+
+            </description>
+            <enclosure url="http://scalalaz.ru/mp3/scalalaz-podcast-5.mp3" type="audio/mpeg" length="94574592"/>
+            <guid isPermaLink="false">http://scalalaz.ru/series-05.html</guid>
+            <pubDate>Sat, 01 Oct 2016 00:00:00 GMT</pubDate>
+        </item>
     </channel>
 </rss>
