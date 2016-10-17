@@ -197,5 +197,29 @@
             <guid isPermaLink="false">http://scalalaz.ru/series-05.html</guid>
             <pubDate>Sat, 01 Oct 2016 00:00:00 GMT</pubDate>
         </item>
+        <item>
+            <title>
+                Выпуск 06
+            </title>
+            <description>
+                Темы:
+
+                - Onion Architecture for FP
+                - Shapeless
+                - Streams/Actors/Futures
+                - Проблемы Scala
+
+                Полезняшки:
+
+                - Scala's Types of Types
+                - delorian
+                - RosHTTP
+                - Scala Scarper
+                - FP for the average Joe - III - Applications as Coproducts of Free Algebras
+            </description>
+            <enclosure url="http://scalalaz.ru/mp3/scalalaz-podcast-6.mp3" type="audio/mpeg" length="122724352"/>
+            <guid isPermaLink="false">http://scalalaz.ru/series-06.html</guid>
+            <pubDate>Sat, 16 Oct 2016 00:00:00 GMT</pubDate>
+        </item>
     </channel>
 </rss>
