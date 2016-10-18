@@ -13,6 +13,7 @@
 
 И еще про onion:
 
+- [пример реализации FP Onion от Дениса Михайлова](https://github.com/notxcain/onion-architecure)
 - [пример описания одного DSL в терминах другого](http://scastie.org/22984)
 - [Advanced-FP-with-Scala](https://gist.github.com/jdegoes/97459c0045f373f4eaf126998d8f65dc)
 - [MTL Versus Free Deathmatch](https://www.youtube.com/watch?v=JLevNswzYh8) 
