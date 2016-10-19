@@ -24,7 +24,8 @@
 - [delorian](https://github.com/Verizon/delorean)
 - [RosHTTP](https://github.com/hmil/RosHTTP)
 - [Scala Scarper](https://github.com/ruippeixotog/scala-scraper)
- -[FP for the average Joe - III - Applications as Coproducts of Free Algebras](http://www.47deg.com/blog/fp-for-the-average-joe-part3-free-monads)
+- [FP for the average Joe - III - Applications as Coproducts of Free Algebras](http://www.47deg.com/blog/fp-for-the-average-joe-part3-free-monads)
+- [Aecor - Pure functional event sourcing runtime (Дениса Михайлова)](http://aecor.io)
 
 Ведущие:
 
