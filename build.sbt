@@ -6,7 +6,8 @@ libraryDependencies ++= Vector(
   Library.scalaTest % "test",
   Library.laika,
   Library.scalatags,
-  Library.fastParse
+  Library.fastParse,
+  Library.cats
 )
 
 initialCommands := """|import ru.scalalaz.gen._
