@@ -221,5 +221,42 @@
             <guid isPermaLink="false">http://scalalaz.ru/series-06.html</guid>
             <pubDate>Sat, 16 Oct 2016 00:00:00 GMT</pubDate>
         </item>
+        <item>
+            <title>
+                Выпуск 07
+            </title>
+            <description>
+                Темы:
+
+                - Прошедший Scala-митап в Москве
+                - Scala Up North 2016
+                    - David Russell - A Literally-Hands-On Introduction to Distributed Systems with Akka Cluster
+                - LambdaConf 2016
+                    - John A De Goes: MTL Versus Free Deathmatch - λC 2016
+                    - Daniel Spiewak: Emm A Sane Alternative to Monad Transformers in Scala - λC 2016 (https://github.com/djspiewak/emm)
+
+                - Scala world
+                    - Generic Derivation: The Hard Parts—Travis Brown
+                    - Pure Functional Database Programming with Fixpoint Types—Rob Norris
+
+                - Akka 2.4.12 released
+                - Freek v0.6.2](https://github.com/ProjectSeptemberInc/freek)
+                - Reactive programming with Scala, Lagom, Spark, Akka and Play
+                - Scaling to Hundreds of Thousands of Persistent Connections on One Machine
+                - Scala Cats library for dummies
+                - Scala Tagged Types
+                - Sbt - локальные библиотеки
+
+                Полезняшки:
+
+                - getclump
+                - fetch
+                - scala-httpc
+                - coursier
+            </description>
+            <enclosure url="http://scalalaz.ru/mp3/scalalaz-podcast-7.mp3" type="audio/mpeg" length="59484160"/>
+            <guid isPermaLink="false">http://scalalaz.ru/series-07.html</guid>
+            <pubDate>Sat, 29 Oct 2016 00:00:00 GMT</pubDate>
+        </item>
     </channel>
 </rss>
