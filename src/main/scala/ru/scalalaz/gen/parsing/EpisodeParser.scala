@@ -14,33 +14,26 @@
  * limitations under the License.
  */
 
-package ru.scalalaz.gen
+package ru.scalalaz.gen.parsing
 
-import java.time.LocalDateTime
-
-import cats.Functor
 import cats.data.Validated
+import cats.implicits._
+import ru.scalalaz.gen.Episode
 
-case class Enclosure(url: String, `type`: String, length: Int)
 
-case class RssItem(title: String,
-                   description: String,
-                   enclosure: Enclosure,
-                   page: String,
-                   date: LocalDateTime)
+object EpisodeParser {
 
-object RssItem {
+  def fromString(content: String): Validated[EpisodeParseError, Episode] =
+    FormatParser.parseContent(content).toValidated
+      .leftMap(e => InvalidFormat(e.failure.msg))
+      .andThen(f => fromFormat(f))
 
-  def fromMap(map: Map[String, String]): Validated[String, RssItem] = {
+  def fromFormat(format: FileFormat): Validated[EpisodeParseError, Episode] =
+    RssParser.fromMap(format.header)
+      .map(rss => Episode(rss, format.otherData))
+      .leftMap(list => ManyErrors(list))
 
-    def read(key:String): Validated[String, String] =
-      map.get(key).toVa
-
-    for {
-      title
-    }
-
-  }
 }
 
-case class Episode(rssItem: RssItem, сontent: String)
+
+

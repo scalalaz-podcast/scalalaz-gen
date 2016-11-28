@@ -1,3 +1,5 @@
+package ru.scalalaz.gen
+
 /*
  * Copyright 2016 Scalalaz Podcast Team
  *
@@ -14,12 +16,8 @@
  * limitations under the License.
  */
 
-import fastparse.all._
 import fastparse.core.Parsed
-
-import collection.mutable.Stack
 import org.scalatest._
-import ru.scalalaz.gen.Rss
 import ru.scalalaz.gen.Rss._
 
 class RssSpec extends FlatSpec with Matchers {
