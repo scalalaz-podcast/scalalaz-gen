@@ -24,3 +24,4 @@ case class RssItem(
 
 
 case class Episode(rss: RssItem, сontent: String)
+case class EpisodeFile(name: String, episode: Episode)

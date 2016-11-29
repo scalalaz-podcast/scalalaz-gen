@@ -1,65 +1,58 @@
-/*
- * Copyright 2016 Scalalaz Podcast Team
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package ru.scalalaz.gen
 
-import java.nio.file.{ Files, Paths }
 import java.io.File
+import java.nio.file.{Files, Path, Paths}
 
-import laika.api.Transform
-import laika.parse.markdown.Markdown
-import laika.render.{ HTML, PrettyPrint }
-import ru.scalalaz.gen.Directives._
+import cats.data.Validated
+import ru.scalalaz.gen.parsing.{EpisodeParseError, EpisodeParser}
 
-import scala.io.Codec
+import scala.collection.JavaConversions._
 
 object Main extends App {
-
-  implicit val codec: Codec = Codec.UTF8
 
   val markdownDir   = getClass.getResource("/md").getPath
   val targetPath    = Paths.get("target/site")
   val targetRssPath = Paths.get("target/site/rss")
 
-  // output directory creation
-  if (!Files.exists(targetPath)) {
-    Files.createDirectory(targetPath)
+  cleanDir(targetPath)
+  createDir(targetRssPath)
+
+  val parsed = EpisodeParser.fromDirectory(markdownDir)
+  if (parsed.exists(_.isInvalid)) {
+    reportErrors(parsed)
+    sys.exit(1)
   }
 
-  if (!Files.exists(targetRssPath)) {
-    Files.createDirectory(targetRssPath)
+//  def mdFiles: Seq[File] = {
+//    Paths.get(dir).toFile.list()
+//      .map(Paths.get(_).toFile)
+//      .filter(f => !f.isDirectory && f.getName.endsWith(".md"))
+//  }
+
+  private def reportErrors(results: Seq[Validated[EpisodeParseError, EpisodeFile]]): Unit = {
+    parsed.filter(_.isInvalid)
+      .foreach(inv => {
+        val msg = s"Error occured while parsing file:\n\t $inv"
+        println(msg)
+      })
   }
 
-  // for debugging //
-  val testFile = getClass.getResource("/md/series-03.md").getPath
-  println(
-      Transform from Markdown.withBlockDirectives(discussBlock,
-                                                  audioControlsBlock,
-                                                  rssStartBlock,
-                                                  rssEndBlock) to
-        PrettyPrint fromFile testFile toString
-  )
+  private def cleanDir(path: Path): Unit = {
+    val file = path.toFile
+    if (file.isDirectory) {
+      file.list().map(path.resolve).foreach(cleanDir)
+      file.delete()
+    } else
+      file.delete()
+  }
 
-  // html generation
-  Transform from Markdown.withBlockDirectives(discussBlock,
-                                              audioControlsBlock,
-                                              rssStartBlock,
-                                              rssEndBlock) to
-    HTML fromDirectory markdownDir toDirectory targetPath.toString
+  private def createDir(path: Path): Unit = createDir(path.iterator())
 
-  // rss
-  Rss(markdownDir, targetRssPath.toString)
+  private def createDir(iter: Iterator[Path]): Unit =
+    if (iter.hasNext) {
+      val p = iter.next()
+      if (!p.toFile.exists()) Files.createDirectory(p)
+      createDir(iter)
+    }
+
 }

@@ -12,3 +12,5 @@ case class InvalidFormat(explanation: String) extends EpisodeParseError
 
 case class ManyErrors(list: NonEmptyList[EpisodeParseError]) extends EpisodeParseError
 
+case class FileParseError(file: String, manyErrors: EpisodeParseError) extends EpisodeParseError
+
