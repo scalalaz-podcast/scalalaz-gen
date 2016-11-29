@@ -32,7 +32,7 @@ object Main extends App {
   private def reportErrors(results: Seq[Validated[EpisodeParseError, EpisodeFile]]): Unit = {
     parsed.filter(_.isInvalid)
       .foreach(inv => {
-        val msg = s"Error occured while parsing file:\n\t $inv"
+        val msg = s"Error occurred while parsing file:\n\t $inv"
         println(msg)
       })
   }
