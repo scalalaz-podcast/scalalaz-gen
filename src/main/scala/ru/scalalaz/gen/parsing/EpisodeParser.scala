@@ -31,7 +31,9 @@ object EpisodeParser {
 
   def fromString(content: String): Validated[EpisodeParseError, Episode] =
     FormatParser.parseContent(content).toValidated
-      .leftMap(e => InvalidFormat(e.failure.msg))
+      .leftMap(e => {
+        InvalidFormat(e.toString)
+      })
       .andThen(f => fromFormat(f))
 
   def fromFormat(format: FileFormat): Validated[EpisodeParseError, Episode] =

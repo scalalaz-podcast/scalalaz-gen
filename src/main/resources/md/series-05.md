@@ -1,3 +1,9 @@
+title=Выпуск 05
+enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-5.mp3
+enc.length=94574592
+page=http://scalalaz.ru/series-05.html
+date=2016-09-05
+----
 ### Выпуск 05
 
 @:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-5.mp3".
@@ -25,27 +31,3 @@
 - [Алексей Романчук](http://github.com/13h3r)
 
 @:disqus.
-
-@:rssTagStart tag=enclosure attr="url(/mp3/scalalaz-podcast-5.mp3);type(audio/mpeg)":{}
-@:rssTagEnd tag=enclosure.
-
-@:rssTagStart tag=title:
-    Выпуск 04
-@:rssTagEnd tag=title.
-
-@:rssTagStart tag=description:
-    Новости
-
-    - Trailing commas
-
-    Темы
-
-    - Can we make concurrency in Scala safer?—Philipp Haller
-    - Spores
-    - Все что вы хотите знать про Scala.js
-
-    Полезняшки:
-
-    - scalapuzzlers
-    
-@:rssTagEnd tag=description.
