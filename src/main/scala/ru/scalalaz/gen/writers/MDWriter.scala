@@ -25,9 +25,8 @@ class MDWriter(tmpDir: String, dir: String) extends Writer {
     episodes.foreach(dumpEpisode(dir, _))
 
   def dumpEpisode(dir: String, ef: EpisodeFile): Unit = {
-    val path = Paths.get(dir, ef.name)
     val data = ef.episode.сontent.getBytes
-    Files.write(path, data)
+    Files.write(ef.path, data)
   }
 
   private def generateHtml(mdDir: String, targetDir: String): Unit =

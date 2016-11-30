@@ -1,5 +1,6 @@
 package ru.scalalaz.gen
 
+import java.nio.file.Path
 import java.time.LocalDate
 
 
@@ -24,4 +25,4 @@ case class RssItem(
 
 
 case class Episode(rss: RssItem, сontent: String)
-case class EpisodeFile(name: String, episode: Episode)
+case class EpisodeFile(path: Path, episode: Episode)

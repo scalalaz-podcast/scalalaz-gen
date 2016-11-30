@@ -29,22 +29,6 @@ import scala.collection.JavaConversions._
 
 object EpisodeParser {
 
-  def fromDirectory(dir: String): Seq[Validated[EpisodeParseError, EpisodeFile]] = {
-    val files =
-      Paths.get(dir).toFile.list()
-        .map(Paths.get(_).toFile)
-        .filter(f => !f.isDirectory && f.getName.endsWith(".md"))
-
-    files.map(f => {
-      val path = Paths.get(dir, f.getPath)
-      val data = Files.readAllLines(path).mkString("\n")
-      val name = f.getName
-      fromString(data)
-        .map(e => EpisodeFile(name, e))
-        .leftMap(e => FileParseError(name, e))
-    })
-  }
-
   def fromString(content: String): Validated[EpisodeParseError, Episode] =
     FormatParser.parseContent(content).toValidated
       .leftMap(e => InvalidFormat(e.failure.msg))

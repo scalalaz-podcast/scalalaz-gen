@@ -1,58 +1,43 @@
 package ru.scalalaz.gen
 
-import java.io.File
 import java.nio.file.{Files, Path, Paths}
 
 import cats.data.Validated
-import ru.scalalaz.gen.parsing.{EpisodeParseError, EpisodeParser}
-
-import scala.collection.JavaConversions._
+import ru.scalalaz.gen.parsing.{EpisodeParseError, EpisodeParser, FileParseError}
 
 object Main extends App {
 
-  val markdownDir   = getClass.getResource("/md").getPath
+  val markdownDir   = Paths.get(getClass.getResource("/md").getPath)
   val targetPath    = Paths.get("target/site")
   val targetRssPath = Paths.get("target/site/rss")
 
-  cleanDir(targetPath)
-  createDir(targetRssPath)
+  fs.clean(targetPath)
+  fs.createDir(targetRssPath)
 
-  val parsed = EpisodeParser.fromDirectory(markdownDir)
+  val isEpisode = (p: Path) => p.toFile.getName.startsWith("series-")
+
+  val parsed = fs.list(markdownDir).filter(isEpisode)
+    .map(p => {
+      val bytes = Files.readAllBytes(p)
+      val content = new String(bytes)
+      EpisodeParser.fromString(content)
+        .map(e => EpisodeFile(p, e))
+        .leftMap(e => FileParseError(p, e))
+    })
+
   if (parsed.exists(_.isInvalid)) {
     reportErrors(parsed)
     sys.exit(1)
   }
 
-//  def mdFiles: Seq[File] = {
-//    Paths.get(dir).toFile.list()
-//      .map(Paths.get(_).toFile)
-//      .filter(f => !f.isDirectory && f.getName.endsWith(".md"))
-//  }
+  fs.copyDir(markdownDir, targetPath, isEpisode.andThen(!_))
 
   private def reportErrors(results: Seq[Validated[EpisodeParseError, EpisodeFile]]): Unit = {
-    parsed.filter(_.isInvalid)
+    results.filter(_.isInvalid)
       .foreach(inv => {
         val msg = s"Error occurred while parsing file:\n\t $inv"
         println(msg)
       })
   }
-
-  private def cleanDir(path: Path): Unit = {
-    val file = path.toFile
-    if (file.isDirectory) {
-      file.list().map(path.resolve).foreach(cleanDir)
-      file.delete()
-    } else
-      file.delete()
-  }
-
-  private def createDir(path: Path): Unit = createDir(path.iterator())
-
-  private def createDir(iter: Iterator[Path]): Unit =
-    if (iter.hasNext) {
-      val p = iter.next()
-      if (!p.toFile.exists()) Files.createDirectory(p)
-      createDir(iter)
-    }
 
 }
