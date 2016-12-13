@@ -84,7 +84,7 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
            """.stripMargin),
             raw(s"""<itunes:category text="$category" />"""),
             raw(s"""<itunes:explicit>no</itunes:explicit>"""),
-            tag("managingEditor")(s"$email $ownerName"),
+            tag("managingEditor")(s"$email ($ownerName)"),
             episodes.map(e => toItem(e.episode))
         )
     )
