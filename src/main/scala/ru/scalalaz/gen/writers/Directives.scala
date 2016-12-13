@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package ru.scalalaz.gen
+package ru.scalalaz.gen.writers
 
 import com.typesafe.config.ConfigFactory
 import laika.directive.Directives.{ Default, _ }

@@ -14,25 +14,21 @@
  * limitations under the License.
  */
 
-package ru.scalalaz.gen
+package ru.scalalaz.gen.writers
 
-import java.nio.file.Paths
+import laika.api.Transform
+import laika.parse.markdown.Markdown
+import laika.render.HTML
+import ru.scalalaz.gen.writers.Directives._
 
-object Main extends App {
+case class MDWriter(from: String, to: String) {
 
-  val markdownDir   = Paths.get(getClass.getResource("/md").getPath)
-  val targetPath    = Paths.get("target/site")
-  val tmp           = Paths.get("target/tmp")
-  val targetRssPath = Paths.get("target/site/rss")
-
-  val gen = new Generator(markdownDir, targetPath, tmp)
-
-  gen.generate() match {
-    case Left(error) =>
-      println("Generation failed, error:")
-      println(error)
-      sys.exit(1)
-    case _ =>
-      println("Done")
+  private val mdParser = Markdown.withBlockDirectives(discussBlock,
+                                                      audioControlsBlock,
+                                                      rssStartBlock,
+                                                      rssEndBlock)
+  def write(): Unit = {
+    Transform from mdParser to HTML fromDirectory from toDirectory to
   }
+
 }

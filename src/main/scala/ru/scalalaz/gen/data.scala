@@ -16,23 +16,22 @@
 
 package ru.scalalaz.gen
 
-import java.nio.file.Paths
+import java.nio.file.Path
+import java.time.LocalDate
 
-object Main extends App {
+/**
+  * Фигня с сылкой на запись, кол-вом байт и типом
+  */
+case class Enclosure(url: String, length: Int, `type`: String = "audio/mpeg")
 
-  val markdownDir   = Paths.get(getClass.getResource("/md").getPath)
-  val targetPath    = Paths.get("target/site")
-  val tmp           = Paths.get("target/tmp")
-  val targetRssPath = Paths.get("target/site/rss")
+/**
+  * То из чего собирается rss-кусок на каждый выпуск
+  */
+case class RssItem(title: String,
+                   description: String,
+                   enclosure: Enclosure,
+                   page: String,
+                   date: LocalDate)
 
-  val gen = new Generator(markdownDir, targetPath, tmp)
-
-  gen.generate() match {
-    case Left(error) =>
-      println("Generation failed, error:")
-      println(error)
-      sys.exit(1)
-    case _ =>
-      println("Done")
-  }
-}
+case class Episode(rss: RssItem, сontent: String)
+case class EpisodeFile(path: Path, episode: Episode)

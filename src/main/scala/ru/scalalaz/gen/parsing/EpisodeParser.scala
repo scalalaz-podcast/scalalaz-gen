@@ -14,25 +14,27 @@
  * limitations under the License.
  */
 
-package ru.scalalaz.gen
+package ru.scalalaz.gen.parsing
 
-import java.nio.file.Paths
+import cats.data.Validated
+import cats.implicits._
+import ru.scalalaz.gen.Episode
 
-object Main extends App {
+object EpisodeParser {
 
-  val markdownDir   = Paths.get(getClass.getResource("/md").getPath)
-  val targetPath    = Paths.get("target/site")
-  val tmp           = Paths.get("target/tmp")
-  val targetRssPath = Paths.get("target/site/rss")
+  def fromString(content: String): Validated[EpisodeParseError, Episode] =
+    FormatParser
+      .parseContent(content)
+      .toValidated
+      .leftMap(e => {
+        InvalidFormat(e.toString)
+      })
+      .andThen(f => fromFormat(f))
 
-  val gen = new Generator(markdownDir, targetPath, tmp)
+  def fromFormat(format: FileFormat): Validated[EpisodeParseError, Episode] =
+    RssParser
+      .fromMap(format.header)
+      .map(rss => Episode(rss, format.otherData))
+      .leftMap(list => ManyErrors(list))
 
-  gen.generate() match {
-    case Left(error) =>
-      println("Generation failed, error:")
-      println(error)
-      sys.exit(1)
-    case _ =>
-      println("Done")
-  }
 }

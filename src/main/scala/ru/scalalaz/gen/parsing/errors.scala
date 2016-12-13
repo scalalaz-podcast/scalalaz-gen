@@ -14,25 +14,22 @@
  * limitations under the License.
  */
 
-package ru.scalalaz.gen
+package ru.scalalaz.gen.parsing
 
-import java.nio.file.Paths
+import java.nio.file.Path
 
-object Main extends App {
+import cats.data.NonEmptyList
 
-  val markdownDir   = Paths.get(getClass.getResource("/md").getPath)
-  val targetPath    = Paths.get("target/site")
-  val tmp           = Paths.get("target/tmp")
-  val targetRssPath = Paths.get("target/site/rss")
+sealed trait EpisodeParseError
 
-  val gen = new Generator(markdownDir, targetPath, tmp)
+case class MissingKey(name: String) extends EpisodeParseError
 
-  gen.generate() match {
-    case Left(error) =>
-      println("Generation failed, error:")
-      println(error)
-      sys.exit(1)
-    case _ =>
-      println("Done")
-  }
-}
+case class InvalidDate(description: String) extends EpisodeParseError
+
+case class InvalidFormat(explanation: String) extends EpisodeParseError
+
+case class ManyErrors(list: NonEmptyList[EpisodeParseError])
+    extends EpisodeParseError
+
+case class FileParseError(path: Path, manyErrors: EpisodeParseError)
+    extends EpisodeParseError
