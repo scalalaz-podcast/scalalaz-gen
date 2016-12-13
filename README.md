@@ -2,6 +2,22 @@
 
 Welcome to scalalaz-gen!
 
+# Как делать новый выпуск
+
+- страница выпуска
+  
+  Формируем заголовок как у остальных эпизодов:
+  
+  `title, enc.url`, page - апаем циферку
+  
+  `enc.length` - количество байт в mp3 (например `wc -c scalalaz-podcast-1.mp3`)
+  
+  Забираем с доки контент, переводим в md, не забываем про тэги `audioCountrols` и `discus`
+  
+- темы и вопросы - копипастим последнюю и апаем цифру внутри тоже
+ 
+- генерим это все `sbt run`, все добро попадает в `target/site`
+  
 # Custom Markdown Tags #
 
 @:audioControls "http://link-to-mp3-file.mp3"
