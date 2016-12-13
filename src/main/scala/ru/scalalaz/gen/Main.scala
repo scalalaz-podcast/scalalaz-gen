@@ -25,10 +25,8 @@ object Main extends App {
   val tmp           = Paths.get("target/tmp")
   val targetRssPath = Paths.get("target/site/rss")
 
-  fs.clean(targetPath)
-  fs.createDir(targetRssPath)
-
   val gen = new Generator(markdownDir, targetPath, tmp)
+
   gen.generate() match {
     case Left(error) =>
       println("Generation failed, error:")
