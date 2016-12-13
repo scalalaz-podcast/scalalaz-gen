@@ -1,43 +1,40 @@
+/*
+ * Copyright 2016 Scalalaz Podcast Team
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package ru.scalalaz.gen
 
-import java.nio.file.{Files, Path, Paths}
-
-import cats.data.Validated
-import ru.scalalaz.gen.parsing.{EpisodeParseError, EpisodeParser, FileParseError}
+import java.nio.file.Paths
 
 object Main extends App {
 
   val markdownDir   = Paths.get(getClass.getResource("/md").getPath)
   val targetPath    = Paths.get("target/site")
+  val tmp           = Paths.get("target/tmp")
   val targetRssPath = Paths.get("target/site/rss")
 
   fs.clean(targetPath)
   fs.createDir(targetRssPath)
 
-  val isEpisode = (p: Path) => p.toFile.getName.startsWith("series-")
-
-  val parsed = fs.list(markdownDir).filter(isEpisode)
-    .map(p => {
-      val bytes = Files.readAllBytes(p)
-      val content = new String(bytes)
-      EpisodeParser.fromString(content)
-        .map(e => EpisodeFile(p, e))
-        .leftMap(e => FileParseError(p, e))
-    })
-
-  if (parsed.exists(_.isInvalid)) {
-    reportErrors(parsed)
-    sys.exit(1)
+  val gen = new Generator(markdownDir, targetPath, tmp)
+  gen.generate() match {
+    case Left(error) =>
+      println("Generation failed, error:")
+      println(error)
+      sys.exit(1)
+    case _ =>
+      println("Done")
   }
-
-  fs.copyDir(markdownDir, targetPath, isEpisode.andThen(!_))
-
-  private def reportErrors(results: Seq[Validated[EpisodeParseError, EpisodeFile]]): Unit = {
-    results.filter(_.isInvalid)
-      .foreach(inv => {
-        val msg = s"Error occurred while parsing file:\n\t $inv"
-        println(msg)
-      })
-  }
-
 }

@@ -17,7 +17,7 @@
 package ru.scalalaz.gen.writers
 
 import com.typesafe.config.ConfigFactory
-import laika.directive.Directives.{Default, _}
+import laika.directive.Directives.{ Default, _ }
 import laika.tree.Elements._
 import laika.util.Builders._
 

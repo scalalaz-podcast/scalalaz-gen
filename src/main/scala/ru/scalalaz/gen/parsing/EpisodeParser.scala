@@ -16,32 +16,25 @@
 
 package ru.scalalaz.gen.parsing
 
-import java.nio.file.{Files, Paths}
-import java.util.Collections
-import java.util.stream.Collectors
-
 import cats.data.Validated
 import cats.implicits._
-import ru.scalalaz.gen.{Episode, EpisodeFile}
-
-import scala.collection.JavaConversions._
-
+import ru.scalalaz.gen.Episode
 
 object EpisodeParser {
 
   def fromString(content: String): Validated[EpisodeParseError, Episode] =
-    FormatParser.parseContent(content).toValidated
+    FormatParser
+      .parseContent(content)
+      .toValidated
       .leftMap(e => {
         InvalidFormat(e.toString)
       })
       .andThen(f => fromFormat(f))
 
   def fromFormat(format: FileFormat): Validated[EpisodeParseError, Episode] =
-    RssParser.fromMap(format.header)
+    RssParser
+      .fromMap(format.header)
       .map(rss => Episode(rss, format.otherData))
       .leftMap(list => ManyErrors(list))
 
 }
-
-
-
