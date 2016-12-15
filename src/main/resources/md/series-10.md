@@ -8,6 +8,8 @@ date=2016-12-11
 
 @:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-10.mp3".
 
+[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-10.mp3)
+
 Новости
 
 - [Scala 2.12.1](http://www.scala-lang.org/news/2.12.1) 
