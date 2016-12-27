@@ -1,0 +1,6 @@
+language: scala
+
+scala:
+    - 2.11.8
+
+script: sbt -no-colors -J-Xss2m ++$TRAVIS_SCALA_VERSION test
