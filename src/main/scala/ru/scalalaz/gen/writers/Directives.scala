@@ -39,7 +39,7 @@ trait Directives {
         (src, `type`, content) =>
           val t = `type`.getOrElse("mpeg")
 
-          RawContent(Seq("html"), s"""|<audio controls="">
+          RawContent(Seq("html"), s"""|<audio controls="" class="audio-panel">
                                       |<source src="$src" type="audio/$t">
                                       |</audio>""".stripMargin)
       }

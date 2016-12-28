@@ -194,3 +194,7 @@ h3 {
 .toc ul{
     list-style-type: circle;
 }
+
+.audio-panel {
+   width: 70%;
+}
