@@ -28,29 +28,7 @@ Welcome to scalalaz-gen!
 
 @:disqus.
 
-- Disqus based commnets
-
-### Rss
-
-Rss has special start and end marks:
-```
-@:rssTagStart tag=title:
-    some content
-@:rssTagEnd tag=title.
-```
-'title' here is a name of rss tag.
-
-content between marks should has indent.  
-
-If this tag need to has attributes it should specified by this way:
-```
-@:rssTagStart tag=enclosure attr="url(/mp3/scalalaz-podcast-3mp3);type(audio/mpeg)":{}
-@:rssTagEnd tag=enclosure.
-```
-
-'url(text)' == url="text"
-';' - is a separator between attributes
-
+- Disqus based comments
 
 ## Contribution policy ##
 
