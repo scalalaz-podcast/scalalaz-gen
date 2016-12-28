@@ -1,5 +1,3 @@
 #!/bin/sh
-echo "start script"
 cd $TRAVIS_BUILD_DIR/target
-tar cvf site_$TRAVIS_BUILD_NUMBER.tar site
-scp site_$TRAVIS_BUILD_NUMBER.tar travis@scalalaz.ru:
+rsync -r site/* travis@scalalaz.ru:/home/travis/site_target
