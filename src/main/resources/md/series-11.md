@@ -28,9 +28,23 @@ date=2016-12-25
 
 Темы:
 
-- Recursion schemes на примере [Matryoshka](https://github.com/slamdata/matryoshka)
 - Как прошел [FuncBy 2016](http://fby.by/)
 - Что же такое [Королев](https://github.com/fomkin/korolev)
+- Recursion schemes на примере [Matryoshka](https://github.com/slamdata/matryoshka)
+    - Материалы по теме:
+        - [Data vs codata (haskell)](http://www.tac-tics.net/blog/data-vs-codata)
+        - [Pure Functional Database Programming with Fixpoint Types Rob Norris (scala)](https://www.youtube.com/watch?v=7xSfLPD6tiQ)
+        - [Practical Recursion Schemes (haskell)](https://medium.com/@jaredtobin/practical-recursion-schemes-c10648ec1c29#.u5cjg39y)
+        - [Going bananas with recursion schemes for fixed point data types](http://bit.ly/2hVvVSK)
+        - [Advanced Functional Programming with Scala - Notes](https://gist.github.com/jdegoes/97459c0045f373f4eaf126998d8f65dc#recursion-schemes)
+        - [Matryoshka](https://github.com/slamdata/matryoshka)
+        - [Recursion scheme talk от создателя Matryoshka](https://github.com/sellout/recursion-scheme-talk)
+        - [Пример использования Матрешки (Matryoshka)](http://scastie.org/24378)
+        - [И еще блог о рекурсивных схемах](http://blog.sumtypeofway.com)
+        - [Understanding F-algebras (haskell)](https://www.schoolofhaskell.com/user/bartosz/understanding-algebras)
+        - [Реализация на Haskell](http://comonad.com/reader/2009/recursion-schemes/)
+        - [Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.125)
+        - [Origami Programming recrussions schemas (haskell)](https://www.cs.ox.ac.uk/jeremy.gibbons/publications/origami.pdf)
 
 Полезняшки:
 
