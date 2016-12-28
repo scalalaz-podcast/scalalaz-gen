@@ -1,5 +1,7 @@
 # scalalaz-gen #
 
+[![Build Status](https://api.travis-ci.org/scalalaz-podcast/scalalaz-gen.svg)](http://travis-ci.org/scalalaz-podcast/scalalaz-gen)
+
 Welcome to scalalaz-gen!
 
 # Как делать новый выпуск
