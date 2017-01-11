@@ -40,6 +40,7 @@ date=2017-01-08
 - [Алексей Романчук](http://github.com/13h3r)
 - [Евгений Токарев](http://github.com/strobe)
 - [Григорий Помадчин](http://github.com/pomadchin)
-- [Денис](https://twitter.com/borovikov)
+
+Гость - [Денис Боровиков](https://twitter.com/borovikov)
 
 @:disqus.
