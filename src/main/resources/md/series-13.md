@@ -42,7 +42,7 @@ date=2017-01-22
 - [splain](https://github.com/tek/splain)
 - [BigDL](https://github.com/intel-analytics/BigDL)
 - [spark-indexedrdd](https://github.com/amplab/spark-indexedrdd)
-- [igniterdd.html](https://ignite.apache.org/features/igniterdd.html)
+- [Apache Ignite - RDD](https://ignite.apache.org/features/igniterdd.html)
 - [parseback](https://github.com/djspiewak/parseback)
 - [sbt-blockade](https://github.com/Verizon/sbt-blockade)
 
