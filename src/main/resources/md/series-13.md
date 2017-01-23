@@ -46,6 +46,8 @@ date=2017-01-22
 - [parseback](https://github.com/djspiewak/parseback)
 - [sbt-blockade](https://github.com/Verizon/sbt-blockade)
 
+[Scalasphere](https://scalasphere.org/)
+
 Ведущие:
 
 - [Алексей Фомкин](http://github.com/fomkin)
