@@ -18,7 +18,9 @@ date=2017-01-22
   [И еще](http://openjdk.java.net/projects/jdk9/)
 
 - [Combining data from a database and a web service with Fetch](http://www.47deg.com/blog/fetch-doobie-http4s/)
+  
   [Haxl](https://github.com/facebook/Haxl](https://github.com/facebook/Haxl)
+  
 - [Хизер Миллер работает над новым Code of Conduct БОЛЬШЕ КОДОВКОНДАКТОВ](https://docs.google.com/document/d/1KqqdOywKWALUqJObM1Dglqe-n59C3bzxygd7RE8vYFY/edit)
   
   [И еще](https://twitter.com/scala_lang/status/819826390430351361)
