@@ -48,6 +48,11 @@ date=2017-01-22
 
 [Scalasphere](https://scalasphere.org/)
 
+Дополнительные материалы:
+
+- [Move Over Free Monads: Make Way for Free Applicatives!](https://www.youtube.com/watch?v=H28QqxO7Ihc)
+- [free-onion-hn-scrapper](https://github.com/strobe/free-onion-hn-scrapper)
+
 Ведущие:
 
 - [Алексей Фомкин](http://github.com/fomkin)
