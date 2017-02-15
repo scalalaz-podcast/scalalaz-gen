@@ -100,12 +100,16 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
 
     tag("item")(tag("title")(title),
                 raw(s"""<description>
-           |<![CDATA[${ e.сontent }]]>
+           |<![CDATA[<pre>
+           |${ e.сontent }
+           |</pre>]]>
            |</description>""".stripMargin),
                 tag("enclosure")(attr("url") := enclosure.url,
                                  attr("type") := enclosure.`type`,
                                  attr("length") := enclosure.length),
                 tag("guid")(attr("isPermalink") := "false", page),
-                tag("pubDate")(formattedDate))
+                tag("pubDate")(formattedDate),
+                tag("link")(page))
+
   }
 }
