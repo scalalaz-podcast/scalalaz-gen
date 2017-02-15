@@ -6,7 +6,9 @@ date=2016-12-25
 ----
 ### Выпуск 11
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-11.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-11.mp3" type="audio/mpeg">
+</audio>
 
 [Запись](http://scalalaz.ru/mp3/scalalaz-podcast-11.mp3)
 
@@ -62,4 +64,3 @@ date=2016-12-25
 - [Евгений Токарев](http://github.com/strobe)
 - [Григорий Помадчин](http://github.com/pomadchin)
 
-@:disqus.

@@ -6,7 +6,9 @@ date=2016-12-11
 ----
 ### Выпуск 10
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-10.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-10.mp3" type="audio/mpeg">
+</audio>
 
 [Запись](http://scalalaz.ru/mp3/scalalaz-podcast-10.mp3)
 
@@ -81,5 +83,3 @@ date=2016-12-11
 - [Алексей Романчук](http://github.com/13h3r)
 - [Евгений Токарев](http://github.com/strobe)
 - [Григорий Помадчин](http://github.com/pomadchin)
-
-@:disqus.

@@ -6,7 +6,9 @@ date=2016-09-20
 ----
 ### Выпуск 04
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-4.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-4.mp3" type="audio/mpeg">
+</audio>
 
 [Запись](http://scalalaz.ru/mp3/scalalaz-podcast-4.mp3)
 
@@ -45,5 +47,3 @@ date=2016-09-20
 - [Алексей Фомкин](http://github.com/fomkin)
 - [Вадим Челышов](http://github.com/dos65)
 - [Евгений Токарев](http://github.com/strobe)
-
-@:disqus.

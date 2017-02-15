@@ -6,7 +6,9 @@ date=2016-11-27
 ----
 ### Выпуск 09
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-9.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-9.mp3" type="audio/mpeg">
+</audio>
 
 [Запись](http://scalalaz.ru/mp3/scalalaz-podcast-9.mp3)
 
@@ -48,5 +50,3 @@ date=2016-11-27
 - [Евгений Токарев](http://github.com/strobe)
 - [Григорий Помадчин](http://github.com/pomadchin)
 
-
-@:disqus.

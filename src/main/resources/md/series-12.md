@@ -6,7 +6,9 @@ date=2017-01-08
 ----
 ### Выпуск 12
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-12.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-12.mp3" type="audio/mpeg">
+</audio>
 
 [Запись](http://scalalaz.ru/mp3/scalalaz-podcast-12.mp3)
 
@@ -42,5 +44,3 @@ date=2017-01-08
 - [Григорий Помадчин](http://github.com/pomadchin)
 
 Гость - [Денис Боровиков](https://twitter.com/borovikov)
-
-@:disqus.

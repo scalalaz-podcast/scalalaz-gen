@@ -6,7 +6,9 @@ date=2016-10-16
 ----
 ### Выпуск 06
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-6.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-6.mp3" type="audio/mpeg">
+</audio>
 
 [Запись](http://scalalaz.ru/mp3/scalalaz-podcast-6.mp3)
 
@@ -44,6 +46,3 @@ date=2016-10-16
 
 - [Михайлов Дениc](https://github.com/notxcain)
 - [Григорий Помадчин - Azavea](http://github.com/pomadchin)
-
-
-@:disqus.

@@ -6,7 +6,11 @@ date=2016-08-07
 ----
 ### Выпуск 01
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3" type="audio/mpeg">
+</audio>
+
+[Запись](http://scalalaz.ru/mp3/scalalaz-podcast1.mp3)
 
 Темы:
 
@@ -37,5 +41,4 @@ date=2016-08-07
 - [Виктор Тараненко](http://github.com/viktortnk)
 - [Алексей Фомкин](http://github.com/fomkin)
 
-@:disqus.
 

@@ -6,7 +6,9 @@ date=2017-01-22
 ----
 ### Выпуск 13
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-13.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-13.mp3" type="audio/mpeg">
+</audio>
 
 [Запись](http://scalalaz.ru/mp3/scalalaz-podcast-13.mp3)
 
@@ -19,13 +21,13 @@ date=2017-01-22
 
 - [Combining data from a database and a web service with Fetch](http://www.47deg.com/blog/fetch-doobie-http4s/)
   
-  [Haxl](https://github.com/facebook/Haxl](https://github.com/facebook/Haxl)
+  [Haxl](https://github.com/facebook/Haxl)(https://github.com/facebook/Haxl)
   
 - [Хизер Миллер работает над новым Code of Conduct БОЛЬШЕ КОДОВКОНДАКТОВ](https://docs.google.com/document/d/1KqqdOywKWALUqJObM1Dglqe-n59C3bzxygd7RE8vYFY/edit)
   
-  [И еще](https://twitter.com/scala_lang/status/819826390430351361)
+  [И еще](http://bit.ly/2krD6Vf)
 
-- [Ускорение компиляции индуктивных выводов имплиситов](https://github.com/scala/scala/pull/5649](https://github.com/scala/scala/pull/5649)
+- [Ускорение компиляции индуктивных выводов имплиситов](https://github.com/scala/scala/pull/5649)(https://github.com/scala/scala/pull/5649)
 
 Видео с конференций:
 
@@ -64,5 +66,3 @@ date=2017-01-22
 - [Григорий Помадчин](http://github.com/pomadchin)
 
 Гость - [Денис Михайлов](https://github.com/notxcain)
-
-@:disqus.

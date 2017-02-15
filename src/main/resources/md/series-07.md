@@ -6,7 +6,9 @@ date=2016-10-29
 ----
 ### Выпуск 07
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-7.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-7.mp3" type="audio/mpeg">
+</audio>
 
 [Запись](http://scalalaz.ru/mp3/scalalaz-podcast-7.mp3)
 
@@ -27,7 +29,7 @@ date=2016-10-29
 - [Freek v0.6.2](https://github.com/ProjectSeptemberInc/freek)
 - [Reactive programming with Scala, Lagom, Spark, Akka and Play](https://jaxenter.com/jax-magazine-october-2016-reactive-programming-with-scala-lagom-spark-akka-and-play-129787.html)
 - [Scaling to Hundreds of Thousands of Persistent Connections on One Machine](https://engineering.linkedin.com/blog/2016/10/instant-messaging-at-linkedin--scaling-to-hundreds-of-thousands-)
-- [Scala Cats library for dummies](https://medium.com/@abu_nadhr)
+- [Scala Cats library for dummies](http://bit.ly/2kLREev)
 - [Scala Tagged Types](http://www.vlachjosef.com/tagged-types-introduction/)
 - Sbt - локальные библиотеки
 
@@ -45,6 +47,3 @@ date=2016-10-29
 - [Вадим Челышов](http://github.com/dos65)
 - [Алексей Романчук](http://github.com/13h3r)
 - [Евгений Токарев](http://github.com/strobe)
-
-
-@:disqus.

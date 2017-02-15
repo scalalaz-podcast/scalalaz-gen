@@ -6,7 +6,9 @@ date=2016-09-05
 ----
 ### Выпуск 05
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-5.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-5.mp3" type="audio/mpeg">
+</audio>
 
 [Запись](http://scalalaz.ru/mp3/scalalaz-podcast-5.mp3)
 
@@ -29,5 +31,3 @@ date=2016-09-05
 - [Алексей Фомкин](http://github.com/fomkin)
 - [Вадим Челышов](http://github.com/dos65)
 - [Алексей Романчук](http://github.com/13h3r)
-
-@:disqus.

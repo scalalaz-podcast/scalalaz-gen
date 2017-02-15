@@ -6,7 +6,9 @@ date=2016-08-21
 ----
 ### Выпуск 02
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-2.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-2.mp3" type="audio/mpeg">
+</audio>
 
 [Запись](http://scalalaz.ru/mp3/scalalaz-podcast-2.mp3)
 
@@ -42,5 +44,3 @@ date=2016-08-21
 - [Вадим Челышов](http://github.com/dos65)
 - [Евгений Токарев](http://github.com/strobe)
 - [Алексей Фомкин](http://github.com/fomkin)
-
-@:disqus.

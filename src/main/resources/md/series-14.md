@@ -6,7 +6,9 @@ date=2017-02-05
 ----
 ### Выпуск 14
 
-@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-14.mp3".
+<audio controls="" class="audio-panel">
+    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-14.mp3" type="audio/mpeg">
+</audio>
 
 [Запись](http://scalalaz.ru/mp3/scalalaz-podcast-14.mp3)
 
@@ -23,12 +25,12 @@ date=2017-02-05
 - Dot calculus - зачем и что принесет
     - [The Essence of Dependent Object Types](https://infoscience.epfl.ch/record/215280/files/paper_1.pdf)
     - [From DOT to Dotty](https://skillsmatter.com/skillscasts/8866-from-dot-to-dotty) ([Слайды](http://www.slideshare.net/Odersky/from-dot-to-dotty))
-    
+
 - (из тем слушателей) Дизъюнкция типов в Dotty (union types)
 
 - (из тем слушателей) Модель корутин (го, котлин), модель акторов.
     - [Reactors, Channels, and Event Streams for Composable Distributed Programming](http://axel22.github.io/resources/docs/reactors.pdf)
-    
+
 Полезняшки:
 
 - [git, site and ghpages support for sbt projects](https://github.com/sbt/sbt-ghpages)
@@ -42,5 +44,3 @@ date=2017-02-05
 - [Евгений Токарев](http://github.com/strobe)
 
 Гость - [Дмитрий Петрашко](https://github.com/darkdimius)
-
-@:disqus.
