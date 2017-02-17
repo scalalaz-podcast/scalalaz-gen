@@ -6,10 +6,10 @@ addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.3")
 
 libraryDependencies ++= Vector(
   Library.scalaTest % "test",
-  Library.laika,
   Library.scalatags,
   Library.fastParse,
-  Library.cats
+  Library.cats,
+  Library.knockoff
 )
 
 initialCommands := """|import ru.scalalaz.gen._

@@ -16,19 +16,56 @@
 
 package ru.scalalaz.gen.writers
 
-import laika.api.Transform
-import laika.parse.markdown.Markdown
-import laika.render.HTML
-import ru.scalalaz.gen.writers.Directives._
+import java.io.{ BufferedWriter, File, FileWriter }
+
+import knockoff.DefaultDiscounter._
+import _root_.knockoff._
+
+import scala.io.Source
+import scala.language.postfixOps
 
 case class MDWriter(from: String, to: String) {
 
-  private val mdParser = Markdown.withBlockDirectives(discussBlock,
-                                                      audioControlsBlock,
-                                                      rssStartBlock,
-                                                      rssEndBlock)
-  def write(): Unit = {
-    Transform from mdParser to HTML fromDirectory from toDirectory to
-  }
+  case class MDData(text: String, filename: String)
+  case class HTMLData(html: String, ast: Seq[Block], filename: String)
 
+  def write(): Unit = {
+
+    def getListOfFiles(directory: String, extension: String): List[File] = {
+      val d = new File(directory)
+      if (d.exists && d.isDirectory) {
+        d.listFiles
+          .filter(_.isFile)
+          .filter(_.getName.endsWith(extension))
+          .toList
+      } else {
+        List[File]()
+      }
+    }
+
+    val files: List[File] = getListOfFiles(from, ".md")
+
+    val markdowns: List[MDData] = files.map { file =>
+      val s    = Source.fromFile(file)
+      val data = MDData(s.getLines().mkString("\n"), file.getName)
+      s.close()
+      data
+    }
+
+    val htmlData: List[HTMLData] = markdowns.map { mdData =>
+      val nodes = knockoff(mdData.text)
+      HTMLData(toXHTML(nodes).mkString,
+               nodes,
+               mdData.filename.split('.').head + ".html")
+    }
+
+    htmlData.foreach { data =>
+      val file = new File(s"${ to }/${ data.filename }")
+      val bw   = new BufferedWriter(new FileWriter(file))
+      bw.write(data.html)
+      bw.close()
+    }
+
+    htmlData.foreach(v => println(v.filename))
+  }
 }
