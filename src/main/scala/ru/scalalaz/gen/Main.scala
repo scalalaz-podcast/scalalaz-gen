@@ -21,11 +21,12 @@ import java.nio.file.Paths
 object Main extends App {
 
   val markdownDir   = Paths.get(getClass.getResource("/md").getPath)
+  val cssDir        = Paths.get(getClass.getResource("/md/css").getPath)
   val targetPath    = Paths.get("target/site")
   val tmp           = Paths.get("target/tmp")
   val targetRssPath = Paths.get("target/site/rss")
 
-  val gen = new Generator(markdownDir, targetPath, tmp)
+  val gen = new Generator(markdownDir, cssDir, targetPath, tmp)
 
   gen.generate() match {
     case Left(error) =>

@@ -17,6 +17,7 @@
 package ru.scalalaz.gen
 
 import java.nio.file.{ Files, Path }
+import java.nio.file.Paths
 
 import cats.data.Validated.{ Invalid, Valid }
 import cats.data.{ NonEmptyList, ValidatedNel }
@@ -41,7 +42,8 @@ trait GeneratorFs {
     }
 }
 
-class Generator(source: Path, target: Path, tmpDir: Path) extends GeneratorFs {
+class Generator(source: Path, css: Path, target: Path, tmpDir: Path)
+    extends GeneratorFs {
 
   val targetRssPath = target.resolve("rss")
 
@@ -70,7 +72,10 @@ class Generator(source: Path, target: Path, tmpDir: Path) extends GeneratorFs {
   /**
     * копируем для лайка-генератора все обычные файлы
     */
-  def copyOther(): Unit = fs.copyDir(source, tmpDir, notEpisode)
+  def copyOther(): Unit = {
+    fs.copyDir(source, tmpDir, notEpisode)
+    fs.copyDir(css, Paths.get(target.toString + "/css"), notEpisode)
+  }
 
   def parse(): Either[String, List[EpisodeFile]] =
     episodes(source).traverseU(parseEpisode) match {

@@ -2,13 +2,14 @@ import com.typesafe.sbt.GitPlugin
 import de.heikoseeberger.sbtheader.HeaderPlugin
 import de.heikoseeberger.sbtheader.license._
 import org.scalafmt.sbt.ScalaFmtPlugin
+//import play.twirl.sbt.SbtTwirl
 import sbt._
 import sbt.plugins.JvmPlugin
 import sbt.Keys._
 
 object Build extends AutoPlugin {
 
-  override def requires = JvmPlugin && HeaderPlugin && GitPlugin && ScalaFmtPlugin
+  override def requires = JvmPlugin && HeaderPlugin && GitPlugin && ScalaFmtPlugin //&& SbtTwirl
 
   override def trigger = allRequirements
 

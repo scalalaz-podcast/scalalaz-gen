@@ -20,8 +20,9 @@ import java.io.{ BufferedWriter, File, FileWriter }
 
 import knockoff.DefaultDiscounter._
 import _root_.knockoff._
-
 import scala.io.Source
+import html.default_template
+
 import scala.language.postfixOps
 
 case class MDWriter(from: String, to: String) {
@@ -54,9 +55,13 @@ case class MDWriter(from: String, to: String) {
 
     val htmlData: List[HTMLData] = markdowns.map { mdData =>
       val nodes = knockoff(mdData.text)
-      HTMLData(toXHTML(nodes).mkString,
-               nodes,
-               mdData.filename.split('.').head + ".html")
+//      val title = nodes
+//        .getOrElse("No title")
+//        .find(_.isInstanceOf[Header]).head.span
+//              .map(_.toString)
+      val html  = toXHTML(nodes).mkString
+      val tHtml = default_template("no title", html).body
+      HTMLData(tHtml, nodes, mdData.filename.split('.').head + ".html")
     }
 
     htmlData.foreach { data =>
@@ -67,5 +72,9 @@ case class MDWriter(from: String, to: String) {
     }
 
     htmlData.foreach(v => println(v.filename))
+
+//    val t = default_template("Hello World!!!")
+//    println(t.body)
+
   }
 }

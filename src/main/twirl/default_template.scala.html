@@ -1,9 +1,10 @@
+@(title: String, mdHTML: String)
 <!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{document.title}}</title>
+    <title>@title</title>
 
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 
@@ -35,16 +36,15 @@
             </br>
             <nav class="nav">
                 <div class="pure-menu custom-restricted-width">
-                <ul class="pure-menu-list">
-                    <div class="toc">
-                        <ul>
-                        <li><a href="rss/feed.xml">RSS</a></li>
-                        <li><a href="https://itunes.apple.com/ru/podcast/scalalaz-podcast/id1156356598">iTunes</a></li>
-                        </ul>
-                    </div>
-                    @:toc depth=1 root="../md".
-                </ul>
-                    </div>
+                    <ul class="pure-menu-list">
+                        <div class="toc">
+                            <ul>
+                                <li><a href="rss/feed.xml">RSS</a></li>
+                                <li><a href="https://itunes.apple.com/ru/podcast/scalalaz-podcast/id1156356598">iTunes</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
             </nav>
         </div>
     </div>
@@ -55,7 +55,7 @@
 
             <!-- A single blog post -->
             <section class="post">
-                {{document.content}}
+                @Html(mdHTML)
             </section>
         </div>
 
