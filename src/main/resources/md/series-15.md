@@ -14,7 +14,7 @@ date=2017-02-19
 
 - Тонкости работы со ScalaJS
 
-Упомянутые ScalaJS-фрейморки
+Упомянутые ScalaJS-фрейморки:
 
 - [diode](https://github.com/suzaku-io/diode)
 - [scalatags](https://github.com/lihaoyi/scalatags)
