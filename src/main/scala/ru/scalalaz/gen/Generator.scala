@@ -29,7 +29,9 @@ trait GeneratorFs {
 
   def episodes(dir: Path): List[Path] = fs.list(dir).filter(isEpisode)
 
-  def isEpisode(p: Path): Boolean = p.toFile.getName.startsWith("series-")
+  def isEpisode(p: Path): Boolean =
+    p.toFile.getName.startsWith("series-") && !p.toFile.getName
+      .contains("themes")
 
   def notEpisode(p: Path): Boolean = !isEpisode(p)
 
@@ -42,7 +44,7 @@ trait GeneratorFs {
     }
 }
 
-class Generator(source: Path, css: Path, target: Path, tmpDir: Path)
+class Generator(source: Path, css: Path, img: Path, target: Path, tmpDir: Path)
     extends GeneratorFs {
 
   val targetRssPath = target.resolve("rss")
@@ -74,6 +76,7 @@ class Generator(source: Path, css: Path, target: Path, tmpDir: Path)
     */
   def copyOther(): Unit = {
     fs.copyDir(source, tmpDir, notEpisode)
+    fs.copyDir(img, Paths.get(target.toString), notEpisode)
     fs.copyDir(css, Paths.get(target.toString + "/css"), notEpisode)
   }
 

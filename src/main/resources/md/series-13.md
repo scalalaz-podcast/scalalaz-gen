@@ -4,7 +4,7 @@ enc.length=161794048
 page=http://scalalaz.ru/series-13.html
 date=2017-01-22
 ----
-### Выпуск 13
+# Выпуск 13
 
 <audio controls="" class="audio-panel">
     <source src="http://scalalaz.ru/mp3/scalalaz-podcast-13.mp3" type="audio/mpeg">

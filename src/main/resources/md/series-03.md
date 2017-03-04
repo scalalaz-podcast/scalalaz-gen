@@ -4,7 +4,7 @@ enc.length=55527205
 page=http://scalalaz.ru/series-03.html
 date=2016-09-05
 ----
-### Выпуск 03
+# Выпуск 03
 
 <audio controls="" class="audio-panel">
     <source src="http://scalalaz.ru/mp3/scalalaz-podcast-3.mp3" type="audio/mpeg">

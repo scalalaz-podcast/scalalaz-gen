@@ -20,10 +20,13 @@ import java.io.{ BufferedWriter, File, FileWriter }
 
 import knockoff.DefaultDiscounter._
 import _root_.knockoff._
+
 import scala.io.Source
 import html.default_template
 
 import scala.language.postfixOps
+import scalatags.Text.TypedTag
+import scalatags.Text.all._
 
 case class MDWriter(from: String, to: String) {
 
@@ -44,6 +47,65 @@ case class MDWriter(from: String, to: String) {
       }
     }
 
+    def getHeader(nodes: Seq[Block]): Option[String] = {
+      for {
+        headerSpans <- nodes.find(_.isInstanceOf[Header]).map {
+                        case h: Header => h.spans
+                      }
+        text <- headerSpans.find(_.isInstanceOf[Text]).map {
+                 case t: Text => t.content
+               }
+      } yield text
+    }
+
+    def getDescriptionSpans(nodes: Seq[Block]): Option[Seq[Span]] = {
+      val descItems = nodes.find(_.isInstanceOf[OrderedList]).map {
+        case l: OrderedList => l.items
+      }
+
+      val descSpans = descItems.map {
+        case d if d.isEmpty => Seq[Span]()
+        case d =>
+          d.flatMap { i =>
+            i.children.filter(_.isInstanceOf[Paragraph]).flatMap {
+              case p: Paragraph => p.spans
+            }
+          }
+      }
+
+      descSpans
+    }
+
+    def getPosts(htmlData: List[HTMLData]): Seq[TypedTag[String]] = {
+      htmlData.reverse.map { hData =>
+        val nodes     = hData.ast
+        val header    = getHeader(nodes)
+        val descSpans = getDescriptionSpans(nodes)
+
+        val descParagraphs = descSpans.map {
+          _.map {
+            case s: Text =>
+              p(s.content)
+          }
+        }
+
+        div(a(href := hData.filename)(h2(header)), descParagraphs)
+      }
+    }
+
+    def generateListOfPosts(htmlData: List[HTMLData]): Unit = {
+      val tHtml = default_template(
+          "no title",
+          ul(`class` := "post-list")(getPosts(htmlData)).toString
+      ).body
+
+      val file = new File(s"${ to }/${ "toc.html" }")
+      val bw   = new BufferedWriter(new FileWriter(file))
+      bw.write(tHtml)
+      bw.close()
+
+    }
+
     val files: List[File] = getListOfFiles(from, ".md")
 
     val markdowns: List[MDData] = files.map { file =>
@@ -55,14 +117,12 @@ case class MDWriter(from: String, to: String) {
 
     val htmlData: List[HTMLData] = markdowns.map { mdData =>
       val nodes = knockoff(mdData.text)
-//      val title = nodes
-//        .getOrElse("No title")
-//        .find(_.isInstanceOf[Header]).head.span
-//              .map(_.toString)
       val html  = toXHTML(nodes).mkString
       val tHtml = default_template("no title", html).body
       HTMLData(tHtml, nodes, mdData.filename.split('.').head + ".html")
     }
+
+    generateListOfPosts(htmlData)
 
     htmlData.foreach { data =>
       val file = new File(s"${ to }/${ data.filename }")

@@ -4,7 +4,7 @@ enc.length=107888659
 page=http://scalalaz.ru/series-08.html
 date=2016-11-13
 ----
-### Выпуск 08
+# Выпуск 08
 
 <audio controls="" class="audio-panel">
     <source src="http://scalalaz.ru/mp3/scalalaz-podcast-8.mp3" type="audio/mpeg">

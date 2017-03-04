@@ -14,4 +14,3 @@ libraryDependencies ++= Vector(
 
 initialCommands := """|import ru.scalalaz.gen._
                       |""".stripMargin
-

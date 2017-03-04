@@ -22,11 +22,12 @@ object Main extends App {
 
   val markdownDir   = Paths.get(getClass.getResource("/md").getPath)
   val cssDir        = Paths.get(getClass.getResource("/md/css").getPath)
+  val imgDir        = Paths.get(getClass.getResource("/md/img").getPath)
   val targetPath    = Paths.get("target/site")
   val tmp           = Paths.get("target/tmp")
   val targetRssPath = Paths.get("target/site/rss")
 
-  val gen = new Generator(markdownDir, cssDir, targetPath, tmp)
+  val gen = new Generator(markdownDir, cssDir, imgDir, targetPath, tmp)
 
   gen.generate() match {
     case Left(error) =>
