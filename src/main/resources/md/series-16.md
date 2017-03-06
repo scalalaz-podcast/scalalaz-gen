@@ -20,11 +20,14 @@ date=2017-03-05
 
 - [Lambda Conf 2017 Winter Retreat](https://www.youtube.com/watch?v=WsA7GtUQeB8&list=PL7DZ7q3nEWhy9wMify6MXW6F339W4g4Eo)
 
+Темы:
+
+- [Doobie](https://github.com/tpolecat/doobie)
+
 Полезняшки:
 
 - [Add comonadic comprehensions (keyword 'cofor')](https://github.com/scala/scala/pull/5725)
 - [Treat implicit by-name arguments as lazy values](https://github.com/lampepfl/dotty/pull/1993) ([Issue](https://github.com/lampepfl/dotty/issues/1998))
-- [Doobie](https://github.com/tpolecat/doobie)
 - <https://scala-clippy.org>
 - [A native Scala client for interacting with Consul](https://github.com/Verizon/helm)
 
