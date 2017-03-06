@@ -27,85 +27,97 @@ import html.default_template
 import scala.language.postfixOps
 import scalatags.Text.TypedTag
 import scalatags.Text.all._
+import com.typesafe.config.ConfigFactory
 
 case class MDWriter(from: String, to: String) {
+
+  val config     = ConfigFactory.load()
+  val disqusCode = config.getString("disqus.disqusCode")
 
   case class MDData(text: String, filename: String)
   case class HTMLData(html: String, ast: Seq[Block], filename: String)
 
-  def write(): Unit = {
+  val disqusJSCode = """
+        var disqus_shortname = '""" + disqusCode + """';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();"""
 
-    def getListOfFiles(directory: String, extension: String): List[File] = {
-      val d = new File(directory)
-      if (d.exists && d.isDirectory) {
-        d.listFiles
-          .filter(_.isFile)
-          .filter(_.getName.endsWith(extension))
-          .toList
-      } else {
-        List[File]()
-      }
+  val disqusHtml =
+    s"""<div id="disqus_thread"></div><script type="text/javascript">$disqusJSCode</script>"""
+
+  def getListOfFiles(directory: String, extension: String): List[File] = {
+    val d = new File(directory)
+    if (d.exists && d.isDirectory) {
+      d.listFiles.filter(_.isFile).filter(_.getName.endsWith(extension)).toList
+    } else {
+      List[File]()
+    }
+  }
+
+  def getHeader(nodes: Seq[Block]): Option[String] = {
+    for {
+      headerSpans <- nodes.find(_.isInstanceOf[Header]).map {
+                      case h: Header => h.spans
+                    }
+      text <- headerSpans.find(_.isInstanceOf[Text]).map {
+               case t: Text => t.content
+             }
+    } yield text
+  }
+
+  def getDescriptionSpans(nodes: Seq[Block]): Option[Seq[Span]] = {
+    val descItems = nodes.find(_.isInstanceOf[OrderedList]).map {
+      case l: OrderedList => l.items
     }
 
-    def getHeader(nodes: Seq[Block]): Option[String] = {
-      for {
-        headerSpans <- nodes.find(_.isInstanceOf[Header]).map {
-                        case h: Header => h.spans
-                      }
-        text <- headerSpans.find(_.isInstanceOf[Text]).map {
-                 case t: Text => t.content
-               }
-      } yield text
-    }
-
-    def getDescriptionSpans(nodes: Seq[Block]): Option[Seq[Span]] = {
-      val descItems = nodes.find(_.isInstanceOf[OrderedList]).map {
-        case l: OrderedList => l.items
-      }
-
-      val descSpans = descItems.map {
-        case d if d.isEmpty => Seq[Span]()
-        case d =>
-          d.flatMap { i =>
-            i.children.filter(_.isInstanceOf[Paragraph]).flatMap {
-              case p: Paragraph => p.spans
-            }
-          }
-      }
-
-      descSpans
-    }
-
-    def getPosts(htmlData: List[HTMLData]): Seq[TypedTag[String]] = {
-      htmlData.reverse.map { hData =>
-        val nodes     = hData.ast
-        val header    = getHeader(nodes)
-        val descSpans = getDescriptionSpans(nodes)
-
-        val descParagraphs = descSpans.map {
-          _.map {
-            case s: Text =>
-              p(s.content)
+    val descSpans = descItems.map {
+      case d if d.isEmpty => Seq[Span]()
+      case d =>
+        d.flatMap { i =>
+          i.children.filter(_.isInstanceOf[Paragraph]).flatMap {
+            case p: Paragraph => p.spans
           }
         }
+    }
 
-        div(a(href := hData.filename)(h2(header)), descParagraphs)
+    descSpans
+  }
+
+  def getPosts(htmlData: List[HTMLData]): Seq[TypedTag[String]] = {
+    htmlData.reverse.map { hData =>
+      val nodes     = hData.ast
+      val header    = getHeader(nodes)
+      val descSpans = getDescriptionSpans(nodes)
+
+      val descParagraphs = descSpans.map {
+        _.map {
+          case s: Text =>
+            p(s.content)
+        }
       }
+
+      div(a(href := hData.filename)(h2(header)), descParagraphs)
     }
+  }
 
-    def generateListOfPosts(htmlData: List[HTMLData]): Unit = {
-      val tHtml = default_template(
-          "no title",
-          ul(`class` := "post-list")(getPosts(htmlData)).toString
-      ).body
+  def generateListOfPosts(htmlData: List[HTMLData]): Unit = {
+    val tHtml = default_template(
+        "no title",
+        ul(`class` := "post-list")(getPosts(htmlData)).toString,
+        "" // empty disqus
+    ).body
 
-      val file = new File(s"${ to }/${ "toc.html" }")
-      val bw   = new BufferedWriter(new FileWriter(file))
-      bw.write(tHtml)
-      bw.close()
+    val file = new File(s"${ to }/${ "toc.html" }")
+    val bw   = new BufferedWriter(new FileWriter(file))
+    bw.write(tHtml)
+    bw.close()
 
-    }
+  }
 
+  def write(): Unit = {
     val files: List[File] = getListOfFiles(from, ".md")
 
     val markdowns: List[MDData] = files.map { file =>
@@ -118,7 +130,7 @@ case class MDWriter(from: String, to: String) {
     val htmlData: List[HTMLData] = markdowns.map { mdData =>
       val nodes = knockoff(mdData.text)
       val html  = toXHTML(nodes).mkString
-      val tHtml = default_template("no title", html).body
+      val tHtml = default_template("no title", html, disqusHtml).body
       HTMLData(tHtml, nodes, mdData.filename.split('.').head + ".html")
     }
 
@@ -131,10 +143,6 @@ case class MDWriter(from: String, to: String) {
       bw.close()
     }
 
-    htmlData.foreach(v => println(v.filename))
-
-//    val t = default_template("Hello World!!!")
-//    println(t.body)
-
+//    htmlData.foreach(v => println(v.filename))
   }
 }

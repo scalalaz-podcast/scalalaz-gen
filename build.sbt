@@ -9,7 +9,8 @@ libraryDependencies ++= Vector(
   Library.scalatags,
   Library.fastParse,
   Library.cats,
-  Library.knockoff
+  Library.knockoff,
+  Library.typesafeConfig
 )
 
 initialCommands := """|import ru.scalalaz.gen._
