@@ -147,6 +147,12 @@ h3 {
     padding-left: inherit;
 }
 
+.post-date {
+    font-size: 10pt;
+    color: #aaa;
+    margin-top: 5px;
+}
+
 .footer {
     text-align: center;
     padding: 1em 0;

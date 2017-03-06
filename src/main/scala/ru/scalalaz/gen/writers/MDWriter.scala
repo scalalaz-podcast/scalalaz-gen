@@ -93,9 +93,12 @@ case class MDWriter(from: String, to: String) {
       val descSpans = getDescriptionSpans(nodes)
 
       val descParagraphs = descSpans.map {
-        _.map {
-          case s: Text =>
-            p(s.content)
+        _.zipWithIndex.map {
+          case (s: Text, index: Int) =>
+            index match {
+              case 0 => p(`class` := "post-date")(s.content)
+              case _ => p(s.content)
+            }
         }
       }
 
@@ -103,7 +106,7 @@ case class MDWriter(from: String, to: String) {
     }
   }
 
-  def generateListOfPosts(htmlData: List[HTMLData]): Unit = {
+  def writeListOfPosts(htmlData: List[HTMLData]): Unit = {
     val tHtml = default_template(
         "no title",
         ul(`class` := "post-list")(getPosts(htmlData)).toString,
@@ -114,7 +117,6 @@ case class MDWriter(from: String, to: String) {
     val bw   = new BufferedWriter(new FileWriter(file))
     bw.write(tHtml)
     bw.close()
-
   }
 
   def write(): Unit = {
@@ -134,8 +136,9 @@ case class MDWriter(from: String, to: String) {
       HTMLData(tHtml, nodes, mdData.filename.split('.').head + ".html")
     }
 
-    generateListOfPosts(htmlData)
+    writeListOfPosts(htmlData)
 
+    // write issues pages
     htmlData.foreach { data =>
       val file = new File(s"${ to }/${ data.filename }")
       val bw   = new BufferedWriter(new FileWriter(file))

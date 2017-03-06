@@ -4,7 +4,9 @@ enc.length=82521832
 page=http://scalalaz.ru/series-12.html
 date=2017-01-08
 ----
-# Выпуск 12
+# Денис Боровиков и Go -- Выпуск 12
+1. Опубликовано - 2017-01-08
+2. В этом выпуске: Go после Scala, Поиск...
 
 <audio controls="" class="audio-panel">
     <source src="http://scalalaz.ru/mp3/scalalaz-podcast-12.mp3" type="audio/mpeg">
