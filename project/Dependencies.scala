@@ -14,7 +14,7 @@ object Library {
   val scalaTest = "org.scalatest" %% "scalatest" % Version.ScalaTest
   val scalatags = "com.lihaoyi" %% "scalatags" % Version.ScalaTags
   val fastParse = "com.lihaoyi" %% "fastparse" % Version.FastParse
-  val cats = "org.typelevel" %% "Cats" % Version.Cats
-  val knockoff = "org.foundweekends" %% "Knockoff" % Version.Knockoff
+  val cats = "org.typelevel" %% "cats" % Version.Cats
+  val knockoff = "org.foundweekends" %% "knockoff" % Version.Knockoff
   val typesafeConfig = "com.typesafe" % "config" % Version.TypesafeConfig
 }
