@@ -4,7 +4,7 @@ enc.length=140646400
 page=http://scalalaz.ru/series-17.html
 date=2017-03-19
 ----
-### Выпуск 16
+### Выпуск 17
 
 @:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-17.mp3".
 
