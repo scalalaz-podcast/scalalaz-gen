@@ -24,16 +24,24 @@ case class HtmlPage(fileName: String, data: String)
 
 class HTMLWriter(targetDir: String, discusCode: String) {
 
+  import html._
+
   def write(episodes: Seq[EpisodeFile]): Unit = {
     episodes.foreach(episodePage)
 
   }
 
   def episodePage(episodeFile: EpisodeFile): Unit = {
-    val data = html.episode_template(episodeFile.episode, discusCode).body
+    val data = episode_template(episodeFile.episode, discusCode).body
     val fileName =
       episodeFile.path.getFileName.toString.replace(".md", ".html")
     val path = Paths.get(targetDir, fileName)
+    Files.write(path, data.getBytes)
+  }
+
+  def mainPage(episodes: Seq[EpisodeFile]): Unit = {
+    val data = main_page("Scalalaz Podcast", episodes.map(_.episode))
+    val path = Paths.get(targetDir, "index.html")
     Files.write(path, data.getBytes)
   }
 }
