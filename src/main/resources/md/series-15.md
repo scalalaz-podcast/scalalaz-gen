@@ -1,19 +1,9 @@
-title=Выпуск 15
+title=Выпуск 15 - Владимир Павкин о ScalaJs в бою
 enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-15.mp3
 enc.length=145782784
 page=http://scalalaz.ru/series-15.html
 date=2017-02-19
 ----
-# Владимир Павкин, ScalaJS - Выпуск 15
-1. Опубликовано 2017-02-05
-2. В этом выпуске: практический опыт ScalaJs
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-15.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-15.mp3)
-
 Темы:
 
 - Тонкости работы со ScalaJS

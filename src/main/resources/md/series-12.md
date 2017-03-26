@@ -1,19 +1,9 @@
-title=Выпуск 12
+title=Выпуск 12 - Денис Боровиков - Со Scala на Go
 enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-12.mp3
 enc.length=82521832
 page=http://scalalaz.ru/series-12.html
 date=2017-01-08
 ----
-# Денис Боровиков и Go -- Выпуск 12
-1. Опубликовано - 2017-01-08
-2. В этом выпуске: Go после Scala, Поиск...
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-12.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-12.mp3)
-
 Новости:
 
 - [Kamon 0.6.5](http://kamon.io/teamblog/2016/12/31/kamon-0-6-5-is-out/) - поддержка 2.12

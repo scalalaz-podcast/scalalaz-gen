@@ -4,14 +4,6 @@ enc.length=70977833
 page=http://scalalaz.ru/series-02.html
 date=2016-08-21
 ----
-# Выпуск 02
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-2.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-2.mp3)
-
 Темы:
 
 - [Scala library index](http://scala-lang.org/blog/2016/08/09/the-scala-library-index-reaches-beta.html)

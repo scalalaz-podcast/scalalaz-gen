@@ -4,14 +4,6 @@ enc.length=59484160
 page=http://scalalaz.ru/series-07.html
 date=2016-10-29
 ----
-# Выпуск 07
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-7.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-7.mp3)
-
 Темы:
 
 - [Прошедший Scala-митап в Москве](https://www.youtube.com/watch?v=DKZp269NxfE)

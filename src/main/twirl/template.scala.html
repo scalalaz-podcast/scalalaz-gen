@@ -1,4 +1,4 @@
-@(title: String, mdHTML: String, disqusHTML: String)
+@(title: String)(content: Html)
 <!doctype html>
 <html>
 <head>
@@ -58,8 +58,7 @@
 
             <!-- A single blog post -->
             <section class="post">
-                @Html(mdHTML)
-                @Html(disqusHTML)
+                @content
             </section>
         </div>
 

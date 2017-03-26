@@ -4,14 +4,6 @@ enc.length=55527205
 page=http://scalalaz.ru/series-03.html
 date=2016-09-05
 ----
-# Выпуск 03
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-3.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-3.mp3)
-
 Новости:
 
 - [Multi-OS Engine](https://software.intel.com/en-us/multi-os-engine?utm_source=Multi+OS+Engine+EBlast&utm_medium=Email&utm_campaign=cmd_12657-01&utm_con$)

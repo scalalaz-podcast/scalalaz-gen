@@ -19,6 +19,9 @@ package ru.scalalaz.gen
 import java.nio.file.Path
 import java.time.LocalDate
 
+import knockoff.DefaultDiscounter._
+import _root_.knockoff._
+
 /**
   * Фигня с сылкой на запись, кол-вом байт и типом
   */
@@ -33,5 +36,14 @@ case class RssItem(title: String,
                    page: String,
                    date: LocalDate)
 
-case class Episode(rss: RssItem, сontent: String)
+case class Episode(rss: RssItem, content: String) {
+
+  def title: String = rss.title
+
+  def asHtml: String = {
+    val blocks = knockoff(content)
+    toXHTML(blocks).mkString
+  }
+
+}
 case class EpisodeFile(path: Path, episode: Episode)

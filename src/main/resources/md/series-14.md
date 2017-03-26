@@ -1,19 +1,9 @@
-title=Выпуск 14
+title=Выпуск 14 - Дмитрий Петрашко о Dotty
 enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-14.mp3
 enc.length=145782784
 page=http://scalalaz.ru/series-14.html
 date=2017-02-05
 ----
-# Дмитрий Петрашко о Dotty - Выпуск 14
-1. Опубликовано 2017-02-05
-2. В этом выпуске: пытаемся понять куда идет развитие компиляторов Dotty и Scalac
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-14.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-14.mp3)
-
 Темы (о Dotty):
 
 - Dotty-linker

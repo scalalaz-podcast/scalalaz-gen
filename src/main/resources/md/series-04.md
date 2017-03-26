@@ -4,14 +4,6 @@ enc.length=45582510
 page=http://scalalaz.ru/series-04.html
 date=2016-09-20
 ----
-# Выпуск 04
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-4.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-4.mp3)
-
 Новости
 
 - [Scala Fiddle](https://scalafiddle.io)

@@ -15,3 +15,5 @@ libraryDependencies ++= Vector(
 
 initialCommands := """|import ru.scalalaz.gen._
                       |""".stripMargin
+
+TwirlKeys.templateImports += "ru.scalalaz.gen._"

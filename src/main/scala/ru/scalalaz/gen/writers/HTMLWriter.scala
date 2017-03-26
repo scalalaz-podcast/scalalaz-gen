@@ -14,25 +14,26 @@
  * limitations under the License.
  */
 
-package ru.scalalaz.gen
+package ru.scalalaz.gen.writers
 
-import java.nio.file.Paths
+import java.nio.file.{ Files, Paths }
 
-object Main extends App {
+import ru.scalalaz.gen.EpisodeFile
 
-  val markdownDir = Paths.get(getClass.getResource("/md").getPath)
-  val targetPath  = Paths.get("target/site")
+case class HtmlPage(fileName: String, data: String)
 
-  val siteSettings = SiteSettings()
+class HTMLWriter(targetDir: String, discusCode: String) {
 
-  val gen = new Generator(siteSettings, markdownDir, targetPath)
+  def write(episodes: Seq[EpisodeFile]): Unit = {
+    episodes.foreach(episodePage)
 
-  gen.generate() match {
-    case Left(error) =>
-      println("Generation failed, error:")
-      println(error)
-      sys.exit(1)
-    case _ =>
-      println("Done")
+  }
+
+  def episodePage(episodeFile: EpisodeFile): Unit = {
+    val data = html.episode_template(episodeFile.episode, discusCode).body
+    val fileName =
+      episodeFile.path.getFileName.toString.replace(".md", ".html")
+    val path = Paths.get(targetDir, fileName)
+    Files.write(path, data.getBytes)
   }
 }

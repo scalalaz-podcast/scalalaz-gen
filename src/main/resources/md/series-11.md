@@ -4,14 +4,6 @@ enc.length=96658748
 page=http://scalalaz.ru/series-11.html
 date=2016-12-25
 ----
-# Выпуск 11
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-11.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-11.mp3)
-
 Новости:
 
 - Итоги [опроса](https://docs.google.com/forms/d/e/1FAIpQLScVypV2NHeT9nBLMQ6PCTyU6F3pWauYAsWhcSdsMonJhnIFmA/viewform) слушателей

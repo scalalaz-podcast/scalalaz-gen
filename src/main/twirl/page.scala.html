@@ -1,0 +1,7 @@
+@(title: String, episodes: Seq[Episode])
+
+@template(title) {
+ @for( e <- episodes) {
+  <h1>e.title</h1>
+ }
+}

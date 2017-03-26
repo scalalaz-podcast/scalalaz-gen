@@ -4,14 +4,6 @@ enc.length=122724352
 page=http://scalalaz.ru/series-06.html
 date=2016-10-16
 ----
-# Выпуск 06
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-6.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-6.mp3)
-
 Темы:
 
 - [Onion Architecture for FP (Free based & MTL based)](http://degoes.net/articles/modern-fp-part-2)

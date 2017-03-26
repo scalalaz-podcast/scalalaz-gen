@@ -4,14 +4,6 @@ enc.length=8649488
 page=http://scalalaz.ru/series-10.html
 date=2016-12-11
 ----
-# Выпуск 10
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-10.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-10.mp3)
-
 Новости
 
 - [Scala 2.12.1](http://www.scala-lang.org/news/2.12.1) 

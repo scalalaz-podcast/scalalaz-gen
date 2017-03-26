@@ -4,17 +4,9 @@ enc.length=63337733
 page=http://scalalaz.ru/series-01.html
 date=2016-08-07
 ----
-# Выпуск 01
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast1.mp3)
-
 Темы:
 
-- [Релиз-кандидат Akka](http://akka.io/news/2016/08/02/akka-…4.9-RC1-released.html)
+- [Релиз-кандидат Akka](http://akka.io/news/2016/08/02/akka-%E2%80%A64.9-RC1-released.html)
 - [Релиз Spark](https://exit.sc/?url=http%3A%2F%2Fspark.apache.org%2Freleases%2Fspark-release-2-0-0.html)
 - О Sbt
 - [Pants](http://www.pantsbuild.org/)

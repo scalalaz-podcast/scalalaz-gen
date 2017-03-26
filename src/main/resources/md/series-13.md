@@ -1,19 +1,9 @@
-title=Выпуск 13
+title=Выпуск 13 - Денис Михайлов o Liberator и Free
 enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-13.mp3
 enc.length=161794048
 page=http://scalalaz.ru/series-13.html
 date=2017-01-22
 ----
-# Денис Михайлов о Liberator - Выпуск 13
-1. Опубликовано - 2017-01-22
-2. В этом выпуске: рассказ о Liberator, Freek и Onion 
-
-<audio controls="" class="audio-panel">
-    <source src="http://scalalaz.ru/mp3/scalalaz-podcast-13.mp3" type="audio/mpeg">
-</audio>
-
-[Запись](http://scalalaz.ru/mp3/scalalaz-podcast-13.mp3)
-
 Новости:
 
 - [Circe 0.7.0](https://github.com/circe/circe/releases/tag/v0.7.0)

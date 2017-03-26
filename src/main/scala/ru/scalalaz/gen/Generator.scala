@@ -27,13 +27,14 @@ import writers._
 
 trait GeneratorFs {
 
-  def episodes(dir: Path): List[Path] = fs.list(dir).filter(isEpisode)
+  def episodes(dir: Path): List[Path] =
+    fs.list(dir).filter(p => isMarkdown(p) && isEpisode(p))
 
-  def isEpisode(p: Path): Boolean =
-    p.toFile.getName.startsWith("series-") && !p.toFile.getName
-      .contains("themes")
+  def isMarkdown(p: Path): Boolean = p.toFile.getName.endsWith(".md")
 
-  def notEpisode(p: Path): Boolean = !isEpisode(p)
+  def isEpisode(p: Path): Boolean = p.toFile.getName.startsWith("series-")
+
+  def notEpisode(p: Path): Boolean = !isMarkdown(p)
 
   def eitherCatch[A](f: => A): Either[String, A] = eitherCatch(f, "")
 
@@ -44,7 +45,7 @@ trait GeneratorFs {
     }
 }
 
-class Generator(source: Path, css: Path, img: Path, target: Path, tmpDir: Path)
+class Generator(settings: SiteSettings, source: Path, target: Path)
     extends GeneratorFs {
 
   val targetRssPath = target.resolve("rss")
@@ -53,9 +54,8 @@ class Generator(source: Path, css: Path, img: Path, target: Path, tmpDir: Path)
     for {
       _        <- prepare()
       episodes <- parse()
-      _        <- dumpEpisodesMd(episodes)
       _        <- eitherCatch(copyOther())
-      _        <- generateHtml()
+      _        <- generateHtml(episodes)
       _        <- generateRss(episodes)
     } yield Right(())
   }
@@ -66,19 +66,14 @@ class Generator(source: Path, css: Path, img: Path, target: Path, tmpDir: Path)
   def prepare(): Either[String, Unit] =
     for {
       _    <- eitherCatch(fs.clean(target))
-      _    <- eitherCatch(fs.clean(tmpDir))
-      _    <- eitherCatch(fs.createDir(tmpDir))
       last <- eitherCatch(fs.createDir(targetRssPath))
     } yield last
 
   /**
     * копируем для лайка-генератора все обычные файлы
     */
-  def copyOther(): Unit = {
-    fs.copyDir(source, tmpDir, notEpisode)
-    fs.copyDir(img, Paths.get(target.toString), notEpisode)
-    fs.copyDir(css, Paths.get(target.toString + "/css"), notEpisode)
-  }
+  def copyOther(): Unit =
+    fs.copyDir(source, target, notEpisode)
 
   def parse(): Either[String, List[EpisodeFile]] =
     episodes(source).traverseU(parseEpisode) match {
@@ -86,18 +81,11 @@ class Generator(source: Path, css: Path, img: Path, target: Path, tmpDir: Path)
       case Valid(ef)  => Right(ef)
     }
 
-  def dumpEpisodesMd(eps: List[EpisodeFile]): Either[String, Unit] =
-    eitherCatch(eps.foreach(dumpEpisode(_)))
-
-  def dumpEpisode(f: EpisodeFile): Unit = {
-    val data = f.episode.сontent.getBytes
-    val path = tmpDir.resolve(f.path.getFileName)
-    Files.write(path, data)
-  }
-
-  def generateHtml(): Either[String, Unit] = {
-    val writer = MDWriter(tmpDir.toString, target.toString)
-    eitherCatch(writer.write())
+  def generateHtml(episodes: List[EpisodeFile]): Either[String, Unit] = {
+    eitherCatch {
+      val writer = new HTMLWriter(target.toString, settings.discusCode)
+      writer.write(episodes)
+    }
   }
 
   def generateRss(eps: List[EpisodeFile]): Either[String, Unit] = {
