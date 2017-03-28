@@ -4,7 +4,9 @@
 
 Запись происходит каждые 2 недели.
 
-Связаться с нами: <a href="mailto:info@scalalaz.ru">info@scalalaz.ru</a>
+Связаться с нами:
+
+<a href="mailto:info@scalalaz.ru">info@scalalaz.ru</a>
 
 Ссылки:
 
