@@ -28,26 +28,20 @@ h3 {
 }
 
 .header {
-    text-align: center;
+    text-align: left;
     top: auto;
-    margin: 3em auto;
+    padding-left: 90px;
 }
 
 .sidebar {
-    background: rgb(61, 79, 93);
-    color: #fff;
+    background: #f0f0f0;
+    color: #292929;
 }
 
-.brand-title,
-.brand-tagline {
-    margin: 0;
-}
 .brand-title {
-    text-transform: uppercase;
-}
-.brand-tagline {
-    font-weight: 300;
-    color: rgb(176, 202, 219);
+   color: #ff3c51;
+   font-size: 31px;
+   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 }
 
 .nav-list {
@@ -68,6 +62,7 @@ h3 {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-size: 85%;
+    color: #000000;
 }
 .nav-item a:hover,
 .nav-item a:focus {
@@ -173,8 +168,7 @@ h3 {
     }
 
     .header {
-        margin: 40% 2em 0;
-        text-align: right;
+        text-align: left;
     }
 
     .sidebar {
@@ -201,10 +195,24 @@ h3 {
      padding-top: 12px;
 }
 
-.toc ul{
-    list-style-type: circle;
+.toc ul {
+    list-style-type: disc;
+}
+
+.toc a {
+    color: #000000;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 20px;
 }
 
 .audio-panel {
    width: 70%;
 }
+
+.logo-box {
+   background: url('../../img/logo.png') no-repeat center center;
+   width: 100%;
+   height: 214px;
+   margin-top: 25px;
+}
+

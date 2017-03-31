@@ -27,7 +27,7 @@ import writers._
 
 trait GeneratorFs {
 
-  def episodes(dir: Path): List[Path] =
+  def episodeFiles(dir: Path): List[Path] =
     fs.list(dir).filter(p => isMarkdown(p) && isEpisode(p))
 
   def isMarkdown(p: Path): Boolean = p.toFile.getName.endsWith(".md")
@@ -76,7 +76,9 @@ class Generator(settings: SiteSettings, source: Path, target: Path)
     fs.copyDir(source, target, notEpisode)
 
   def parse(): Either[String, List[EpisodeFile]] =
-    episodes(source).traverseU(parseEpisode) match {
+    episodeFiles(source)
+      .sortBy(_.getFileName.toString)
+      .traverseU(parseEpisode) match {
       case Invalid(e) => Left(describeErrors(e))
       case Valid(ef)  => Right(ef)
     }

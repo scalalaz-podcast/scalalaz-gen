@@ -2,6 +2,10 @@
 
 @template(title) {
  @for( e <- episodes) {
-  <h1>e.title</h1>
+
+    <section>
+        <h1>@e.rss.title</h1>
+        @Html(e.asHtml)
+    </section>
  }
 }

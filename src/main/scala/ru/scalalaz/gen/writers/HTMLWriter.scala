@@ -18,7 +18,7 @@ package ru.scalalaz.gen.writers
 
 import java.nio.file.{ Files, Paths }
 
-import ru.scalalaz.gen.EpisodeFile
+import ru.scalalaz.gen.{ Episode, EpisodeFile }
 
 case class HtmlPage(fileName: String, data: String)
 
@@ -28,11 +28,11 @@ class HTMLWriter(targetDir: String, discusCode: String) {
 
   def write(episodes: Seq[EpisodeFile]): Unit = {
     episodes.foreach(episodePage)
-
+    mainPage(episodes)
   }
 
   def episodePage(episodeFile: EpisodeFile): Unit = {
-    val data = episode_template(episodeFile.episode, discusCode).body
+    val data = episode_page(episodeFile.episode, discusCode).body
     val fileName =
       episodeFile.path.getFileName.toString.replace(".md", ".html")
     val path = Paths.get(targetDir, fileName)
@@ -40,8 +40,27 @@ class HTMLWriter(targetDir: String, discusCode: String) {
   }
 
   def mainPage(episodes: Seq[EpisodeFile]): Unit = {
-    val data = main_page("Scalalaz Podcast", episodes.map(_.episode))
+    val data =
+      main_page("Scalalaz Podcast", episodes.map(_.episode).reverse).body
     val path = Paths.get(targetDir, "index.html")
     Files.write(path, data.getBytes)
   }
 }
+
+//case class EpisodeUnit(episode: Episode, disqusCode: String)
+//
+//trait HtmlRender[A] {
+//
+//  def render(a: A): String
+//
+//}
+//
+//object HtmlRender {
+//
+//  def apply[A](f: A => String): HtmlRender[A] =
+//    new HtmlRender[A] {
+//      override def render(a: A): String = f(a)
+//    }
+//
+//  val EpisodePage = HtmlRender()
+//}
