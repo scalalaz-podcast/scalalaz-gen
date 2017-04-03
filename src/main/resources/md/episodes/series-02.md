@@ -30,9 +30,5 @@ date=2016-08-21
 - [scopt](https://github.com/scopt/scopt)
 - [atmos](https://github.com/zmanio/atmos)
 
-Ведущие:
-
-- [Алексей Романчук](http://github.com/13h3r)
-- [Вадим Челышов](http://github.com/dos65)
-- [Евгений Токарев](http://github.com/strobe)
-- [Алексей Фомкин](http://github.com/fomkin)
+Ведущие: [Алексей Романчук](http://github.com/13h3r), [Вадим Челышов](http://github.com/dos65)
+[Евгений Токарев](http://github.com/strobe), [Алексей Фомкин](http://github.com/fomkin)

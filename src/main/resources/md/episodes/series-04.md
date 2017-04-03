@@ -34,8 +34,5 @@ date=2016-09-20
 - [https://habrahabr.ru/post/127727/](https://habrahabr.ru/post/127727/)
 - [http://codeforces.com/](http://codeforces.com/)
 
-Ведущие:
-
-- [Алексей Фомкин](http://github.com/fomkin)
-- [Вадим Челышов](http://github.com/dos65)
-- [Евгений Токарев](http://github.com/strobe)
+Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65)
+[Евгений Токарев](http://github.com/strobe)

@@ -16,4 +16,7 @@ libraryDependencies ++= Vector(
 initialCommands := """|import ru.scalalaz.gen._
                       |""".stripMargin
 
-TwirlKeys.templateImports += "ru.scalalaz.gen._"
+TwirlKeys.templateImports ++= Seq(
+  "ru.scalalaz.gen._",
+  "ru.scalalaz.gen.writers._"
+)

@@ -16,51 +16,52 @@
 
 package ru.scalalaz.gen.writers
 
-import java.nio.file.{ Files, Paths }
+import java.nio.file._
 
-import ru.scalalaz.gen.{ Episode, EpisodeFile }
+import ru.scalalaz.gen._
 
-case class HtmlPage(fileName: String, data: String)
+import html._
 
 class HTMLWriter(targetDir: String, discusCode: String) {
 
-  import html._
-
   def write(episodes: Seq[EpisodeFile]): Unit = {
-    episodes.foreach(episodePage)
-    mainPage(episodes)
+    val episodeUnits = episodes.map(f => {
+      val fName = f.path.getFileName.toString.replace(".md", ".html")
+      EpisodePage(fName, discusCode, f.episode)
+    })
+
+    episodeUnits.foreach(_.write(targetDir))
+
+    MainPage(episodeUnits.reverse).write(targetDir)
   }
 
-  def episodePage(episodeFile: EpisodeFile): Unit = {
-    val data = episode_page(episodeFile.episode, discusCode).body
-    val fileName =
-      episodeFile.path.getFileName.toString.replace(".md", ".html")
-    val path = Paths.get(targetDir, fileName)
-    Files.write(path, data.getBytes)
-  }
+}
 
-  def mainPage(episodes: Seq[EpisodeFile]): Unit = {
-    val data =
-      main_page("Scalalaz Podcast", episodes.map(_.episode).reverse).body
-    val path = Paths.get(targetDir, "index.html")
-    Files.write(path, data.getBytes)
+trait PageUnit {
+
+  val fileName: String
+
+  def content: String
+
+  def write(to: String): Path = {
+    val path = Paths.get(to, fileName)
+    Files.write(path, content.getBytes())
   }
 }
 
-//case class EpisodeUnit(episode: Episode, disqusCode: String)
-//
-//trait HtmlRender[A] {
-//
-//  def render(a: A): String
-//
-//}
-//
-//object HtmlRender {
-//
-//  def apply[A](f: A => String): HtmlRender[A] =
-//    new HtmlRender[A] {
-//      override def render(a: A): String = f(a)
-//    }
-//
-//  val EpisodePage = HtmlRender()
-//}
+case class EpisodePage(fileName: String, disqusCode: String, episode: Episode)
+    extends PageUnit {
+
+  override def content: String =
+    episode_page(episode, disqusCode).body
+
+}
+
+case class MainPage(episodes: Seq[EpisodePage]) extends PageUnit {
+
+  val fileName: String = "index.html"
+
+  override def content: String =
+    main_page("Scalalaz Podcast", episodes).body
+
+}

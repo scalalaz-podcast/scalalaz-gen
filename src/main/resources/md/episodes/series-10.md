@@ -68,10 +68,6 @@ date=2016-12-11
 
 - [Lambda Conf Ledder of Functional Programming](https://twitter.com/i/web/status/803695008100466688)
 
-Ведущие:
-
-- [Алексей Фомкин](http://github.com/fomkin)
-- [Вадим Челышов](http://github.com/dos65)
-- [Алексей Романчук](http://github.com/13h3r)
-- [Евгений Токарев](http://github.com/strobe)
-- [Григорий Помадчин](http://github.com/pomadchin)
+Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
+[Алексей Романчук](http://github.com/13h3r), [Евгений Токарев](http://github.com/strobe),
+[Григорий Помадчин](http://github.com/pomadchin)

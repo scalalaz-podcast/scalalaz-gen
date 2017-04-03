@@ -34,11 +34,7 @@ date=2016-11-27
 - [FutureOr](https://github.com/chariotsolutions/scala-commons#futureor)
 - [pushka - 2.12](https://github.com/fomkin/pushka)
 
-Ведущие:
-
-- [Алексей Фомкин](http://github.com/fomkin)
-- [Вадим Челышов](http://github.com/dos65)
-- [Алексей Романчук](http://github.com/13h3r)
-- [Евгений Токарев](http://github.com/strobe)
-- [Григорий Помадчин](http://github.com/pomadchin)
+Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
+[Алексей Романчук](http://github.com/13h3r), [Евгений Токарев](http://github.com/strobe),
+[Григорий Помадчин](http://github.com/pomadchin)
 

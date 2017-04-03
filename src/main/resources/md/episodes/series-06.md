@@ -27,14 +27,7 @@ date=2016-10-16
 - [FP for the average Joe - III - Applications as Coproducts of Free Algebras](http://www.47deg.com/blog/fp-for-the-average-joe-part3-free-monads)
 - [Aecor - Pure functional event sourcing runtime (Дениса Михайлова)](http://aecor.io)
 
-Ведущие:
+Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65)
+[Алексей Романчук](http://github.com/13h3r), [Евгений Токарев](http://github.com/strobe)
 
-- [Алексей Фомкин](http://github.com/fomkin)
-- [Вадим Челышов](http://github.com/dos65)
-- [Алексей Романчук](http://github.com/13h3r)
-- [Евгений Токарев](http://github.com/strobe)
-
-Гости:
-
-- [Михайлов Дениc](https://github.com/notxcain)
-- [Григорий Помадчин - Azavea](http://github.com/pomadchin)
+Гости: [Михайлов Дениc](https://github.com/notxcain), [Григорий Помадчин - Azavea](http://github.com/pomadchin)

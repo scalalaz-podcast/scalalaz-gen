@@ -54,7 +54,7 @@ class Generator(settings: SiteSettings, source: Path, target: Path)
     for {
       _        <- prepare()
       episodes <- parse()
-      _        <- eitherCatch(copyOther())
+      _        <- eitherCatch(copyOther(), "Copy other resources: ")
       _        <- generateHtml(episodes)
       _        <- generateRss(episodes)
     } yield Right(())
@@ -72,11 +72,16 @@ class Generator(settings: SiteSettings, source: Path, target: Path)
   /**
     * копируем для лайка-генератора все обычные файлы
     */
-  def copyOther(): Unit =
-    fs.copyDir(source, target, notEpisode)
+  def copyOther(): Unit = {
+    Seq("img", "css/layouts").foreach(d => {
+      val from = source.resolve(d)
+      val to   = target.resolve(d)
+      fs.copyDir(from, to)
+    })
+  }
 
   def parse(): Either[String, List[EpisodeFile]] =
-    episodeFiles(source)
+    episodeFiles(source.resolve("episodes"))
       .sortBy(_.getFileName.toString)
       .traverseU(parseEpisode) match {
       case Invalid(e) => Left(describeErrors(e))

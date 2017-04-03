@@ -17,12 +17,13 @@
 package ru.scalalaz.gen.writers
 
 import java.nio.file.{ Files, Paths }
-import java.time.{ LocalDate, ZoneOffset }
+import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
+
+import ru.scalalaz.gen.{ Episode, EpisodeFile }
 
 import scalatags.Text.TypedTag
 import scalatags.Text.all._
-import ru.scalalaz.gen.{ Episode, EpisodeFile }
 
 case class ITunesInfo(title: String,
                       link: String,
@@ -100,12 +101,16 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
 
     tag("item")(tag("title")(title),
                 raw(s"""<description>
-           |<![CDATA[${ e.content }]]>
+           |<![CDATA[<pre>
+           |${ e.content }
+           |</pre>]]>
            |</description>""".stripMargin),
                 tag("enclosure")(attr("url") := enclosure.url,
                                  attr("type") := enclosure.`type`,
                                  attr("length") := enclosure.length),
                 tag("guid")(attr("isPermalink") := "false", page),
-                tag("pubDate")(formattedDate))
+                tag("pubDate")(formattedDate),
+                tag("link")(page))
+
   }
 }

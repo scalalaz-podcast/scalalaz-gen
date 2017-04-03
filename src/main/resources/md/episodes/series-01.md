@@ -25,12 +25,8 @@ date=2016-08-07
   - [lens](http://github.com/xdotai/lens)
 - [sourcecode](http://github.com/lihaoyi/sourcecode)
 
-Ведущие:
-
-- [Алексей Романчук](http://github.com/13h3r)
-- [Вадим Челышов](http://github.com/dos65)
-- [Евгений Токарев](http://github.com/strobe)
-- [Виктор Тараненко](http://github.com/viktortnk)
-- [Алексей Фомкин](http://github.com/fomkin)
+Ведущие: [Алексей Романчук](http://github.com/13h3r), [Вадим Челышов](http://github.com/dos65),
+[Евгений Токарев](http://github.com/strobe), [Виктор Тараненко](http://github.com/viktortnk)
+[Алексей Фомкин](http://github.com/fomkin)
 
 

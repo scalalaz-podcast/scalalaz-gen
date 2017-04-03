@@ -27,12 +27,8 @@ date=2017-01-08
 - [Practical Deep Learning For Coders](http://course.fast.ai/lessons/lessons.html) (free, python, keras, jupyter notebook)
 - [https://github.com/julienrf/endpoints](https://github.com/julienrf/endpoints)
 
-Ведущие:
+Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
+[Алексей Романчук](http://github.com/13h3r), [Евгений Токарев](http://github.com/strobe),
+[Григорий Помадчин](http://github.com/pomadchin)
 
-- [Алексей Фомкин](http://github.com/fomkin)
-- [Вадим Челышов](http://github.com/dos65)
-- [Алексей Романчук](http://github.com/13h3r)
-- [Евгений Токарев](http://github.com/strobe)
-- [Григорий Помадчин](http://github.com/pomadchin)
-
-Гость - [Денис Боровиков](https://twitter.com/borovikov)
+Гость: [Денис Боровиков](https://twitter.com/borovikov)

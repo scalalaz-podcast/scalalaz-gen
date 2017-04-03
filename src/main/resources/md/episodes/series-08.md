@@ -37,9 +37,5 @@ date=2016-11-13
 - [Li Haoyi Scala Scripting](https://vimeo.com/191328477)
 - [Scala development with GNU Emacs](http://www.47deg.com/blog/scala-development-with-emacs)
 
-Ведущие:
-
-- [Алексей Фомкин](http://github.com/fomkin)
-- [Вадим Челышов](http://github.com/dos65)
-- [Алексей Романчук](http://github.com/13h3r)
-- [Евгений Токарев](http://github.com/strobe)
+Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
+[Алексей Романчук](http://github.com/13h3r), [Евгений Токарев](http://github.com/strobe)

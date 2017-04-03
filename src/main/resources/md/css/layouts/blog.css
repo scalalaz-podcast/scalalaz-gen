@@ -216,3 +216,15 @@ h3 {
    margin-top: 25px;
 }
 
+.more-link {
+  color: #ff5265;
+  letter-spacing: 1.1px;
+  font-size: 16px;
+  display: block;
+  margin-top: 35px;
+}
+
+.post-title {
+  margin-top: 50px;
+}
+

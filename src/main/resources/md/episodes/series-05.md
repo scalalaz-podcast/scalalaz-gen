@@ -18,8 +18,5 @@ date=2016-09-05
 
 - [scalapuzzlers](http://scalapuzzlers.com/)
 
-Ведущие:
-
-- [Алексей Фомкин](http://github.com/fomkin)
-- [Вадим Челышов](http://github.com/dos65)
-- [Алексей Романчук](http://github.com/13h3r)
+Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65)
+[Алексей Романчук](http://github.com/13h3r)

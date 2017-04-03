@@ -33,9 +33,5 @@ date=2016-10-29
 - [scala-httpc](https://github.com/amrhassan/scala-httpc)
 - [coursier](https://github.com/alexarchambault/coursier)
 
-Ведущие:
-
-- [Алексей Фомкин](http://github.com/fomkin)
-- [Вадим Челышов](http://github.com/dos65)
-- [Алексей Романчук](http://github.com/13h3r)
-- [Евгений Токарев](http://github.com/strobe)
+Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
+[Алексей Романчук](http://github.com/13h3r), [Евгений Токарев](http://github.com/strobe)

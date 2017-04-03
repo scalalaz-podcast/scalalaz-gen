@@ -28,11 +28,7 @@ date=2017-02-05
 - [git, site and ghpages support for sbt projects](https://github.com/sbt/sbt-ghpages)
 - [Simple SBT plugin to configure Spark applications](https://github.com/alonsodomin/sbt-spark)
 
-Ведущие:
-
-- [Алексей Фомкин](http://github.com/fomkin)
-- [Вадим Челышов](http://github.com/dos65)
-- [Алексей Романчук](http://github.com/13h3r)
-- [Евгений Токарев](http://github.com/strobe)
+Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
+[Алексей Романчук](http://github.com/13h3r), [Евгений Токарев](http://github.com/strobe)
 
 Гость - [Дмитрий Петрашко](https://github.com/darkdimius)

@@ -27,9 +27,5 @@ date=2016-09-05
 - [migration manager](https://github.com/typesafehub/migration-manager)
 
 
-Ведущие:
-
-- [Алексей Романчук](http://github.com/13h3r)
-- [Вадим Челышов](http://github.com/dos65)
-- [Евгений Токарев](http://github.com/strobe)
-- [Алексей Фомкин](http://github.com/fomkin)
+Ведущие: [Алексей Романчук](http://github.com/13h3r), [Вадим Челышов](http://github.com/dos65)
+[Евгений Токарев](http://github.com/strobe), [Алексей Фомкин](http://github.com/fomkin)
