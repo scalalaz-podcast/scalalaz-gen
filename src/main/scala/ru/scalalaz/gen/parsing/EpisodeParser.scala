@@ -32,7 +32,7 @@ object EpisodeParser {
       .andThen(f => fromFormat(f))
 
   def fromFormat(format: FileFormat): Validated[EpisodeParseError, Episode] =
-    RssParser
+    EpisodeSettingsExtractor
       .fromMap(format.header)
       .map(rss => Episode(rss, format.otherData))
       .leftMap(list => ManyErrors(list))

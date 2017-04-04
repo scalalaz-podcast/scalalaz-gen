@@ -14,25 +14,23 @@
  * limitations under the License.
  */
 
-package ru.scalalaz.gen
+package ru.scalalaz.gen.writers
 
-import java.nio.file.Paths
+case class Pagination[A](prev: Option[A], current: A, next: Option[A])
 
-object Main extends App {
+object Pagination {
 
-  val markdownDir = Paths.get("src/main/resources/md")
-  val targetPath  = Paths.get("target/site")
+  def forList[A](list: List[A]): List[Pagination[A]] =
+    forList[A](None, list)
 
-  val siteSettings = SiteSettings()
-
-  val gen = new Generator(siteSettings, markdownDir, targetPath)
-
-  gen.generate() match {
-    case Left(error) =>
-      println("Generation failed, error:")
-      println(error)
-      sys.exit(1)
-    case _ =>
-      println("Done")
+  private def forList[A](prev: Option[A], list: List[A]): List[Pagination[A]] = {
+    list match {
+      case Nil => Nil
+      case x :: Nil =>
+        List(Pagination(prev, x, None))
+      case x :: y :: _ =>
+        List(Pagination(prev, x, Some(y))) ++ forList(Some(x), list.tail)
+    }
   }
+
 }

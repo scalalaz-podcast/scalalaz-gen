@@ -35,12 +35,10 @@ object fs {
   }
 
   def createDir(path: Path): Unit = {
-    val (root, tail) = (path.head, path.tail)
-    val dirs         = tail.scanLeft(root)((p, n) => p.resolve(n))
-    dirs.foreach(d => if (!d.toFile.exists()) Files.createDirectory(d))
+    Files.createDirectories(path)
   }
 
-  def copyFile(from: Path, to: Path): Unit = {
+  def copyFile(from: Path, to: Path): Path = {
     val data = Files.readAllBytes(from)
     Files.write(to, data)
   }
@@ -48,6 +46,7 @@ object fs {
   def copyDir(from: Path, to: Path): Unit = copyDir(from, to, _ => true)
 
   def copyDir(from: Path, to: Path, filter: Path => Boolean): Unit = {
+    if (!to.toFile.exists()) createDir(to)
     list(from)
       .filter(filter)
       .foreach(p => {
@@ -55,9 +54,10 @@ object fs {
           copyFile(p, to.resolve(p.last))
         else {
           val next = to.resolve(p.last)
-          createDir(to.resolve(p.last))
+          createDir(next)
           copyDir(p, next, filter)
         }
       })
   }
+
 }

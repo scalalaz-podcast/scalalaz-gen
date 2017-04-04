@@ -16,23 +16,14 @@
 
 package ru.scalalaz.gen
 
-import java.nio.file.Paths
+import com.typesafe.config.ConfigFactory
 
-object Main extends App {
+case class SiteSettings(discusCode: String)
 
-  val markdownDir = Paths.get("src/main/resources/md")
-  val targetPath  = Paths.get("target/site")
+object SiteSettings {
 
-  val siteSettings = SiteSettings()
-
-  val gen = new Generator(siteSettings, markdownDir, targetPath)
-
-  gen.generate() match {
-    case Left(error) =>
-      println("Generation failed, error:")
-      println(error)
-      sys.exit(1)
-    case _ =>
-      println("Done")
+  def apply(): SiteSettings = {
+    val config = ConfigFactory.load()
+    new SiteSettings(config.getString("disqus.disqusCode"))
   }
 }

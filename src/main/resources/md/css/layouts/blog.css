@@ -28,26 +28,21 @@ h3 {
 }
 
 .header {
-    text-align: center;
+    text-align: left;
     top: auto;
-    margin: 3em auto;
+    padding-left: 90px;
 }
 
 .sidebar {
-    background: rgb(61, 79, 93);
-    color: #fff;
+    background: #f0f0f0;
+    color: #292929;
 }
 
-.brand-title,
-.brand-tagline {
-    margin: 0;
-}
 .brand-title {
-    text-transform: uppercase;
-}
-.brand-tagline {
-    font-weight: 300;
-    color: rgb(176, 202, 219);
+   color: #ff3c51;
+   font-size: 31px;
+   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+   margin-bottom: 1px;
 }
 
 .nav-list {
@@ -68,6 +63,7 @@ h3 {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-size: 85%;
+    color: #000000;
 }
 .nav-item a:hover,
 .nav-item a:focus {
@@ -143,6 +139,16 @@ h3 {
     text-shadow: 0 1px 1px #333;
 }
 
+.post-list {
+    padding-left: inherit;
+}
+
+.post-date {
+    font-size: 10pt;
+    color: #aaa;
+    margin-top: 5px;
+}
+
 .footer {
     text-align: center;
     padding: 1em 0;
@@ -163,8 +169,7 @@ h3 {
     }
 
     .header {
-        margin: 40% 2em 0;
-        text-align: right;
+        text-align: left;
     }
 
     .sidebar {
@@ -191,10 +196,60 @@ h3 {
      padding-top: 12px;
 }
 
-.toc ul{
-    list-style-type: circle;
+.toc ul {
+    list-style-type: disc;
+}
+
+.toc a {
+    color: #000000;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 18px;
 }
 
 .audio-panel {
    width: 70%;
 }
+
+.logo-box {
+   background: url('../../img/logo.png') no-repeat center center;
+   width: 100%;
+   height: 214px;
+   margin-top: 25px;
+}
+
+.more-link {
+  color: #ff5265;
+  letter-spacing: 1.1px;
+  font-size: 16px;
+  display: block;
+  margin-top: 35px;
+}
+
+.post-title {
+  margin-top: 50px;
+}
+
+.pub-date {
+  color: #939292;
+  font-size: 16px;
+}
+
+a.prev-page {
+  color: #ff5265;
+  position: absolute;
+  right: 0;
+}
+
+a.next-page {
+  color: #ff5265;
+  position: absolute;
+  left: 0;
+}
+
+.pagination {
+  position: relative;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+

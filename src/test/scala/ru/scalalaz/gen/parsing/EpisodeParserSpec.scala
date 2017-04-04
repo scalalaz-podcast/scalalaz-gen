@@ -20,6 +20,7 @@ import java.time.LocalDate
 
 import cats.data.Validated.Valid
 import org.scalatest.{ FlatSpec, Inside, Matchers }
+import ru.scalalaz.gen.writers.Pagination
 
 class EpisodeParserSpec extends FlatSpec with Matchers with Inside {
 
@@ -27,8 +28,8 @@ class EpisodeParserSpec extends FlatSpec with Matchers with Inside {
       |title=Episode#1
       |page=http://scalalaz.ru/series-01.html
       |date=2016-11-28
-      |enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3
-      |enc.length=6
+      |audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3
+      |audio.length=6
       |----
       |### Yoyoyo!
       |it is a new episode!""".stripMargin
@@ -37,16 +38,17 @@ class EpisodeParserSpec extends FlatSpec with Matchers with Inside {
     val result = EpisodeParser.fromString(episodeStr)
     inside(result) {
       case Valid(episode) =>
-        episode.сontent shouldBe "### Yoyoyo!\nit is a new episode!"
+        episode.content shouldBe "### Yoyoyo!\nit is a new episode!"
 
-        val rss = episode.rss
+        val rss = episode.settings
         rss.title shouldBe "Episode#1"
         rss.page shouldBe "http://scalalaz.ru/series-01.html"
 
         rss.date shouldBe LocalDate.of(2016, 11, 28)
 
-        rss.enclosure.url shouldBe "http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3"
-        rss.enclosure.length shouldBe 6
+        rss.audio.url shouldBe "http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3"
+        rss.audio.length shouldBe 6
     }
   }
+
 }

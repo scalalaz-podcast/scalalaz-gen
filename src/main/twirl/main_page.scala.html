@@ -1,0 +1,27 @@
+@(title: String,
+  pages: Seq[EpisodePage],
+  prev: Option[String],
+  next: Option[String])
+
+@template(title) {
+ @for( p <- pages ) {
+    <section>
+        <h1 class="post-title">@p.episode.settings.title</h1>
+        <p class="pub-date">
+            Опубликовано: @p.episode.settings.ISODate
+        </p>
+        @Html(p.episode.asHtml)
+        <a href="@p.fileName" class="more-link">К странице выпуска</a>
+    </section>
+ }
+ <div class="pagination">
+     @for( link <- prev) {
+     <a href="@link" class="prev-page">Вперед →</a>
+     }
+
+     @for( link <- next) {
+     <a href="@link" class="next-page">← Назад</a>
+     }
+ </div>
+
+}

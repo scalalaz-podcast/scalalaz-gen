@@ -10,9 +10,9 @@ Welcome to scalalaz-gen!
   
   Формируем заголовок как у остальных эпизодов (лежат `src/main/resources/md/series-*.md`):
   
-  `title, enc.url`, page - апаем циферку
+  `title, audio.url`, page - апаем циферку
   
-  `enc.length` - количество байт в mp3 (например `wc -c scalalaz-podcast-1.mp3`)
+  `audio.length` - количество байт в mp3 (например `wc -c scalalaz-podcast-1.mp3`)
   
   Забираем с доки контент, переводим в md, не забываем про тэги `audioCountrols` и `discus`
   

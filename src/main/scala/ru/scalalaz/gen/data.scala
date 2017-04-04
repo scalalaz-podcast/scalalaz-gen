@@ -17,7 +17,11 @@
 package ru.scalalaz.gen
 
 import java.nio.file.Path
-import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.{ LocalDate, ZoneOffset }
+
+import knockoff.DefaultDiscounter._
+import _root_.knockoff._
 
 /**
   * Фигня с сылкой на запись, кол-вом байт и типом
@@ -27,11 +31,30 @@ case class Enclosure(url: String, length: Int, `type`: String = "audio/mpeg")
 /**
   * То из чего собирается rss-кусок на каждый выпуск
   */
-case class RssItem(title: String,
-                   description: String,
-                   enclosure: Enclosure,
-                   page: String,
-                   date: LocalDate)
+case class EpisodeSettings(title: String,
+                           description: String,
+                           audio: Enclosure,
+                           page: String,
+                           date: LocalDate) {
 
-case class Episode(rss: RssItem, сontent: String)
+  def RFCDate: String = {
+    val dateTime = date.atStartOfDay().atOffset(ZoneOffset.UTC)
+    dateTime.format(DateTimeFormatter.RFC_1123_DATE_TIME)
+  }
+
+  def ISODate: String = {
+    date.format(DateTimeFormatter.ISO_DATE)
+  }
+}
+
+case class Episode(settings: EpisodeSettings, content: String) {
+
+  def title: String = settings.title
+
+  def asHtml: String = {
+    val blocks = knockoff(content)
+    toXHTML(blocks).mkString
+  }
+
+}
 case class EpisodeFile(path: Path, episode: Episode)

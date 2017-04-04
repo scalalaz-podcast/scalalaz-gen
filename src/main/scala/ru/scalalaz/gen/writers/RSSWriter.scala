@@ -17,12 +17,13 @@
 package ru.scalalaz.gen.writers
 
 import java.nio.file.{ Files, Paths }
-import java.time.{ LocalDate, ZoneOffset }
+import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
+
+import ru.scalalaz.gen.{ Episode, EpisodeFile }
 
 import scalatags.Text.TypedTag
 import scalatags.Text.all._
-import ru.scalalaz.gen.{ Episode, EpisodeFile }
 
 case class ITunesInfo(title: String,
                       link: String,
@@ -54,7 +55,7 @@ object ITunesInfo {
 class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
 
   def write(episodes: Seq[EpisodeFile]): Unit = {
-    val xml  = toXML(episodes.sortBy(_.episode.rss.title))
+    val xml  = toXML(episodes.sortBy(_.episode.settings.title))
     val path = Paths.get(dir, "feed.xml")
     Files.write(path, xml.getBytes)
   }
@@ -92,23 +93,19 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
   }
 
   private def toItem(e: Episode): TypedTag[String] = {
-    import e.rss._
-    def formattedDate: String = {
-      val dateTime = date.atStartOfDay().atOffset(ZoneOffset.UTC)
-      dateTime.format(DateTimeFormatter.RFC_1123_DATE_TIME)
-    }
+    import e.settings._
 
     tag("item")(tag("title")(title),
                 raw(s"""<description>
            |<![CDATA[<pre>
-           |${ e.сontent }
+           |${ e.content }
            |</pre>]]>
            |</description>""".stripMargin),
-                tag("enclosure")(attr("url") := enclosure.url,
-                                 attr("type") := enclosure.`type`,
-                                 attr("length") := enclosure.length),
+                tag("enclosure")(attr("url") := audio.url,
+                                 attr("type") := audio.`type`,
+                                 attr("length") := audio.length),
                 tag("guid")(attr("isPermalink") := "false", page),
-                tag("pubDate")(formattedDate),
+                tag("pubDate")(RFCDate),
                 tag("link")(page))
 
   }
