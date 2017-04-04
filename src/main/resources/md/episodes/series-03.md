@@ -1,6 +1,6 @@
 title=Выпуск 03
-enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-3.mp3
-enc.length=55527205
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-3.mp3
+audio.length=55527205
 page=http://scalalaz.ru/series-03.html
 date=2016-09-05
 ----

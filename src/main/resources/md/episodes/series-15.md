@@ -1,6 +1,6 @@
-title=Выпуск 15 - Владими Павкин о тонкостях ScalaJS
-enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-15.mp3
-enc.length=145782784
+title=Выпуск 15
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-15.mp3
+audio.length=145782784
 page=http://scalalaz.ru/series-15.html
 date=2017-02-19
 ----

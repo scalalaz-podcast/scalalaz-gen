@@ -39,14 +39,14 @@ class EpisodeParserSpec extends FlatSpec with Matchers with Inside {
       case Valid(episode) =>
         episode.сontent shouldBe "### Yoyoyo!\nit is a new episode!"
 
-        val rss = episode.rss
+        val rss = episode.settings
         rss.title shouldBe "Episode#1"
         rss.page shouldBe "http://scalalaz.ru/series-01.html"
 
         rss.date shouldBe LocalDate.of(2016, 11, 28)
 
-        rss.enclosure.url shouldBe "http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3"
-        rss.enclosure.length shouldBe 6
+        rss.audio.url shouldBe "http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3"
+        rss.audio.length shouldBe 6
     }
   }
 }

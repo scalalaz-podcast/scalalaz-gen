@@ -1,6 +1,6 @@
 title=Выпуск 05
-enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-5.mp3
-enc.length=94574592
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-5.mp3
+audio.length=94574592
 page=http://scalalaz.ru/series-05.html
 date=2016-09-05
 ----

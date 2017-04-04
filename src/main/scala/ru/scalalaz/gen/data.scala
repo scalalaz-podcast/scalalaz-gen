@@ -31,11 +31,11 @@ case class Enclosure(url: String, length: Int, `type`: String = "audio/mpeg")
 /**
   * То из чего собирается rss-кусок на каждый выпуск
   */
-case class RssItem(title: String,
-                   description: String,
-                   enclosure: Enclosure,
-                   page: String,
-                   date: LocalDate) {
+case class EpisodeSettings(title: String,
+                           description: String,
+                           audio: Enclosure,
+                           page: String,
+                           date: LocalDate) {
 
   def RFCDate: String = {
     val dateTime = date.atStartOfDay().atOffset(ZoneOffset.UTC)
@@ -47,9 +47,9 @@ case class RssItem(title: String,
   }
 }
 
-case class Episode(rss: RssItem, content: String) {
+case class Episode(settings: EpisodeSettings, content: String) {
 
-  def title: String = rss.title
+  def title: String = settings.title
 
   def asHtml: String = {
     val blocks = knockoff(content)

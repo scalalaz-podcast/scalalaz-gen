@@ -22,32 +22,32 @@ import java.time.format.{ DateTimeFormatter, DateTimeParseException }
 import cats.Apply
 import cats.data.Validated.Valid
 import cats.data.{ Validated, ValidatedNel }
-import ru.scalalaz.gen.{ Enclosure, RssItem }
+import ru.scalalaz.gen.{ Enclosure, EpisodeSettings }
 
-object RssParser {
+object EpisodeSettingsExtractor {
 
   /**
     * Достаем title, enclosure, pageUrl, дату создания
     */
   def fromMap(
       map: Map[String, String]
-  ): ValidatedNel[EpisodeParseError, RssItem] =
-    new RssItemExtractor(map).extract
+  ): ValidatedNel[EpisodeParseError, EpisodeSettings] =
+    new SettingsExtractor(map).extract
 
-  class RssItemExtractor(map: Map[String, String]) {
+  class SettingsExtractor(map: Map[String, String]) {
 
-    def extract: ValidatedNel[EpisodeParseError, RssItem] =
+    def extract: ValidatedNel[EpisodeParseError, EpisodeSettings] =
       Apply[ValidatedNel[EpisodeParseError, ?]].map6(
           read("title").toValidatedNel,
           optRead("description").toValidatedNel,
-          read("enc.url").toValidatedNel,
-          read("enc.length").toValidatedNel,
+          read("audio.url").toValidatedNel,
+          read("audio.length").toValidatedNel,
           read("page").toValidatedNel,
           read("date").andThen(parseDate).toValidatedNel
       ) {
         case (title, desrc, encUrl, encLength, page, date) =>
           val enc = Enclosure(encUrl, encLength.toInt)
-          RssItem(title, desrc, enc, page, date)
+          EpisodeSettings(title, desrc, enc, page, date)
       }
 
     private def read(key: String): Validated[EpisodeParseError, String] =

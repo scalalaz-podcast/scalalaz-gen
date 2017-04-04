@@ -2,17 +2,17 @@
 
 @template(episode.title) {
 
-<h1>@episode.rss.title</h1>
+<h1>@episode.settings.title</h1>
 <p class="pub-date">
-    Опубликовано: @episode.rss.ISODate
+    Опубликовано: @episode.settings.ISODate
 </p>
 
 <audio controls="" class="audio-panel">
-    <source src="@episode.rss.enclosure.url" type="audio/mpeg">
+    <source src="@episode.settings.audio.url" type="audio/mpeg">
 </audio>
 
 <p>
-    <a href="@episode.rss.enclosure.url">Запись</a>
+    <a href="@episode.settings.audio.url">Запись</a>
 </p>
 
 @Html(episode.asHtml)

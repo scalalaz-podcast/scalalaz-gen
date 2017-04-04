@@ -1,6 +1,6 @@
 title=Выпуск 10
-enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-10.mp3
-enc.length=8649488
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-10.mp3
+audio.length=8649488
 page=http://scalalaz.ru/series-10.html
 date=2016-12-11
 ----

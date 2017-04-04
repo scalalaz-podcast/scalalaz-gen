@@ -1,6 +1,6 @@
 title=Выпуск 07
-enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-7.mp3
-enc.length=59484160
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-7.mp3
+audio.length=59484160
 page=http://scalalaz.ru/series-07.html
 date=2016-10-29
 ----

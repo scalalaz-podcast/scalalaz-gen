@@ -3,9 +3,9 @@
 @template(title) {
  @for( p <- pages ) {
     <section>
-        <h1 class="post-title">@p.episode.rss.title</h1>
+        <h1 class="post-title">@p.episode.settings.title</h1>
         <p class="pub-date">
-            Опубликовано: @p.episode.rss.ISODate
+            Опубликовано: @p.episode.settings.ISODate
         </p>
         @Html(p.episode.asHtml)
         <a href="@p.fileName" class="more-link">К странице выпуска</a>

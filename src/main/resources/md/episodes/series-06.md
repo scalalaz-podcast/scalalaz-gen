@@ -1,6 +1,6 @@
 title=Выпуск 06
-enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-6.mp3
-enc.length=122724352
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-6.mp3
+audio.length=122724352
 page=http://scalalaz.ru/series-06.html
 date=2016-10-16
 ----

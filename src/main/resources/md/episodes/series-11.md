@@ -1,6 +1,6 @@
 title=Выпуск 11
-enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-11.mp3
-enc.length=96658748
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-11.mp3
+audio.length=96658748
 page=http://scalalaz.ru/series-11.html
 date=2016-12-25
 ----

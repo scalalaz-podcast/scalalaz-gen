@@ -1,6 +1,6 @@
 title=Выпуск 09
-enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-9.mp3
-enc.length=105471234
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-9.mp3
+audio.length=105471234
 page=http://scalalaz.ru/series-09.html
 date=2016-11-27
 ----

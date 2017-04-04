@@ -1,6 +1,6 @@
-title=Выпуск 13 - Денис Михайлов o Liberator и Free
-enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-13.mp3
-enc.length=161794048
+title=Выпуск 13
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-13.mp3
+audio.length=161794048
 page=http://scalalaz.ru/series-13.html
 date=2017-01-22
 ----
@@ -13,7 +13,7 @@ date=2017-01-22
 
 - [Combining data from a database and a web service with Fetch](http://www.47deg.com/blog/fetch-doobie-http4s/)
   
-  [Haxl](https://github.com/facebook/Haxl)(https://github.com/facebook/Haxl)
+  [Haxl](https://github.com/facebook/Haxl)
   
 - [Хизер Миллер работает над новым Code of Conduct БОЛЬШЕ КОДОВКОНДАКТОВ](https://docs.google.com/document/d/1KqqdOywKWALUqJObM1Dglqe-n59C3bzxygd7RE8vYFY/edit)
   
