@@ -36,6 +36,7 @@ h3 {
 .sidebar {
     background: #f0f0f0;
     color: #292929;
+    min-width: 350px;
 }
 
 .brand-title {
