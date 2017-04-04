@@ -234,3 +234,22 @@ h3 {
   font-size: 16px;
 }
 
+a.prev-page {
+  color: #ff5265;
+  position: absolute;
+  right: 0;
+}
+
+a.next-page {
+  color: #ff5265;
+  position: absolute;
+  left: 0;
+}
+
+.pagination {
+  position: relative;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+

@@ -24,6 +24,8 @@ import html._
 
 class HTMLWriter(targetDir: String, discusCode: String) {
 
+  val pageCount = 5
+
   def write(episodes: Seq[EpisodeFile]): Unit = {
     val episodeUnits = episodes.map(f => {
       val fName = f.path.getFileName.toString.replace(".md", ".html")
@@ -32,7 +34,34 @@ class HTMLWriter(targetDir: String, discusCode: String) {
 
     episodeUnits.foreach(_.write(targetDir))
 
-    MainPage(episodeUnits.reverse).write(targetDir)
+    writeMain(episodeUnits)
+  }
+
+  private def writeMain(episodes: Seq[EpisodePage]): Unit = {
+    val sorted =
+      episodes.sortWith((e1, e2) => e1.fileName.compareTo(e2.fileName) > 0)
+
+    val splitted = sorted
+      .grouped(pageCount)
+      .zipWithIndex
+      .map({
+        case (eps, i) =>
+          val file = if (i == 0) "index.html" else s"index-$i.html"
+          eps -> file
+      })
+      .toList
+
+    val paginated = Pagination
+      .forList(splitted)
+      .map(p => {
+        val eps  = p.current._1
+        val name = p.current._2
+        val prev = p.prev.map(_._2)
+        val next = p.next.map(_._2)
+        MainPage(name, eps, prev, next)
+      })
+
+    paginated.foreach(_.write(targetDir))
   }
 
 }
@@ -57,11 +86,13 @@ case class EpisodePage(fileName: String, disqusCode: String, episode: Episode)
 
 }
 
-case class MainPage(episodes: Seq[EpisodePage]) extends PageUnit {
-
-  val fileName: String = "index.html"
+case class MainPage(fileName: String,
+                    episodes: Seq[EpisodePage],
+                    prev: Option[String],
+                    next: Option[String])
+    extends PageUnit {
 
   override def content: String =
-    main_page("Scalalaz Podcast", episodes).body
+    main_page("Scalalaz Podcast", episodes, prev, next).body
 
 }
