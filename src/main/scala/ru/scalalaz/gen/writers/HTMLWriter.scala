@@ -34,10 +34,10 @@ class HTMLWriter(targetDir: String, discusCode: String) {
 
     episodeUnits.foreach(_.write(targetDir))
 
-    writeMain(episodeUnits)
+    buildMainPages(episodeUnits).foreach(_.write(targetDir))
   }
 
-  private def writeMain(episodes: Seq[EpisodePage]): Unit = {
+  private def buildMainPages(episodes: Seq[EpisodePage]): List[MainPage] = {
     val sorted =
       episodes.sortWith((e1, e2) => e1.fileName.compareTo(e2.fileName) > 0)
 
@@ -46,12 +46,12 @@ class HTMLWriter(targetDir: String, discusCode: String) {
       .zipWithIndex
       .map({
         case (eps, i) =>
-          val file = if (i == 0) "index.html" else s"index-$i.html"
+          val file = if (i == 0) "index.html" else s"page-$i.html"
           eps -> file
       })
       .toList
 
-    val paginated = Pagination
+    val mainPages = Pagination
       .forList(splitted)
       .map(p => {
         val eps  = p.current._1
@@ -61,7 +61,7 @@ class HTMLWriter(targetDir: String, discusCode: String) {
         MainPage(name, eps, prev, next)
       })
 
-    paginated.foreach(_.write(targetDir))
+    mainPages.foreach(_.write(targetDir))
   }
 
 }

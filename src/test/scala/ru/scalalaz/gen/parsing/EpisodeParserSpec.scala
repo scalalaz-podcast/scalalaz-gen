@@ -19,7 +19,7 @@ package ru.scalalaz.gen.parsing
 import java.time.LocalDate
 
 import cats.data.Validated.Valid
-import org.scalatest.{FlatSpec, Inside, Matchers}
+import org.scalatest.{ FlatSpec, Inside, Matchers }
 import ru.scalalaz.gen.writers.Pagination
 
 class EpisodeParserSpec extends FlatSpec with Matchers with Inside {
