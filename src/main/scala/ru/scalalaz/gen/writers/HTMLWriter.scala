@@ -51,7 +51,7 @@ class HTMLWriter(targetDir: String, discusCode: String) {
       })
       .toList
 
-    val mainPages = Pagination
+    Pagination
       .forList(splitted)
       .map(p => {
         val eps  = p.current._1
@@ -60,8 +60,6 @@ class HTMLWriter(targetDir: String, discusCode: String) {
         val next = p.next.map(_._2)
         MainPage(name, eps, prev, next)
       })
-
-    mainPages.foreach(_.write(targetDir))
   }
 
 }
