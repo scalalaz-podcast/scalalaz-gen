@@ -17,7 +17,8 @@
 package ru.scalalaz.gen
 
 import java.nio.file.Path
-import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.{ LocalDate, ZoneOffset }
 
 import knockoff.DefaultDiscounter._
 import _root_.knockoff._
@@ -34,7 +35,17 @@ case class RssItem(title: String,
                    description: String,
                    enclosure: Enclosure,
                    page: String,
-                   date: LocalDate)
+                   date: LocalDate) {
+
+  def RFCDate: String = {
+    val dateTime = date.atStartOfDay().atOffset(ZoneOffset.UTC)
+    dateTime.format(DateTimeFormatter.RFC_1123_DATE_TIME)
+  }
+
+  def ISODate: String = {
+    date.format(DateTimeFormatter.ISO_DATE)
+  }
+}
 
 case class Episode(rss: RssItem, content: String) {
 

@@ -3,6 +3,9 @@
 @template(episode.title) {
 
 <h1>@episode.rss.title</h1>
+<p class="pub-date">
+    Опубликовано: @episode.rss.ISODate
+</p>
 
 <audio controls="" class="audio-panel">
     <source src="@episode.rss.enclosure.url" type="audio/mpeg">
