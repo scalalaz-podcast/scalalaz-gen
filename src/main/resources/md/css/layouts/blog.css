@@ -42,6 +42,7 @@ h3 {
    color: #ff3c51;
    font-size: 31px;
    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+   margin-bottom: 1px;
 }
 
 .nav-list {
@@ -202,7 +203,7 @@ h3 {
 .toc a {
     color: #000000;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .audio-panel {
