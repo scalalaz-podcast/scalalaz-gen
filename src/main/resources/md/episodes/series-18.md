@@ -18,8 +18,7 @@ date=2017-04-02
 - [Stackless functuion composition (FS2)](https://mpilquist.github.io/blog/2017/03/11/stackless-function-composition)
 - [Подкаст Functional Geekery c Adelbert Chang](https://www.functionalgeekery.com/episode-86-adelbert-chang/)
 - [Coursier в SBT](https://github.com/sbt/sbt/issues/2997)
-- [Freestyle - крутые доки и куча интеграций](http://frees.io/docs/modules/)
-  [Интеграция с cats](http://frees.io/docs/cats/)
+- [Freestyle - крутые доки и куча интеграций](http://frees.io/docs/modules/). [Интеграция с cats](http://frees.io/docs/cats/)
 - [herding-cats day 16, Category Theory](http://eed3si9n.com/herding-cats/day16.html)
 - [vim-bootstrap](http://vim-bootstrap.com) now support scala
 
