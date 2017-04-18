@@ -4,7 +4,7 @@ audio.length=142286848
 page=http://scalalaz.ru/series-19.html
 date=2017-04-16
 ----
-![episode 19](img/episode19.jpg)
+![episode 19](img/episode19.png)
 
 Новости:
 
