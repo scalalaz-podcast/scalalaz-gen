@@ -8,7 +8,7 @@ date=2017-04-30
 
 Новости:
 
-- [Goodbuy to Activator](https://www.lightbend.com/blog/introducing-a-new-way-to-get-started-with-lightbend-technologies-and-saying-goodbye-to-activator )
+- [Goodbye to Activator](https://www.lightbend.com/blog/introducing-a-new-way-to-get-started-with-lightbend-technologies-and-saying-goodbye-to-activator )
 - [Багтрекер scala переехал на гитхаб (и release notes)](https://github.com/scala/bug)
 - [3 релиза 2.11.11, 2.12.2, 2.13.0-M1](http://scala-lang.org/news/releases-1Q17.html)
 - [Scala Native 0.2.0](https://github.com/scala-native/scala-native/releases/tag/v0.2.0)
