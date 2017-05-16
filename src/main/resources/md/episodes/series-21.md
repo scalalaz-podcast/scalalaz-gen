@@ -18,7 +18,7 @@ date=2017-05-14
 - [Akka Typed](http://blog.akka.io/typed/2017/05/05/typed-intro)
 - [Cats - IO monad](http://typelevel.org/blog/2017/05/02/io-monad-for-cats.html)
 - [The ThechEmpower benchmark](https://www.reddit.com/r/scala/comments/6ala1n/the_thechempower_benchmark/)
-    - <http://playframework.github.io/prune/]>
+    - <http://playframework.github.io/prune/>
 - [Scalacenter - sprees](https://github.com/scalacenter/sprees)
 
 Полезняшки:
