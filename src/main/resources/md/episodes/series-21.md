@@ -25,7 +25,7 @@ date=2017-05-14
 
 - [tut](https://github.com/tpolecat/tut)
 - [extruder](https://github.com/janstenpickle/extruder)
-- [ctags](https://github.com/luben/sctags)
+- [sctags](https://github.com/luben/sctags)
     - <http://ensime.org/editors/emacs/hacks/#tags>
     - <https://gist.github.com/strobe/ea0995551a4f11890ca818079d0331ed>
 
