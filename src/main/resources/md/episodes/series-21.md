@@ -4,7 +4,7 @@ audio.length=130633499
 page=http://scalalaz.ru/series-21.html
 date=2017-05-14
 ----
-![episode 20](img/episode21.png)
+![episode 21](img/episode21.png)
 
 Темы:
 
