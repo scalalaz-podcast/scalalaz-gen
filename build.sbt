@@ -1,6 +1,7 @@
 lazy val `scalalaz-gen` = project
   .in(file("."))
   .enablePlugins(AutomateHeaderPlugin, GitVersioning, SbtTwirl)
+  .settings(scalaVersion := Version.Scala)
 
 addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.3")
 
