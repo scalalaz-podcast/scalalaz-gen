@@ -1,6 +1,6 @@
 title=Выпуск 21 - Не про final tagless
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-21.mp3
-audio.length=130633499
+audio.length=130961374
 page=http://scalalaz.ru/series-21.html
 date=2017-05-14
 ----
