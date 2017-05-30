@@ -36,7 +36,7 @@ h3 {
 .sidebar {
     background: #f0f0f0;
     color: #292929;
-    min-width: 320px;
+    min-width: 340px;
 }
 
 .brand-title {
@@ -164,10 +164,14 @@ h3 {
 }
 
 @media (min-width: 48em) {
+    .content-holder {
+        margin-left: 340px
+    }
     .content {
         padding: 2em 3em 0;
-        margin-left: 320px;
+        margin-left: 10%;
     }
+    
 
     .header {
         text-align: left;
