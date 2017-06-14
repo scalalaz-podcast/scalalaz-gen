@@ -27,6 +27,8 @@ import writers._
 
 trait GeneratorFs {
 
+  val EOL = scala.util.Properties.lineSeparator
+
   def episodeFiles(dir: Path): List[Path] =
     fs.list(dir).filter(p => isMarkdown(p) && isEpisode(p))
 
@@ -40,7 +42,12 @@ trait GeneratorFs {
 
   def eitherCatch[A](f: => A, descr: String): Either[String, A] =
     Either.catchNonFatal(f) match {
-      case Left(e)  => Left(descr + e.toString)
+      case Left(e) =>
+        Left(
+            descr + "\n"
+              + e.toString + "\n"
+              + e.getStackTrace().mkString("", EOL, EOL)
+        )
       case Right(v) => Right(v)
     }
 }

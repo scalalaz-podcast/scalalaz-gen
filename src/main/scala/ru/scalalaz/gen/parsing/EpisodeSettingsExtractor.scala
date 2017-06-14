@@ -30,11 +30,11 @@ object EpisodeSettingsExtractor {
     * Достаем title, enclosure, pageUrl, дату создания
     */
   def fromMap(
-      map: Map[String, String]
+      map: Map[String, Option[String]]
   ): ValidatedNel[EpisodeParseError, EpisodeSettings] =
     new SettingsExtractor(map).extract
 
-  class SettingsExtractor(map: Map[String, String]) {
+  class SettingsExtractor(map: Map[String, Option[String]]) {
 
     def extract: ValidatedNel[EpisodeParseError, EpisodeSettings] =
       Apply[ValidatedNel[EpisodeParseError, ?]].map6(
@@ -46,15 +46,16 @@ object EpisodeSettingsExtractor {
           read("date").andThen(parseDate).toValidatedNel
       ) {
         case (title, desrc, encUrl, encLength, page, date) =>
-          val enc = Enclosure(encUrl, encLength.toInt)
+          val enc =
+            Enclosure(encUrl, if (encLength != "") encLength.toInt else -1)
           EpisodeSettings(title, desrc, enc, page, date)
       }
 
     private def read(key: String): Validated[EpisodeParseError, String] =
-      Validated.fromOption(map.get(key), MissingKey(key))
+      Validated.fromOption(map.get(key).flatten, MissingKey(key))
 
     private def optRead(key: String): Validated[EpisodeParseError, String] =
-      Valid(map.getOrElse(key, ""))
+      Valid(map.get(key).flatten.getOrElse(""))
 
     private def parseDate(
         date: String
