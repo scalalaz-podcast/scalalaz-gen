@@ -64,6 +64,12 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
     import iTunesInfo._
     val head = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
 
+    val ep: Seq[Either[String, TypedTag[String]]] = episodes.map { e =>
+      if (e.episode.settings.audio.url != "")
+        Right(toItem(e.episode))
+      else Left("episode doesnt'has audio")
+    }
+
     val xml = tag("rss")(
         attr("version") := "2.0",
         attr("xmlns:itunes") := "http://www.itunes.com/dtds/podcast-1.0.dtd",
@@ -86,7 +92,7 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
             raw(s"""<itunes:category text="$category" />"""),
             raw(s"""<itunes:explicit>no</itunes:explicit>"""),
             tag("managingEditor")(s"$email ($ownerName)"),
-            episodes.map(e => toItem(e.episode))
+            ep.filter(_.isRight).map(_.right.get)
         )
     )
     head + xml.toString()

@@ -7,13 +7,15 @@
     Опубликовано: @episode.settings.ISODate
 </p>
 
-<audio controls="" class="audio-panel">
-    <source src="@episode.settings.audio.url" type="audio/mpeg">
-</audio>
+@if(episode.settings.audio.url) {
+    <audio controls="" class="audio-panel">
+        <source src="@episode.settings.audio.url" type="audio/mpeg">
+    </audio>
 
-<p>
-    <a href="@episode.settings.audio.url">Запись</a>
-</p>
+    <p>
+        <a href="@episode.settings.audio.url">Запись</a>
+    </p>
+}
 
 @Html(episode.asHtml)
 
