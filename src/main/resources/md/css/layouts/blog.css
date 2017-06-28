@@ -37,6 +37,7 @@ h3 {
     background: #f0f0f0;
     color: #292929;
     min-width: 340px;
+    max-width: 580px;
 }
 
 .brand-title {
