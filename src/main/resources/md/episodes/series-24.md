@@ -4,7 +4,7 @@ audio.length=132184064
 page=http://scalalaz.ru/series-24.html
 date=2017-07-09
 ----
-![episode 24](img/episode24.png)
+![episode 24](img/episode24.jpg)
 
 - |00:00:51| - [Towards a faster Scala compiler](http://developer.lightbend.com/blog/2017-06-12-faster-scala-compiler/)
 - |00:07:31| - [new Dotty Documentation](http://dotty.epfl.ch/docs/)
