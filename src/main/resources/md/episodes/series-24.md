@@ -1,4 +1,4 @@
-title=Выпуск 24 - Несвежие новости 
+title=Выпуск 24 - Свежие новости вовремя 
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-24.mp3
 audio.length=132184064
 page=http://scalalaz.ru/series-24.html
