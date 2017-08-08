@@ -27,7 +27,7 @@ date=2017-08-06
 - <span>[01:33:42]</span> - [Akka Batteries (Beta) A collection of useful utilities for Akka cluster in production.](https://github.com/PaytmLabs/akka-batteries)
     - [Alternative split brain resolver](https://www.reddit.com/r/scala/comments/6r5qr9/an_alternative_splitbrain_resolver/)
 - <span>[01:34:50]</span> - [Scalanum - haskell like enum](https://github.com/izeigerman/scalanum)
-- <span>[01:36:09]</span> - [Scala macros](https://github.com/scalamacros/scalamacros) замерджин в мастер, можно пробовать.
+- <span>[01:36:09]</span> - [Scala macros](https://github.com/scalamacros/scalamacros) код в мастере, можно пробовать.
 - <span>[01:39:06]</span> - [scala-forklift Type-safe data migration tool for Slick, Git and beyond](https://github.com/lastland/scala-forklift)
 - <span>[01:40:08]</span> - [Circe vs Argonaut Shapeless Compile Time](https://blog.stephenn.com/2017/07/circe-vs-argonaut-shapless-compile-time.html)
 
