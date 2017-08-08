@@ -23,7 +23,7 @@ date=2017-08-06
     - [Generic Programming with Adjunctions](http://www.cs.ox.ac.uk/ralf.hinze/LN.pdf)
     - [Generic Programming with Adjunctions Slides](http://www.cs.ox.ac.uk/ralf.hinze/SSGIP10/Slides.pdf)
 - <span>[01:29:40]</span>
-    - ![episode 26 scheme](img/episode26-scheme.png)
+    - [Руководство по выбору нужного тайпкласса](img/episode26-scheme.png)
 - <span>[01:33:42]</span> - [Akka Batteries (Beta) A collection of useful utilities for Akka cluster in production.](https://github.com/PaytmLabs/akka-batteries)
     - [Alternative split brain resolver](https://www.reddit.com/r/scala/comments/6r5qr9/an_alternative_splitbrain_resolver/)
 - <span>[01:34:50]</span> - [Scalanum - haskell like enum](https://github.com/izeigerman/scalanum)
