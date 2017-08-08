@@ -31,4 +31,4 @@ date=2017-08-06
 - <span>[01:39:06]</span> - [scala-forklift Type-safe data migration tool for Slick, Git and beyond](https://github.com/lastland/scala-forklift)
 - <span>[01:40:08]</span> - [Circe vs Argonaut Shapeless Compile Time](https://blog.stephenn.com/2017/07/circe-vs-argonaut-shapless-compile-time.html)
 
-Голоса выпуска: [Алексей Фомкин](http://github.com/fomkin/korolev), [Евгений Токарев](http://github.com/strobe), [Гриша Помадчин](https://github.com/pomadchin), [Алексей Романчук](http://github.com/13h3r)
+Голоса выпуска: [Алексей Фомкин](http://github.com/fomkin/korolev), [Евгений Токарев](http://github.com/strobe), [Григорий Помадчин](https://github.com/pomadchin), [Алексей Романчук](http://github.com/13h3r)
