@@ -20,4 +20,4 @@ date=2017-08-23
 - <span>[01:45:09]</span> - [cats infographics updated for cats 1.0](https://github.com/tpolecat/cats-infographic)
 - <span>[01:45:48]</span> - [Finagle v7 is out: now without a Netty 3 dependency!](http://finagle.github.io/blog/2017/08/17/release-notes-7-00/)
 
-Голоса выпуска: [Вадим Челышов](http://github.com/dos65), [Евгений Токарев](http://github.com/strobe)
+Голоса выпуска: [Марина Сигаева](https://twitter.com/BesseIFunction), [Вадим Челышов](http://github.com/dos65), [Евгений Токарев](http://github.com/strobe)
