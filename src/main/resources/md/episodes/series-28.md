@@ -4,12 +4,12 @@ audio.length=158647483
 page=http://scalalaz.ru/series-28.html
 date=2017-09-03
 ----
-![episode 28](img/episode28.jpg)
+![episode 28](img/episode28.png)
 
-- <span>[00:01:54]</span> - Lightbend, Twitter stack. Разговор с Виктором (внезапное возвращение спустя год).
-- <span>[00:27:35]</span> - Путешествие в Java и обратно Ожидания от Scala в будущем, чуть-чуть экспериментов с GO.
-- <span>[00:37:13]</span> - Немного о стриминге: Storm, Akka Streams.
-- <span>[00:41:01]</span> - Немного о базах: MongoDB, PSQL.
+- <span>[00:01:54]</span> - Lightbend, Twitter stack. Разговор с Виктором (внезапное возвращение спустя год)
+- <span>[00:27:35]</span> - Путешествие в Java и обратно Ожидания от Scala в будущем, чуть-чуть экспериментов с GO
+- <span>[00:37:13]</span> - Немного о стриминге: Storm, Akka Streams
+- <span>[00:41:01]</span> - Немного о базах: MongoDB, PSQL
 - <span>[00:43:27]</span> - Методы деплоя
 - <span>[00:47:00]</span> - Монорепы
     - <a href="https://finelydistributed.io/monorepo-for-small-teams-part-1-9-why-you-havent-heard-of-pants-28358b12f0cb">https://finelydistributed.io/monorepo-for-small-teams-part-1-9-why-you-havent-heard-of-pants-28358b12f0cb</a>
