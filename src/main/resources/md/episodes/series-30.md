@@ -23,4 +23,4 @@ date=2017-10-15
 *   |01:22:38| [LambdaConf 2017 videos](https://www.youtube.com/channel/UCEtohQeDqMSebi2yvLMUItg)
 *   |01:25:30| [Scala native example app](https://github.com/lihaoyi/scala-native-example-app/)
 
-Голоса выпуска: [Евгений Токарев](http://github.com/strobe), [Алексей Романчук](http://github.com/13h3r), [Вадим Челышов](http://github.com/13h3r), [Григорий Помадчин](https://github.com/pomadchin)
+Голоса выпуска: [Евгений Токарев](http://github.com/strobe), [Алексей Романчук](http://github.com/13h3r), [Вадим Челышов](http://github.com/dos65), [Григорий Помадчин](https://github.com/pomadchin)
