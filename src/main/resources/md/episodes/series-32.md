@@ -46,5 +46,11 @@ date=2017-11-15
     * [https://www.youtube.com/watch?v=fXAqQnGRfFA](https://www.youtube.com/watch?v=fXAqQnGRfFA)
 * |01:52:02| [Deeplearning4j Tutorials in Zeppelin](https://github.com/deeplearning4j/deeplearning4j/blob/master/dl4j-examples/tutorials/README.md")
 
+<br/>
+статья от Ольги про вопросы на интервью:
+
+[What to ask an interviewer during a tech interview](https://medium.com/@olga.makhasoeva/what-to-ask-an-interviewer-during-a-tech-interview-865a293e548c)
+
+<br/>
 
 Голоса выпуска: [Ольга Махасоева](https://twitter.com/oli_kitty), [Алексей Фомкин](https://github.com/fomkin), [Григорий Помадчин](https://github.com/pomadchin), [Евгений Токарев](http://github.com/strobe)
