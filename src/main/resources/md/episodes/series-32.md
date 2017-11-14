@@ -19,7 +19,7 @@ date=2017-11-15
 * |00:22:15| akka не нужна
 * |00:24:15| трудоустройство в Expedia
 * |00:34:15| работа в Expedia
-* |00:40:20| [tesia](https://github.com/ExpediaDotCom/tesla) vs protobuf
+* |00:40:20| [tesla](https://github.com/ExpediaDotCom/tesla) vs protobuf
 * |00:48:50| выбор зависимостей
 * |00:57:10| [Typelevel Scala 4 for Scala 2.12.4](https://github.com/typelevel/scala/blob/typelevel-readme/notes/typelevel-4.md)
 * |00:59:50| [Scalameta 2.1.0 released and Scalameta 2.1.1](https://github.com/scalameta/scalameta/releases/tag/v2.1.0)
