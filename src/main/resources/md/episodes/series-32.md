@@ -35,7 +35,7 @@ date=2017-11-15
     * [https://www.reddit.com/r/scala/comments/7c15wt/minitest_zero_crap_scala_testing_library/](https://www.reddit.com/r/scala/comments/7c15wt/minitest_zero_crap_scala_testing_library/)
 * |01:30:09| процессы и инструменты в Expedia
 * |01:40:28| [SPEED UP COMPILE TIMES WITH ZINC 1.0](http://scala-lang.org/blog/2017/11/03/zinc-blog-1.0.html)
-* |01:44:47| [monix update to SBT 1.0](https://github.com/monix/monix/pull/463")
+* |01:44:47| [monix update to SBT 1.0](https://github.com/monix/monix/pull/463)
 * |01:45:08| [SBT 1x показывает дебаг сообщения - всегда! есть ли workaround?](https://github.com/sbt/sbt/pull/3717)
 * |01:46:31| [Introducing Kontextfrei](http://danielwestheide.com/blog/2017/10/31/introducing-kontextfrei.html)
 * |01:48:33| [Json либа tethys-json из скала чата](https://github.com/tethys-json)
@@ -44,7 +44,7 @@ date=2017-11-15
     * [https://blog.codecentric.de/en/2017/01/hello-grpc-scalapb/](https://blog.codecentric.de/en/2017/01/hello-grpc-scalapb/)
     * [http://slides.com/petrabierleutgeb/hello-grpc-final](http://slides.com/petrabierleutgeb/hello-grpc-final)
     * [https://www.youtube.com/watch?v=fXAqQnGRfFA](https://www.youtube.com/watch?v=fXAqQnGRfFA)
-* |01:52:02| [Deeplearning4j Tutorials in Zeppelin](https://github.com/deeplearning4j/deeplearning4j/blob/master/dl4j-examples/tutorials/README.md")
+* |01:52:02| [Deeplearning4j Tutorials in Zeppelin](https://github.com/deeplearning4j/deeplearning4j/blob/master/dl4j-examples/tutorials/README.md)
 
 <br/>
 статья от Ольги про вопросы на интервью:
