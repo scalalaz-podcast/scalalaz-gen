@@ -5,6 +5,8 @@ page=http://scalalaz.ru/series-33.html
 date=2017-11-29
 ----
 
+![episode 23](img/episode23.png)
+
 * |00:04:10| 5 декабря очередой Питерский Scala meetup [Регистрируйтесь и приходите](https://www.meetup.com/ScalaSpb/events/245294222/)
 * |00:04:18| как прошел [Scala митап в Екатеринбурге](https://www.meetup.com/ScalaEkb/events/244924025/)
 * |00:04:29| [Reasonable Scala](https://github.com/twitter/reasonable-scala) typechecker opensourced
