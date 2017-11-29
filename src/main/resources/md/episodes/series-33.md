@@ -25,7 +25,7 @@ date=2017-11-29
     * [https://github.com/sbt/sbt/releases/tag/v1.0.4](https://github.com/sbt/sbt/releases/tag/v1.0.4)
 
 <br/>
-Подержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
+Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
 <br/>
 
 Голоса выпуска: [Eugene Burmako](https://github.com/xeno-by), [Ольга Махасоева](https://twitter.com/oli_kitty), [Алексей Фомкин](https://github.com/fomkin), [Евгений Токарев](http://github.com/strobe)
