@@ -25,4 +25,4 @@ date=2017-12-10
 
 <br/>
 
-Голоса выпуска: [Алексей Романчук](http://github.com/13h3r), [Вадим Челышов](http://github.com/dos65), [Алексей Фомкин](https://github.com/fomkin), [Евгений Токарев](http://github.com/strobe), [Гриша Помадчин](https://github.com/pomadchin), [Владимир Полушин](https://github.com/vovapolu)
+Голоса выпуска: [Алексей Романчук](http://github.com/13h3r), [Вадим Челышов](http://github.com/dos65), [Алексей Фомкин](https://github.com/fomkin), [Евгений Токарев](http://github.com/strobe), [Григорий Помадчин](https://github.com/pomadchin), [Владимир Полушин](https://github.com/vovapolu)
