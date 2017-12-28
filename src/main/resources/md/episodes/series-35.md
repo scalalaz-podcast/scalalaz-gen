@@ -27,5 +27,5 @@ date=2017-12-28
 
 <br/>
 
-Голоса выпуска: [Алексей Фомкин](https://github.com/fomkin), [Евгений Токарев](http://github.com/strobe), [Гриша Помадчин](https://github.com/pomadchin),
+Голоса выпуска: [Алексей Фомкин](https://github.com/fomkin), [Евгений Токарев](http://github.com/strobe), [Григорий Помадчин](https://github.com/pomadchin),
 [Ольга Махасоева](https://twitter.com/oli_kitty)
