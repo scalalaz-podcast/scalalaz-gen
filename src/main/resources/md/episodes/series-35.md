@@ -1,4 +1,4 @@
-title=Выпуск 32 - Новогодний Блокчейн
+title=Выпуск 35 - Новогодний Блокчейн
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-35.mp3
 audio.length=127426409
 page=http://scalalaz.ru/series-35.html
