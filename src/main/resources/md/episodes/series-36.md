@@ -11,6 +11,15 @@ date=2018-01-07
 
 * 00:00:37 - Про Глеба - детство, юность, scala
 * 00:08:00 - Spotify
+    - <https://github.com/nevillelyh/shapeless-datatype>
+    - <https://github.com/spotify/dataenum>
+    - <https://github.com/spotify/featran>
+    - <https://github.com/spotify/scio>
+    - <https://github.com/spotify/scio-idea-plugin>
+    - <https://github.com/spotify/spydra>
+    - <https://github.com/spotify/styx>
+    - <https://github.com/wartremover/wartremover>
+
 * 01:10:17 - [sbt 1.1.0 released](https://developer.lightbend.com/blog/2017-11-30-sbt-1-1-0-RC1-sbt-server/?final?final)
 * 01:14:55 - cats - 1.0.0 and 1.0.1 released
     - <https://github.com/typelevel/cats/releases>
@@ -22,6 +31,8 @@ date=2018-01-07
     - <https://www.reddit.com/r/scala/comments/7nny8n/mill_your_shiny_new_scala_build_tool/?st=JC4E69FC&sh=2727f7d1>
 * 01:25:48 - [sbt-dependency-check](https://github.com/albuch/sbt-dependency-check)
 * 01:31:55 - [Optimizing Tagless Final](https://typelevel.org/blog/2017/12/27/optimizing-final-tagless.html)
+
+
 
 <br/>
 
