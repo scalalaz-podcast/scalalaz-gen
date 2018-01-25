@@ -26,7 +26,9 @@ date=2018-01-21
 * 01:11:37 - [Королев 0.7 с Мониксом и кучей багфиксов](https://github.com/fomkin/korolev/releases/tag/v0.7.0)
 * 01:17:23 - [An empirical study on the correctness of formally verified distributed systems](https://blog.acolyer.org/2017/05/29/an-empirical-study-on-the-correctness-of-formally-verified-distributed-systems/)
 
-... и до конца о типах.
+... и до конца о типах. И подписывайтесь на канал Александра [Зависимые типы в массы!](https://t.me/joinchat/AAAAAD9SWO_tLd7rJ9S7Ig)
+    - Много зависимых типов и серьезных разговоров о прекрасном.
+
 
 <br/>
 
