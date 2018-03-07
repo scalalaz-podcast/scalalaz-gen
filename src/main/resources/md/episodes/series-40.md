@@ -24,7 +24,7 @@ date=2018-03-07
 * 01:07:51 - [eff 5.0.0](https://github.com/atnos-org/eff/releases)
 * 01:08:59 - [A lightweight introduction to Recursion Schemes in Scala](http://bit.ly/2D5nzix)
 * 01:09:40 - [A monad for resource acquisition and cleanup](https://github.com/iravid/managedt)
-* 01:10:26 -  mist
+* 01:10:26 - [mist](https://github.com/Hydrospheredata/mist)
 * 01:11:02 - [https://github.com/fomkin/sunl](https://github.com/fomkin/sunl)
 
 <br/>
