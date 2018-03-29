@@ -5,8 +5,6 @@ page=http://scalalaz.ru/series-41.html
 date=2018-03-27
 ----
 
-![episode 41](img/episode41.png)
-
 
 * 00:00:05 - [java 10](href="https://medium.com/@elizarov/why-im-not-enthusiastic-about-java-10-b2d789b6d42a)
 * 00:21:08 - [Features I want in an IDE](https://geirsson.com/post/2018/03/ide/)
