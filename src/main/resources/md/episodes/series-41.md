@@ -19,7 +19,7 @@ date=2018-03-27
 
 <br/>
 
-Эксперементальная видео запись доступна на нашем (youtube канале)[https://www.youtube.com/channel/UCCnHEDeVmUSu5wM_N7Ltvfw]
+Эксперементальная видео запись доступна на нашем [youtube канале](https://www.youtube.com/channel/UCCnHEDeVmUSu5wM_N7Ltvfw)
 
 <br/>
 
