@@ -6,7 +6,7 @@ date=2018-03-27
 ----
 
 
-* 00:00:05 - [java 10](href="https://medium.com/@elizarov/why-im-not-enthusiastic-about-java-10-b2d789b6d42a)
+* 00:00:05 - [java 10](https://medium.com/@elizarov/why-im-not-enthusiastic-about-java-10-b2d789b6d42a)
 * 00:21:08 - [Features I want in an IDE](https://geirsson.com/post/2018/03/ide/)
 * 00:30:56 - [Scala 2.12.5](https://github.com/scala/scala/releases/tag/v2.12.5)
 * 00:35:31 - [Dotty 0.6.0 and 0.7.0-RC1](href="http://dotty.epfl.ch/blog/2018/03/05/seventh-dotty-milestone-release.html)
