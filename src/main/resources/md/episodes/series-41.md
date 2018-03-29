@@ -19,6 +19,10 @@ date=2018-03-27
 
 <br/>
 
+Эксперементальная видео запись доступна на нашем (youtube канале)[https://www.youtube.com/channel/UCCnHEDeVmUSu5wM_N7Ltvfw]
+
+<br/>
+
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
 
 Голоса выпуска: [Алексей Романчук](http://github.com/13h3r), [Алексей Фомкин](https://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
