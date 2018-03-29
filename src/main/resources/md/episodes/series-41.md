@@ -1,4 +1,4 @@
-title=Выпуск 41
+title=Выпуск 41 - Видео и Monix
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-41.mp3
 audio.length=74276864
 page=http://scalalaz.ru/series-41.html
