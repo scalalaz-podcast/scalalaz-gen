@@ -1,9 +1,11 @@
-title=Выпуск 42 - 
+title=Выпуск 42 - c Евгением Платоновым о FP тренингах
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-42.mp3
 audio.length=101190560
-page=http://scalalaz.ru/series-41.html
+page=http://scalalaz.ru/series-42.html
 date=2018-04-11
 ----
+
+![episode 42](img/episode42.jpg)
 
 * 00:09:31 - Про Евгения - откуда, как начал  заниматься скалой, про работу
 * 00:40:59 - FP тренинги
@@ -16,6 +18,6 @@ date=2018-04-11
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
 
 Голоса выпуска: 
-[Евгений Платонов](),
+[Евгений Платонов](https://github.com/jozic),
 [Евгений Токарев](http://github.com/strobe),
 [Ольга Махасоева](https://twitter.com/oli_kitty)
