@@ -1,14 +1,15 @@
 title=Выпуск 42 - 
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-42.mp3
-audio.length=
+audio.length=101190560
 page=http://scalalaz.ru/series-41.html
 date=2018-04-11
 ----
 
-
-* 00:00:05 - [java 10](https://medium.com/@elizarov/why-im-not-enthusiastic-about-java-10-b2d789b6d42a)
-
-
+* 00:09:31 - Про Евгения - откуда, как начал  заниматься скалой, про работу
+* 00:40:59 - FP тренинги
+* 01:27:26 - про конференцию [ScalaNE](http://www.nescala.org/)
+  - [Summary](https://medium.com/@olga.makhasoeva/northeast-scala-symposium-summary-day-1-unconference-cca7ddbecb5e)
+  - [Видео искать в канале Typelevel](https://www.youtube.com/channel/UC-CzKrmtV55SlW2eL3k1RRQ/videos)
 
 <br/>
 
