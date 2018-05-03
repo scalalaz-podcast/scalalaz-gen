@@ -10,9 +10,9 @@ date=2018-05-03
 *   [00:27:17] - Интервью с гостем
 *   [00:42:12] - Спасибо патронам
 *   [00:45:56] - Митапный апрель
-    - [Алексей Корольков - SCALA И CASSANDRA](https://youtu.be/yxq6My6h_c0)
-    - [Владимир Попов - От синхронных методов до композиции Клейсли за пол часа](https://youtu.be/dWyGM3MnN0A)
-    - [ExpertFridays](https://www.youtube.com/user/ExpertFridays/videos)
+    - [Москва - Алексей Корольков: SCALA И CASSANDRA](https://youtu.be/yxq6My6h_c0)
+    - [Питер - Владимир Попов: От синхронных методов до композиции Клейсли за пол часа](https://youtu.be/dWyGM3MnN0A)
+    - [Казань - ExpertFridays](https://www.youtube.com/user/ExpertFridays/videos)
 *   [00:53:30] - [dotty == scala3](https://www.scala-lang.org/blog/2018/04/19/scala-3.html)
 *   [01:04:24] - [Scala 2.12.6](https://github.com/scala/scala/releases/tag/v2.12.6)
 *   [01:06:42] - [cats-effects v1.0.0-RC](https://github.com/typelevel/cats-effect/releases/tag/v1.0.0-RC)
