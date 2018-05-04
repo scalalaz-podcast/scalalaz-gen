@@ -1,6 +1,6 @@
 title=Выпуск 43 -
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-43.mp3
-audio.length=
+audio.length=79155905
 page=http://scalalaz.ru/series-43.html
 date=2018-05-03
 ----
