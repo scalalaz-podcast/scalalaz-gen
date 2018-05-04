@@ -13,6 +13,7 @@ date=2018-05-03
     - [Москва](https://www.youtube.com/watch?v=yxq6My6h_c0&list=PL9SJrES3EGUTZ1ki9UOYolgFHsoVSvWqg)
     - [Питер](https://www.youtube.com/watch?v=dWyGM3MnN0A&list=PL9SJrES3EGURfczfW0KSGXVDrykc6mJuo)
     - [Казань](https://www.youtube.com/user/ExpertFridays/videos)
+    - [Беллвью](http://meetu.ps/e/F859s/kY3XM/a)
 *   [00:53:30] - [dotty == scala3](https://www.scala-lang.org/blog/2018/04/19/scala-3.html)
 *   [01:04:24] - [Scala 2.12.6](https://github.com/scala/scala/releases/tag/v2.12.6)
 *   [01:06:42] - [cats-effects v1.0.0-RC](https://github.com/typelevel/cats-effect/releases/tag/v1.0.0-RC)
@@ -24,6 +25,9 @@ date=2018-05-03
 
 <br/>
 
+* [FP Митап 8 мая - Беллвью и Сиэтл](http://meetu.ps/e/F859s/kY3XM/a)
+
+<br/>
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
 
 Голоса выпуска: 
