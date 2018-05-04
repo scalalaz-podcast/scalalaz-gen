@@ -35,4 +35,4 @@ date=2018-05-03
 [Алексей Фомкин](https://github.com/fomkin), 
 [Вадим Челышов](http://github.com/dos65),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
-[Евгений Токарев](http://github.com/strobe)
+[Евгений Токарев](https://twitter.com/strobegen)
