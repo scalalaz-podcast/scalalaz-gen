@@ -37,4 +37,4 @@ date=2018-05-13
 Голоса выпуска:
 [Ольга Махасоева](https://twitter.com/oli_kitty),
 [Евгений Токарев](https://twitter.com/strobegen),
-[Григорий Помадчин](https://twitter.com/pomadchin)
+[Григорий Помадчин](https://github.com/pomadchin)
