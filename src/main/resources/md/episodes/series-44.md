@@ -1,5 +1,5 @@
 title=Выпуск 44 - Очень скучный и вялый
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-44.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-44.mp3
 audio.length=45644960
 page=http://scalalaz.ru/series-44.html
 date=2018-05-13

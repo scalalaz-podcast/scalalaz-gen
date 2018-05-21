@@ -1,5 +1,5 @@
 title=Выпуск 26 - Несравнимые вещи, юбилейные
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-26.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-26.mp3
 audio.length=157725956
 page=http://scalalaz.ru/series-26.html
 date=2017-08-06

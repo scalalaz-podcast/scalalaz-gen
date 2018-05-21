@@ -1,5 +1,5 @@
 title=Выпуск 27 - с Мариной Сигаевой
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-27.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-27.mp3
 audio.length=143781595
 page=http://scalalaz.ru/series-27.html
 date=2017-08-23

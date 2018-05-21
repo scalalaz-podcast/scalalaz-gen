@@ -1,5 +1,5 @@
 title=Выпуск 13
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-13.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-13.mp3
 audio.length=161794048
 page=http://scalalaz.ru/series-13.html
 date=2017-01-22

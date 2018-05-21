@@ -1,5 +1,5 @@
 title=Выпуск 17
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-17.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-17.mp3
 audio.length=140646400
 page=http://scalalaz.ru/series-17.html
 date=2017-03-19
