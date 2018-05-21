@@ -1,5 +1,5 @@
 title=Выпуск 31 - петиции, драмы и IFы
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-31.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-31.mp3
 audio.length=141379584
 page=http://scalalaz.ru/series-31.html
 date=2017-10-29

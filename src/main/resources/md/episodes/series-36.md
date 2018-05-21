@@ -1,5 +1,5 @@
 title=Выпуск 36 - c Глебом Кантеровым о Scala в bigdata 
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-36.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-36.mp3
 audio.length=73558016
 page=http://scalalaz.ru/series-36.html
 date=2018-01-07

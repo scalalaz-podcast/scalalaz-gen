@@ -1,5 +1,5 @@
 title=Выпуск 28 - с Виктором Тараненко
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-28.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-28.mp3
 audio.length=158647483
 page=http://scalalaz.ru/series-28.html
 date=2017-09-03

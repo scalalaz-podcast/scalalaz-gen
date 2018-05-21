@@ -1,5 +1,5 @@
 title=Выпуск 32 - No Ads c Ольгой Махасоевой
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-32.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-32.mp3
 audio.length=167966426
 page=http://scalalaz.ru/series-32.html
 date=2017-11-15

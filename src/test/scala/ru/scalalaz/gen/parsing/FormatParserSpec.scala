@@ -38,14 +38,14 @@ class FormatParserSpec extends FlatSpec with Matchers with Inside {
   val raw2 =
     """
       |title=Выпуск 01
-      |enc.url=http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3
+      |enc.url=https://scalalaz.ru/mp3/scalalaz-podcast-1.mp3
       |enc.length=63337733
       |page=http://scalalaz.ru/series-01.html
       |date=2016-08-07
       |----
       |### Выпуск 01
       |
-      |@:audioControls "http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3".
+      |@:audioControls "https://scalalaz.ru/mp3/scalalaz-podcast-1.mp3".
       |
       |Темы:
       |

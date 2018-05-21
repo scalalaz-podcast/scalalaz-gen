@@ -1,5 +1,5 @@
 title=Выпуск 43 - с Ярославом Гринюком из Wix
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-43.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-43.mp3
 audio.length=79155905
 page=http://scalalaz.ru/series-43.html
 date=2018-05-03

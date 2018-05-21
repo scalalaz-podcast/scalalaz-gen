@@ -1,5 +1,5 @@
 title=Выпуск 40
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-40.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-40.mp3
 audio.length=105789685
 page=http://scalalaz.ru/series-40.html
 date=2018-03-07
