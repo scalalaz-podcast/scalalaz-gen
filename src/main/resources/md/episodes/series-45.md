@@ -15,7 +15,7 @@ date=2018-05-30
 * 00:58:35 - Finch - [Best practices and abstractions](https://github.com/finagle/finch/issues/263)
 * 01:03:18 - Pants
 * 01:13:34 - Zipkin
-* 01:17:47 - какие чележжи у нас как разработчиков RPC стека
+* 01:17:47 - какие челенжи у разработчиков RPC стека
 * 01:27:15 - [Job Coordination API for Tasks](https://github.com/KenSuenobu/scattersphere)
 * 01:28:03 - [Static content generator for developers. Intuitive, scalable, powerful.](https://github.com/sake92/hepek)
 
