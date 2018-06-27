@@ -11,9 +11,9 @@ date=2018-06-17
 * 00:00:04 [Конференция Data Summer - Одесса - 21 июля](https://provectus.com/datasummer/)
 * 00:00:54 [ZIO](https://github.com/scalaz/scalaz-zio)
 * 00:32:36 ANNOUNCING THE BUILD SERVER PROTOCOL V1.0.0
-  * <https://www.scala-lang.org/blog/2018/06/15/bsp.html>
-  * <https://www.reddit.com/r/scala/comments/8rdqtr/announcing_the_build_server_protocol_v100/>
-  * <http://jorge.vican.me/slides/BSP.pdf>
+    * <https://www.scala-lang.org/blog/2018/06/15/bsp.html>
+    * <https://www.reddit.com/r/scala/comments/8rdqtr/announcing_the_build_server_protocol_v100/>
+    * <http://jorge.vican.me/slides/BSP.pdf>
 * 00:43:50 Проблемы лицензии scopt
 * 00:58:03 [SCALAC-PROFILING](https://www.scala-lang.org/blog/2018/06/04/scalac-profiling.html)
 * 01:03:58 [Interflow: Scala Native](http://www.scala-native.org/en/latest/blog/interflow.html)
