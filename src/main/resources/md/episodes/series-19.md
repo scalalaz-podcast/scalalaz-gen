@@ -1,5 +1,5 @@
 title=Выпуск 19 - Гомотопический
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-19.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-19.mp3
 audio.length=142286848
 page=http://scalalaz.ru/series-19.html
 date=2017-04-16

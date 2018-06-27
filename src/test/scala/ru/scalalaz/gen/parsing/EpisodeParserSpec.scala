@@ -28,7 +28,7 @@ class EpisodeParserSpec extends FlatSpec with Matchers with Inside {
       |title=Episode#1
       |page=http://scalalaz.ru/series-01.html
       |date=2016-11-28
-      |audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3
+      |audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-1.mp3
       |audio.length=6
       |----
       |### Yoyoyo!
@@ -46,7 +46,7 @@ class EpisodeParserSpec extends FlatSpec with Matchers with Inside {
 
         rss.date shouldBe LocalDate.of(2016, 11, 28)
 
-        rss.audio.url shouldBe "http://scalalaz.ru/mp3/scalalaz-podcast-1.mp3"
+        rss.audio.url shouldBe "https://scalalaz.ru/mp3/scalalaz-podcast-1.mp3"
         rss.audio.length shouldBe 6
     }
   }

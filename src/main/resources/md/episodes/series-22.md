@@ -1,5 +1,5 @@
 title=Выпуск 22 - Android на Scala или Scala на Android
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-22.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-22.mp3
 audio.length=110120960
 page=http://scalalaz.ru/series-22.html
 date=2017-05-28

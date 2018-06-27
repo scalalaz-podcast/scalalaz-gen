@@ -1,5 +1,5 @@
 title=Выпуск 39 - Исповедь скалана 
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-39.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-39.mp3
 audio.length=101698601
 page=http://scalalaz.ru/series-39.html
 date=2018-02-18

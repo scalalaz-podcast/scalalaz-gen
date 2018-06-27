@@ -1,5 +1,5 @@
 title=Выпуск 34 - ENSIME и как живется опенсорс-фрилансерам
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-34.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-34.mp3
 audio.length=175796224
 page=http://scalalaz.ru/series-34.html
 date=2017-12-10

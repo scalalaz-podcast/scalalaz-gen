@@ -1,5 +1,5 @@
 title=Выпуск 08
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-8.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-8.mp3
 audio.length=107888659
 page=http://scalalaz.ru/series-08.html
 date=2016-11-13

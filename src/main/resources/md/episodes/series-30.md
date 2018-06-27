@@ -1,5 +1,5 @@
 title=Выпуск 30 - Хорошая документация - прочитанная документация
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-30.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-30.mp3
 audio.length=115646464
 page=http://scalalaz.ru/series-30.html
 date=2017-10-15

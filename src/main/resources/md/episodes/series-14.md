@@ -1,5 +1,5 @@
 title=Выпуск 14
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-14.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-14.mp3
 audio.length=145782784
 page=http://scalalaz.ru/series-14.html
 date=2017-02-05

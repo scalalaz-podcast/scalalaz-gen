@@ -1,5 +1,5 @@
 title=Выпуск 33 - c Евгением Бурмако о Reasonable Scala Compiler
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-33.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-33.mp3
 audio.length=89642551
 page=http://scalalaz.ru/series-33.html
 date=2017-11-29

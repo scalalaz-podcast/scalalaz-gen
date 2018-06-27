@@ -1,5 +1,5 @@
 title=FPConf 2017 Special
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-special-fpconf-2017.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-special-fpconf-2017.mp3
 audio.length=89642551
 page=http://scalalaz.ru/special-fpconf-2017.html
 date=2017-12-03
