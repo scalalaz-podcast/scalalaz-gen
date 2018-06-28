@@ -1,4 +1,4 @@
-title=Кто же расскажет нам про zio?
+title=Выпуск 46 - Кто же расскажет нам про zio?
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-46.mp3
 audio.length=96070937
 page=https://scalalaz.ru/series-46.html
