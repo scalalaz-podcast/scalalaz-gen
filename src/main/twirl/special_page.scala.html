@@ -1,0 +1,13 @@
+@(page: Page)
+
+@template(page.title) {
+
+<h1>@page.settings.title</h1>
+<p class="pub-date">
+    Опубликовано: @page.settings.ISODate
+</p>
+
+
+@Html(page.asHtml)
+
+}

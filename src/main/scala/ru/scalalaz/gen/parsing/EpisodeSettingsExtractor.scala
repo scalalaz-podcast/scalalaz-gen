@@ -22,9 +22,11 @@ import java.time.format.{ DateTimeFormatter, DateTimeParseException }
 import cats.Apply
 import cats.data.Validated.Valid
 import cats.data.{ Validated, ValidatedNel }
-import ru.scalalaz.gen.{ Enclosure, EpisodeSettings }
+import ru.scalalaz.gen.{ Enclosure, EpisodeSettings, SpecialPageSettings }
 
 object EpisodeSettingsExtractor {
+
+  import ru.scalalaz.gen.parsing.EpisodeErrors._
 
   /**
     * Достаем title, enclosure, pageUrl, дату создания
@@ -60,6 +62,49 @@ object EpisodeSettingsExtractor {
     private def parseDate(
         date: String
     ): Validated[EpisodeParseError, LocalDate] = {
+      def toDate = LocalDate.parse(date, DateTimeFormatter.ISO_LOCAL_DATE)
+      Validated
+        .catchOnly[DateTimeParseException](toDate)
+        .leftMap(e => InvalidDate(e.getMessage))
+    }
+
+  }
+
+}
+
+object PageSettingsExtractor {
+
+  import ru.scalalaz.gen.parsing.SpecialPageErrors._
+  
+  /**
+    * Достаем title, дату создания
+    */
+  def fromMap(
+      map: Map[String, Option[String]]
+  ): ValidatedNel[PageParseError, SpecialPageSettings] =
+    new SettingsExtractor(map).extract
+
+  class SettingsExtractor(map: Map[String, Option[String]]) {
+
+    def extract: ValidatedNel[PageParseError, SpecialPageSettings] =
+      Apply[ValidatedNel[PageParseError, ?]].map2(
+          read("title").toValidatedNel,
+          read("date").andThen(parseDate).toValidatedNel
+      ) {
+        case (title, date) =>
+          //val enc = Enclosure(encUrl, if (encLength != "") encLength.toInt else -1)
+          SpecialPageSettings(title, date)
+      }
+
+    private def read(key: String): Validated[PageParseError, String] =
+      Validated.fromOption(map.get(key).flatten, MissingKey(key))
+
+    private def optRead(key: String): Validated[PageParseError, String] =
+      Valid(map.get(key).flatten.getOrElse(""))
+
+    private def parseDate(
+        date: String
+    ): Validated[PageParseError, LocalDate] = {
       def toDate = LocalDate.parse(date, DateTimeFormatter.ISO_LOCAL_DATE)
       Validated
         .catchOnly[DateTimeParseException](toDate)

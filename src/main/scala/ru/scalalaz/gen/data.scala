@@ -58,3 +58,21 @@ case class Episode(settings: EpisodeSettings, content: String) {
 
 }
 case class EpisodeFile(path: Path, episode: Episode)
+
+case class SpecialPageSettings(title: String, date: LocalDate) {
+  def ISODate: String = {
+    date.format(DateTimeFormatter.ISO_DATE)
+  }
+}
+
+case class Page(settings: SpecialPageSettings, content: String) {
+
+  def title: String = settings.title
+
+  def asHtml: String = {
+    val blocks = knockoff(content)
+    toXHTML(blocks).mkString
+  }
+
+}
+case class PageFile(path: Path, page: Page)
