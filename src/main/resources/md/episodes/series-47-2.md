@@ -1,6 +1,6 @@
 title=Выпуск 47 - Дубль Два
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-47-2.mp3
-audio.length=
+audio.length=124754336
 page=https://scalalaz.ru/series-47-2.html
 date=2018-07-31
 ----
@@ -24,7 +24,7 @@ date=2018-07-31
 * 01:06:24 - [lihaoyi - A Scala port of the popular Python Requests HTTP client](https://github.com/lihaoyi/requests-scala)
 * 01:18:37 - визуализация в gui
 
-
+<br/>Спасибо большое за иллюстрацию к выпуску Zelenya [twitter @impurepics](https://twitter.com/impurepics)
 
 <br/>
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
