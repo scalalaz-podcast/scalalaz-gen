@@ -20,16 +20,37 @@ import java.nio.file.Path
 
 import cats.data.NonEmptyList
 
-sealed trait EpisodeParseError
+object EpisodeErrors {
 
-case class MissingKey(name: String) extends EpisodeParseError
+  sealed trait EpisodeParseError
 
-case class InvalidDate(description: String) extends EpisodeParseError
+  case class MissingKey(name: String) extends EpisodeParseError
 
-case class InvalidFormat(explanation: String) extends EpisodeParseError
+  case class InvalidDate(description: String) extends EpisodeParseError
 
-case class ManyErrors(list: NonEmptyList[EpisodeParseError])
+  case class InvalidFormat(explanation: String) extends EpisodeParseError
+
+  case class ManyErrors(list: NonEmptyList[EpisodeParseError])
     extends EpisodeParseError
 
-case class FileParseError(path: Path, manyErrors: EpisodeParseError)
+  case class FileParseError(path: Path, manyErrors: EpisodeParseError)
     extends EpisodeParseError
+}
+
+object SpecialPageErrors {
+
+  sealed trait PageParseError
+
+  case class MissingKey(name: String) extends PageParseError
+
+  case class InvalidDate(description: String) extends PageParseError
+
+  case class InvalidFormat(explanation: String) extends PageParseError
+
+  case class FileParseError(path: Path, manyErrors: PageParseError)
+    extends PageParseError
+
+  case class ManyErrors(list: NonEmptyList[PageParseError])
+    extends PageParseError
+
+}

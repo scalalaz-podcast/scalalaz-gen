@@ -16,15 +16,16 @@
 
 package ru.scalalaz.gen.parsing
 
-import cats.data.Validated
+
 import cats.implicits._
-import ru.scalalaz.gen.Episode
+import cats.data.Validated
+import ru.scalalaz.gen.Page
 
-object EpisodeParser {
+object PageParser {
 
-  import ru.scalalaz.gen.parsing.EpisodeErrors._
+  import ru.scalalaz.gen.parsing.SpecialPageErrors._
 
-  def fromString(content: String): Validated[EpisodeParseError, Episode] =
+  def fromString(content: String): Validated[PageParseError, Page] =
     FormatParser
       .parseContent(content)
       .toValidated
@@ -33,11 +34,10 @@ object EpisodeParser {
       })
       .andThen(f => fromFormat(f))
 
-  def fromFormat(format: FileFormat): Validated[EpisodeParseError, Episode] =
-    EpisodeSettingsExtractor
+  def fromFormat(format: FileFormat): Validated[PageParseError, Page] =
+    PageSettingsExtractor
       .fromMap(format.header)
-      .map(rss => Episode(rss, format.otherData))
+      .map(settings => Page(settings, format.otherData))
       .leftMap(list => ManyErrors(list))
 
 }
-

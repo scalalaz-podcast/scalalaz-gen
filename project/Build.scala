@@ -1,20 +1,18 @@
 import com.typesafe.sbt.GitPlugin
 import de.heikoseeberger.sbtheader.HeaderPlugin
-import de.heikoseeberger.sbtheader.license._
-import org.scalafmt.sbt.ScalaFmtPlugin
-//import play.twirl.sbt.SbtTwirl
+import org.scalafmt.sbt._
+import play.twirl.sbt.SbtTwirl
 import sbt._
 import sbt.plugins.JvmPlugin
 import sbt.Keys._
 
 object Build extends AutoPlugin {
 
-  override def requires = JvmPlugin && HeaderPlugin && GitPlugin && ScalaFmtPlugin //&& SbtTwirl
+  override def requires = JvmPlugin && GitPlugin&& HeaderPlugin && SbtTwirl
 
   override def trigger = allRequirements
 
   override def projectSettings =
-    ScalaFmtPlugin.autoImport.reformatOnCompileSettings ++
     Vector(
       // Core settings
       organization := "ru",
@@ -33,14 +31,11 @@ object Build extends AutoPlugin {
       unmanagedSourceDirectories.in(Compile) := Vector(scalaSource.in(Compile).value),
       unmanagedSourceDirectories.in(Test) := Vector(scalaSource.in(Test).value),
 
-      // scalafmt settings
-      ScalaFmtPlugin.autoImport.scalafmtConfig := Some(baseDirectory.in(ThisBuild).value / ".scalafmt"),
-
       // Git settings
       GitPlugin.autoImport.git.useGitDescribe := true,
 
       // Header settings
-      HeaderPlugin.autoImport.headers := Map("scala" -> Apache2_0("2016", "Scalalaz Podcast Team"))
+      HeaderPlugin.autoImport.headerLicense := Some(HeaderPlugin.autoImport.HeaderLicense.ALv2("2016", "Scalalaz Podcast Team"))
 
     )
 }
