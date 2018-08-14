@@ -7,9 +7,13 @@ date=2018-08-14
 
 ![epsidode48](img/episode48.jpg)
 
-* 00:03:36 - Спарк Митап   
+* 00:03:36 - Спарк Митап 
+    *   <https://t.me/moscowspark>
+    *  [Видео](https://www.facebook.com/pg/afishamansarda/videos/?ref=page_internal)
 * 00:27:12 - Apache Spark на Scala 2.12
 * 00:32:28 - LambdaNsk
+    *  [Их твиттор](https://twitter.com/LambdaNsk)
+    *  [Видео](https://www.youtube.com/channel/UC_Xt9gmfXcR_k8gOl1C4UQA)
 * 00:35:39 - exploring scala ast in-your browser
     *   [exploring scala ast in-your browser](https://blog.buildo.io/exploring-scala-ast-in-your-browser-dc0b1fb743e0)
     *   [astexplorer.net](https://astexplorer.net/#/gist/da91d24f9a81e27219629c06c73fecfc/43ee2593d93fc48487e0d11ee7ab0de7267da8cd)
