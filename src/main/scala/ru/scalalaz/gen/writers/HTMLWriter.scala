@@ -64,17 +64,6 @@ class HTMLWriter(targetDir: String, discusCode: String) {
 
 }
 
-trait PageUnit {
-
-  val fileName: String
-
-  def content: String
-
-  def write(to: String): Path = {
-    val path = Paths.get(to, fileName)
-    Files.write(path, content.getBytes())
-  }
-}
 
 case class EpisodePage(fileName: String, disqusCode: String, episode: Episode)
     extends PageUnit {

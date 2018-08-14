@@ -16,11 +16,11 @@
 
 package ru.scalalaz.gen
 
-import java.nio.file.{ Files, Path }
+import java.nio.file.{Files, Path}
 import java.nio.file.Paths
 
-import cats.data.Validated.{ Invalid, Valid }
-import cats.data.{ NonEmptyList, ValidatedNel }
+import cats.data.Validated.{Invalid, Valid}
+import cats.data.{NonEmptyList, ValidatedNel}
 import cats.implicits._
 import parsing._
 import writers._
@@ -32,9 +32,14 @@ trait GeneratorFs {
   def episodeFiles(dir: Path): List[Path] =
     fs.list(dir).filter(p => isMarkdown(p) && isEpisode(p))
 
+  def specialPagesFiles(dir: Path): List[Path] =
+    fs.list(dir).filter(p => isMarkdown(p) && isSpecial(p))
+
   def isMarkdown(p: Path): Boolean = p.toFile.getName.endsWith(".md")
 
   def isEpisode(p: Path): Boolean = p.toFile.getName.startsWith("series-")
+
+  def isSpecial(p: Path): Boolean = p.toFile.getName.startsWith("special-page-")
 
   def notEpisode(p: Path): Boolean = !isMarkdown(p)
 
@@ -54,6 +59,8 @@ trait GeneratorFs {
 
 class Generator(settings: SiteSettings, source: Path, target: Path)
     extends GeneratorFs {
+
+  import ru.scalalaz.gen.parsing.EpisodeErrors._
 
   val targetRssPath = target.resolve("rss")
 
@@ -124,4 +131,48 @@ class Generator(settings: SiteSettings, source: Path, target: Path)
       .mkString("\n")
   }
 
+}
+
+class SpecialPagesGenerator(source: Path, target: Path) extends GeneratorFs {
+
+  import ru.scalalaz.gen.parsing.SpecialPageErrors._
+
+  def generate(): Either[String, Unit] = {
+    for {
+      pages <- parse()
+      _     <- generateHtml(pages)
+    } yield Right(())
+  }
+
+  def parse(): Either[String, List[PageFile]] =
+    specialPagesFiles(source.resolve("pages"))
+      .sortBy(_.getFileName.toString)
+      .traverseU(parsePage) match {
+      case Invalid(e) => Left(describeErrors(e))
+      case Valid(ef)  => Right(ef)
+      }
+
+  def generateHtml(pages: List[PageFile]): Either[String, Unit] = {
+    eitherCatch {
+      val writer = new SpecialPagesHTMLWriter(target.toString)
+      writer.write(pages)
+    }
+  }
+
+  def parsePage(p: Path): ValidatedNel[PageParseError, PageFile] = {
+    val bytes   = Files.readAllBytes(p)
+    val content = new String(bytes)
+    PageParser
+      .fromString(content)
+      .leftMap(e => FileParseError(p, e))
+      .map(e => PageFile(p, e))
+      .toValidatedNel
+  }
+
+  def describeErrors(errors: NonEmptyList[PageParseError]): String = {
+    errors
+      .map(e => s"Error occurred while parsing file:\n\t $e")
+      .toList
+      .mkString("\n")
+  }
 }

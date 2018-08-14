@@ -26,13 +26,24 @@ object Main extends App {
   val siteSettings = SiteSettings()
 
   val gen = new Generator(siteSettings, markdownDir, targetPath)
+  val pgen = new SpecialPagesGenerator(markdownDir, targetPath)
 
   gen.generate() match {
     case Left(error) =>
-      println("Generation failed, error:")
+      println("Main Pages generation failed, error:")
       println(error)
       sys.exit(1)
     case _ =>
-      println("Done")
+      println("Main Pages generation - Done")
   }
+
+  pgen.generate() match {
+    case Left(error) =>
+      println("Special Pages generation failed, error:")
+      println(error)
+      sys.exit(1)
+    case _ =>
+      println("Special Pages generation - Done")
+  }
+
 }
