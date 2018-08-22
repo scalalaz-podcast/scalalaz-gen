@@ -22,4 +22,7 @@ date=2018-08-21
 <br/>
 
 Голоса выпуска:
-[Ольга Махасоева](https://twitter.com/oli_kitty)
+[Ольга Махасоева](https://twitter.com/oli_kitty),
+[Олег Алешко](https://twitter.com/OlegYch),
+[Олег Пыжков](https://twitter.com/oleg_pyzhcov),
+[Олег Нижников](https://github.com/Odomontois) ([o.nizhnikov@tinkoff.ru](mailto:o.nizhnikov@tinkoff.ru))
