@@ -16,6 +16,8 @@ date=2018-08-21
 * 00:32:55 - [Oleg N](https://github.com/Odomontois/FDyrka)
 * 00:58:53 - [Scala 3 SIP Review](https://contributors.scala-lang.org/)
 
+<br/>Спасибо большое за иллюстрацию к выпуску Zelenya [twitter @impurepics](https://twitter.com/impurepics)
+
 <br/>
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
 
