@@ -5,7 +5,7 @@ page=https://scalalaz.ru/series-50.html
 date=2018-09-13
 ----
 
-![epsidode50](img/episode50.jpg)
+![episode50](img/episode50.jpg)
 
 * 00:01:09 - Спасибо патронам
 * 00:03:34 - Интервью с Александром
