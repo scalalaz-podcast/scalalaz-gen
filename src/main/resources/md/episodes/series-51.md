@@ -8,8 +8,8 @@ date=2018-09-28
 ![epsidode51](img/episode51.jpg)
 
 * 00:00:34 - Праздник [Суккот](https://ru.wikipedia.org/wiki/Суккот) 
-* 00:01:17 - Начала карьеры Игаля на Scala
-* 00:04:00 - ФП в мире дотнета
+* 00:01:17 - Начало карьеры Игаля на Scala
+* 00:04:00 - ФП в мире Дотнета
 * 00:14:40 - Коммьюнити в Израиле
     * Митап [Underscore](https://www.meetup.com/underscore/)
     * Конференция [Scalapeno](https://www.scalapeno2018.com/)
@@ -26,6 +26,7 @@ date=2018-09-28
     * [Epub version](https://github.com/onlurking/category-theory-for-programmers)
     * [https://github.com/typelevel/CT_from_Programmers.scala](https://github.com/typelevel/CT_from_Programmers.scala)
 * 01:30:05 - [пост John de Goes про нейминг](http://degoes.net/articles/insufficiently-polymorphic)
+* 01:43:00 - [митап в Москве](http://meetu.ps/e/FRGnt/t1YQm/f)
 
 <br/>
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
