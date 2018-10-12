@@ -16,4 +16,5 @@ date=2018-10-12
 [Ольга Махасоева](https://twitter.com/oli_kitty),
 [Алексей Романчук](http://github.com/13h3r),
 [Григорий Помадчин](https://github.com/pomadchin),
-[Евгений Токарев](https://twitter.com/strobegen)
+[Евгений Токарев](https://twitter.com/strobegen),
+[Дмитрий Лахвич](https://github.com/ReiReiRei)
