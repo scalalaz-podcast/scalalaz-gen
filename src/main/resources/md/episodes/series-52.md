@@ -1,4 +1,4 @@
-title=Выпуск 52 - Выпуск с ?
+title=Выпуск 52 - Выпуск с Дмитрием Лахвичем
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-52.mp3
 audio.length=121848704
 page=https://scalalaz.ru/series-52.html
