@@ -13,7 +13,7 @@ date=2018-10-31
 * 01:04:54 - maven, idea build, sbt
 * 01:07:05 - metals
 * 01:13:44 - hkt, shapeless, scalaz, cats - сложности поддержки, разработки плагина
-* 01:22:04 - как думайте по чему ensime не пошел? - какие основные ошибки в продукте
+* 01:22:04 - почему ensime не пошел? какие основные ошибки в продукте?
 * 01:36:13 - [JetBrains - devecosystem-2018](https://www.jetbrains.com/research/devecosystem-2018/scala/)
 * 01:36:19 - [Finch 0.25 - cats.effect.Effect, LOT of API changes](https://github.com/finagle/finch/releases/tag/v0.25.0) 
 * 01:37:58 - [Vladimir Kostyukov - Finch Performance Lessons](https://kostyukov.net/posts/finch-performance-lessons/)
