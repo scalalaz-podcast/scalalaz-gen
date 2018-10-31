@@ -1,6 +1,6 @@
 title=Выпуск 53 - Выпуск с гостями из команды Scala плагина JetBrains
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-53.mp3
-audio.length=
+audio.length=151337024
 page=https://scalalaz.ru/series-53.html
 date=2018-10-31
 ----
@@ -23,6 +23,7 @@ date=2018-10-31
 <br/>
 
 Голоса выпуска:
+Михаил Муцянко,
 [Алексей Фомкин](http://github.com/fomkin),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
 [Вадим Челышов](http://github.com/dos65),
