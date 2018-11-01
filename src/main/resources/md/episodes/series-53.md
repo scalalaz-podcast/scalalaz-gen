@@ -2,13 +2,13 @@ title=Выпуск 53 - Выпуск с гостями из команды Scala
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-53.mp3
 audio.length=151337024
 page=https://scalalaz.ru/series-53.html
-date=2018-10-31
+date=2018-11-01
 ----
 
 ![epsidode53](img/episode53.jpg)
 
 * 00:01:31 - вопросы гостям
-* 00:44:19 - новые билд тулы bloop, BSP, LSP, metals интеграция с идеей<
+* 00:44:19 - новые билд тулы bloop, BSP, LSP, metals интеграция с идеей
 * 00:54:42 - будующее scala3/dotty и макросы
 * 01:04:54 - maven, idea build, sbt
 * 01:07:05 - metals
