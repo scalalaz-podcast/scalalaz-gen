@@ -1,4 +1,4 @@
-title=Выпуск 54 - 
+title=Выпуск 54 - Jet Lag и конференции 
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-54.mp3
 audio.length=102008672
 page=https://scalalaz.ru/series-54.html
