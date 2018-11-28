@@ -12,7 +12,7 @@ date=2018-11-28
 * 00:04:00 - [шаблон для pdf презентаций из emacs org-mode](https://github.com/strobe/nice-org-beamer)
 * 00:10:47 - впечатления Oli о Конференциях (SFScala, Lambda World) 
     * [Видяхи с Lambda World](https://twitter.com/Lambda_World/status/1067363951833477120)
-* 00:27:32 - Fury opensourced(https://github.com/propensive/fury)
+* 00:27:32 - [Fury opensourced](https://github.com/propensive/fury)
 * 00:40:39 - обсуждаем книги
 * 00:52:45 - отчет Oli об FP тренинге John De Goes
 * 00:58:28 - [Scala version of Category Theory for Programmers](https://twitter.com/hmemcpy/status/1066460602644774914)
