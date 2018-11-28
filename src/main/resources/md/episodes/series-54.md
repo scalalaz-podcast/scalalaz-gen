@@ -8,7 +8,7 @@ date=2018-11-28
 ![epsidode53](img/episode54.jpg)
 
 
-00:03:35 - Благодарности Патреонам
+00:03:35 - Благодарности Патронам
 00:04:00 - [шаблон для pdf презентаций из emacs org-mode](https://github.com/strobe/nice-org-beamer)
 00:10:47 - впечатления Oli о Конференциях (SFScala, Lambda World) 
 	* [Видяхи с Lambda World](https://twitter.com/Lambda_World/status/1067363951833477120)
