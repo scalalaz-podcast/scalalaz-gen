@@ -15,6 +15,7 @@ Does John consider it as a weak side of zio? Or such a lib is not even needed if
 
 I know he has proposed some ideas for Cats Effect 2.0. Does he believe he'll be heard by Nedelcu & co?»
 
+[Cats Effect 2.0 Design Discussion](https://github.com/typelevel/cats-effect/issues/321)
 ---
 
 Библиотека Cats-effect позволяет реализовывать модули параметризованные с помощью абстрактного эффекта F ограниченного возможностями Sync, Async и т.д, т.е не выбирать конкретную монаду эффекта пока это возможно.
