@@ -5,7 +5,7 @@ page=https://scalalaz.ru/series-54.html
 date=2018-11-28
 ----
 
-![epsidode53](img/episode54.jpg)
+![epsidode54](img/episode54.jpg)
 
 
 * 00:03:35 - Благодарности Патронам
