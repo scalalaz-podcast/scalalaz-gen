@@ -7,16 +7,17 @@ date=2018-12-04
 
 ![epsidode55](img/episode55.jpg)
 
-«Cats-effect library lets us implement modules parameterized with an abstract effect F bounded by Sync, Async, etc capabilities, i.e. not choose a concrete effect monad until the very end of the universe.
+<br/>
+Cats-effect library lets us implement modules parameterized with an abstract effect F bounded by Sync, Async, etc capabilities, i.e. not choose a concrete effect monad until the very end of the universe.
 
 In opposite, AFAIU, John's approach is different. We still describe our algebras with F, but have to implement modules with IO (zio), which doesn't let us easily migrate to a different IO monad later with a simple replace in the Main class.
 
 Does John consider it as a weak side of zio? Or such a lib is not even needed if you use the best io impl like ZIO? )))
 
-I know he has proposed some ideas for Cats Effect 2.0. Does he believe he'll be heard by Nedelcu & co?»
+I know he has proposed some ideas for Cats Effect 2.0. Does he believe he'll be heard by Nedelcu & co?
 
-[Cats Effect 2.0 Design Discussion](https://github.com/typelevel/cats-effect/issues/321)
----
+- [Cats Effect 2.0 Design Discussion](https://github.com/typelevel/cats-effect/issues/321)
+<br/>
 
 Библиотека Cats-effect позволяет реализовывать модули, параметризованные с помощью *абстрактного* эффекта F, ограниченного
 возможностями Sync, Async и т.д, т.е библиотека позволяет откладывать выбор конкретного
