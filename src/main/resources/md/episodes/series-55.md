@@ -1,0 +1,34 @@
+title=Issue 55 - Mini QA with John De Goes [EN] [5 min]
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-55.mp3
+audio.length=8746208
+page=https://scalalaz.ru/series-55.html
+date=2018-12-04
+----
+
+![epsidode55](img/episode55.jpg)
+
+«Cats-effect library lets us implement modules parameterized with an abstract effect F bounded by Sync, Async, etc capabilities, i.e. not choose a concrete effect monad until the very end of the universe.
+
+In opposite, AFAIU, John's approach is different. We still describe our algebras with F, but have to implement modules with IO (zio), which doesn't let us easily migrate to a different IO monad later with a simple replace in the Main class.
+
+Does John consider it as a weak side of zio? Or such a lib is not even needed if you use the best io impl like ZIO? )))
+
+I know he has proposed some ideas for Cats Effect 2.0. Does he believe he'll be heard by Nedelcu & co?»
+
+---
+
+Библиотека Cats-effect позволяет реализовывать модули параметризованные с помощью абстрактного эффекта F ограниченного возможностями Sync, Async и т.д, т.е не выбирать конкретную монаду эффекта пока это возможно.
+
+Подход Джона противоположный, он описывает алгебры с помощью F но реализует модули с IO (zio), которые не позволяют легко мигрировать на другую монаду эффекта.
+
+Как считает Джон, это недостаток zio? Или другие библиотеки не нужны когда есть ZIO? )))
+
+Как известно он предложил несколько идея для Cats Effect 2.0. - будут ли они услышаны Nedelcu & co ?
+
+<br/>
+Patreon [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
+<br/>
+
+Hosts:
+[Oli Makhasoeva](https://twitter.com/oli_kitty),
+[John De Goes](https://twitter.com/jdegoes)
