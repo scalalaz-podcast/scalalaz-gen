@@ -7,6 +7,8 @@ date=2019-01-25
 
 ![epsidode57](img/episode57.jpg)
 
+* [Scala митап в Казани](http://expertfridays.com/meetups/scala-meetup-2/) - 1 февраля
+
 * плоские конфиги и [config3](https://github.com/scf37/config3) 
 * спасибо патронам 
 * про акторы и о [type-safe actor](https://github.com/simerplaha/Actor)
