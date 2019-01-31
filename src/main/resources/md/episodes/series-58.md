@@ -1,6 +1,6 @@
-title=Выпуск 58 - 
+title=Выпуск 58 - Выпуск с Никитой Мельниковым
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-.mp3
-audio.length=
+audio.length=94738400
 page=https://scalalaz.ru/series-58.html
 date=2019-02-01
 ----
@@ -20,6 +20,7 @@ date=2019-02-01
 <br/>
 
 Голоса выпуска:
+[Никита Мельников](https://twitter.com/nikita_melnikov),
 [Алексей Романчук](http://github.com/13h3r),
 [Алексей Фомкин](http://github.com/fomkin),
 [Евгений Токарев](https://twitter.com/strobegen)
