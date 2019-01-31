@@ -83,6 +83,7 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
             raw(
                 s"""<atom:link href="$atomLink" rel="self" type="application/rss+xml" />"""
             ),
+            raw(s"""<itunes:author>$ownerName</itunes:author>"""),
             raw(s"""<itunes:image href="$imageLink" />"""),
             raw(s"""<itunes:owner>
               |  <itunes:name>$ownerName</itunes:name>
