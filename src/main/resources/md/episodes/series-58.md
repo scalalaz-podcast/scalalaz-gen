@@ -1,5 +1,5 @@
 title=Выпуск 58 - Выпуск с Никитой Мельниковым о жизни в большой компании.
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-.mp3
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-58.mp3
 audio.length=94738400
 page=https://scalalaz.ru/series-58.html
 date=2019-02-04
