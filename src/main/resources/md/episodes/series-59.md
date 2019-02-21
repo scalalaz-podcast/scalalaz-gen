@@ -5,7 +5,7 @@ page=https://scalalaz.ru/series-59.html
 date=2019-02-21
 ----
 
-![epsidode59](img/episode59.png)
+![epsidode59](img/episode59.jpg)
 
 * 00:18:47 - korolev and [mu](http://higherkindness.io/mu/)
 * 00:31:06 - патроны
