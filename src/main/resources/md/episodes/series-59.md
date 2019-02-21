@@ -1,4 +1,4 @@
-title=Выпуск 59 - 
+title=Выпуск 59 - Ярость Жукова. Остров Мю. Конференции в Кентукки
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-59.mp3
 audio.length=114988544
 page=https://scalalaz.ru/series-59.html
