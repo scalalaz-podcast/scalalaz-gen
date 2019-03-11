@@ -1,4 +1,4 @@
-title=Выпуск 60 - Прагматичный кафкалаз
+title=Выпуск 60 - Прагматичный кафкалаз c Виктором Гамовым
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-60.mp3
 audio.length=89636192
 page=https://scalalaz.ru/series-60.html
@@ -20,3 +20,4 @@ date=2019-03-09
 [Ольга Махасоева](https://twitter.com/oli_kitty),
 [Вадим Челышов](http://github.com/dos65),
 [Евгений Токарев](https://twitter.com/strobegen)
+
