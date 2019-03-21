@@ -18,7 +18,7 @@ date=2019-03-22
 	- [FlameGraph](http://www.brendangregg.com/flamegraphs.html)
 	- [async-profiler](https://github.com/jvm-profiling-tools/async-profiler)
 	- [sbt-jmh](https://github.com/ktoso/sbt-jmh)
-	- [FlameGraph visualizer]https://github.com/brendangregg/FlameGraph
+	- [FlameGraph visualizer](https://github.com/brendangregg/FlameGraph)
 * 01:22:41 - Новости про Жукова
 
 <br/>
