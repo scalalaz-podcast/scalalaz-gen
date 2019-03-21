@@ -1,5 +1,5 @@
 title=Выпуск 61 - c Максимом Логвиненко
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-60.mp3
+audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-61.mp3
 audio.length=103341536
 page=https://scalalaz.ru/series-61.html
 date=2019-03-22
