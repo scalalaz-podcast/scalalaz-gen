@@ -33,5 +33,4 @@ date=2019-03-22
 [Григорий Помадчин](https://github.com/pomadchin),
 [Алексей Фомкин](http://github.com/fomkin),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
-[Вадим Челышов](http://github.com/dos65),
 [Евгений Токарев](https://twitter.com/strobegen)
