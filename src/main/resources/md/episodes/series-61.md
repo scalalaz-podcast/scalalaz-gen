@@ -5,7 +5,7 @@ page=https://scalalaz.ru/series-61.html
 date=2019-03-22
 ----
 
-![epsidode60](img/episode61.jpg)
+![epsidode61](img/episode61.jpg)
 
 * 00:02:34 - Путь к скале, опыт
 * 00:09:33 - Как и почему адоптили скалу в новой команде
