@@ -17,6 +17,7 @@ date=2019-03-22
 ](http://psy-lob-saw.blogspot.com/2016/02/why-most-sampling-java-profilers-are.html)
 	- [FlameGraph](http://www.brendangregg.com/flamegraphs.html)
 	- [async-profiler](https://github.com/jvm-profiling-tools/async-profiler)
+	- [honest-profiler](https://github.com/jvm-profiling-tools/honest-profiler)
 	- [sbt-jmh](https://github.com/ktoso/sbt-jmh)
 	- [FlameGraph visualizer](https://github.com/brendangregg/FlameGraph)
 * 01:22:41 - Новости про Жукова
