@@ -19,8 +19,8 @@ date=2019-04-02
 * 01:23:07 - [mdoc - Typechecked markdown documentation for Scala](https://scalameta.org/mdoc/)
 * 01:24:54 - Open-sourcing the first OpenRTB Scala framework:
 
-    - [статья-обзор](https://powerspace.tech/open-sourcing-the-first-openrtb-scala-framework-686dde0a0d40")
-    - [github](https://github.com/Powerspace/scala-openrtb")
+    - [статья-обзор](https://powerspace.tech/open-sourcing-the-first-openrtb-scala-framework-686dde0a0d40)
+    - [github](https://github.com/Powerspace/scala-openrtb)
 
 * 01:27:26 - [Arend](https://github.com/JetBrains/Arend)
 * 01:28:28 - [Using Scala in the Cloud: A Guide to Amazon EC2 Instance Types](https://www.triplequote.com/blog/2019-guide-to-amazon-instances/)
