@@ -4,7 +4,7 @@ audio.length=80159840
 page=https://scalalaz.ru/series-63.html
 date=2019-05-08
 ----
-![epsidode63](img/episode63.jpg)
+![epsidode63](img/episode63.png)
 
 
 * 00:00:41 -  Патроны
