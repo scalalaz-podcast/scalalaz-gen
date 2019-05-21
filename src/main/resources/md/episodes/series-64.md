@@ -1,6 +1,6 @@
 title=Выпуск 64 - Два ума и курага
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-64.mp3
-audio.length=0
+audio.length=92614112
 page=https://scalalaz.ru/series-64.html
 date=2019-05-19
 ----
@@ -19,6 +19,11 @@ date=2019-05-19
 * 00:46:34 - Продакшен-реди?
 * 00:48:03 - Наконец то про [izumi](https://izumi.7mind.io/latest/release/doc/)
 * 01:19:03 - idealingua, logstage
+
+<br/>
+
+* 30 Мая Scala митап в Екатеринбурге:
+-  https://meetup.tinkoff.ru/events/scala-meetup-ekb
 
 <br/>
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
