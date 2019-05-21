@@ -23,7 +23,7 @@ date=2019-05-19
 <br/>
 
 * 30 Мая Scala митап в Екатеринбурге:
--  https://meetup.tinkoff.ru/events/scala-meetup-ekb
+-  [https://meetup.tinkoff.ru/events/scala-meetup-ekb](https://meetup.tinkoff.ru/events/scala-meetup-ekb)
 
 <br/>
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
