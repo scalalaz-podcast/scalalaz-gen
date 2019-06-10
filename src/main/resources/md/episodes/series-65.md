@@ -17,6 +17,8 @@ date=2019-06-10
     - [Berkeley Out-of-Order Machine](https://github.com/riscv-boom/riscv-boom)
     - [Rocket Chip Generator](https://github.com/freechipsproject/rocket-chip)
     - [Flexible Intermediate Representation for RTL](https://github.com/freechipsproject/firrtl)
+* ??:??:?? - [Renaissance-benchmark](https://github.com/renaissance-benchmarks/renaissance)
+* ??:??:?? - [Гриша побенчил Apache Arrow](https://github.com/pomadchin/arrow-benchmark)
 
 <br/>
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
