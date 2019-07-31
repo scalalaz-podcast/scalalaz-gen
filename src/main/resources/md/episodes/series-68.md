@@ -13,7 +13,7 @@ FPure 2019 (в Казани).
 
 * 00:00:00 - [Алексей Терёхин](https://github.com/daron666)
 * 00:11:55 - [Павел Аргентов](https://twitter.com/argent_smith)
-* 00:55:19 - [Турченков Михаил](http://biosim-rg.ru/MikeCV_en/), [Анна Капылова](http://biosim-rg.ru/AnnaCV_en)
+* 00:55:19 - [Турченков Михаил](http://biosim-rg.ru/MikeCV_en/) и [Анна Капылова](http://biosim-rg.ru/AnnaCV_en)
 * 01:19:00 - [Олег Нижников](https://github.com/Odomontois)
 * 01:33:00 - [Юрий Бадальянц](https://twitter.com/lmnet89)
 
@@ -24,4 +24,5 @@ FPure 2019 (в Казани).
 
 
 Задавал вопросы:
-[Евгений Токарев](https://twitter.com/strobegen), [Вадим Челышов](http://github.com/dos65)
+[Евгений Токарев](https://twitter.com/strobegen),
+[Вадим Челышов](http://github.com/dos65)
