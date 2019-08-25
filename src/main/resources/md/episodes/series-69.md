@@ -1,8 +1,8 @@
-title=Выпуск 69 - 
+title=Выпуск 69 - Восстание машин
 audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-69.mp3
-audio.length=
+audio.length=124383478
 page=https://scalalaz.ru/series-69.html
-date=2019-08-24
+date=2019-08-25
 ----
 ![epsidode69](img/ep69.jpg)
 
@@ -16,9 +16,9 @@ date=2019-08-24
 * 01:30:52 - как проходит code-review
 
 <br/>
-ТРА РОБОТИКС (www.tra.ai):
-- [Scala Developer, QA и еще много разных в Берлине](https://www.tra.ai/careers/)
-- [в Санкт-Петербурге](https://spb.hh.ru/employer/2759082)
+[ТРА РОБОТИКС](https://www.tra.ai):
+  - [Scala Developer, QA и еще много разных в Берлине](https://www.tra.ai/careers/)
+  - [в Санкт-Петербурге](https://spb.hh.ru/employer/2759082)
 
 <br/>
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
