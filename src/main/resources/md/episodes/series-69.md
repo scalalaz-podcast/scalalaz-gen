@@ -4,7 +4,7 @@ audio.length=124383478
 page=https://scalalaz.ru/series-69.html
 date=2019-08-25
 ----
-![epsidode69](img/ep69.jpg)
+![epsidode69](img/episode69.jpg)
 
 * 00:04:02 - Патроны
 * 00:09:55 - [ScalaConf - Профессиональная конференция для Scala-разработчиков](https://scalaconf.ru/)
