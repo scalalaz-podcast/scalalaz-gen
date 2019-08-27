@@ -16,14 +16,16 @@
 
 package ru.scalalaz.gen
 
-import java.nio.file.{Files, Path}
-import java.nio.file.Paths
+import parsing._
+import writers._
 
 import cats.data.Validated.{Invalid, Valid}
 import cats.data.{NonEmptyList, ValidatedNel}
-import cats.implicits._
-import parsing._
-import writers._
+import cats.instances.list._
+import cats.syntax.traverse._
+import cats.syntax.either._
+
+import java.nio.file.{Files, Path}
 
 trait GeneratorFs {
 
@@ -97,7 +99,7 @@ class Generator(settings: SiteSettings, source: Path, target: Path)
   def parse(): Either[String, List[EpisodeFile]] =
     episodeFiles(source.resolve("episodes"))
       .sortBy(_.getFileName.toString)
-      .traverseU(parseEpisode) match {
+      .traverse(parseEpisode) match {
       case Invalid(e) => Left(describeErrors(e))
       case Valid(ef)  => Right(ef)
     }
@@ -147,7 +149,7 @@ class SpecialPagesGenerator(source: Path, target: Path) extends GeneratorFs {
   def parse(): Either[String, List[PageFile]] =
     specialPagesFiles(source.resolve("pages"))
       .sortBy(_.getFileName.toString)
-      .traverseU(parsePage) match {
+      .traverse(parsePage) match {
       case Invalid(e) => Left(describeErrors(e))
       case Valid(ef)  => Right(ef)
       }

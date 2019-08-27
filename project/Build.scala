@@ -23,10 +23,12 @@ object Build extends AutoPlugin {
       scalacOptions ++= Vector(
         "-unchecked",
         "-deprecation",
+        "-feature",
         "-language:_",
         "-target:jvm-1.8",
         "-encoding",
-        "UTF-8"
+        "UTF-8",
+        "-Ypartial-unification"
       ),
       unmanagedSourceDirectories.in(Compile) := Vector(scalaSource.in(Compile).value),
       unmanagedSourceDirectories.in(Test) := Vector(scalaSource.in(Test).value),

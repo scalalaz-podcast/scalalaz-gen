@@ -18,7 +18,7 @@ package ru.scalalaz.gen
 
 import java.nio.file.{ Files, Path }
 
-import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
 
 object fs {
 
@@ -51,9 +51,9 @@ object fs {
       .filter(filter)
       .foreach(p => {
         if (p.toFile.isFile)
-          copyFile(p, to.resolve(p.last))
+          copyFile(p, to.resolve(p.asScala.last))
         else {
-          val next = to.resolve(p.last)
+          val next = to.resolve(p.asScala.last)
           createDir(next)
           copyDir(p, next, filter)
         }
