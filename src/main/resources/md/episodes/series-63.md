@@ -1,11 +1,10 @@
 title=Выпуск 63 - Второй плохой выпуск про ZIO (и звук не очень) 
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-63.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-63.mp3
 audio.length=80159840
 page=https://scalalaz.ru/series-63.html
 date=2019-05-08
 ----
-![epsidode63](img/episode63.png)
-
+![episode 63](https://scalalaz.ru/img/episode63.png)
 
 * 00:00:41 -  Патроны
 * 00:01:55 -  [FPure конференция в Казани 24-25 мая](http://fpure.events/) 

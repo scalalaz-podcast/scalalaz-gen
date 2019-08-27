@@ -1,11 +1,11 @@
 title=Выпуск 60 - Прагматичный кафкалаз c Виктором Гамовым
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-60.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-60.mp3
 audio.length=89636192
 page=https://scalalaz.ru/series-60.html
 date=2019-03-09
 ----
 
-![epsidode60](img/episode60.jpg)
+![episode 60](https://scalalaz.ru/img/episode60.jpg)
 
 * 00:01:45 - Жизнь, Путь - как до кафки дошел
 * 00:30:13 - Кафка - зачем переписали на java?

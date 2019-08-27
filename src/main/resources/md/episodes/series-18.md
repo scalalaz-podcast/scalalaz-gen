@@ -1,11 +1,10 @@
 title=Выпуск 18 - Реакторы и редакторы
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-18.mp3
 audio.length=131035933
-page=http://scalalaz.ru/series-18.html
+page=https://scalalaz.ru/series-18.html
 date=2017-04-02
 ----
-![episode 18](img/episode18.png)
-
+![episode 18](https://scalalaz.ru/img/episode18.png)
 
 Новости:
 

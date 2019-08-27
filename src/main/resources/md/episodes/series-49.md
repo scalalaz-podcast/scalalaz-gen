@@ -1,11 +1,11 @@
 title=Выпуск 49 - Олеголаз
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-49.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-49.mp3
 audio.length=123768512
 page=https://scalalaz.ru/series-49.html
 date=2018-08-21
 ----
 
-![epsidode49](img/episode49.jpg)
+![episode 49](https://scalalaz.ru/img/episode49.jpg)
 
 * 00:01:46 - OlegYch
     * [https://scastie.scala-lang.org/](https://scastie.scala-lang.org/)

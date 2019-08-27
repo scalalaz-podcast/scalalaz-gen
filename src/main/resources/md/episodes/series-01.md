@@ -1,7 +1,7 @@
 title=Выпуск 01
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-1.mp3
 audio.length=63337733
-page=http://scalalaz.ru/series-01.html
+page=https://scalalaz.ru/series-01.html
 date=2016-08-07
 ----
 Темы:

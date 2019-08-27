@@ -1,10 +1,10 @@
 title=Выпуск 66 - Королевский
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-66.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-66.mp3
 audio.length=103551263
 page=https://scalalaz.ru/series-66.html
 date=2019-07-02
 ----
-![epsidode66](img/episode66.png)
+![episode 66](https://scalalaz.ru/img/episode66.png)
 
 
 * 00:03:20 [Scala Days 2019 Videos](https://portal.klewel.com/watch/nice_url/scala-days-2019/)

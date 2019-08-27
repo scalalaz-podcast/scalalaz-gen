@@ -1,11 +1,11 @@
 title=Выпуск 39 - Исповедь скалана 
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-39.mp3
 audio.length=101698601
-page=http://scalalaz.ru/series-39.html
+page=https://scalalaz.ru/series-39.html
 date=2018-02-18
 ----
 
-![episode 39](img/episode39.jpg)
+![episode 39](https://scalalaz.ru/img/episode39.jpg)
 
 
 * 00:39:47 - [In Defence of OOFP](https://alexn.org/blog/2018/02/12/in-defense-oofp.html)

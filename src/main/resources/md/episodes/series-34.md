@@ -1,11 +1,11 @@
 title=Выпуск 34 - ENSIME и как живется опенсорс-фрилансерам
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-34.mp3
 audio.length=175796224
-page=http://scalalaz.ru/series-34.html
+page=https://scalalaz.ru/series-34.html
 date=2017-12-10
 ----
 
-![episode 34](img/episode34.png)
+![episode 34](https://scalalaz.ru/img/episode34.png)
 
 * (00:01:35) Спасибо патронам
 * (00:02:18) [f(by) — Conference on Functional Programming](http://fby.by). Ретвитте [твит](https://twitter.com/ScalalazPodcast/status/939129448221368321) о конференции, что бы выиграть бесплатный билет. Выигравшый будет выбран случайным образом в ближайшую среду.

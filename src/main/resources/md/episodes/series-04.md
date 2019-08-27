@@ -1,7 +1,7 @@
 title=Выпуск 04
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-4.mp3
 audio.length=45582510
-page=http://scalalaz.ru/series-04.html
+page=https://scalalaz.ru/series-04.html
 date=2016-09-20
 ----
 Новости

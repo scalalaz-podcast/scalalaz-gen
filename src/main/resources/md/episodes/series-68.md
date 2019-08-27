@@ -1,11 +1,10 @@
 title=Выпуск 68 - FPure 2019 (День 2)
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-68.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-68.mp3
 audio.length=131095380
 page=https://scalalaz.ru/series-68.html
 date=2019-07-31
 ----
-![epsidode68](img/ep-fpure-d1.jpg)
-
+![episode 68](img/ep-fpure-d1.jpg)
 
 Дорогие слушатели.
 Вашему вниманию представляются интервью с второго дня конференции

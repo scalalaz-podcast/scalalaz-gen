@@ -1,7 +1,7 @@
 title=Выпуск 15
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-15.mp3
 audio.length=145782784
-page=http://scalalaz.ru/series-15.html
+page=https://scalalaz.ru/series-15.html
 date=2017-02-19
 ----
 Темы:

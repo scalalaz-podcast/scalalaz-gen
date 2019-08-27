@@ -1,12 +1,11 @@
 title=Выпуск 40
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-40.mp3
 audio.length=105789685
-page=http://scalalaz.ru/series-40.html
+page=https://scalalaz.ru/series-40.html
 date=2018-03-07
 ----
 
-![episode 40](img/episode40.png)
-
+![episode 40](https://scalalaz.ru/img/episode40.png)
 
 * 00:01:12 - Спасибо патронам
 * 00:03:55 - Открыт прием заявок на доклады на Московскую встречу Scala-разработчиков.

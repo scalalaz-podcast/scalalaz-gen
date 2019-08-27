@@ -1,12 +1,11 @@
 title=Выпуск 54 - Jet Lag и конференции 
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-54.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-54.mp3
 audio.length=102008672
 page=https://scalalaz.ru/series-54.html
 date=2018-11-28
 ----
 
-![epsidode54](img/episode54.jpg)
-
+![episode 54](https://scalalaz.ru/img/episode54.jpg)
 
 * 00:03:35 - Благодарности Патронам
 * 00:04:00 - [шаблон для pdf презентаций из emacs org-mode](https://github.com/strobe/nice-org-beamer)

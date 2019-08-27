@@ -1,10 +1,10 @@
 title=Выпуск 29 - с Олегом Нижниковым (не токсичный)
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-29.mp3
 audio.length=149966848
-page=http://scalalaz.ru/series-29.html
+page=https://scalalaz.ru/series-29.html
 date=2017-10-01
 ----
-![episode 29](img/episode29.jpg)
+![episode 29](https://scalalaz.ru/img/episode29.jpg)
 
 *   |00:07:05| интервью с Олегом
 *   |00:11:48| команда

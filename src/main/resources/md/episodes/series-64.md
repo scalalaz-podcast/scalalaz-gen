@@ -1,10 +1,10 @@
 title=Выпуск 64 - Два ума и курага
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-64.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-64.mp3
 audio.length=92614112
 page=https://scalalaz.ru/series-64.html
 date=2019-05-19
 ----
-![epsidode64](img/episode64.jpg)
+![episode 64](https://scalalaz.ru/img/episode64.jpg)
 
 *Последняя реклама [FPURE](https://www.fpure.events/)*
 *+ Женя будет писать интервью!*

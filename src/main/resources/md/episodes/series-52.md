@@ -1,11 +1,11 @@
 title=Выпуск 52 - Выпуск с KrivdaTheTriwe
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-52.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-52.mp3
 audio.length=121848704
 page=https://scalalaz.ru/series-52.html
 date=2018-10-12
 ----
 
-![epsidode52](img/episode52.jpg)
+![episode 52](https://scalalaz.ru/img/episode52.jpg)
 
 * о карьере
 * 00:22:00 - [Typed Schema](https://github.com/TinkoffCreditSystems/typed-schema)

@@ -1,10 +1,10 @@
 title=Выпуск 25 - Секретные темы
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-25.mp3
 audio.length=118771115
-page=http://scalalaz.ru/series-25.html
+page=https://scalalaz.ru/series-25.html
 date=2017-07-23
 ----
-![episode 25](img/episode25.png)
+![episode 25](https://scalalaz.ru/img/episode25.png)
 
 ___
 

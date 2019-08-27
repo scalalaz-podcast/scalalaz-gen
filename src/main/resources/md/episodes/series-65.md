@@ -1,11 +1,10 @@
 title=Выпуск 65 - Каша из топора
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-65.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-65.mp3
 audio.length=69216992
 page=https://scalalaz.ru/series-65.html
 date=2019-06-10
 ----
-![epsidode65](img/episode65.jpg)
-
+![episode 65](https://scalalaz.ru/img/episode65.jpg)
 
 * 00:09:36 - Monad error
 * 00:14:55 - [Scala митап - Нижний Новгород](https://vk.com/scala_nn?w=wall-181495622_2%2Ffe53fe4ba4ca423ccd)

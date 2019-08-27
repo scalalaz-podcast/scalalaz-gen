@@ -1,11 +1,11 @@
 title=Выпуск 33 - c Евгением Бурмако о Reasonable Scala Compiler
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-33.mp3
 audio.length=89642551
-page=http://scalalaz.ru/series-33.html
+page=https://scalalaz.ru/series-33.html
 date=2017-11-29
 ----
 
-![episode 23](img/episode23.png)
+![episode 23](https://scalalaz.ru/img/episode23.png)
 
 * |00:04:10| 5 декабря очередой Питерский Scala meetup [Регистрируйтесь и приходите](https://www.meetup.com/ScalaSpb/events/245294222/)
 * |00:04:18| как прошел [Scala митап в Екатеринбурге](https://www.meetup.com/ScalaEkb/events/244924025/)

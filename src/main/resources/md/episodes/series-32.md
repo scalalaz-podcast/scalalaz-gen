@@ -1,10 +1,10 @@
 title=Выпуск 32 - No Ads c Ольгой Махасоевой
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-32.mp3
 audio.length=167966426
-page=http://scalalaz.ru/series-32.html
+page=https://scalalaz.ru/series-32.html
 date=2017-11-15
 ----
-![episode 32](img/episode32.jpg)
+![episode 32](https://scalalaz.ru/img/episode32.jpg)
 
 * |00:00:36| Конкурс с призом от конференции ["Технологии баз данных"] (https://www.osp.ru/iz/tbd_dbms2017/)
 <p>

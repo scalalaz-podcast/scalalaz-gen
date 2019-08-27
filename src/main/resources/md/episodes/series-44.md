@@ -1,11 +1,11 @@
 title=Выпуск 44 - Очень скучный и вялый
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-44.mp3
 audio.length=45644960
-page=http://scalalaz.ru/series-44.html
+page=https://scalalaz.ru/series-44.html
 date=2018-05-13
 ----
 
-![episode 44](img/episode44.jpg)
+![episode 44](https://scalalaz.ru/img/episode44.jpg)
 
 * 00:02:25 - [Митап в Екатеринбурге - 24 мая - Фомкин, Нижников, Токарев (выездной scalalaz)](https://meetup.tinkoff.ru/events/scala-russian-meetup)
 * 00:02:33 - [Scala digest JUG.ru](https://jug.ru/2018/05/scala-digest-1/)

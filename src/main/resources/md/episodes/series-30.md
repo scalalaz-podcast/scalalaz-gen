@@ -1,10 +1,10 @@
 title=Выпуск 30 - Хорошая документация - прочитанная документация
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-30.mp3
 audio.length=115646464
-page=http://scalalaz.ru/series-30.html
+page=https://scalalaz.ru/series-30.html
 date=2017-10-15
 ----
-![episode 30](img/episode30.jpg)
+![episode 30](https://scalalaz.ru/img/episode30.jpg)
 
 *   |00:01:07| [Akka 2.5.6 Released](https://akka.io/blog/news/2017/09/28/akka-2.5.6-released)
 *   |00:20:44| [ROADMAP TOWARDS NON-EXPERIMENTAL MACROS](http://scala-lang.org/blog/2017/10/09/scalamacros.html)

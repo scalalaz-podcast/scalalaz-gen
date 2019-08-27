@@ -1,10 +1,10 @@
 title=Выпуск 28 - с Виктором Тараненко
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-28.mp3
 audio.length=158647483
-page=http://scalalaz.ru/series-28.html
+page=https://scalalaz.ru/series-28.html
 date=2017-09-03
 ----
-![episode 28](img/episode28.png)
+![episode 28](https://scalalaz.ru/img/episode28.png)
 
 - <span>[00:01:54]</span> - Lightbend, Twitter stack. Разговор с Виктором (внезапное возвращение спустя год)
 - <span>[00:27:35]</span> - Путешествие в Java и обратно Ожидания от Scala в будущем, чуть-чуть экспериментов с GO

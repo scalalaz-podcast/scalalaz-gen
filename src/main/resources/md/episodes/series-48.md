@@ -1,11 +1,11 @@
 title=Выпуск 48 - Юбилейный
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-48.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-48.mp3
 audio.length=116983520
 page=https://scalalaz.ru/series-48.html
 date=2018-08-14
 ----
 
-![epsidode48](img/episode48.jpg)
+![episode 48](https://scalalaz.ru/img/episode48.jpg)
 
 * 00:03:36 - Спарк Митап 
     *   <https://t.me/moscowspark>

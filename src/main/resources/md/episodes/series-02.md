@@ -1,7 +1,7 @@
 title=Выпуск 02
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-2.mp3
 audio.length=70977833
-page=http://scalalaz.ru/series-02.html
+page=https://scalalaz.ru/series-02.html
 date=2016-08-21
 ----
 Темы:
