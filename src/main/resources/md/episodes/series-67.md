@@ -1,11 +1,10 @@
 title=Выпуск 67 - FPure 2019 (День 1)
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-67.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-67.mp3
 audio.length=69209745
 page=https://scalalaz.ru/series-67.html
 date=2019-07-07
 ----
-![epsidode66](img/ep-fpure-d1.jpg)
-
+![episode 66](img/ep-fpure-d1.jpg)
 
 Дорогие слушатели.
 Вашему вниманию представляются интервью с первого дня конференции

@@ -1,11 +1,11 @@
 title=Выпуск 46 - Кто же расскажет нам про zio?
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-46.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-46.mp3
 audio.length=96070937
 page=https://scalalaz.ru/series-46.html
 date=2018-06-17
 ----
 
-![epsidode46](img/episode46.jpg)
+![episode 46](https://scalalaz.ru/img/episode46.jpg)
 
 * 00:00:00 Спасибо патронам
 * 00:00:04 [Конференция Data Summer - Одесса - 21 июля](https://provectus.com/datasummer/)

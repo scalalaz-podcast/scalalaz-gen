@@ -1,10 +1,10 @@
 title=Выпуск 62 - c Алексеем Терёхиным
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-62.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-62.mp3
 audio.length=80391392
 page=https://scalalaz.ru/series-62.html
 date=2019-04-02
 ----
-![epsidode62](img/episode62.jpg)
+![episode 62](https://scalalaz.ru/img/episode62.jpg)
 
 * 00:11:05 - как вышло, что я стал программировать
 * 00:22:47 - патреоны

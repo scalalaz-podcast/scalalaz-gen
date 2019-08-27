@@ -1,11 +1,11 @@
 title=Выпуск 56 - Новогодний Выпуск  
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-56.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-56.mp3
 audio.length=113325344
 page=https://scalalaz.ru/series-56.html
 date=2018-12-28
 ----
 
-![epsidode56](img/episode56.jpg)
+![episode 56](https://scalalaz.ru/img/episode56.jpg)
 
 * 00:02:21 - Патроны 
 * 00:04:40 - [Spb Scala Meetup 2018.4](https://www.meetup.com/ScalaSpb/events/256998648/) 

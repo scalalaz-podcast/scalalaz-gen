@@ -1,10 +1,10 @@
 title=Выпуск 20 - Митап и Scala Native
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-20.mp3
 audio.length=47258105
-page=http://scalalaz.ru/series-20.html
+page=https://scalalaz.ru/series-20.html
 date=2017-04-30
 ----
-![episode 20](img/episode20.png)
+![episode 20](https://scalalaz.ru/img/episode20.png)
 
 Новости:
 

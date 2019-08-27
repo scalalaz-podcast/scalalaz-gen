@@ -1,10 +1,10 @@
 title=Выпуск 27 - с Мариной Сигаевой
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-27.mp3
 audio.length=143781595
-page=http://scalalaz.ru/series-27.html
+page=https://scalalaz.ru/series-27.html
 date=2017-08-23
 ----
-![episode 27](img/episode27.jpg)
+![episode 27](https://scalalaz.ru/img/episode27.jpg)
 
 - <span>[00:00:46]</span> - Вопросы - Путь в отрасль и за жизнь.
 - <span>[00:23:14]</span> - Вопросы - Конференции scala matsuri, scala days, typelevel summit, scalawave.

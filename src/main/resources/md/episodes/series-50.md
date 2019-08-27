@@ -1,11 +1,11 @@
 title=Выпуск 50 - Scalaz c Александром Коноваловым
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-50.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-50.mp3
 audio.length=141683534
 page=https://scalalaz.ru/series-50.html
 date=2018-09-13
 ----
 
-![episode50](img/episode50.jpg)
+![episode50](https://scalalaz.ru/img/episode50.jpg)
 
 * 00:01:09 - Спасибо патронам
 * 00:03:34 - Интервью с Александром

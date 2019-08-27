@@ -1,7 +1,7 @@
 title=Выпуск 16
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-16.mp3
 audio.length=125835264
-page=http://scalalaz.ru/series-16.html
+page=https://scalalaz.ru/series-16.html
 date=2017-03-05
 ----
 Новости:

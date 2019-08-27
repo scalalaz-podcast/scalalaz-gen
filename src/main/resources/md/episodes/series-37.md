@@ -1,11 +1,11 @@
 title=Выпуск 37 - c Александром Грызловым о магии типов или Software Doundations with Alex Gryzlov
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-37.mp3
 audio.length=136566784
-page=http://scalalaz.ru/series-37.html
+page=https://scalalaz.ru/series-37.html
 date=2018-01-21
 ----
 
-![episode 37](img/episode37.jpg)
+![episode 37](https://scalalaz.ru/img/episode37.jpg)
 
 * 00:00:30 - Интро про Александра, типы, химия, лиспы, идрисы
     - [Software Foundations (1)](https://softwarefoundations.cis.upenn.edu/)

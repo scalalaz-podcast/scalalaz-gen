@@ -1,11 +1,11 @@
 title=Выпуск 47 - Дубль Два
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-47-2.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-47-2.mp3
 audio.length=124754336
 page=https://scalalaz.ru/series-47-2.html
 date=2018-07-31
 ----
 
-![epsidode47](img/episode47.jpg)
+![episode 47](https://scalalaz.ru/img/episode47.jpg)
 
 * 00:00:00 - Спасибо патронам
 * 00:02:07 - [Scala Native 0.3.8](https://github.com/scala-native/scala-native/releases/tag/v0.3.8)

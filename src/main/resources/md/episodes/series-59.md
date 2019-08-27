@@ -1,11 +1,11 @@
 title=Выпуск 59 - Ярость Жукова. Остров Мю. Конференции в Кентукки
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-59.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-59.mp3
 audio.length=114988544
 page=https://scalalaz.ru/series-59.html
 date=2019-02-21
 ----
 
-![epsidode59](img/episode59.jpg)
+![episode 59](https://scalalaz.ru/img/episode59.jpg)
 
 * 00:18:47 - korolev and [mu](http://higherkindness.io/mu/)
 * 00:31:06 - патроны

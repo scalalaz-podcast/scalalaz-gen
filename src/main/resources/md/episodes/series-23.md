@@ -1,10 +1,10 @@
 title=Выпуск 23 - Мета-выпуск c Евгением Бурмако
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-23.mp3
 audio.length=163475456
-page=http://scalalaz.ru/series-23.html
+page=https://scalalaz.ru/series-23.html
 date=2017-06-25
 ----
-![episode 23](img/episode23.png)
+![episode 23](https://scalalaz.ru/img/episode23.png)
 
 
 <ul>

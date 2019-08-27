@@ -1,11 +1,11 @@
 title=Выпуск 57 - О плоских конфигах  
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-57.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-57.mp3
 audio.length=126134517
 page=https://scalalaz.ru/series-57.html
 date=2019-01-25
 ----
 
-![epsidode57](img/episode57.jpg)
+![episode 57](https://scalalaz.ru/img/episode57.jpg)
 
 * [Scala митап в Казани](http://expertfridays.com/meetups/scala-meetup-2/) - 1 февраля
 

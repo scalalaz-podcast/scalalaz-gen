@@ -1,11 +1,11 @@
 title=Issue 55 - Mini QA with John De Goes [EN] [5 min]
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-55.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-55.mp3
 audio.length=8746208
 page=https://scalalaz.ru/series-55.html
 date=2018-12-04
 ----
 
-![epsidode55](img/episode55.jpg)
+![episode 55](https://scalalaz.ru/img/episode55.jpg)
 
 <br/>
 Cats-effect library lets us implement modules parameterized with an abstract effect F bounded by Sync, Async, etc capabilities, i.e. not choose a concrete effect monad until the very end of the universe.

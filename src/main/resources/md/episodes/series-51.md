@@ -1,11 +1,11 @@
 title=Выпуск 51 - Выпуск с Игалем Табачником
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-51.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-51.mp3
 audio.length=150185312
 page=https://scalalaz.ru/series-51.html
 date=2018-09-28
 ----
 
-![epsidode51](img/episode51.jpg)
+![episode 51](https://scalalaz.ru/img/episode51.jpg)
 
 * 00:00:34 - Праздник [Суккот](https://ru.wikipedia.org/wiki/Суккот) 
 * 00:01:17 - Начало карьеры Игаля на Scala

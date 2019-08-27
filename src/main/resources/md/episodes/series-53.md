@@ -1,11 +1,11 @@
 title=Выпуск 53 - Выпуск с гостями из команды Scala плагина JetBrains
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-53.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-53.mp3
 audio.length=151337024
 page=https://scalalaz.ru/series-53.html
 date=2018-11-01
 ----
 
-![epsidode53](img/episode53.jpg)
+![episode 53](https://scalalaz.ru/img/episode53.jpg)
 
 * 00:01:31 - вопросы гостям
 * 00:44:19 - новые билд тулы bloop, BSP, LSP, metals интеграция с идеей

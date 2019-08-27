@@ -1,11 +1,11 @@
 title=Выпуск 45 - С Владимиром Костюковым
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-45.mp3
 audio.length=89653071
-page=http://scalalaz.ru/series-45.html
+page=https://scalalaz.ru/series-45.html
 date=2018-05-30
 ----
 
-![episode 45](img/episode45.jpg)
+![episode 45](https://scalalaz.ru/img/episode45.jpg)
 
 * 00:00:40 - Митап Екб
 * 00:01:58 - История гостя

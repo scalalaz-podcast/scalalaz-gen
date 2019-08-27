@@ -1,10 +1,10 @@
 title=Выпуск 69 - Восстание машин
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-69.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-69.mp3
 audio.length=124383478
 page=https://scalalaz.ru/series-69.html
 date=2019-08-25
 ----
-![epsidode69](img/episode69.jpg)
+![episode 69](https://scalalaz.ru/img/episode69.jpg)
 
 * 00:04:02 - Патроны
 * 00:09:55 - [ScalaConf - Профессиональная конференция для Scala-разработчиков](https://scalaconf.ru/)

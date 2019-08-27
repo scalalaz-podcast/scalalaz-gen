@@ -1,7 +1,7 @@
 title=Выпуск 12
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-12.mp3
 audio.length=82521832
-page=http://scalalaz.ru/series-12.html
+page=https://scalalaz.ru/series-12.html
 date=2017-01-08
 ----
 Новости:

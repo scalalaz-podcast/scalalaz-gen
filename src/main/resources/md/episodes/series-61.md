@@ -1,11 +1,11 @@
 title=Выпуск 61 - c Максимом Логвиненко
-audio.url=http://scalalaz.ru/mp3/scalalaz-podcast-61.mp3
+audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-61.mp3
 audio.length=103341536
 page=https://scalalaz.ru/series-61.html
 date=2019-03-22
 ----
 
-![epsidode61](img/episode61.jpg)
+![episode 61](https://scalalaz.ru/img/episode61.jpg)
 
 * 00:02:34 - Путь к скале, опыт
 * 00:09:33 - Как и почему адоптили скалу в новой команде

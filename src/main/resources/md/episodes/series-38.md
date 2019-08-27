@@ -1,11 +1,11 @@
 title=Выпуск 38 - Haskell Yeaah с Алексеем Пироговым
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-38.mp3
 audio.length=126626345
-page=http://scalalaz.ru/series-38.html
+page=https://scalalaz.ru/series-38.html
 date=2018-02-06
 ----
 
-![episode 38](img/episode38.jpg)
+![episode 38](https://scalalaz.ru/img/episode38.jpg)
 
 
 * 00:02:20 - Интервью

@@ -1,12 +1,11 @@
 title=Выпуск 35 - Новогодний Блокчейн
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-35.mp3
 audio.length=127426409
-page=http://scalalaz.ru/series-35.html
+page=https://scalalaz.ru/series-35.html
 date=2017-12-28
 ----
 
-![episode 35](img/episode35.png)
-
+![episode 35](https://scalalaz.ru/img/episode35.png)
 
 * 00:00:57 - Рассказ про поездку на конференцию [fby.by](https://fby.by)
 * 00:08:06 - Blockchain индустрия
