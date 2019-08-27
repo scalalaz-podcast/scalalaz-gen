@@ -3,13 +3,13 @@ lazy val `scalalaz-gen` = project
   .enablePlugins(AutomateHeaderPlugin, GitVersioning, SbtTwirl)
   .settings(scalaVersion := Version.Scala)
 
-addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.3")
+addCompilerPlugin("org.typelevel" %% "kind-projector" % "0.10.3")
 
 libraryDependencies ++= Vector(
-  Library.scalaTest % "test",
+  Library.scalaTest % Test,
   Library.scalatags,
   Library.fastParse,
-  Library.cats,
+  Library.catsCore,
   Library.knockoff,
   Library.typesafeConfig
 )

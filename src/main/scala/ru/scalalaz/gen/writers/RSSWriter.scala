@@ -16,14 +16,13 @@
 
 package ru.scalalaz.gen.writers
 
-import java.nio.file.{ Files, Paths }
-import java.time.ZoneOffset
-import java.time.format.DateTimeFormatter
+import ru.scalalaz.gen.{Episode, EpisodeFile}
 
-import ru.scalalaz.gen.{ Episode, EpisodeFile }
-
+import knockoff.DefaultDiscounter.{knockoff, toXHTML}
 import scalatags.Text.TypedTag
 import scalatags.Text.all._
+
+import java.nio.file.{Files, Paths}
 
 case class ITunesInfo(title: String,
                       link: String,
@@ -105,7 +104,7 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
     tag("item")(tag("title")(title),
                 raw(s"""<description>
            |<![CDATA[<pre>
-           |${ e.content }
+           |${ toXHTML(knockoff(e.content)).mkString }
            |</pre>]]>
            |</description>""".stripMargin),
                 tag("enclosure")(attr("url") := audio.url,
