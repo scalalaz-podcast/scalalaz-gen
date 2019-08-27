@@ -12,7 +12,7 @@ date=2019-07-02
 * 01:08:00 [Scala 2.13.0 is now available!](https://www.scala-lang.org/news/2.13.0)
 * 01:17:33 Korolev. Slimming pill for Web (или вырезанные вопли Алексея по поводу Королева)
   * [https://dev.to/fomkin/korolev-slimming-pill-for-web-549a](https://dev.to/fomkin/korolev-slimming-pill-for-web-549a)
-  * [https://habr.com/ru/post/429028/">https://habr.com/ru/post/429028/](https://habr.com/ru/post/429028/">https://habr.com/ru/post/429028/)
+  * [Королёв. Лекарство для веба](https://habr.com/ru/post/429028/)
 
 <br/>
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
