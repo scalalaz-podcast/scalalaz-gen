@@ -1,6 +1,6 @@
-title=Выпуск 70 - 
+title=Выпуск 70 - Уже не свежий выпуск с KrivdaTheTriwe
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-70.mp3
-audio.length=
+audio.length=115761120
 page=https://scalalaz.ru/series-70.html
 date=2019-10-03
 ----
