@@ -7,7 +7,9 @@ date=2019-10-03
 ![episode 70](https://scalalaz.ru/img/episode70.jpg)
 
 Этот выпуск был записан в начале сентября но по различным причинам обработка и оформление затянулись.
-Извиняемся за задержку.
+
+
+В качестве рекламы, а еще и извенений за задержку, ловите промокод на [ScalaConf - Москва 26 ноября](https://scalaconf.ru/2019) `scalalaz`
 <br/>
 * 00:01:45 - [Delta Lake 0.3.0](https://databricks.com/blog/2019/08/02/announcing-delta-lake-0-3-0-release.html) 
 * 00:23:30 - [Allow significant indentation syntax](https://github.com/lampepfl/dotty/pull/7083) 
