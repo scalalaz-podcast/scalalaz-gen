@@ -28,7 +28,6 @@ date=2019-10-28
 
 <br/>
 А так же, мы решили завести [Discord канал](https://discord.gg/RnugmrU), для более тесного общения с вами! 
-[https://discord.gg/RnugmrU](https://discord.gg/RnugmrU)
 <br/>
 
 Гости:
