@@ -30,6 +30,10 @@ date=2019-10-28
 А так же, мы решили завести [Discord канал](https://discord.gg/RnugmrU), для более тесного общения с вами! 
 <br/>
 
+<br/>
+Присоединяйтесь к сообществу [Moscow Spark](https://t.me/moscowspark) и [Data Engineers](https://t.me/hadoopusers) в Telegramm.
+<br/>
+
 Гости:
 [Павел Клеменков](https://www.linkedin.com/in/pavel-klemenkov-7a88a956/),
 [Андрей Титов](https://www.linkedin.com/in/t3nq/)
