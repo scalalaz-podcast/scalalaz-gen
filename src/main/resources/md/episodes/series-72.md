@@ -33,6 +33,7 @@ date=2019-10-28
 <br/>
 Присоединяйтесь к сообществу [Moscow Spark](https://t.me/moscowspark) и [Data Engineers](https://t.me/hadoopusers) в Telegram.
 <br/>
+<br/>
 
 Гости:
 [Павел Клеменков](https://www.linkedin.com/in/pavel-klemenkov-7a88a956/),
