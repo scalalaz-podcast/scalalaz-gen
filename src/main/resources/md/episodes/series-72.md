@@ -31,7 +31,7 @@ date=2019-10-28
 <br/>
 
 <br/>
-Присоединяйтесь к сообществу [Moscow Spark](https://t.me/moscowspark) и [Data Engineers](https://t.me/hadoopusers) в Telegramm.
+Присоединяйтесь к сообществу [Moscow Spark](https://t.me/moscowspark) и [Data Engineers](https://t.me/hadoopusers) в Telegram.
 <br/>
 
 Гости:
