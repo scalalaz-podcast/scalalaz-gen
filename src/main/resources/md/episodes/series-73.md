@@ -1,4 +1,4 @@
-title=Выпуск 73 - 
+title=Выпуск 73 - Курсы и Тестирование
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-73.mp3
 audio.length=89449173
 page=https://scalalaz.ru/series-73.html
