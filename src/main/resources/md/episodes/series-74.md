@@ -1,4 +1,4 @@
-title=Выпуск 74 - про происк в Авто.ру с Андреем Корзиневым
+title=Выпуск 74 - про поиск в Авто.ру с Андреем Корзиневым
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-74.mp3
 audio.length=117392253
 page=https://scalalaz.ru/series-74.html
