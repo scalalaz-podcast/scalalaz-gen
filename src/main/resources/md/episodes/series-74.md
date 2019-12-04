@@ -2,7 +2,7 @@ title=Выпуск 74 - про происк в Авто.ру с Андреем �
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-74.mp3
 audio.length=117392253
 page=https://scalalaz.ru/series-74.html
-date=2019-12-05
+date=2019-12-04
 ----
 ![episode 74](https://scalalaz.ru/img/episode74.jpg)
 
