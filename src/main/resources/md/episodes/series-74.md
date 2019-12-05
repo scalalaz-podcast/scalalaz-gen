@@ -13,6 +13,7 @@ date=2019-12-04
 * 00:45:49 - [IntelliJ Scala Plugin 2019.3](https://blog.jetbrains.com/scala/2019/11/28/intellij-scala-plugin-2019-3-method-chain-hints-scala-repl-scala-worksheet-and-scalatest-improvements/)
 * 00:59:40 - [Use := for Assignment](https://github.com/lampepfl/dotty/issues/7598)
 * 01:00:05 - [Proposal to retain private[this] in Scala 3](https://contributors.scala-lang.org/t/proposal-to-retain-private-this-in-scala-3/3829)
+    - [Обещанный гист с объяснением того, что делает private[this]](https://gist.github.com/pomadchin/8fd5f5b5bfb053370c699ec5577c8c1b)
 * 01:10:23 - [korolev-garcon](https://github.com/fomkin/korolev-garcon)
 * 01:19:20 - [Scala.js 1.0.0-RC1](https://www.scala-js.org/news/2019/11/26/announcing-scalajs-1.0.0-RC1/)
 * 01:21:39 - Опыт с shenandoah
