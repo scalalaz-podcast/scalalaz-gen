@@ -14,12 +14,11 @@ date=2020-01-05
 
 <br/>
 
-Скидка на  [f(by) 2020 – конференцию в Минске!](https://fby.dev/)
-по промокоду: [>>](https://fby.dev/) fbytoScalalaz [<<](https://fby.dev/)
+Скидка на  [f(by) 2020 – конференцию в Минске!](https://fby.dev/) по промокоду: fbytoScalalaz
 
 <br/>
 Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.
+<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 <br/>
 
 <br/>
