@@ -19,6 +19,12 @@ date=2020-01-30
   - [Lithium A Split Brain Resolver For Akka Cluster](https://speakerdeck.com/dennisvdb/lithium-a-split-brain-resolver-for-akka-cluster)
 * 01:15:26 - [Dotty nightly now include kind-projector compatibility](https://www.reddit.com/r/scala/comments/et91zd/dotty_nightly_releases_now_include_kindprojector/)
 
+<br/>
+
+[Курс по разработке на Scala](https://fintech.tinkoff.ru/study/fintech_middle/java_to_scala/) 
+в офисах Тинькофф в Москве, Санкт-Петербурге и Екатеринбурге
+
+[Tinkoff fintech](https://fintech.tinkoff.ru/tfschool/scala)
 
 <br/>
 Поддержи подкаст:
