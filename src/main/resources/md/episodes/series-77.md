@@ -2,7 +2,7 @@ title=Выпуск 77 - Java 2 Scala с Денисом Костоусовым
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-77.mp3
 audio.length=73198368
 page=https://scalalaz.ru/series-77.html
-date=2020-01-30
+date=2020-02-02
 ----
 ![episode 77](https://scalalaz.ru/img/episode77.jpg)
 
