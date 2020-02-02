@@ -19,16 +19,13 @@ date=2020-02-02
   - [Lithium A Split Brain Resolver For Akka Cluster](https://speakerdeck.com/dennisvdb/lithium-a-split-brain-resolver-for-akka-cluster)
 * 01:15:26 - [Dotty nightly now include kind-projector compatibility](https://www.reddit.com/r/scala/comments/et91zd/dotty_nightly_releases_now_include_kindprojector/)
 
-<br/>
+[Курс по разработке на Scala](https://fintech.tinkoff.ru/study/fintech_middle/java_to_scala/)
+в офисах Тинькофф в Москве, Санкт-Петербурге и Екатеринбурге и [Tinkoff fintech](https://fintech.tinkoff.ru/tfschool/scala)
 
-[Курс по разработке на Scala](https://fintech.tinkoff.ru/study/fintech_middle/java_to_scala/) 
-в офисах Тинькофф в Москве, Санкт-Петербурге и Екатеринбурге
-
-[Tinkoff fintech](https://fintech.tinkoff.ru/tfschool/scala)
 
 <br/>
 Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bu
+<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 <br/>
 
 <br/>
@@ -36,8 +33,11 @@ date=2020-02-02
 <br/>
 
 Голоса выпуска:
+[Алексей Романчук](http://github.com/13h3r),
 [Григорий Помадчин](https://github.com/pomadchin),
-[Евгений Токарев](https://twitter.com/strobegen)
+[Евгений Токарев](https://twitter.com/strobegen),
+[Алексей Фомкин](http://github.com/fomkin)
 
 Гости:
-[Денис Костоусов](https://github.com/kostousov-ds)
+[Олег Нижников](https://github.com/Odomontois),
+[Алексей Терёхин](https://github.com/daron666)
