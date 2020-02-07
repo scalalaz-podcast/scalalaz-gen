@@ -33,11 +33,7 @@ date=2020-02-02
 <br/>
 
 Голоса выпуска:
-[Алексей Романчук](http://github.com/13h3r),
 [Григорий Помадчин](https://github.com/pomadchin),
-[Евгений Токарев](https://twitter.com/strobegen),
-[Алексей Фомкин](http://github.com/fomkin)
-
+[Евгений Токарев](https://twitter.com/strobegen)
 Гости:
-[Олег Нижников](https://github.com/Odomontois),
-[Алексей Терёхин](https://github.com/daron666)
+[Денис Костоусов](https://github.com/kostousov-ds)
