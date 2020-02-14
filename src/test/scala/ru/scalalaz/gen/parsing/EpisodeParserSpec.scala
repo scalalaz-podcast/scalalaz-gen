@@ -19,10 +19,11 @@ package ru.scalalaz.gen.parsing
 import java.time.LocalDate
 
 import cats.data.Validated.Valid
-import org.scalatest.{ FlatSpec, Inside, Matchers }
-import ru.scalalaz.gen.writers.Pagination
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.Inside
 
-class EpisodeParserSpec extends FlatSpec with Matchers with Inside {
+class EpisodeParserSpec extends AnyFlatSpec with Matchers with Inside {
 
   val episodeStr = """
       |title=Episode#1
