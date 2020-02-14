@@ -16,22 +16,23 @@
 
 package ru.scalalaz.gen.parsing
 
-import fastparse.all._
+import fastparse._
+import fastparse.Parsed.TracedFailure
+import NoWhitespace._
 
 case class FileFormat(header: Map[String, Option[String]], otherData: String)
 
 object FormatParser {
+  def key[_: P]: P[String] = P(CharIn("a-z") | CharIn("0-9") | "." | "_" | "-").rep.!
+  def value[_: P]: P[String] = P(CharsWhile(_ != '\n')).!
 
-  val key   = P(CharIn('a' to 'z') | CharIn('0' to '9') | "." | "_" | "-").rep.!
-  val value = P(CharsWhile(_ != '\n')).!
+  def pair[_: P]: P[(String, Option[String])] = P(key ~ "=" ~ value.? ~ "\n")
+  def head[_: P]: P[Seq[(String, Option[String])]] = P("\n".rep.? ~ pair.rep ~ "-".rep(2) ~ "\n")
 
-  val pair = P(key ~ "=" ~ value.? ~ "\n")
-  val head = P("\n".rep.? ~ pair.rep ~ "-".rep(min = 2) ~ "\n")
+  def showNotes[_: P]: P[String] = P(AnyChar.rep).!
 
-  val showNotes = P(AnyChar.rep).!
-
-  val format = P(head ~ showNotes).map({
-    case (pairs, data) => {
+  def format[_: P]: P[FileFormat] = P(head ~ showNotes).map({
+    case (pairs, data) =>
       FileFormat(pairs
                    .map(
                        x =>
@@ -42,13 +43,12 @@ object FormatParser {
                    )
                    .toMap,
                  data)
-    }
   })
 
-  def parseContent(content: String): Either[ParseError, FileFormat] =
-    format.parse(content) match {
-      case Parsed.Success(parsed, index) => Right(parsed)
+  def parseContent(content: String): Either[TracedFailure, FileFormat] =
+    parse(content, format(_)) match {
+      case Parsed.Success(parsed, _) => Right(parsed)
       case f: Parsed.Failure =>
-        Left(ParseError(f))
+        Left(f.trace())
     }
 }

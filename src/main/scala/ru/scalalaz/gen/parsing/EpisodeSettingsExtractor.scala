@@ -39,7 +39,7 @@ object EpisodeSettingsExtractor {
   class SettingsExtractor(map: Map[String, Option[String]]) {
 
     def extract: ValidatedNel[EpisodeParseError, EpisodeSettings] =
-      Apply[ValidatedNel[EpisodeParseError, ?]].map6(
+      Apply[ValidatedNel[EpisodeParseError, *]].map6(
           read("title").toValidatedNel,
           optRead("description").toValidatedNel,
           read("audio.url").toValidatedNel,
@@ -87,7 +87,7 @@ object PageSettingsExtractor {
   class SettingsExtractor(map: Map[String, Option[String]]) {
 
     def extract: ValidatedNel[PageParseError, SpecialPageSettings] =
-      Apply[ValidatedNel[PageParseError, ?]].map2(
+      Apply[ValidatedNel[PageParseError, *]].map2(
           read("title").toValidatedNel,
           read("date").andThen(parseDate).toValidatedNel
       ) {
