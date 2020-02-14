@@ -92,7 +92,7 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
             raw(s"""<itunes:category text="$category" />"""),
             raw(s"""<itunes:explicit>no</itunes:explicit>"""),
             tag("managingEditor")(s"$email ($ownerName)"),
-            ep.filter(_.isRight).map(_.right.get)
+            ep.filter(_.isRight).map(_.getOrElse(throw new Exception(s"toXML call failed for the following files: ${episodes.map(_.path)}")))
         )
     )
     head + xml.toString()

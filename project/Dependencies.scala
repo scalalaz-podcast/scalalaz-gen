@@ -1,7 +1,7 @@
 import sbt._
 
 object Version {
-  final val Scala          = "2.12.10"
+  final val Scala          = "2.13.1"
   final val ScalaTest      = "3.1.0"
   final val ScalaTags      = "0.8.5"
   final val FastParse      = "2.2.4"
