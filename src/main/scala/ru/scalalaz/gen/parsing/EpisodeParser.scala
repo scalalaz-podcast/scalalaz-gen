@@ -29,7 +29,7 @@ object EpisodeParser {
       .parseContent(content)
       .toValidated
       .leftMap(e => {
-        InvalidFormat(e.toString)
+        InvalidFormat(e.longAggregateMsg)
       })
       .andThen(f => fromFormat(f))
 
