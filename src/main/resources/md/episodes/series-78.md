@@ -6,9 +6,9 @@ date=2020-02-15
 ----
 ![episode 78](https://scalalaz.ru/img/episode78.jpg)
 
-* 00:02:00 - история создания [Tofu](https://github.com/TinkoffCreditSystems/tofu)
+* 00:02:00 - История создания [Tofu](https://github.com/TinkoffCreditSystems/tofu)
 * 00:12:00 - Tagless Final и [Tofu](https://github.com/TinkoffCreditSystems/tofu) 
-* 01:29:00 - zio vs [Tofu](https://github.com/TinkoffCreditSystems/tofu) 
+* 01:29:00 - ZIO vs [Tofu](https://github.com/TinkoffCreditSystems/tofu) 
 * 01:42:30 - [Giter8 шаблон для Avast Scala Server Toolkit](https://github.com/avast/sst-seed.g8) 
 
 <br/>
@@ -20,7 +20,7 @@ date=2020-02-15
 <br/>
 
 <br/>
-Вступайне в наш [Discord](https://discord.gg/RnugmrU)!
+Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
 <br/>
 
 Голоса выпуска:

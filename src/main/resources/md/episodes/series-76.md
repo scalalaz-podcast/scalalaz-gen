@@ -22,7 +22,7 @@ date=2020-01-05
 <br/>
 
 <br/>
-Вступайне в наш [Discord](https://discord.gg/RnugmrU)!
+Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
 <br/>
 
 Голоса выпуска:

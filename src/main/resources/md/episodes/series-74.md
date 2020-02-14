@@ -35,7 +35,7 @@ date=2019-12-04
 <br/>
 
 <br/>
-Вступайне в наш [Discord](https://discord.gg/RnugmrU)! 
+Вступайте в наш [Discord](https://discord.gg/RnugmrU)! 
 <br/>
 
 Гости:
