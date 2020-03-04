@@ -1,4 +1,4 @@
-title=Выпуск 79 - с Никитой Мелькозеровым 
+title=Выпуск 79 - C Никитой Мелькозеровым 
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-79.mp3
 audio.length=79708320
 page=https://scalalaz.ru/series-79.html
