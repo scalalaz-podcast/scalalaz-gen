@@ -13,7 +13,11 @@ date=2020-03-03
 * 00:27:24 - mesosphere и marathon
 * 00:57:28 - история про metals и open source
 
-<br/>
+Ссылки на Scala курс упомянутый в выпуске:
+
+* [Teaching Scala To Computer Science 101 Students (SoundCloud)](https://soundcloud.com/lightbend/teaching-scala-in-computer-science-101
+)
+* [Dr Mark Lewis YouTube channel](https://www.youtube.com/user/DrMarkCLewis/)
 
 
 <br/>
