@@ -1,4 +1,4 @@
-title=Выпуск 80 - Расслабленно о ZIO/GraalVM/Property testing
+title=Выпуск 80 - Совсем без гостей о ZIO/GraalVM/Property testing
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-80.mp3
 audio.length=56361853
 page=https://scalalaz.ru/series-80.html
