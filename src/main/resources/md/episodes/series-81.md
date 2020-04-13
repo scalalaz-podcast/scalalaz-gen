@@ -4,7 +4,7 @@ audio.length=64419688
 page=https://scalalaz.ru/series-81.html
 date=2020-04-12
 ----
-![episode 81](https://scalalaz.ru/img/episode81.jpg)
+![episode 81](https://scalalaz.ru/img/episode81.png)
 
 
 * 00:05:54 - [Scala 3 support in IntelliJ Scala plugin](https://blog.jetbrains.com/scala/2020/03/17/scala-3-support-in-intellij-scala-plugin/)
