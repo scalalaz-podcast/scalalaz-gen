@@ -1,8 +1,8 @@
-title=Выпуск 84 -
+title=Выпуск 84 - Пробки не VSCode
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-84.mp3
 audio.length=65751840
 page=https://scalalaz.ru/series-84.html
-date=2020-07-26
+date=2020-06-26
 ----
 ![episode 84](https://scalalaz.ru/img/episode84.png)
 
@@ -32,8 +32,3 @@ date=2020-07-26
 [Евгений Токарев](https://twitter.com/strobegen)
 [Вадим Челышов](http://github.com/dos65),
 [Ольга Махасоева](https://twitter.com/oli_kitty)
-
-
-
-
-
