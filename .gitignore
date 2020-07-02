@@ -36,3 +36,8 @@ snapshots
 # VSCode
 .history
 .metals
+
+# metals
+.bloop
+.metals
+project/metals.sbt
