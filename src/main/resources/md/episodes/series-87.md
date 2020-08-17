@@ -23,8 +23,14 @@ date=2020-08-18
 Гости:
 [Юрий Бадальянц](https://twitter.com/lmnet89),
 [Олег Нижников](https://github.com/Odomontois),
-[7mind.io](https://twitter.com/kai_nyasha),
-[7mind.io](https://twitter.com/shirshovp)
+[Kai](https://twitter.com/kai_nyasha),
+[Pavel Shirshov](https://twitter.com/shirshovp)
+
+<br />
+
+Полезные ссылки:
+* https://github.com/7mind/izumi
+* https://github.com/TinkoffCreditSystems/tofu
 
 Голоса выпуска:
 [Григорий Помадчин](https://github.com/pomadchin),
