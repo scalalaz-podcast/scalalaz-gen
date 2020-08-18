@@ -29,8 +29,9 @@ date=2020-08-18
 <br />
 
 Полезные ссылки:
-* https://github.com/7mind/izumi
-* https://github.com/TinkoffCreditSystems/tofu
+
+* [Izumi](https://github.com/7mind/izumi)
+* [Tofu](https://github.com/TinkoffCreditSystems/tofu)
 
 Голоса выпуска:
 [Григорий Помадчин](https://github.com/pomadchin),
