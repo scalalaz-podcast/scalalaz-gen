@@ -37,7 +37,7 @@ case class ITunesInfo(title: String,
 object ITunesInfo {
 
   val Scalalaz = {
-    val url = "http://scalalaz.ru"
+    val url = "https://scalalaz.ru"
     ITunesInfo(title = "Scalalaz Podcast",
                link = url,
                description = "Подкаст о программировании на языке Scala (16+)",
@@ -89,7 +89,7 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
               |  <itunes:email>$email</itunes:email>
               |</itunes:owner>
            """.stripMargin),
-            raw(s"""<itunes:category text="$category" />"""),
+            raw(s"""<itunes:category text="$category"></itunes:category>"""),
             raw(s"""<itunes:explicit>no</itunes:explicit>"""),
             tag("managingEditor")(s"$email ($ownerName)"),
             ep.filter(_.isRight).map(_.getOrElse(throw new Exception(s"toXML call failed for the following files: ${episodes.map(_.path)}")))
@@ -110,7 +110,7 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
                 tag("enclosure")(attr("url") := audio.url,
                                  attr("type") := audio.`type`,
                                  attr("length") := audio.length),
-                tag("guid")(attr("isPermalink") := "false", page),
+                tag("guid")(attr("isPermaLink") := "false", page),
                 tag("pubDate")(RFCDate),
                 tag("link")(page))
 

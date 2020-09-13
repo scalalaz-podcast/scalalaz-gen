@@ -6,7 +6,7 @@ date=2020-06-26
 ----
 ![episode 84](https://scalalaz.ru/img/episode84.png)
 
-* [Scalar 2020 whiteboard voting - Results]("https://blog.softwaremill.com/scalar-2020-whiteboard-voting-fe5ef8803262")
+* [Scalar 2020 whiteboard voting - Results](https://blog.softwaremill.com/scalar-2020-whiteboard-voting-fe5ef8803262)
 * новые тренды от гостя
 * JS с легаси кодом? types vs tools vs mind?
 * [@nowarn, -Wunused:nowarn](https://www.inner-product.com/posts/nowarn-addendum/)

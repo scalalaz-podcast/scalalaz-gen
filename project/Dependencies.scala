@@ -1,12 +1,12 @@
 import sbt._
 
 object Version {
-  final val Scala          = "2.13.1"
-  final val ScalaTest      = "3.1.0"
-  final val ScalaTags      = "0.8.5"
-  final val FastParse      = "2.2.4"
-  final val Cats           = "2.1.0"
-  final val Knockoff       = "0.8.12"
+  final val Scala          = "2.13.3"
+  final val ScalaTest      = "3.2.2"
+  final val ScalaTags      = "0.9.1"
+  final val FastParse      = "2.3.0"
+  final val Cats           = "2.2.0"
+  final val Knockoff       = "0.8.13"
   final val TypesafeConfig = "1.4.0"
 }
 
