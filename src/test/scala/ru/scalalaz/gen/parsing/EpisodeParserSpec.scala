@@ -27,7 +27,7 @@ class EpisodeParserSpec extends AnyFlatSpec with Matchers with Inside {
 
   val episodeStr = """
       |title=Episode#1
-      |page=http://scalalaz.ru/series-01.html
+      |page=https://scalalaz.ru/series-01.html
       |date=2016-11-28
       |audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-1.mp3
       |audio.length=6
@@ -43,7 +43,7 @@ class EpisodeParserSpec extends AnyFlatSpec with Matchers with Inside {
 
         val rss = episode.settings
         rss.title shouldBe "Episode#1"
-        rss.page shouldBe "http://scalalaz.ru/series-01.html"
+        rss.page shouldBe "https://scalalaz.ru/series-01.html"
 
         rss.date shouldBe LocalDate.of(2016, 11, 28)
 

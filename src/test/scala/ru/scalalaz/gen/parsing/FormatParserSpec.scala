@@ -42,7 +42,7 @@ class FormatParserSpec extends AnyFlatSpec with Matchers with Inside {
       |title=Выпуск 01
       |enc.url=https://scalalaz.ru/mp3/scalalaz-podcast-1.mp3
       |enc.length=63337733
-      |page=http://scalalaz.ru/series-01.html
+      |page=https://scalalaz.ru/series-01.html
       |date=2016-08-07
       |----
       |### Выпуск 01
