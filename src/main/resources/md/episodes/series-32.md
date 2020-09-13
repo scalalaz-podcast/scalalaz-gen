@@ -9,7 +9,7 @@ date=2017-11-15
 * |00:00:36| Конкурс с призом от конференции ["Технологии баз данных"] (https://www.osp.ru/iz/tbd_dbms2017/)
 <p>
 <a href="https://www.osp.ru/iz/tbd_dbms2017/">
-<img src="img/episode32_promo_logo.png" width="200" alt="технологии баз данных" style="background-color: #0a1b3d;">
+<img src="https://scalalaz.ru/img/episode32_promo_logo.png" width="200" alt="технологии баз данных" style="background-color: #0a1b3d;">
 </a>
 </p>
 * |00:05:15| [fpconf] (http://fpconf.ru)
