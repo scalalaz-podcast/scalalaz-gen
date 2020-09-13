@@ -16,8 +16,8 @@ date=2017-08-23
 - <span>[01:34:35]</span> - [Gigahorse](https://github.com/eed3si9n/gigahorse).
 - <span>[01:36:47]</span> - [Functional Programming in Scala is now a part of Scala Exercises](https://www.47deg.com/blog/fp-in-scala/)
 - <span>[01:37:50]</span> - [Twitter announces Reasonable Scala compiler](https://www.reddit.com/r/scala/comments/6ubuix/twitter_announces_reasonable_scala_compiler_an/)
-- <span>[01:42:51]</span> - [Vladimir Pavkin - Multiple faces of Scala Iterator trap](http://pavkin.ru/multiple-faces-of-scala-iterator-trap/)
+- <span>[01:42:51]</span> - [Vladimir Pavkin - Multiple faces of Scala Iterator trap](https://pavkin.ru/multiple-faces-of-scala-iterator-trap/)
 - <span>[01:45:09]</span> - [cats infographics updated for cats 1.0](https://github.com/tpolecat/cats-infographic)
-- <span>[01:45:48]</span> - [Finagle v7 is out: now without a Netty 3 dependency!](http://finagle.github.io/blog/2017/08/17/release-notes-7-00/)
+- <span>[01:45:48]</span> - [Finagle v7 is out: now without a Netty 3 dependency!](https://finagle.github.io/blog/2017/08/17/release-notes-7-00/)
 
-Голоса выпуска: [Марина Сигаева](https://twitter.com/BesseIFunction), [Вадим Челышов](http://github.com/dos65), [Евгений Токарев](http://github.com/strobe)
+Голоса выпуска: [Марина Сигаева](https://twitter.com/BesseIFunction), [Вадим Челышов](https://github.com/dos65), [Евгений Токарев](https://github.com/strobe)

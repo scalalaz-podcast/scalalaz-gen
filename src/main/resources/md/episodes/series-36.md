@@ -40,6 +40,6 @@ date=2018-01-07
 
 <br/>
 
-Голоса выпуска: [Евгений Токарев](http://github.com/strobe), [Григорий Помадчин](https://github.com/pomadchin),
-[Ольга Махасоева](https://twitter.com/oli_kitty), [Алексей Романчук](http://github.com/13h3r), [Вадим Челышов](http://github.com/dos65),
+Голоса выпуска: [Евгений Токарев](https://github.com/strobe), [Григорий Помадчин](https://github.com/pomadchin),
+[Ольга Махасоева](https://twitter.com/oli_kitty), [Алексей Романчук](https://github.com/13h3r), [Вадим Челышов](https://github.com/dos65),
 [Глеб Кантеров](https://twitter.com/kanterov)

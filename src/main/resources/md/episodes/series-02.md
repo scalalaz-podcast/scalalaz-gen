@@ -6,10 +6,10 @@ date=2016-08-21
 ----
 Темы:
 
-- [Scala library index](http://scala-lang.org/blog/2016/08/09/the-scala-library-index-reaches-beta.html)
-- [Scala js](http://www.lihaoyi.com/post/FromfirstprinciplesWhyIbetonScalajs.html)
-- [August sip meeting results](http://www.scala-lang.org/blog/2016/08/15/sip-meeting-august-results.html)
-- [Akka anti patterns](http://manuel.bernhardt.io/2016/08/09/akka-anti-patterns-flat-actor-hierarchies-or-mixing-business-logic-and-failure-handling/)
+- [Scala library index](https://scala-lang.org/blog/2016/08/09/the-scala-library-index-reaches-beta.html)
+- [Scala js](https://www.lihaoyi.com/post/FromfirstprinciplesWhyIbetonScalajs.html)
+- [August sip meeting results](https://www.scala-lang.org/blog/2016/08/15/sip-meeting-august-results.html)
+- [Akka anti patterns](https://manuel.bernhardt.io/2016/08/09/akka-anti-patterns-flat-actor-hierarchies-or-mixing-business-logic-and-failure-handling/)
 - О Scaladays 2016
 - Зачем Lagom
 
@@ -19,8 +19,8 @@ date=2016-08-21
 
 Ссылки:
 
-- [Scaladays 2016](http://manuel.bernhardt.io/2016/08/09/akka-anti-patterns-flat-actor-hierarchies-or-mixing-business-logic-and-failure-handling/)
-- [Eff Monad](http://bit.ly/eff_flatmap_2016). [https://github.com/atnos-org/eff-scalaz](https://github.com/atnos-org/eff-scalaz)
+- [Scaladays 2016](https://manuel.bernhardt.io/2016/08/09/akka-anti-patterns-flat-actor-hierarchies-or-mixing-business-logic-and-failure-handling/)
+- [Eff Monad](https://bit.ly/eff_flatmap_2016). [https://github.com/atnos-org/eff-scalaz](https://github.com/atnos-org/eff-scalaz)
 - [Principles of Elegance - by Jon Pretty](https://www.youtube.com/watch?v=bUO_oLwe4Og)
 - [Roll Your Own Shapeless - by Daniel Spiewak](https://www.youtube.com/watch?v=GKIfu1WtSz4)
 
@@ -30,5 +30,5 @@ date=2016-08-21
 - [scopt](https://github.com/scopt/scopt)
 - [atmos](https://github.com/zmanio/atmos)
 
-Ведущие: [Алексей Романчук](http://github.com/13h3r), [Вадим Челышов](http://github.com/dos65)
-[Евгений Токарев](http://github.com/strobe), [Алексей Фомкин](http://github.com/fomkin)
+Ведущие: [Алексей Романчук](https://github.com/13h3r), [Вадим Челышов](https://github.com/dos65)
+[Евгений Токарев](https://github.com/strobe), [Алексей Фомкин](https://github.com/fomkin)

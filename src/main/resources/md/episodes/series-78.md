@@ -27,7 +27,7 @@ date=2020-02-15
 [Дмитрий Лахвич](https://github.com/ReiReiRei),
 [Григорий Помадчин](https://github.com/pomadchin),
 [Евгений Токарев](https://twitter.com/strobegen),
-[Алексей Фомкин](http://github.com/fomkin)
+[Алексей Фомкин](https://github.com/fomkin)
 
 Гости:
 [Олег Нижников](https://github.com/Odomontois),

@@ -25,6 +25,6 @@ date=2018-11-28
 
 Голоса выпуска:
 [Ольга Махасоева](https://twitter.com/oli_kitty),
-[Вадим Челышов](http://github.com/dos65),
-[Григорий Помадчин](http://github.com/pomadchin),
+[Вадим Челышов](https://github.com/dos65),
+[Григорий Помадчин](https://github.com/pomadchin),
 [Евгений Токарев](https://twitter.com/strobegen)

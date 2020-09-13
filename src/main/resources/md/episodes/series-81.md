@@ -25,7 +25,7 @@ date=2020-04-12
 <br/>
 
 Голоса выпуска:
-[Вадим Челышов](http://github.com/dos65),
+[Вадим Челышов](https://github.com/dos65),
 [Дмитрий Лахвич](https://github.com/ReiReiRei),
 [Григорий Помадчин](https://github.com/pomadchin),
 [Евгений Токарев](https://twitter.com/strobegen)

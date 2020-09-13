@@ -8,14 +8,14 @@ date=2017-12-10
 ![episode 34](https://scalalaz.ru/img/episode34.png)
 
 * (00:01:35) Спасибо патронам
-* (00:02:18) [f(by) — Conference on Functional Programming](http://fby.by). Ретвитте [твит](https://twitter.com/ScalalazPodcast/status/939129448221368321) о конференции, что бы выиграть бесплатный билет. Выигравшый будет выбран случайным образом в ближайшую среду.
+* (00:02:18) [f(by) — Conference on Functional Programming](https://fby.by). Ретвитте [твит](https://twitter.com/ScalalazPodcast/status/939129448221368321) о конференции, что бы выиграть бесплатный билет. Выигравшый будет выбран случайным образом в ближайшую среду.
 * (00:04:13) Расспрашиваем Владимира
 * (00:26:19) LSP and ensime, scalafix
 * (00:53:17) Google summer of code
 * (01:08:05) Редактор на королёве для скала проектов
-* (01:12:42) [sbt server with Sublime Text 3](http://eed3si9n.com/sbt-server-with-sublime-text3)
+* (01:12:42) [sbt server with Sublime Text 3](https://eed3si9n.com/sbt-server-with-sublime-text3)
 * (01:23:08) Вадим про шейдинг
-* (01:33:40) SIP-23 - LITERAL-BASED SINGLETON TYPES - Accepted. Ссылки [1](https://twitter.com/milessabin/status/938457896022675456), [2](http://docs.scala-lang.org/sips/42.type.html), [3](https://github.com/scala/scala/pull/5310)
+* (01:33:40) SIP-23 - LITERAL-BASED SINGLETON TYPES - Accepted. Ссылки [1](https://twitter.com/milessabin/status/938457896022675456), [2](https://docs.scala-lang.org/sips/42.type.html), [3](https://github.com/scala/scala/pull/5310)
 * (01:40:00) scalaz 8
 * (02:00:33) [интриги вокруг - Scalaz and Cats Comparison](https://www.reddit.com/r/scala/comments/7hqzjz/scalaz_and_cats_comparison/)
 
@@ -25,4 +25,4 @@ date=2017-12-10
 
 <br/>
 
-Голоса выпуска: [Алексей Романчук](http://github.com/13h3r), [Вадим Челышов](http://github.com/dos65), [Алексей Фомкин](https://github.com/fomkin), [Евгений Токарев](http://github.com/strobe), [Григорий Помадчин](https://github.com/pomadchin), [Владимир Полушин](https://github.com/vovapolu)
+Голоса выпуска: [Алексей Романчук](https://github.com/13h3r), [Вадим Челышов](https://github.com/dos65), [Алексей Фомкин](https://github.com/fomkin), [Евгений Токарев](https://github.com/strobe), [Григорий Помадчин](https://github.com/pomadchin), [Владимир Полушин](https://github.com/vovapolu)

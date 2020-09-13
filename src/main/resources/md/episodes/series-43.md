@@ -13,7 +13,7 @@ date=2018-05-03
     * [Москва](https://www.youtube.com/watch?v=yxq6My6h_c0&list=PL9SJrES3EGUTZ1ki9UOYolgFHsoVSvWqg)
     * [Питер](https://www.youtube.com/watch?v=dWyGM3MnN0A&list=PL9SJrES3EGURfczfW0KSGXVDrykc6mJuo)
     * [Казань](https://www.youtube.com/user/ExpertFridays/videos)
-    * [Беллвью](http://meetu.ps/e/F859s/kY3XM/a)
+    * [Беллвью](https://meetu.ps/e/F859s/kY3XM/a)
 * 00:53:30 - [Scala3 == Dotty](https://www.scala-lang.org/blog/2018/04/19/scala-3.html)
 * 01:04:24 - [Scala 2.12.6](https://github.com/scala/scala/releases/tag/v2.12.6)
 * 01:06:42 - [cats-effects v1.0.0-RC](https://github.com/typelevel/cats-effect/releases/tag/v1.0.0-RC)
@@ -26,7 +26,7 @@ date=2018-05-03
 
 Aнонс:
 
-* [FP Митап 8 мая - Беллвью и Сиэтл](http://meetu.ps/e/F859s/kY3XM/a)
+* [FP Митап 8 мая - Беллвью и Сиэтл](https://meetu.ps/e/F859s/kY3XM/a)
 
 <br/>
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
@@ -34,6 +34,6 @@ Aнонс:
 Голоса выпуска:
 [Ярослав Гринюк](https://github.com/yarhrn),
 [Алексей Фомкин](https://github.com/fomkin),
-[Вадим Челышов](http://github.com/dos65),
+[Вадим Челышов](https://github.com/dos65),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
 [Евгений Токарев](https://twitter.com/strobegen)

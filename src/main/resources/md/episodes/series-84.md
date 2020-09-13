@@ -30,5 +30,5 @@ date=2020-06-26
 Голоса выпуска:
 [Дмитрий Лахвич](https://github.com/ReiReiRei),
 [Евгений Токарев](https://twitter.com/strobegen)
-[Вадим Челышов](http://github.com/dos65),
+[Вадим Челышов](https://github.com/dos65),
 [Ольга Махасоева](https://twitter.com/oli_kitty)

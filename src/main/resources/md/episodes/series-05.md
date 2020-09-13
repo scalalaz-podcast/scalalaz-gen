@@ -11,12 +11,12 @@ date=2016-09-05
 Темы
 
 - [Can we make concurrency in Scala safer?—Philipp Haller](https://www.youtube.com/watch?v=nwWvPeX6U9w)
-- [Spores](http://docs.scala-lang.org/sips/pending/spores.html)
+- [Spores](https://docs.scala-lang.org/sips/pending/spores.html)
 - Все что вы хотите знать про Scala.js
 
 Полезняшки:
 
-- [scalapuzzlers](http://scalapuzzlers.com/)
+- [scalapuzzlers](https://scalapuzzlers.com/)
 
-Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65)
-[Алексей Романчук](http://github.com/13h3r)
+Ведущие: [Алексей Фомкин](https://github.com/fomkin), [Вадим Челышов](https://github.com/dos65)
+[Алексей Романчук](https://github.com/13h3r)

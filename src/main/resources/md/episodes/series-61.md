@@ -13,8 +13,8 @@ date=2019-03-22
 * 00:26:12 - [скала дайджест](https://scalanews.org/ru/2019/03/07/digest-10/)
 * 00:32:03 - Процессинг данных и стрим процессинг
 * 01:02:34 - Перфоманс/профайлинг. Зачем, где и как :) :
-    - [Why (Most) Sampling Java Profilers Are Fucking Terrible](http://psy-lob-saw.blogspot.com/2016/02/why-most-sampling-java-profilers-are.html)
-    - [FlameGraph](http://www.brendangregg.com/flamegraphs.html)
+    - [Why (Most) Sampling Java Profilers Are Fucking Terrible](https://psy-lob-saw.blogspot.com/2016/02/why-most-sampling-java-profilers-are.html)
+    - [FlameGraph](https://www.brendangregg.com/flamegraphs.html)
     - [async-profiler](https://github.com/jvm-profiling-tools/async-profiler)
     - [honest-profiler](https://github.com/jvm-profiling-tools/honest-profiler)
     - [sbt-jmh](https://github.com/ktoso/sbt-jmh)
@@ -29,8 +29,8 @@ date=2019-03-22
 Максим Логвиненко - (ник в телеграмме @m_logvinenko)
 
 Голоса выпуска:
-[Алексей Романчук](http://github.com/13h3r),
+[Алексей Романчук](https://github.com/13h3r),
 [Григорий Помадчин](https://github.com/pomadchin),
-[Алексей Фомкин](http://github.com/fomkin),
+[Алексей Фомкин](https://github.com/fomkin),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
 [Евгений Токарев](https://twitter.com/strobegen)

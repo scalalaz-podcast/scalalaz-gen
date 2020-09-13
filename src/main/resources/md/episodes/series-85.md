@@ -37,9 +37,9 @@ date=2020-07-01
 [Григорий Помадчин](https://github.com/pomadchin),
 [Дмитрий Лахвич](https://github.com/ReiReiRei),
 [Евгений Токарев](https://twitter.com/strobegen),
-[Алексей Фомкин](http://github.com/fomkin),
+[Алексей Фомкин](https://github.com/fomkin),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
-[Вадим Челышов](http://github.com/dos65)
+[Вадим Челышов](https://github.com/dos65)
 
 
 

@@ -6,9 +6,9 @@ date=2017-03-05
 ----
 Новости:
 
-- [Scastie](https://scastie.scala-lang.org/)  <http://scala-lang.org/blog/2017/02/20/introducing-scastie.html>
-- [Scala 2.13 collections rework](http://scala-lang.org/blog/2017/02/28/collections-rework.html)
-- [Slick 3.2.0](http://slick.lightbend.com/news/2017/02/24/slick-3.2.0-released.html)
+- [Scastie](https://scastie.scala-lang.org/)  <https://scala-lang.org/blog/2017/02/20/introducing-scastie.html>
+- [Scala 2.13 collections rework](https://scala-lang.org/blog/2017/02/28/collections-rework.html)
+- [Slick 3.2.0](https://slick.lightbend.com/news/2017/02/24/slick-3.2.0-released.html)
 
 Видео:
 
@@ -25,4 +25,4 @@ date=2017-03-05
 - <https://scala-clippy.org>
 - [A native Scala client for interacting with Consul](https://github.com/Verizon/helm)
 
-Ведущие: [Вадим Челышов](http://github.com/dos65), [Алексей Романчук](http://github.com/13h3r), [Евгений Токарев](http://github.com/strobe)
+Ведущие: [Вадим Челышов](https://github.com/dos65), [Алексей Романчук](https://github.com/13h3r), [Евгений Токарев](https://github.com/strobe)

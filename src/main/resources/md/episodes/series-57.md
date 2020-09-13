@@ -7,7 +7,7 @@ date=2019-01-25
 
 ![episode 57](https://scalalaz.ru/img/episode57.jpg)
 
-* [Scala митап в Казани](http://expertfridays.com/meetups/scala-meetup-2/) - 1 февраля
+* [Scala митап в Казани](https://expertfridays.com/meetups/scala-meetup-2/) - 1 февраля
 
 * плоские конфиги и [config3](https://github.com/scf37/config3) 
 * спасибо патронам 
@@ -25,8 +25,8 @@ date=2019-01-25
 <br/>
 
 Голоса выпуска:
-[Алексей Романчук](http://github.com/13h3r),
-[Вадим Челышов](http://github.com/dos65),
-[Алексей Фомкин](http://github.com/fomkin),
+[Алексей Романчук](https://github.com/13h3r),
+[Вадим Челышов](https://github.com/dos65),
+[Алексей Фомкин](https://github.com/fomkin),
 [Евгений Токарев](https://twitter.com/strobegen)
 

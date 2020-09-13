@@ -25,8 +25,8 @@ date=2018-09-28
 * 01:16:37 - [Category Theory for Programmers](https://github.com/hmemcpy/milewski-ctfp-pdf)
     * [Epub version](https://github.com/onlurking/category-theory-for-programmers)
     * [https://github.com/typelevel/CT_from_Programmers.scala](https://github.com/typelevel/CT_from_Programmers.scala)
-* 01:30:05 - [пост John de Goes про нейминг](http://degoes.net/articles/insufficiently-polymorphic)
-* 01:43:00 - [митап в Москве](http://meetu.ps/e/FRGnt/t1YQm/f)
+* 01:30:05 - [пост John de Goes про нейминг](https://degoes.net/articles/insufficiently-polymorphic)
+* 01:43:00 - [митап в Москве](https://meetu.ps/e/FRGnt/t1YQm/f)
 
 <br/>
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
@@ -34,6 +34,6 @@ date=2018-09-28
 
 Голоса выпуска:
 [Евгений Токарев](https://twitter.com/strobegen),
-[Алексей Фомкин](http://github.com/fomkin),
+[Алексей Фомкин](https://github.com/fomkin),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
 [Igal Tabachnik](https://twitter.com/hmemcpy)

@@ -34,5 +34,5 @@ date=2019-04-02
 
 Голоса выпуска:
 [Григорий Помадчин](https://github.com/pomadchin),
-[Алексей Фомкин](http://github.com/fomkin),
+[Алексей Фомкин](https://github.com/fomkin),
 [Евгений Токарев](https://twitter.com/strobegen)

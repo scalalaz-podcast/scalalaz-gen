@@ -15,7 +15,7 @@ date=2018-02-06
 * 01:13:00 - билд тулы stack, cabal и сравнение с ситуацией в scala сообществе
 * 01:37:05 - используется ли Free повсеместно в haskell?
 * 01:50:00 - MTL
-    - [Наследие Мартина - Type Inference for Parametric Type Classes](http://www.cs.yale.edu/publications/techreports/tr900.pdf)
+    - [Наследие Мартина - Type Inference for Parametric Type Classes](https://www.cs.yale.edu/publications/techreports/tr900.pdf)
 
 <br/>
 
@@ -38,6 +38,6 @@ FP паперы рекомендованные Алексеем для проч�
 
 <br/>
 
-Голоса выпуска: [Евгений Токарев](http://github.com/strobe), [Григорий Помадчин](https://github.com/pomadchin),
-[Вадим Челышов](http://github.com/dos65),
+Голоса выпуска: [Евгений Токарев](https://github.com/strobe), [Григорий Помадчин](https://github.com/pomadchin),
+[Вадим Челышов](https://github.com/dos65),
 [Алексей Пирогов](https://github.com/astynax)

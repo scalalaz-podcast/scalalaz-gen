@@ -28,8 +28,8 @@ date=2020-05-22
 <br/>
 
 Голоса выпуска:
-[Алексей Фомкин](http://github.com/fomkin),
-[Алексей Романчук](http://github.com/13h3r),
-[Вадим Челышов](http://github.com/dos65),
+[Алексей Фомкин](https://github.com/fomkin),
+[Алексей Романчук](https://github.com/13h3r),
+[Вадим Челышов](https://github.com/dos65),
 [Григорий Помадчин](https://github.com/pomadchin),
 [Евгений Токарев](https://twitter.com/strobegen)

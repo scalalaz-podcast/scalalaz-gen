@@ -20,7 +20,7 @@ ___
 - <span>[00:00:20]</span> - Анонс
 
 - <span>[00:00:45]</span> - Sbt 1.0 RC
-    - <http://www.scala-sbt.org/1.0/docs/sbt-1.0-Release-Notes.html>
+    - <https://www.scala-sbt.org/1.0/docs/sbt-1.0-Release-Notes.html>
     - <https://github.com/sbt/sbt/releases/tag/v1.0.0-RC2> <p/>
  
 - <span>[00:09:03]</span> - [ScalaQuest game](https://www.kickstarter.com/projects/andanthor/scalaquest-a-game-to-learn-scala) 
@@ -42,4 +42,4 @@ ___
 
 
 Голоса выпуска: 
-[Вадим Челышов](http://github.com/dos65), [Гриша Помадчин](https://github.com/pomadchin), [Евгений Токарев](http://github.com/strobe)
+[Вадим Челышов](https://github.com/dos65), [Гриша Помадчин](https://github.com/pomadchin), [Евгений Токарев](https://github.com/strobe)

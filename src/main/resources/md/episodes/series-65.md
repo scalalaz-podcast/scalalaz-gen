@@ -10,7 +10,7 @@ date=2019-06-10
 * 00:14:55 - [Scala митап - Нижний Новгород](https://vk.com/scala_nn?w=wall-181495622_2%2Ffe53fe4ba4ca423ccd)
 * 00:18:11 - Mитап екб
 * 00:35:44 - Тестирование
-* 00:52:52 - [Li Hayou - How to work with Files in Scala](http://www.lihaoyi.com/post/HowtoworkwithFilesinScala.html)
+* 00:52:52 - [Li Hayou - How to work with Files in Scala](https://www.lihaoyi.com/post/HowtoworkwithFilesinScala.html)
 * 00:56:13 - [Github Trending](https://github.com/trending/scala?since=monthly)
 * 00:58:53 - Хардварная сторона:
     - [Berkeley Out-of-Order Machine](https://github.com/riscv-boom/riscv-boom)
@@ -25,7 +25,7 @@ date=2019-06-10
 
 
 Голоса выпуска:
-[Вадим Челышов](http://github.com/dos65),
-[Алексей Фомкин](http://github.com/fomkin),
+[Вадим Челышов](https://github.com/dos65),
+[Алексей Фомкин](https://github.com/fomkin),
 [Евгений Токарев](https://twitter.com/strobegen),
 [Григорий Помадчин](https://github.com/pomadchin)

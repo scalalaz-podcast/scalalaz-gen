@@ -25,7 +25,7 @@ date=2018-11-01
 Голоса выпуска:
 Михаил Муцянко,
 [Андрей Козлов](https://twitter.com/@adkozlov),
-[Алексей Фомкин](http://github.com/fomkin),
+[Алексей Фомкин](https://github.com/fomkin),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
-[Вадим Челышов](http://github.com/dos65),
+[Вадим Челышов](https://github.com/dos65),
 [Евгений Токарев](https://twitter.com/strobegen)

@@ -15,7 +15,7 @@ date=2018-05-13
 * 00:07:33 - [UPCOMING EVENTS - scala-lang.org page](https://scala-lang.org/events/)
 * 00:10:46 - [sbt 1.1.5 patch release](https://developer.lightbend.com/blog/2018-05-09-sbt-1-1-5-patch-release/)
 * 00:18:05 - [InteliJ idea Ammonite Support](https://blog.jetbrains.com/scala/2018/05/07/ammonite-support/)
-* 00:20:18 - [Ammonite 1.1.0](http://ammonite.io/#1.1.0)
+* 00:20:18 - [Ammonite 1.1.0](https://ammonite.io/#1.1.0)
 * 00:23:57 - [Akka Typed: Hello World in the new API](https://akka.io/blog/2017/05/05/typed-intro)
 * 00:25:34 - Macros: the Plan for Scala 3
     * [https://www.scala-lang.org/blog/2018/04/30/in-a-nutshell.html](https://www.scala-lang.org/blog/2018/04/30/in-a-nutshell.html)

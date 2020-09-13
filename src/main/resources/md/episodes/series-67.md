@@ -4,7 +4,7 @@ audio.length=69209745
 page=https://scalalaz.ru/series-67.html
 date=2019-07-07
 ----
-![episode 66](img/ep-fpure-d1.jpg)
+![episode 66](https://scalalaz.ru/img/ep-fpure-d1.jpg)
 
 Дорогие слушатели.
 Вашему вниманию представляются интервью с первого дня конференции

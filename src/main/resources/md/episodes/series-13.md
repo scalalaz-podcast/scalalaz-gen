@@ -8,16 +8,16 @@ date=2017-01-22
 
 - [Circe 0.7.0](https://github.com/circe/circe/releases/tag/v0.7.0)
 - [Список наиболее часто используемых слов (fun) в яп](https://anvaka.github.io/common-words/#?lang=scala)
-- [JDK-9](http://mail.openjdk.java.net/pipermail/jdk9-dev/2017-January/005505.html)
-  [И еще](http://openjdk.java.net/projects/jdk9/)
+- [JDK-9](https://mail.openjdk.java.net/pipermail/jdk9-dev/2017-January/005505.html)
+  [И еще](https://openjdk.java.net/projects/jdk9/)
 
-- [Combining data from a database and a web service with Fetch](http://www.47deg.com/blog/fetch-doobie-http4s/)
+- [Combining data from a database and a web service with Fetch](https://www.47deg.com/blog/fetch-doobie-http4s/)
   
   [Haxl](https://github.com/facebook/Haxl)
   
 - [Хизер Миллер работает над новым Code of Conduct БОЛЬШЕ КОДОВКОНДАКТОВ](https://docs.google.com/document/d/1KqqdOywKWALUqJObM1Dglqe-n59C3bzxygd7RE8vYFY/edit)
   
-  [И еще](http://bit.ly/2krD6Vf)
+  [И еще](https://bit.ly/2krD6Vf)
 
 - [Ускорение компиляции индуктивных выводов имплиситов](https://github.com/scala/scala/pull/5649)(https://github.com/scala/scala/pull/5649)
 
@@ -49,8 +49,8 @@ date=2017-01-22
 - [Move Over Free Monads: Make Way for Free Applicatives!](https://www.youtube.com/watch?v=H28QqxO7Ihc)
 - [free-onion-hn-scrapper](https://github.com/strobe/free-onion-hn-scrapper)
 
-Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
-[Алексей Романчук](http://github.com/13h3r), [Евгений Токарев](http://github.com/strobe),
-[Григорий Помадчин](http://github.com/pomadchin)
+Ведущие: [Алексей Фомкин](https://github.com/fomkin), [Вадим Челышов](https://github.com/dos65),
+[Алексей Романчук](https://github.com/13h3r), [Евгений Токарев](https://github.com/strobe),
+[Григорий Помадчин](https://github.com/pomadchin)
 
 Гость - [Денис Михайлов](https://github.com/notxcain)

@@ -30,8 +30,8 @@ date=2020-06-03
 <br/>
 
 Голоса выпуска:
-[Алексей Фомкин](http://github.com/fomkin),
-[Алексей Романчук](http://github.com/13h3r),
+[Алексей Фомкин](https://github.com/fomkin),
+[Алексей Романчук](https://github.com/13h3r),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
 [Григорий Помадчин](https://github.com/pomadchin),
 [Дмитрий Лахвич](https://github.com/ReiReiRei),

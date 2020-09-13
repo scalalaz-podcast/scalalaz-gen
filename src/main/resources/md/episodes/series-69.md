@@ -25,8 +25,8 @@ date=2019-08-25
 <br/>
 
 Голоса выпуска:
-[Вадим Челышов](http://github.com/dos65),
-[Алексей Романчук](http://github.com/13h3r),
+[Вадим Челышов](https://github.com/dos65),
+[Алексей Романчук](https://github.com/13h3r),
 [Григорий Помадчин](https://github.com/pomadchin),
 [Евгений Токарев](https://twitter.com/strobegen)
 

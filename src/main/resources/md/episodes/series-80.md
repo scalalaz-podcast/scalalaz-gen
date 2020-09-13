@@ -26,7 +26,7 @@ date=2020-03-21
 
 Голоса выпуска:
 [Григорий Помадчин](https://github.com/pomadchin),
-[Алексей Романчук](http://github.com/13h3r),
+[Алексей Романчук](https://github.com/13h3r),
 [Евгений Токарев](https://twitter.com/strobegen)
 
 

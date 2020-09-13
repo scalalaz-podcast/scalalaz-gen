@@ -12,14 +12,14 @@ date=2018-01-21
     - [Software Foundations (2)](https://github.com/idris-hackers/software-foundations)
     - [Type driven development with Idris](https://www.manning.com/books/type-driven-development-with-idris)
     - [Linear Algebra via Exterior Products](https://sites.google.com/site/winitzki/linalg)
-    - [Блог Виницкого](http://chaource.livejournal.com/)
+    - [Блог Виницкого](https://chaource.livejournal.com/)
 * 00:51:18 - Chymyst & CyrryHoward
     - <https://github.com/Chymyst/curryhoward>
     - <https://github.com/Chymyst>
 * 00:51:29 - Dotty - Functional Typelevel Programming
     - [Ссылочка на MD док](https://github.com/dotty-staging/dotty/blob/60f92f629b5a6c0924555072de375ec2505d633b/docs/docs/typelevel.md)
     - <https://github.com/lampepfl/dotty/pull/3844>
-* 01:00:34 - [Build Tools as Pure Functional Programs](http://www.lihaoyi.com/post/BuildToolsasPureFunctionalPrograms.html)
+* 01:00:34 - [Build Tools as Pure Functional Programs](https://www.lihaoyi.com/post/BuildToolsasPureFunctionalPrograms.html)
 * 01:07:12 - [Functional Programming with Runar Bjarnason - CoRecursive Podcast](https://corecursive.com/004-design-principles-from-functional-programming-with-runar-bjarnason)
 * 01:09:47 - [Lightbend Scala Kafka streams](https://github.com/lightbend/kafka-streams-scala)
 * 01:11:16 - [Scalatest Embedded Kafka](https://github.com/manub/scalatest-embedded-kafka)
@@ -38,6 +38,6 @@ P.S. В тайтле опечаток нет.
 
 <br/>
 
-Голоса выпуска: [Евгений Токарев](http://github.com/strobe), [Григорий Помадчин](https://github.com/pomadchin),
-[Ольга Махасоева](https://twitter.com/oli_kitty), [Алексей Фомкин](https://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
+Голоса выпуска: [Евгений Токарев](https://github.com/strobe), [Григорий Помадчин](https://github.com/pomadchin),
+[Ольга Махасоева](https://twitter.com/oli_kitty), [Алексей Фомкин](https://github.com/fomkin), [Вадим Челышов](https://github.com/dos65),
 [Богоподобный Александр Грызлов](https://github.com/clayrat)

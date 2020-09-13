@@ -4,7 +4,7 @@ audio.length=131095380
 page=https://scalalaz.ru/series-68.html
 date=2019-07-31
 ----
-![episode 68](img/ep-fpure-d1.jpg)
+![episode 68](https://scalalaz.ru/img/ep-fpure-d1.jpg)
 
 Дорогие слушатели.
 Вашему вниманию представляются интервью с второго дня конференции
@@ -12,7 +12,7 @@ FPure 2019 (в Казани).
 
 * 00:00:00 - [Алексей Терёхин](https://github.com/daron666)
 * 00:11:55 - [Павел Аргентов](https://twitter.com/argent_smith)
-* 00:55:19 - [Турченков Михаил](https://bit.ly/2ZjffHW) и [Анна Капылова](http://biosim-rg.ru/AnnaCV_en)
+* 00:55:19 - [Турченков Михаил](https://bit.ly/2ZjffHW) и [Анна Капылова](https://biosim-rg.ru/AnnaCV_en)
 * 01:19:00 - [Олег Нижников](https://github.com/Odomontois)
 * 01:33:00 - [Юрий Бадальянц](https://twitter.com/lmnet89)
 
@@ -24,4 +24,4 @@ FPure 2019 (в Казани).
 
 Задавал вопросы:
 [Евгений Токарев](https://twitter.com/strobegen),
-[Вадим Челышов](http://github.com/dos65)
+[Вадим Челышов](https://github.com/dos65)

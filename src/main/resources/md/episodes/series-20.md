@@ -10,9 +10,9 @@ date=2017-04-30
 
 - [Goodbye to Activator](https://www.lightbend.com/blog/introducing-a-new-way-to-get-started-with-lightbend-technologies-and-saying-goodbye-to-activator )
 - [Багтрекер scala переехал на гитхаб (и release notes)](https://github.com/scala/bug)
-- [3 релиза 2.11.11, 2.12.2, 2.13.0-M1](http://scala-lang.org/news/releases-1Q17.html)
+- [3 релиза 2.11.11, 2.12.2, 2.13.0-M1](https://scala-lang.org/news/releases-1Q17.html)
 - [Scala Native 0.2.0](https://github.com/scala-native/scala-native/releases/tag/v0.2.0)
-- [Syntactic sugar for monad composition (or: “async/await” generalized)](http://monadless.io)
+- [Syntactic sugar for monad composition (or: “async/await” generalized)](https://monadless.io)
 - [Hands-on Scala-Native - Ncurse Bandwidth Monitor](https://github.com/MasseGuillaume/hands-on-scala-native)
 
 Темы:
@@ -29,4 +29,4 @@ date=2017-04-30
 - [Scala abstractions and tooling around the Java Debugger Interface.](https://scala-debugger.org)
 - [Free as in Monads by Daniel Spiewak](https://www.youtube.com/watch?v=aKUQUIHRGec)
 
-Голоса выпуска: [Алексей Фомкин](http://github.com/fomkin/korolev), [Евгений Токарев](http://github.com/strobe)
+Голоса выпуска: [Алексей Фомкин](https://github.com/fomkin/korolev), [Евгений Токарев](https://github.com/strobe)

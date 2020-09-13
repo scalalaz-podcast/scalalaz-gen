@@ -18,13 +18,13 @@ date=2017-06-25
   </br>
   <li>[01:10:25] - <a href="https://github.com/scalamacros/scalamacros/pull/1">New-style macro APIs for Scala 2.11.11.</a></li>
   </br>
-  <li>[01:33:39] - <a href="http://lamp.epfl.ch/publications">На какие паперы и диссертации из EPFL стоит обратить внимание?</a></li>
+  <li>[01:33:39] - <a href="https://lamp.epfl.ch/publications">На какие паперы и диссертации из EPFL стоит обратить внимание?</a></li>
   </br>
   <li>[01:45:38] - <a href="https://twitter.com/coldenzero/status/870213350231298048">Как в Twitter обстоят дела со scala?</a></li>
 </ul>
 
 
-Голоса выпуска: [Алексей Фомкин](http://github.com/fomkin/korolev), [Евгений Токарев](http://github.com/strobe),
-[Вадим Челышов](http://github.com/dos65), [Гриша Помадчин](https://github.com/pomadchin), [Алексей Романчук](http://github.com/13h3r)
+Голоса выпуска: [Алексей Фомкин](https://github.com/fomkin/korolev), [Евгений Токарев](https://github.com/strobe),
+[Вадим Челышов](https://github.com/dos65), [Гриша Помадчин](https://github.com/pomadchin), [Алексей Романчук](https://github.com/13h3r)
 
 Гость: [Eugene Burmako](https://github.com/xeno-by)

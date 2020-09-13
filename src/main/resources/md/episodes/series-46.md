@@ -13,15 +13,15 @@ date=2018-06-17
 * 00:32:36 ANNOUNCING THE BUILD SERVER PROTOCOL V1.0.0
     * <https://www.scala-lang.org/blog/2018/06/15/bsp.html>
     * <https://www.reddit.com/r/scala/comments/8rdqtr/announcing_the_build_server_protocol_v100/>
-    * <http://jorge.vican.me/slides/BSP.pdf>
+    * <https://jorge.vican.me/slides/BSP.pdf>
 * 00:43:50 Проблемы лицензии scopt
 * 00:58:03 [SCALAC-PROFILING](https://www.scala-lang.org/blog/2018/06/04/scalac-profiling.html)
-* 01:03:58 [Interflow: Scala Native](http://www.scala-native.org/en/latest/blog/interflow.html)
+* 01:03:58 [Interflow: Scala Native](https://www.scala-native.org/en/latest/blog/interflow.html)
 * 01:07:52 [sbt-big: faster and more stable sbt](https://github.com/olafurpg/sbt-big)
 * 01:12:23 [Cryptography for Scala and Scala.js](https://github.com/fluencelabs/crypto)
 
 Голоса выпуска:
-[Алексей Фомкин](http://github.com/fomkin),
+[Алексей Фомкин](https://github.com/fomkin),
 [Евгений Токарев](https://twitter.com/strobegen),
 [Григорий Помадчин](https://github.com/pomadchin),
-[Вадим Челышов](http://github.com/dos65)
+[Вадим Челышов](https://github.com/dos65)

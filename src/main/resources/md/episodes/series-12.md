@@ -6,7 +6,7 @@ date=2017-01-08
 ----
 Новости:
 
-- [Kamon 0.6.5](http://kamon.io/teamblog/2016/12/31/kamon-0-6-5-is-out/) - поддержка 2.12
+- [Kamon 0.6.5](https://kamon.io/teamblog/2016/12/31/kamon-0-6-5-is-out/) - поддержка 2.12
 - [Kamon-logstash](https://github.com/darienmt/kamon-logstash) [v0.0.1](https://github.com/darienmt/kamon-logstash/releases/tag/v0.0.1) Elasticsearch-Logstash-Kibana as the backend and visualization for the data collected by Kamon
 - [ScalikeJDBC 3.0.0](https://github.com/scalikejdbc/scalikejdbc/blob/master/notes/3.0.0.markdown)
     - поддержка 2.12
@@ -24,11 +24,11 @@ date=2017-01-08
 
 Полезняшки:
 
-- [Practical Deep Learning For Coders](http://course.fast.ai/lessons/lessons.html) (free, python, keras, jupyter notebook)
+- [Practical Deep Learning For Coders](https://course.fast.ai/lessons/lessons.html) (free, python, keras, jupyter notebook)
 - [https://github.com/julienrf/endpoints](https://github.com/julienrf/endpoints)
 
-Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
-[Алексей Романчук](http://github.com/13h3r), [Евгений Токарев](http://github.com/strobe),
-[Григорий Помадчин](http://github.com/pomadchin)
+Ведущие: [Алексей Фомкин](https://github.com/fomkin), [Вадим Челышов](https://github.com/dos65),
+[Алексей Романчук](https://github.com/13h3r), [Евгений Токарев](https://github.com/strobe),
+[Григорий Помадчин](https://github.com/pomadchin)
 
 Гость: [Денис Боровиков](https://twitter.com/borovikov)

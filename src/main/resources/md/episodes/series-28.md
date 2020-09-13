@@ -17,7 +17,7 @@ date=2017-09-03
 - <span>[00:55:00]</span> - Рекламная пауза от Виктора, краткое описание чем занимается (контекст обсуждения выше).
 - <span>[01:12:32]</span> - <a href="https://github.com/lampepfl/dotty/issues/2887">Odersky - higher-kinded language import and declaring higher-kinded types officially unsound.</a>
 - <span>[01:15:35]</span> - <a href="https://blog.janestreet.com/ironing-out-your-development-style/">JaneStreet - Ironing out your development style</a>
-- <span>[01:27:37]</span> - <a href="http://degoes.net/articles/scalaz8-is-the-future">John De Goes - Excited About Scalaz 8</a>
+- <span>[01:27:37]</span> - <a href="https://degoes.net/articles/scalaz8-is-the-future">John De Goes - Excited About Scalaz 8</a>
 - <span>[01:31:32]</span> - <a href="https://medium.com/@gkossakowski/a-note-on-kentucky-mule-and-twitters-scala-compiler-announcement-3294b5baf2ea">A note on Kentucky Mule and Twitter&rsquo;s Scala compiler announcement</a>
 - <span>[01:35:51]</span> - Bootstrapping the Web with Scala Native
     - <a href="https://www.spantree.net/blog/2017/08/29/bootstrapping-web-scala-native.html">https://www.spantree.net/blog/2017/08/29/bootstrapping-web-scala-native.html</a>
@@ -36,4 +36,4 @@ date=2017-09-03
 
 Если вас заинтересовала беседа с Виктором и вы хотите поучавствовать в развитии его проектов (<a href="https://whisk.com" target="_blank">https://whisk.com</a>), то можно обращаться к нему в [твиттер](https://twitter.com/viktortnk), или писать на <a href="mailto:viktor@whisk.com" target="_blank">почту</a>.
 
-Голоса выпуска: [Виктор Тараненко](https://twitter.com/viktortnk), [Евгений Токарев](http://github.com/strobe), [Алексей Фомкин](http://github.com/fomkin/korolev), [Григорий Помадчин](https://github.com/pomadchin)
+Голоса выпуска: [Виктор Тараненко](https://twitter.com/viktortnk), [Евгений Токарев](https://github.com/strobe), [Алексей Фомкин](https://github.com/fomkin/korolev), [Григорий Помадчин](https://github.com/pomadchin)

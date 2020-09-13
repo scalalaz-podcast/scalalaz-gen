@@ -32,9 +32,9 @@ date=2020-03-03
 Голоса выпуска:
 [Григорий Помадчин](https://github.com/pomadchin),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
-[Вадим Челышов](http://github.com/dos65)
+[Вадим Челышов](https://github.com/dos65)
 [Евгений Токарев](https://twitter.com/strobegen),
-[Алексей Фомкин](http://github.com/fomkin)
+[Алексей Фомкин](https://github.com/fomkin)
 
 Гости:
 [Никита Мелькозеров](https://github.com/meln1k/)

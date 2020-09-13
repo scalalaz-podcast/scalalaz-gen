@@ -42,7 +42,7 @@ date=2019-12-04
 [Андрей Корзинев](https://t.me/fellrond)
 
 Голоса выпуска:
-[Вадим Челышов](http://github.com/dos65),
+[Вадим Челышов](https://github.com/dos65),
 [Григорий Помадчин](https://github.com/pomadchin),
 [Евгений Токарев](https://twitter.com/strobegen),
-[Алексей Фомкин](http://github.com/fomkin)
+[Алексей Фомкин](https://github.com/fomkin)

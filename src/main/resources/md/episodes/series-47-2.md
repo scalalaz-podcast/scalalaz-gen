@@ -33,5 +33,5 @@ date=2018-07-31
 
 Голоса выпуска:
 [Ольга Махасоева](https://twitter.com/oli_kitty),
-[Алексей Романчук](http://github.com/13h3r),
+[Алексей Романчук](https://github.com/13h3r),
 [Евгений Токарев](https://twitter.com/strobegen)

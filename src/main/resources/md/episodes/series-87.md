@@ -37,5 +37,5 @@ date=2020-08-18
 [Григорий Помадчин](https://github.com/pomadchin),
 [Дмитрий Лахвич](https://github.com/ReiReiRei),
 [Евгений Токарев](https://twitter.com/strobegen),
-[Вадим Челышов](http://github.com/dos65)
+[Вадим Челышов](https://github.com/dos65)
 

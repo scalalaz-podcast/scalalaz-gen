@@ -6,13 +6,13 @@ date=2016-12-11
 ----
 Новости
 
-- [Scala 2.12.1](http://www.scala-lang.org/news/2.12.1) 
+- [Scala 2.12.1](https://www.scala-lang.org/news/2.12.1) 
 
-- [Spores release](http://www.scala-lang.org/blog/2016/11/30/spores-release.html)
+- [Spores release](https://www.scala-lang.org/blog/2016/11/30/spores-release.html)
 
-- [Implicit functions](http://scala-lang.org/blog/2016/12/07/implicit-function-types.html) 
+- [Implicit functions](https://scala-lang.org/blog/2016/12/07/implicit-function-types.html) 
 
-- [Scalafix](http://scala-lang.org/blog/2016/10/24/scalafix.html)
+- [Scalafix](https://scala-lang.org/blog/2016/10/24/scalafix.html)
 
 
 Видео с конференций (Scala By The Bay & Scala eXchange):
@@ -20,7 +20,7 @@ date=2016-12-11
 - [John A. De Goes, Streams for (Co)Free! (John’s laws of clean functional code)](https://www.youtube.com/watch?v=R_nYc4FItcI) 
 
 - [Dan Simon, Building High Performance Microservices with Colossus](https://www.youtube.com/watch?v=2ghtw7Bp0ME) 
-  [Colossus](http://tumblr.github.io/colossus/) 
+  [Colossus](https://tumblr.github.io/colossus/) 
 
 - [Adelbert Chang, Spoiled by higher-kinded types](https://www.youtube.com/watch?v=DN3QmlmPBlQ) 
 
@@ -28,7 +28,7 @@ date=2016-12-11
 
 - [Martin Odersky, From Dot to Dotty](https://skillsmatter.com/skillscasts/8866-from-dot-to-dotty)
 
-  [слайды](http://www.slideshare.net/Odersky/from-dot-to-dotty) 
+  [слайды](https://www.slideshare.net/Odersky/from-dot-to-dotty) 
 
 - [Erik Osheim, Visions for collaboration, competition, and interop in Scala](https://skillsmatter.com/skillscasts/8541-visions-for-collaboration-competition-and-interop-in-scala) 
 
@@ -68,6 +68,6 @@ date=2016-12-11
 
 - [Lambda Conf Ledder of Functional Programming](https://twitter.com/i/web/status/803695008100466688)
 
-Ведущие: [Алексей Фомкин](http://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
-[Алексей Романчук](http://github.com/13h3r), [Евгений Токарев](http://github.com/strobe),
-[Григорий Помадчин](http://github.com/pomadchin)
+Ведущие: [Алексей Фомкин](https://github.com/fomkin), [Вадим Челышов](https://github.com/dos65),
+[Алексей Романчук](https://github.com/13h3r), [Евгений Токарев](https://github.com/strobe),
+[Григорий Помадчин](https://github.com/pomadchin)

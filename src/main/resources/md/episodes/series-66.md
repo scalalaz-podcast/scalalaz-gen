@@ -20,8 +20,8 @@ date=2019-07-02
 
 
 Голоса выпуска:
-[Алексей Романчук](http://github.com/13h3r),
-[Алексей Фомкин](http://github.com/fomkin),
+[Алексей Романчук](https://github.com/13h3r),
+[Алексей Фомкин](https://github.com/fomkin),
 [Евгений Токарев](https://twitter.com/strobegen),
 [Ольга Махасоева](https://twitter.com/oli_kitty)
 

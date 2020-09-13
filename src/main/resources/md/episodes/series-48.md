@@ -29,7 +29,7 @@ date=2018-08-14
     *   [https://twitter.com/propensive/status/1027859878222721024](https://twitter.com/propensive/status/1027859878222721024)  
 * 00:59:58 - [Mercator v0.1.0](https://twitter.com/propensive/status/1027547440407355392)   
 * 01:02:37 - [scalanews.org](https://scalanews.org/ru/)
-* 01:06:02 - [Jdegoes - Using ZIO with Tagless-Final](http://degoes.net/articles/polymorphic-bifunctors) 
+* 01:06:02 - [Jdegoes - Using ZIO with Tagless-Final](https://degoes.net/articles/polymorphic-bifunctors) 
 * 01:19:52 - [typed-schema](https://github.com/TinkoffCreditSystems/typed-schema)
 
 <br/>
@@ -39,8 +39,8 @@ date=2018-08-14
 
 Голоса выпуска:
 [Ольга Махасоева](https://twitter.com/oli_kitty),
-[Алексей Романчук](http://github.com/13h3r),
+[Алексей Романчук](https://github.com/13h3r),
 [Григорий Помадчин](https://github.com/pomadchin),
-[Вадим Челышов](http://github.com/dos65),
+[Вадим Челышов](https://github.com/dos65),
 [Евгений Токарев](https://twitter.com/strobegen),
-[Алексей Фомкин](http://github.com/fomkin)
+[Алексей Фомкин](https://github.com/fomkin)

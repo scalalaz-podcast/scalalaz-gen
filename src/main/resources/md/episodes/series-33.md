@@ -18,7 +18,7 @@ date=2017-11-29
 	* |https://contributors.scala-lang.org/t/whitebox-def-macros/1210](https://contributors.scala-lang.org/t/whitebox-def-macros/1210)
 * |01:32:42| Korolev 0.6.0
 * |01:34:27| Дэвид Бари хочет споноршип на предмет портирования scala-js-react на React 16.
-* |01:34:54| [SECURITY UPDATE: 2.12.4, 2.11.12, 2.10.7 (CVE-2017-15288)](http://www.scala-lang.org/news/security-update-nov17.html)
+* |01:34:54| [SECURITY UPDATE: 2.12.4, 2.11.12, 2.10.7 (CVE-2017-15288)](https://www.scala-lang.org/news/security-update-nov17.html)
 * |01:35:45| Книга [Functional and Reactive Domain Modeling](https://www.manning.com/books/functional-and-reactive-domain-modeling)
 * |01:38:24| Книга [Scala with Cats](https://underscore.io/blog/posts/2017/11/22/scala-with-cats.html)
 * |01:39:07| [Scalaz 8 IO - PR](https://github.com/scalaz/scalaz/pull/1519)
@@ -32,4 +32,4 @@ date=2017-11-29
 
 <br/>
 
-Голоса выпуска: [Eugene Burmako](https://github.com/xeno-by), [Ольга Махасоева](https://twitter.com/oli_kitty), [Алексей Фомкин](https://github.com/fomkin), [Евгений Токарев](http://github.com/strobe)
+Голоса выпуска: [Eugene Burmako](https://github.com/xeno-by), [Ольга Махасоева](https://twitter.com/oli_kitty), [Алексей Фомкин](https://github.com/fomkin), [Евгений Токарев](https://github.com/strobe)

@@ -22,6 +22,6 @@ date=2018-09-13
 
 Голоса выпуска:
 [Евгений Токарев](https://twitter.com/strobegen),
-[Алексей Фомкин](http://github.com/fomkin),
+[Алексей Фомкин](https://github.com/fomkin),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
 [Александр Коновалов](https://twitter.com/alexknvl)

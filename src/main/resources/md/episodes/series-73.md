@@ -31,8 +31,8 @@ date=2019-11-15
 [Юрий Бадальянц](https://twitter.com/lmnet89),
 
 Голоса выпуска:
-[Алексей Романчук](http://github.com/13h3r),
-[Вадим Челышов](http://github.com/dos65),
+[Алексей Романчук](https://github.com/13h3r),
+[Вадим Челышов](https://github.com/dos65),
 [Григорий Помадчин](https://github.com/pomadchin),
 [Евгений Токарев](https://twitter.com/strobegen),
-[Алексей Фомкин](http://github.com/fomkin)
+[Алексей Фомкин](https://github.com/fomkin)

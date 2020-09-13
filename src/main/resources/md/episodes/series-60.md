@@ -18,6 +18,6 @@ date=2019-03-09
 Голоса выпуска:
 [Виктор Гамов](https://twitter.com/gamussa),
 [Ольга Махасоева](https://twitter.com/oli_kitty),
-[Вадим Челышов](http://github.com/dos65),
+[Вадим Челышов](https://github.com/dos65),
 [Евгений Токарев](https://twitter.com/strobegen)
 

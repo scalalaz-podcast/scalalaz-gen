@@ -21,7 +21,7 @@ date=2018-03-07
 * 01:03:07 - [Выложили видяхи с прошлогоднего митапа в Екатеринбурге](https://www.youtube.com/watch?v=uvHmi6A5hk4&list=PL9SJrES3EGUQ1GwQGPHlSBSP-IurfbBsE)
 * 01:04:10 - [Scala Standard XML Library v1.1.0](https://github.com/scala/scala-xml/releases/tag/v1.1.0)
 * 01:07:51 - [eff 5.0.0](https://github.com/atnos-org/eff/releases)
-* 01:08:59 - [A lightweight introduction to Recursion Schemes in Scala](http://bit.ly/2D5nzix)
+* 01:08:59 - [A lightweight introduction to Recursion Schemes in Scala](https://bit.ly/2D5nzix)
 * 01:09:40 - [A monad for resource acquisition and cleanup](https://github.com/iravid/managedt)
 * 01:10:26 - [mist](https://github.com/Hydrospheredata/mist)
 * 01:11:02 - [https://github.com/fomkin/sunl](https://github.com/fomkin/sunl)
@@ -30,6 +30,6 @@ date=2018-03-07
 
 Поддержи подкаст [https://www.patreon.com/scalalalaz](https://www.patreon.com/scalalalaz)
 
-Голоса выпуска: [Евгений Токарев](http://github.com/strobe),
-[Ольга Махасоева](https://twitter.com/oli_kitty), [Алексей Фомкин](https://github.com/fomkin), [Вадим Челышов](http://github.com/dos65),
+Голоса выпуска: [Евгений Токарев](https://github.com/strobe),
+[Ольга Махасоева](https://twitter.com/oli_kitty), [Алексей Фомкин](https://github.com/fomkin), [Вадим Челышов](https://github.com/dos65),
 [Григорий Помадчин](https://github.com/pomadchin)

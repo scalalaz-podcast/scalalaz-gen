@@ -10,7 +10,7 @@ date=2018-08-21
 * 00:01:46 - OlegYch
     * [https://scastie.scala-lang.org/](https://scastie.scala-lang.org/)
     * [ФП митап в Минске](https://www.facebook.com/events/668979860123285/)
-    * [Unison language](http://unisonweb.org/)
+    * [Unison language](https://unisonweb.org/)
     * [Frank language](https://github.com/frank-lang/frank)
 * 00:12:36 -  Oleg-Py
     * [https://github.com/oleg-py/meow-mtl](https://github.com/oleg-py/meow-mtl)

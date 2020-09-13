@@ -24,7 +24,7 @@ date=2019-10-23
 
 Голоса выпуска:
 [Ольга Махасоева](https://twitter.com/oli_kitty),
-[Вадим Челышов](http://github.com/dos65),
+[Вадим Челышов](https://github.com/dos65),
 [Дмитрий Лахвич](https://github.com/ReiReiRei),
 [Григорий Помадчин](https://github.com/pomadchin),
 [Евгений Токарев](https://twitter.com/strobegen)

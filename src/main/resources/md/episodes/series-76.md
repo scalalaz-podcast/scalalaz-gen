@@ -26,10 +26,10 @@ date=2020-01-05
 <br/>
 
 Голоса выпуска:
-[Алексей Романчук](http://github.com/13h3r),
+[Алексей Романчук](https://github.com/13h3r),
 [Григорий Помадчин](https://github.com/pomadchin),
 [Евгений Токарев](https://twitter.com/strobegen),
-[Алексей Фомкин](http://github.com/fomkin)
+[Алексей Фомкин](https://github.com/fomkin)
 
 Гости:
 [Олег Нижников](https://github.com/Odomontois),

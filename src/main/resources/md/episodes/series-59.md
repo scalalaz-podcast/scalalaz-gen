@@ -7,7 +7,7 @@ date=2019-02-21
 
 ![episode 59](https://scalalaz.ru/img/episode59.jpg)
 
-* 00:18:47 - korolev and [mu](http://higherkindness.io/mu/)
+* 00:18:47 - korolev and [mu](https://higherkindness.io/mu/)
 * 00:31:06 - патроны
 * 00:37:59 - [конференция FPure](https://www.fpure.events/?utm_source=scala_ru) c промо-кодом SCALALAZ стоимость будет 5к
 * 00:48:24 - [Fury](https://fury.build)
@@ -22,6 +22,6 @@ date=2019-02-21
 Голоса выпуска:
 [Ольга Махасоева](https://twitter.com/oli_kitty),
 [Григорий Помадчин](https://github.com/pomadchin),
-[Вадим Челышов](http://github.com/dos65),
-[Алексей Фомкин](http://github.com/fomkin),
+[Вадим Челышов](https://github.com/dos65),
+[Алексей Фомкин](https://github.com/fomkin),
 [Евгений Токарев](https://twitter.com/strobegen)
