@@ -2,7 +2,7 @@ title=Выпуск 88 - Путь металиста или тягости open s
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-88.mp3
 audio.length=78431136
 page=https://scalalaz.ru/series-88.html
-date=2020-08-30
+date=2020-09-14
 ----
 ![episode 88](https://scalalaz.ru/img/episode88.png)
 
