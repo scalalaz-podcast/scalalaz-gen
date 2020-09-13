@@ -30,4 +30,8 @@ date=2017-10-01
     *   [https://github.com/ThoughtWorksInc/DesignPattern.scala](https://github.com/ThoughtWorksInc/DesignPattern.scala)
     *   [covariant.scala](https://github.com/ThoughtWorksInc/DesignPattern.scala/blob/9f1a44c/designpattern/src/main/scala/com/thoughtworks/designpattern/covariant.scala)
 
-Голоса выпуска: [Евгений Токарев](http://github.com/strobe), [Алексей Романчук](http://github.com/13h3r), [Вадим Челышов](http://github.com/dos65), [Олег Нижников](https://github.com/Odomontois) ([o.nizhnikov@tinkoff.ru](mailto:o.nizhnikov@tinkoff.ru))
+Голоса выпуска: 
+[Евгений Токарев](http://github.com/strobe), 
+[Алексей Романчук](http://github.com/13h3r), 
+[Вадим Челышов](http://github.com/dos65), 
+[Олег Нижников](https://github.com/Odomontois) (<a href="mailto:o.nizhnikov@tinkoff.ru">o.nizhnikov@tinkoff.ru</a>)

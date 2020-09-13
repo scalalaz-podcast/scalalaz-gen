@@ -19,7 +19,7 @@ date=2017-05-28
 
 - Scala на Android (главная тема, спасибо Матвею за разговор)
     - <https://medium.com/@ScalaWilliam/why-scala-didnt-miss-the-android-opportunity-92eaaf63c339>
-    - В команду [Titanium Messenger](http://titanium.im) требуется Scala разработчик под Android, по всем вопросам писать <a href="mailto:developer[at]titanium.im">developer[at]titanium.im</a>, в [твиттер](https://twitter.com/matveyka_jj), в телеграм (`@matvey_malkov`) или же можно спрашивать в скала чатике <a href="https://t.me/scala_ru" target="_blank">Scala User Group</a>
+    - В команду [Titanium Messenger](http://titanium.im) требуется Scala разработчик под Android, по всем вопросам писать <a href="mailto:developer@titanium.im">developer@titanium.im</a>, в [твиттер](https://twitter.com/matveyka_jj), в телеграм (`@matvey_malkov`) или же можно спрашивать в скала чатике <a href="https://t.me/scala_ru" target="_blank">Scala User Group</a>
 - Немного о документации - какая она должна быть?
     -  Вадиму не очень нравится Akka документация
 - [Consider syntax with significant indentation](https://github.com/lampepfl/dotty/issues/2491)
