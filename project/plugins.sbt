@@ -1,5 +1,5 @@
-addSbtPlugin("org.scalameta"     % "sbt-scalafmt" % "2.3.1")
+addSbtPlugin("org.scalameta"     % "sbt-scalafmt" % "2.4.2")
 addSbtPlugin("com.typesafe.sbt"  % "sbt-git"      % "1.0.0")
-addSbtPlugin("de.heikoseeberger" % "sbt-header"   % "5.4.0")
+addSbtPlugin("de.heikoseeberger" % "sbt-header"   % "5.5.0")
 addSbtPlugin("com.typesafe.sbt"  % "sbt-twirl"    % "1.5.0")
-addSbtPlugin("com.timushev.sbt"  % "sbt-updates"  % "0.5.0")
+addSbtPlugin("com.timushev.sbt"  % "sbt-updates"  % "0.5.1")
