@@ -7,6 +7,7 @@ date=2020-09-29
 ![episode 89](https://scalalaz.ru/img/episode89.png)
 
 * [00:00:08] - zio kafka
+    - [Comparing Apache Kafka and Apache Pulsar](https://blog.softwaremill.com/comparing-apache-kafka-and-apache-pulsar-3bd44e00f304)
 * [00:23:38] - hands on scala book
 * [00:35:02] - [Virtual Scala, September 24th, Online Meetup](https://www.meetup.com/ZIO-Meetup-UK/events/273009646/)
 * [00:36:56] - [micro.sphere.it with Martin](https://micro.sphere.it/sphere/scala-micro-sphere-it/)
