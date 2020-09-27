@@ -7,7 +7,7 @@ date=2020-09-29
 ![episode 89](https://scalalaz.ru/img/episode89.png)
 
 * [00:00:08] - zio kafka
-* [00:16:38] - hands on scala book
+* [00:23:38] - hands on scala book
 * [00:35:02] - [Virtual Scala, September 24th, Online Meetup](https://www.meetup.com/ZIO-Meetup-UK/events/273009646/)
 * [00:36:56] - [micro.sphere.it with Martin](https://micro.sphere.it/sphere/scala-micro-sphere-it/)
 * [00:38:14] - [Scala Castle, September 14th-17th](https://scalacastle.com/)
