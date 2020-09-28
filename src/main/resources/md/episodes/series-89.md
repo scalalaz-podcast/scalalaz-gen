@@ -1,4 +1,4 @@
-title=Выпуск 89 - Протухшие конференции
+title=Выпуск 89 - ЗИО Кафка, Книга
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-89.mp3
 audio.length=62504352
 page=https://scalalaz.ru/series-89.html
