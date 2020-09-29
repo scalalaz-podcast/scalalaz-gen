@@ -6,7 +6,7 @@ object Version {
   final val ScalaTags      = "0.9.1"
   final val FastParse      = "2.3.0"
   final val Cats           = "2.2.0"
-  final val Knockoff       = "0.8.13"
+  final val Knockoff       = "0.8.14"
   final val TypesafeConfig = "1.4.0"
 }
 
