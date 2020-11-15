@@ -20,7 +20,7 @@ date=2020-11-15
     - [https://github.com/typelevel/cats-effect/releases/tag/v3.0.0-M1](https://github.com/typelevel/cats-effect/releases/tag/v3.0.0-M1)
     - [https://github.com/typelevel/cats-effect/issues/1235](https://github.com/typelevel/cats-effect/issues/1235)
 * 01:04:06 - [Tofu 0.8.0 is released with new abstractions for streams, blocking, and more](https://github.com/TinkoffCreditSystems/tofu/releases/tag/0.8.0/)
-* 01:05:20 - https://github.com/fomkin/korolev/releases/tag/v0.16.1
+* 01:05:20 - [Korolev 0.16.1](https://github.com/fomkin/korolev/releases/tag/v0.16.1)
 * 01:10:39 - [https://github.com/wiringbits/my-photo-timeline](https://github.com/wiringbits/my-photo-timeline)
 
 <br/>
