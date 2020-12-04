@@ -1,4 +1,4 @@
-title=Выпуск 91 - 
+title=Выпуск 91 - make DI nomicon
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-91.mp3
 audio.length=61778208
 page=https://scalalaz.ru/series-91.html
