@@ -11,13 +11,13 @@ date=2020-12-03
 * 00:07:28 - [Scala 2.13 Using](https://www.scala-lang.org/api/current/scala/util/Using$.html)
 * 00:10:11 - flow работы с амонитом
 * 00:15:07 - [Scala Native 2.12](https://github.com/scala-native/scala-native/pull/1877)
-* 00:22:58 - [библиотека Вадима 'Make DI'](https://trello.com/c/LqsE2Frk/1087-make-di)
+* 00:22:58 - [библиотека Вадима 'Make DI'](https://github.com/dos65/make)
 * 00:36:14 - селективные функторы
 * 00:41:43 - [sbt cache](https://eed3si9n.com/remote-caching-sbt-builds-with-bintray)
 * 00:48:23 - [книга Zionomicon](https://www.zionomicon.com/)
 * 00:51:30 - [Open sourcing the code and build system for Hands-on Scala Programming](https://github.com/handsonscala/build)
 * 00:52:10 - инструменты для stateful приложение 
-* 01:01:25 - вакансия Wisk
+* 01:01:25 - вакансия Whisk
   - https://vc.ru/s/whisk/169808-senior-scala-developer-platform-services
 
 
