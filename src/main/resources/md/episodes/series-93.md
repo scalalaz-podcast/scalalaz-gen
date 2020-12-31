@@ -1,6 +1,6 @@
 title=Выпуск 93 - Записываем Scala 3 по новому/старому.
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-93.mp3
-audio.length=
+audio.length=92607072
 page=https://scalalaz.ru/series-93.html
 date=2020-12-31
 ----
