@@ -13,7 +13,7 @@ date=2021-01-24
 * 00:26:22 - [Kafka Journal: Akka Persistence plugin.](https://github.com/evolution-gaming/kafka-journal)
 * 00:34:51 - [Kafka Flow: useless library one can learn from.](https://github.com/evolution-gaming/kafka-flow)
   - [Quasar](https://github.com/precog/quasar)
-  - [Apache Pulsar](https://pulsar.apache.org/)  
+  - [Apache Pulsar](https://pulsar.apache.org/)
 * 00:56:14 - Tagless Final: testing using StateT, selling it, how to replace Mockito.
 * 01:08:00 - [scala bootcamp](https://github.com/evolution-gaming/scala-bootcamp)
 * 01:12:34 - Akka Cluster
