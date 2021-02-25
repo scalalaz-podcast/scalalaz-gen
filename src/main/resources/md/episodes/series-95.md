@@ -1,4 +1,4 @@
-title=Выпуск 95 - Потные секреты Вадима (и Юра)
+title=Выпуск 95 - Секреты Вадима (и Юра)
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-95.mp3
 audio.length=88857312
 page=https://scalalaz.ru/series-95.html
