@@ -1,4 +1,4 @@
-title=Выпуск 96 - TODO
+title=Выпуск 96 - Выпуск, в котором все опоздали
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-96.mp3
 audio.length=111382368
 page=https://scalalaz.ru/series-96.html
