@@ -4,7 +4,7 @@ audio.length=111382368
 page=https://scalalaz.ru/series-96.html
 date=2021-02-28
 ----
-![episode 96](https://scalalaz.ru/img/episode96.png)
+![episode 96](https://scalalaz.ru/img/episode96.jpg)
 
 - [00:01:20] [metals/emacs & metals 10](<https://scalameta.org/metals/blog/>)
 - [00:12:15] Немного про воркшиты
