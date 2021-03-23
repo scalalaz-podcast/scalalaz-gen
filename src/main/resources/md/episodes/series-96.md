@@ -15,7 +15,7 @@ date=2021-02-28
 * 00:31:25 - Как Олю Java чемпионы обижали
 * 00:33:28 - [Korolev 0.17.0](<https://github.com/fomkin/korolev/releases/tag/v0.17.0>)
 * 00:34:19 - [Bintray всё](https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/)
-*   - [Twi -ter тред по теме](<https://twitter.com/eed3si9n/status/1357068549429338112?s=19>)
+    - [Twitter тред по теме](<https://twitter.com/eed3si9n/status/1357068549429338112?s=19>)
 * 00:39:58 - [Scala 3.0.0-RC1](<https://dotty.epfl.ch/blog/2021/02/17/scala3-rc1.html>)
 * 00:45:29 - [Scala 2.13.5](<https://github.com/scala/scala/releases/tag/v2.13.5>)
 * 00:47:35 - [This Is Your App on Scala 3 by John A. De Goes](<https://www.reddit.com/r/scala/comments/lmmi5m/this_is_your_app_on_scala_3_by_john_a_de_goes/>)
