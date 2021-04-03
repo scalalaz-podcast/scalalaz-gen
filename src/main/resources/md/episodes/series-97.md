@@ -4,7 +4,7 @@ audio.length=100433760
 page=https://scalalaz.ru/series-97.html
 date=2021-02-14
 ----
-![episode 97](https://scalalaz.ru/img/episode97.png)
+![episode 97](/img/episode97.png)
 
 * 00:00:47 [Scala 3 Tech Report (Softwaremill)](https://softwaremill.com/ebooks/scala-3-tech-report/)
 * 00:45:30 Checked exceptions in scala 3
