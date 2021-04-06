@@ -103,6 +103,7 @@ h3 {
 .post-title {
     font-size: 2em;
     color: #222;
+    margin-top: 50px;
     margin-bottom: 0.2em;
 }
 .post-avatar {
@@ -119,6 +120,14 @@ h3 {
     color: #999;
     font-size: 90%;
     margin: 0;
+}
+
+a.post-title-link {
+    color: inherit;
+}
+a.post-title-link:hover,
+a.post-title-link:focus {
+    text-decoration: none;
 }
 
 .post-category {
@@ -182,7 +191,7 @@ h3 {
         padding: 2em 3em 0;
         margin-left: 10%;
     }
-    
+
 
     .header {
         text-align: left;
@@ -241,10 +250,6 @@ h3 {
   margin-top: 35px;
 }
 
-.post-title {
-  margin-top: 50px;
-}
-
 .pub-date {
   color: #939292;
   font-size: 16px;
@@ -268,4 +273,3 @@ a.next-page {
   margin-left: 10px;
   margin-right: 10px;
 }
-
