@@ -89,7 +89,7 @@ class Generator(settings: SiteSettings, source: Path, target: Path)
     * копируем для лайка-генератора все обычные файлы
     */
   def copyOther(): Unit = {
-    Seq("img", "css/layouts").foreach(d => {
+    Seq("img", "css/layouts", "js").foreach(d => {
       val from = source.resolve(d)
       val to   = target.resolve(d)
       fs.copyDir(from, to)

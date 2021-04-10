@@ -8,7 +8,7 @@
 
 @template(title) {
     @for( p <- pages ) {
-       <section>
+       <section class="post">
            <h1 class="post-title"><a href="@p.fileName" class="post-title-link">@p.episode.settings.title</a></h1>
            <p class="pub-date">
                Опубликовано: @p.episode.settings.ISODate
@@ -18,11 +18,13 @@
     }
     <div class="pagination">
         @for( link <- prev) {
-        <a href="@link" class="prev-page">Вперед →</a>
+            <a href="@link" class="prev-page">Вперед →</a>
         }
 
         @for( link <- next) {
-        <a href="@link" class="next-page">← Назад</a>
+            <a href="@link" class="next-page">← Назад</a>
         }
     </div>
+
+    <script src="/js/clickable-post-images.js"></script>
 }
