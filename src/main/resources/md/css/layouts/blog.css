@@ -37,17 +37,20 @@ h3 {
     padding: 0;
 }
 
-.header {
-    text-align: left;
-    top: auto;
-    padding-left: 90px;
-}
-
 .sidebar {
     background: #f0f0f0;
     color: #292929;
     min-width: 340px;
     max-width: 580px;
+}
+
+.sidebar-content {
+    top: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 10px;
+    max-width: 480px;
 }
 
 .brand-title {
@@ -209,15 +212,13 @@ a.post-title-link:focus {
         margin-left: 10%;
     }
 
-
-    .header {
-        text-align: left;
-    }
-
     .sidebar {
         position: fixed;
         top: 0;
         bottom: 0;
+    }
+    .sidebar-content {
+        text-align: left;
     }
 }
 .custom-restricted-width {
