@@ -16,13 +16,6 @@ date=2020-03-21
 * 01:12:13 - [Scala 2 community build reaches goals](https://www.scala-lang.org/2020/02/20/community-build.html)
 
 <br/>
-Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-<br/>
-
-<br/>
-Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
-<br/>
 
 Голоса выпуска:
 [Григорий Помадчин](https://github.com/pomadchin),

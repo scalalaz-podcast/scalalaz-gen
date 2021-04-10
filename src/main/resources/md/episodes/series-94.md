@@ -22,16 +22,7 @@ date=2021-01-24
 * 01:32:43 - Scala 3
 * 01:48:27 - Circe: case classes w json native fields &amp; mappings to domain classes VS deriving for domain classes directly
 
-
 <br/>
-Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-<br/>
-
-<br/>
-Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
-<br/>
-
 
 Вакансия:
 

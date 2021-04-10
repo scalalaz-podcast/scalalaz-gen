@@ -15,14 +15,6 @@ date=2021-02-28
 * 01:24:43 [Significant indentation](https://contributors.scala-lang.org/t/scala-3-significant-indentation/4672)
 
 <br/>
-Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-<br/>
-
-<br/>
-Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
-<br/>
-
 
 Голоса выпуска:
 

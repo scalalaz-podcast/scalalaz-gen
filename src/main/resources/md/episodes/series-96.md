@@ -26,14 +26,6 @@ date=2021-02-28
 * 01:16:35 - [Вакансия в 2ГИС](<https://job.2gis.ru/software/1529/>)
 
 <br/>
-Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-<br/>
-
-<br/>
-Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
-<br/>
-
 
 Голоса выпуска:
 

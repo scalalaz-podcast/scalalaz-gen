@@ -22,13 +22,6 @@ date=2020-07-01
 * 01:29:45 - [ZIO fiber dump information straight from the debugger](https://github.com/botkop/numsca/blob/master/notebooks/dl-from-scratch.ipynb)
 
 <br/>
-Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-<br/>
-
-<br/>
-Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
-<br/>
 
 Гость:
 [Владимир Павкин](https://github.com/vpavkin)

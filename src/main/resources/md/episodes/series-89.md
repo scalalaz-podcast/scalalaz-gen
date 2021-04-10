@@ -18,13 +18,6 @@ date=2020-09-29
 * 01:00:57 - [ScalaJS game engine](https://indigoengine.io/)
 
 <br/>
-Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-<br/>
-
-<br/>
-Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
-<br/>
 
 Голоса выпуска:
 [Григорий Помадчин](https://github.com/pomadchin),
