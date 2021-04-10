@@ -1,3 +1,6 @@
+@import html.template
+@import ru.scalalaz.gen.Episode
+
 @(episode: Episode, disqusCode: String)
 
 @template(episode.title) {
@@ -7,7 +10,7 @@
     Опубликовано: @episode.settings.ISODate
 </p>
 
-@if(episode.settings.audio.url) {
+@if(episode.settings.audio.url.nonEmpty) {
     <audio controls="" class="audio-panel">
         <source src="@episode.settings.audio.url" type="audio/mpeg">
     </audio>
