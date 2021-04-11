@@ -115,7 +115,7 @@ h3 {
 }
 
 .posts {
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
 
 .post {
@@ -243,23 +243,50 @@ a.post-title-link:focus {
   font-size: 16px;
 }
 
-a.prev-page {
-  color: #ff5265;
-  position: absolute;
-  right: 0;
-}
-
-a.next-page {
-  color: #ff5265;
-  position: absolute;
-  left: 0;
-}
-
 .pagination {
-  position: relative;
-  margin-top: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
+    margin-top: 50px;
+    padding-bottom: 2em;
+}
+
+.pagination-buttons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination-button {
+    float: left;
+    border: 1px solid #aaa;
+    border-right: none;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
+.pagination-button:first-child {
+    border-radius: 3px 0 0 3px;
+}
+.pagination-button:last-child {
+    border-right: 1px solid #aaa;
+    border-radius: 0 3px 3px 0;
+}
+.pagination-button.active {
+    border: none;
+    background: #aaa;
+    color: #fff;
+}
+
+.pagination-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
+.pagination-link:hover {
+    text-decoration: none;
+    background: #eee;
 }
 
 .gcse-search-wrapper {

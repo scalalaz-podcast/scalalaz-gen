@@ -38,34 +38,44 @@ class HTMLWriter(targetDir: String, discusCode: String) {
   }
 
   private def buildMainPages(episodes: Seq[EpisodePage]): List[MainPage] = {
-    val sorted =
+    val sorted: Seq[EpisodePage] =
       episodes.sortWith((e1, e2) => e1.fileName.compareTo(e2.fileName) > 0)
 
-    val splitted = sorted
+    val splittedOnPages: List[(Seq[EpisodePage], PageName)] = sorted
       .grouped(pageCount)
       .zipWithIndex
       .map({
         case (eps, i) =>
-          val file = if (i == 0) "index.html" else s"page-$i.html"
-          eps -> file
+          val order = i + 1
+          val file: FileName = if (i == 0) "index.html" else s"page-$order.html"
+          eps -> PageName(file, order)
       })
       .toList
 
-    Pagination
-      .forList(splitted)
-      .map(p => {
-        val eps  = p.current._1
-        val name = p.current._2
-        val prev = p.prev.map(_._2)
-        val next = p.next.map(_._2)
-        MainPage(name, eps, prev, next)
-      })
+    val allPages: List[PageName] = splittedOnPages.map { case (_, pageName) =>
+      pageName
+    }
+
+    splittedOnPages.zipWithIndex.map { case ((episodes, pageName), idx) =>
+      MainPage(
+        fileName = pageName.file,
+        episodes = episodes,
+        pagination = Pagination.from(
+          currentPageIndex = idx,
+          allPages = allPages,
+        )
+      )
+    }
   }
 
 }
 
+case class PageName(
+  file: FileName,
+  order: Int,
+)
 
-case class EpisodePage(fileName: String, disqusCode: String, episode: Episode)
+case class EpisodePage(fileName: FileName, disqusCode: String, episode: Episode)
     extends PageUnit {
 
   override def content: String =
@@ -73,13 +83,12 @@ case class EpisodePage(fileName: String, disqusCode: String, episode: Episode)
 
 }
 
-case class MainPage(fileName: String,
+case class MainPage(fileName: FileName,
                     episodes: Seq[EpisodePage],
-                    prev: Option[String],
-                    next: Option[String])
+                    pagination: Pagination[PageName])
     extends PageUnit {
 
   override def content: String =
-    main_page("Scalalaz Podcast", episodes, prev, next).body
+    main_page("Scalalaz Podcast", episodes, pagination).body
 
 }
