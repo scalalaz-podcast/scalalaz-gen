@@ -24,18 +24,9 @@ date=2020-12-31
 	- [Scala 3 Developers Survey](https://softwaremill.com/scala-3-developers-survey/)
 	- [reddit tread about survey](https://www.reddit.com/r/scala/comments/k0784a/scala_developers_survey/)
 
-
-<br/>
-Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-<br/>
-
-<br/>
-Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
 <br/>
 
 Голоса выпуска:
 [Григорий Помадчин](https://github.com/pomadchin),
 [Вадим Челышов](https://github.com/dos65),
 [Евгений Токарев](https://twitter.com/strobegen)
-

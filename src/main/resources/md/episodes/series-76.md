@@ -17,13 +17,6 @@ date=2020-01-05
 Скидка на  [f(by) 2020 – конференцию в Минске!](https://fby.dev/) по промокоду: fbytoScalalaz
 
 <br/>
-Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-<br/>
-
-<br/>
-Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
-<br/>
 
 Голоса выпуска:
 [Алексей Романчук](https://github.com/13h3r),

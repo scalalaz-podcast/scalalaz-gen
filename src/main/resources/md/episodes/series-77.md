@@ -22,14 +22,6 @@ date=2020-02-02
 [Курс по разработке на Scala](https://fintech.tinkoff.ru/study/fintech_middle/java_to_scala/)
 в офисах Тинькофф в Москве, Санкт-Петербурге и Екатеринбурге и [Tinkoff fintech](https://fintech.tinkoff.ru/tfschool/scala)
 
-
-<br/>
-Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-<br/>
-
-<br/>
-Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
 <br/>
 
 Голоса выпуска:

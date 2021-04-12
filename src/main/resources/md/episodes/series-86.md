@@ -16,13 +16,6 @@ date=2020-07-20
 Регистрируйтесь на бесплатный пробный урок [«Scala в разработке веб-приложений»](https://otus.pw/3s0l/): [https://otus.pw/3s0l/](https://otus.pw/3s0l/)
 
 <br/>
-Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-<br/>
-
-<br/>
-Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
-<br/>
 
 Гость:
 [Олег Шелаев](https://twitter.com/shelajev)

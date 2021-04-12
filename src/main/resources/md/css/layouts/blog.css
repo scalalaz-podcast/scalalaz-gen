@@ -37,17 +37,18 @@ h3 {
     padding: 0;
 }
 
-.header {
-    text-align: left;
-    top: auto;
-    padding-left: 90px;
-}
-
 .sidebar {
     background: #f0f0f0;
     color: #292929;
-    min-width: 340px;
-    max-width: 580px;
+}
+
+.sidebar-content {
+    top: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 20px;
+    margin-bottom: 20px;
 }
 
 .brand-title {
@@ -55,6 +56,17 @@ h3 {
    font-size: 31px;
    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
    margin-bottom: 1px;
+}
+.brand-title:hover {
+   cursor: pointer;
+}
+
+.nav-title {
+   color: #ff3c51;
+   font-size: 26px;
+   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+   margin-bottom: 1px;
+   font-weight: normal;
 }
 
 .nav-list {
@@ -94,11 +106,19 @@ h3 {
 }
 
 .content {
-    padding: 2em 1em 0;
+    padding: 2em 3em 0;
+}
+@media screen and (min-width: 64em) {
+    .content {
+        margin-left: 5%;
+    }
+}
+
+.posts {
+    padding-bottom: 2em;
 }
 
 .post {
-    padding-bottom: 2em;
 }
 .post-title {
     font-size: 2em;
@@ -120,6 +140,9 @@ h3 {
     color: #999;
     font-size: 90%;
     margin: 0;
+}
+.post-img:hover {
+    cursor: pointer;
 }
 
 a.post-title-link {
@@ -183,44 +206,6 @@ a.post-title-link:focus {
     background: none;
 }
 
-@media (min-width: 48em) {
-    .content-holder {
-        margin-left: 340px
-    }
-    .content {
-        padding: 2em 3em 0;
-        margin-left: 10%;
-    }
-
-
-    .header {
-        text-align: left;
-    }
-
-    .sidebar {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-    }
-}
-.custom-restricted-width {
-     /* To limit the menu width to the content of the menu: */
-     display: inline-block;
-     /* Or set the width explicitly: */
-     /* width: 10em; */
-     text-align: left;
-
-     /*
-     border: 2px solid rgb(96, 118, 130);
-     border-radius: 4px;
-     */
-
-     padding-bottom: 20px;
-     padding-left: 0px;
-     padding-right: 18px;
-     padding-top: 12px;
-}
-
 .toc ul {
     list-style-type: disc;
 }
@@ -240,6 +225,9 @@ a.post-title-link:focus {
    width: 100%;
    height: 214px;
    margin-top: 25px;
+}
+.logo-box:hover {
+    cursor: pointer;
 }
 
 .more-link {
@@ -272,4 +260,12 @@ a.next-page {
   margin-top: 25px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.gcse-search-wrapper {
+    max-width: 600px;
+}
+
+.patreon-wrapper {
+    padding-top: 8px;
 }

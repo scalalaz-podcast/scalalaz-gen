@@ -16,13 +16,6 @@ date=2020-04-12
 * 01:05:15 - [Practical FP in Scala: A hands-on approach - Printed versions available](https://www.reddit.com/r/scala/comments/for38n/practical_fp_in_scala_a_handson_approach_printed/)
 
 <br/>
-Поддержи подкаст:
-<a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-<br/>
-
-<br/>
-Вступайте в наш [Discord](https://discord.gg/RnugmrU)!
-<br/>
 
 Голоса выпуска:
 [Вадим Челышов](https://github.com/dos65),

@@ -23,13 +23,13 @@
 </head>
 
 <body>
-<div id="layout">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-        <div class="logo-box"> </div>
-        <div class="header">
-            <h1 class="brand-title">Русскоязычный подкаст о Scala</h1>
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1 pure-u-lg-1-4">
+        <div class="logo-box" onclick="location.href='/';"> </div>
+        <div class="sidebar-content">
+            <h1 class="brand-title" onclick="location.href='/';">Русскоязычный подкаст о Scala</h1>
             <nav class="nav">
-                <div class="pure-menu custom-restricted-width">
+                <div class="pure-menu">
                     <ul class="pure-menu-list">
                         <div class="toc">
                             <ul>
@@ -46,9 +46,9 @@
                     </ul>
                 </div>
             </nav>
-            <h1 class="brand-title">Scala чаты</h1>
+            <h1 class="nav-title">Scala чаты</h1>
             <nav class="nav">
-                <div class="pure-menu custom-restricted-width">
+                <div class="pure-menu">
                     <ul class="pure-menu-list">
                         <div class="toc">
                             <ul>
@@ -61,19 +61,25 @@
                     </ul>
                 </div>
             </nav>
+            <h1 class="nav-title">Поддержи подкаст</h1>
+            <nav class="nav">
+                <div class="pure-menu">
+                    <div class="patreon-wrapper">
+                        <a href="https://www.patreon.com/bePatron?u=8074802" data-patreon-widget-type="become-patron-button">Поддержи подкаст!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+                    </div>
+                </div>
+            </nav>
         </div>
     </div>
-    <div class="content-holder">
-    <div class="content pure-u-1 pure-u-md-3-4">
-        <script async src="https://cse.google.com/cse.js?cx=017272479572758030482:gshsh3xysqx"></script>
-        <div class="gcse-search"></div>
-        <div class="posts">
-            <h1 class="content-subhead">Post</h1>
-            <section class="post">
+    <div class="content-holder pure-u-1 pure-u-md-1 pure-u-lg-3-4">
+        <div class="content">
+            <script async src="https://cse.google.com/cse.js?cx=017272479572758030482:gshsh3xysqx"></script>
+            <div class="gcse-search-wrapper"><div class="gcse-search"></div></div>
+            <div class="posts">
+                <h1 class="content-subhead">Posts</h1>
                 @content
-            </section>
+            </div>
         </div>
-    </div>
     </div>
 </div>
 
