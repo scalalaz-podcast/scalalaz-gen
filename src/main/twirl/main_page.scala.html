@@ -1,10 +1,12 @@
 @import ru.scalalaz.gen.writers.EpisodePage
 @import html.template
+@import ru.scalalaz.gen.FileName
+@import ru.scalalaz.gen.writers.Pagination
+@import ru.scalalaz.gen.writers.PageName
 
-@(title: String,
+@(title: FileName,
   pages: Seq[EpisodePage],
-  prev: Option[String],
-  next: Option[String])
+  pagination: Pagination[PageName])
 
 @template(title) {
     @for( p <- pages ) {
@@ -18,13 +20,21 @@
        </section>
     }
     <div class="pagination">
-        @for( link <- prev) {
-            <a href="@link" class="prev-page">Вперед →</a>
+        <ul class="pagination-buttons">
+        @for( button <- pagination.buttons ) {
+            @button match {
+                case Pagination.Button.CurrentPage(pageName) => {
+                    <li class="pagination-button active">@pageName.order</li>
+                }
+                case Pagination.Button.Page(pageName) => {
+                    <li class="pagination-button"><a class="pagination-link" href="/@pageName.file">@pageName.order</a></li>
+                }
+                case Pagination.Button.Ellipsis => {
+                    <li class="pagination-button">...</li>
+                }
+            }
         }
-
-        @for( link <- next) {
-            <a href="@link" class="next-page">← Назад</a>
-        }
+        </ul>
     </div>
 
     <script src="/js/clickable-post-images.js"></script>
