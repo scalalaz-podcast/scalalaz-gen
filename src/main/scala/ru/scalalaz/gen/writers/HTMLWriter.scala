@@ -28,8 +28,14 @@ class HTMLWriter(targetDir: String, discusCode: String) {
 
   def write(episodes: Seq[EpisodeFile]): Unit = {
     val episodeUnits = episodes.map(f => {
-      val fName = f.path.getFileName.toString.replace(".md", ".html")
-      EpisodePage(fName, discusCode, f.episode)
+      val sourceFileName = f.path.getFileName.toString
+      val order = sourceFileName match {
+        case s"series-$idx1-$idx2.md" => s"$idx1.$idx2".toDouble
+        case s"series-$idx.md" => idx.toDouble
+        case _ => throw new RuntimeException(s"Invalid episode file name: $sourceFileName")
+      }
+      val htmlFileName = sourceFileName.replace(".md", ".html")
+      EpisodePage(order, htmlFileName, discusCode, f.episode)
     })
 
     episodeUnits.foreach(_.write(targetDir))
@@ -39,7 +45,7 @@ class HTMLWriter(targetDir: String, discusCode: String) {
 
   private def buildMainPages(episodes: Seq[EpisodePage]): List[MainPage] = {
     val sorted: Seq[EpisodePage] =
-      episodes.sortWith((e1, e2) => e1.fileName.compareTo(e2.fileName) > 0)
+      episodes.sortBy(_.order).reverse
 
     val splittedOnPages: List[(Seq[EpisodePage], PageName)] = sorted
       .grouped(pageCount)
@@ -75,7 +81,7 @@ case class PageName(
   order: Int,
 )
 
-case class EpisodePage(fileName: FileName, disqusCode: String, episode: Episode)
+case class EpisodePage(order: Double, fileName: FileName, disqusCode: String, episode: Episode)
     extends PageUnit {
 
   override def content: String =
