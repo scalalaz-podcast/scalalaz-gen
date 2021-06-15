@@ -1,4 +1,4 @@
-title=Выпуск 101 - devinsideyou с Владом
+title=Выпуск 101 - DevInsideYou с Владом
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-101.mp3
 audio.length=98899874
 page=https://scalalaz.ru/series-101.html
