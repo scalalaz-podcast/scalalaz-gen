@@ -1,0 +1,47 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != 'scalalaz-podcast/scalalaz-gen'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: coursier/cache-action@v6
+    - name: Set up Scala
+      uses: olafurpg/setup-scala@v11
+      with:
+          java-version: adopt@1.11
+
+    - name: Build and test
+      run: sbt ";test ;run"
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: site
+        path: target/site
+
+  deploy:
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/download-artifact@v2
+      with:
+        name: site
+        path: target/site
+
+    - uses: burnett01/rsync-deployments@4.1
+      env:
+        DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+        DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      if: ${{ env.DEPLOY_HOST != '' && env.DEPLOY_USER != '' && env.DEPLOY_KEY != '' }}
+      with:
+        switches: -r
+        path: target/site/*
+        remote_path: /home/${{ secrets.DEPLOY_USER }}/site_target
+        remote_host: ${{ secrets.DEPLOY_HOST }}
+        remote_user: ${{ secrets.DEPLOY_USER }}
+        remote_key: ${{ secrets.DEPLOY_KEY }}

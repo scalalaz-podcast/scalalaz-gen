@@ -1,11 +1,11 @@
 # scalalaz-gen #
 
-[![Build Status](https://api.travis-ci.org/scalalaz-podcast/scalalaz-gen.svg)](http://travis-ci.org/scalalaz-podcast/scalalaz-gen)
+[![CI](https://github.com/scalalaz-podcast/scalalaz-gen/workflows/CI/badge.svg)](https://github.com/scalalaz-podcast/scalalaz-gen/actions)
 [![Discord Server](https://img.shields.io/discord/632692119185653770)](https://discord.gg/RnugmrU)
 
 Welcome to scalalaz-gen!
 
-# Для редактирования в браузере через Vscode + metals используетй ссылку:
+### Для редактирования в браузере через Vscode + metals используетй ссылку:
 
 [https://gitpod.io/#https://github.com/scalalaz-podcast/scalalaz-gen/](https://gitpod.io/#https://github.com/scalalaz-podcast/scalalaz-gen/)
 
