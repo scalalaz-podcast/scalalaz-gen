@@ -33,7 +33,7 @@ Flo Health Hiring Event:
 
 * [Ссылка на регистрацию](https://boards.greenhouse.io/flohealth/jobs/4611474003?gh_src=tgscalalaz), если ты Senior Data Engineer
 
-Зарплата для Минска 3915-6090 € на руки, для Литвы 3000-4500 € на руки. Более подробно можно почитать в [телеграмм канале](https://t.me/scala_channel_ru/508)
+Зарплата для Минска 3900-6000 € на руки, для Литвы 3000-4500 € на руки. Более подробно можно почитать в [телеграмм канале](https://t.me/scala_channel_ru/508)
 
 <br/>
 
