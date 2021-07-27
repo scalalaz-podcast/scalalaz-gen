@@ -5,7 +5,7 @@
 
 Welcome to scalalaz-gen!
 
-# Для редактирования в браузере через Vscode + metals используетй ссылку:
+### Для редактирования в браузере через Vscode + metals используетй ссылку:
 
 [https://gitpod.io/#https://github.com/scalalaz-podcast/scalalaz-gen/](https://gitpod.io/#https://github.com/scalalaz-podcast/scalalaz-gen/)
 
