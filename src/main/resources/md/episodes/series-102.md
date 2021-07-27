@@ -27,11 +27,11 @@ Flo Health Hiring Event:
 
 Кандидатам с большим опытом работы с другими back-end языками программирования и заинтересованным в переходе на Scala/Python компания предложит обучение. 
 
-* [Ссылка на регистрацию](https://boards.greenhouse.io/flohealth/jobs/4611459003?gh_src=tgscalalaz), если ты Senior #Scala Engineer или хочешь перейти на Scala.
+* [Ссылка на регистрацию](https://boards.greenhouse.io/flohealth/jobs/4611459003?gh_src=tgscalalaz), если ты Senior Scala Engineer или хочешь перейти на Scala.
 
-* [Ссылка на регистрацию](https://boards.greenhouse.io/flohealth/jobs/4611443003?gh_src=tgscalalaz), если ты Senior #Python Engineer или хочешь перейти на Python.
+* [Ссылка на регистрацию](https://boards.greenhouse.io/flohealth/jobs/4611443003?gh_src=tgscalalaz), если ты Senior Python Engineer или хочешь перейти на Python.
 
-* [Ссылка на регистрацию](https://boards.greenhouse.io/flohealth/jobs/4611474003?gh_src=tgscalalaz), если ты Senior #Data Engineer
+* [Ссылка на регистрацию](https://boards.greenhouse.io/flohealth/jobs/4611474003?gh_src=tgscalalaz), если ты Senior Data Engineer
 
 Зарплата для Минска 3915-6090 € на руки, для Литвы 3000-4500 € на руки. Более подробно можно почитать в [телеграмм канале](https://t.me/scala_channel_ru/508)
 
