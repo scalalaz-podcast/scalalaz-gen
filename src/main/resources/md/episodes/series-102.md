@@ -7,7 +7,7 @@ date=2021-07-11
 <img src="/img/episode102.jpg" width="450" />
 
 * 00:01:21 Flo Health Hiring Event! (подробнее в конце страницы)
-* 00:03:23 хBuild your own refinement types in Scala 3(https://msitko.pl/blog/build-your-own-refinement-types-in-scala3.html)
+* 00:03:23 [Build your own refinement types in Scala 3](https://msitko.pl/blog/build-your-own-refinement-types-in-scala3.html)
 * 00:23:58 Scala 3.0.1
   * [Scala 3.0.1-RC2 - backports of critical bugfixes](https://dotty.epfl.ch/blog/2021/06/25/scala301-rc2.html)
   * [Scala 3.0.1](https://github.com/lampepfl/dotty/releases/tag/3.0.1)
