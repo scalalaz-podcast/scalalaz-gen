@@ -1,9 +1,11 @@
+ThisBuild / scalaVersion := Version.Scala
+
 lazy val `scalalaz-gen` = project
   .in(file("."))
   .enablePlugins(AutomateHeaderPlugin, GitVersioning, SbtTwirl)
   .settings(scalaVersion := Version.Scala)
 
-addCompilerPlugin("org.typelevel" %% "kind-projector" % "0.11.0" cross CrossVersion.full)
+addCompilerPlugin("org.typelevel" % "kind-projector" % "0.13.0" cross CrossVersion.full)
 
 libraryDependencies ++= Vector(
   Library.scalaTest % Test,
