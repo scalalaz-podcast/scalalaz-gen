@@ -6,22 +6,23 @@ date=2021-07-11
 ----
 <img src="/img/episode102.jpg" width="450" />
 
-* 00:01:21 Flo Health Hiring Event! (подробнее в конце страницы)
-* 00:03:23 [Build your own refinement types in Scala 3](https://msitko.pl/blog/build-your-own-refinement-types-in-scala3.html)
-* 00:23:58 Scala 3.0.1
-  * [Scala 3.0.1-RC2 - backports of critical bugfixes](https://dotty.epfl.ch/blog/2021/06/25/scala301-rc2.html)
-  * [Scala 3.0.1](https://github.com/lampepfl/dotty/releases/tag/3.0.1)
-* 00:30:07 Idea w emacs hotkeys
-* 00:39:44 [IntelliJ Scala Plugin 2021.2 EAP: Package Search Integration](https://blog.jetbrains.com/scala/2021/07/09/package-search-integration/)
-* 00:43:10 [Fully automated luxury pipeline for updating dependencies in Scala projects with Missinglink](https://engineering.avast.io/fully-automated-luxury-pipeline-for-updating-dependencies-in-scala-projects-with-missinglink/)
-* 00:51:36 [MonitorControl](https://github.com/MonitorControl/MonitorControl)
-* 00:57:38 [How to write a fire shader (Scala.js / WebGL 2.0)](https://www.reddit.com/r/scala/comments/o4249h/how_to_write_a_fire_shader_scalajs_webgl_20/)
-* 01:04:53 [FR Makes Big Things](https://twitter.com/djspiewak/status/1414018363433439233?cn=ZmxleGlibGVfcmVjcw%3D%3D&amp;refsrc=email) twit by Daniel Spiewak
-* 01:13:50 [tpolecat/pool-party](https://github.com/tpolecat/pool-party)
+* 00:00:18 Flo Health Hiring Event! (подробнее в конце страницы)
+* 00:01:05 [Build your own refinement types in Scala 3](https://msitko.pl/blog/build-your-own-refinement-types-in-scala3.html)
+* 00:20:04 Scala 3.0.1
+    * [Scala 3.0.1-RC2 - backports of critical bugfixes](https://dotty.epfl.ch/blog/2021/06/25/scala301-rc2.html)
+    * [Scala 3.0.1](https://github.com/lampepfl/dotty/releases/tag/3.0.1)
+* 00:24:05 Idea w emacs hotkeys
+* 00:32:25 [IntelliJ Scala Plugin 2021.2 EAP: Package Search Integration](https://blog.jetbrains.com/scala/2021/07/09/package-search-integration/)
+* 00:35:25 [Fully automated luxury pipeline for updating dependencies in Scala projects with Missinglink](https://engineering.avast.io/fully-automated-luxury-pipeline-for-updating-dependencies-in-scala-projects-with-missinglink/)
+* 00:37:55 [MonitorControl](https://github.com/MonitorControl/MonitorControl)
+* 00:48:35 [How to write a fire shader (Scala.js / WebGL 2.0)](https://www.reddit.com/r/scala/comments/o4249h/how_to_write_a_fire_shader_scalajs_webgl_20/)
+* 00:54:55 [FP Makes Big Things](https://twitter.com/djspiewak/status/1414018363433439233?cn=ZmxleGlibGVfcmVjcw%3D%3D&amp;refsrc=email) twit by Daniel Spiewak
+    * [Доклад от Юры по теме: Production-ready functional programming](https://youtu.be/wROJoMUHLck?list=PLecWId-JT7S5cqUiY7ixWcZgjdRV4upnw)
+* 01:02:35 [tpolecat/pool-party](https://github.com/tpolecat/pool-party)
 
 <br/>
 
-Flo Health Hiring Event:
+#### Flo Health Hiring Event
 
 31 июля компания Flo Health проведет онлайн hiring event для Senior Backend Engineers в офисы в Минске и Вильнюсе, с возможностью релокации в Литву. 
 
