@@ -4,12 +4,13 @@ audio.length=93780962
 page=https://scalalaz.ru/series-104.html
 date=2021-09-12
 ----
-<img src="/img/episode104.jpeg" width="450" />
+<img src="/img/episode104.png" width="450" />
 
 * 00:00:16 Беседуем с гостем
     * 00:04:01 Kappa архитектура
     * 00:14:57 Немного про историю Spark'а 
     * 00:36:37 Про доклад гостя о модуляризации Spark приложений через DiStage
+      * [SmartData расписание](https://smartdataconf.ru/schedule/)
 * 00:52:51 Scala 3.0.2/3.1.0-rc1
     * [Release 3.0.2 · lampepfl/dotty · GitHub](https://github.com/lampepfl/dotty/releases/tag/3.0.2)
     * [Release 3.1.0-RC1 · lampepfl/dotty · GitHub](https://github.com/lampepfl/dotty/releases/tag/3.1.0-RC1)
