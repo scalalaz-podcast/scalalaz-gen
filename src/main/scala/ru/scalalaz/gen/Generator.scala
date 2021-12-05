@@ -67,11 +67,11 @@ class Generator(settings: SiteSettings, source: Path, target: Path) extends Gene
 
   def generate(): Either[String, Unit] =
     for {
-      _ <- prepare()
+      _        <- prepare()
       episodes <- parse()
-      _ <- eitherCatch(copyOther(), "Copy other resources: ")
-      _ <- generateHtml(episodes)
-      _ <- generateRss(episodes)
+      _        <- eitherCatch(copyOther(), "Copy other resources: ")
+      _        <- generateHtml(episodes)
+      _        <- generateRss(episodes)
     } yield Right(())
 
   /**
@@ -79,7 +79,7 @@ class Generator(settings: SiteSettings, source: Path, target: Path) extends Gene
    */
   def prepare(): Either[String, Unit] =
     for {
-      _ <- eitherCatch(fs.clean(target))
+      _    <- eitherCatch(fs.clean(target))
       last <- eitherCatch(fs.createDir(targetRssPath))
     } yield last
 
@@ -89,7 +89,7 @@ class Generator(settings: SiteSettings, source: Path, target: Path) extends Gene
   def copyOther(): Unit =
     Seq("img", "css/layouts", "js").foreach { d =>
       val from = source.resolve(d)
-      val to = target.resolve(d)
+      val to   = target.resolve(d)
       fs.copyDir(from, to)
     }
 
@@ -113,7 +113,7 @@ class Generator(settings: SiteSettings, source: Path, target: Path) extends Gene
   }
 
   def parseEpisode(p: Path): ValidatedNel[EpisodeParseError, EpisodeFile] = {
-    val bytes = Files.readAllBytes(p)
+    val bytes   = Files.readAllBytes(p)
     val content = new String(bytes)
     EpisodeParser
       .fromString(content)
@@ -137,7 +137,7 @@ class SpecialPagesGenerator(source: Path, target: Path) extends GeneratorFs {
   def generate(): Either[String, Unit] =
     for {
       pages <- parse()
-      _ <- generateHtml(pages)
+      _     <- generateHtml(pages)
     } yield Right(())
 
   def parse(): Either[String, List[PageFile]] =
@@ -155,7 +155,7 @@ class SpecialPagesGenerator(source: Path, target: Path) extends GeneratorFs {
     }
 
   def parsePage(p: Path): ValidatedNel[PageParseError, PageFile] = {
-    val bytes = Files.readAllBytes(p)
+    val bytes   = Files.readAllBytes(p)
     val content = new String(bytes)
     PageParser
       .fromString(content)

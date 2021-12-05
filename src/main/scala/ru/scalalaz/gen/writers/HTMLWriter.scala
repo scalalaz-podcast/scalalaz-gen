@@ -51,7 +51,7 @@ class HTMLWriter(targetDir: String, discusCode: String) {
       .grouped(pageCount)
       .zipWithIndex
       .map { case (eps, i) =>
-        val order = i + 1
+        val order          = i + 1
         val file: FileName = if (i == 0) "index.html" else s"page-$order.html"
         eps -> PageName(file, order)
       }

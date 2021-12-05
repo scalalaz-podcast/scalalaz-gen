@@ -23,10 +23,10 @@ import NoWhitespace.*
 case class FileFormat(header: Map[String, Option[String]], otherData: String)
 
 object FormatParser {
-  def key[T: P]: P[String] = P(CharIn("a-z") | CharIn("0-9") | "." | "_" | "-").rep.!
+  def key[T: P]: P[String]   = P(CharIn("a-z") | CharIn("0-9") | "." | "_" | "-").rep.!
   def value[T: P]: P[String] = P(CharsWhile(_ != '\n')).!
 
-  def pair[T: P]: P[(String, Option[String])] = P(key ~ "=" ~ value.? ~ "\n")
+  def pair[T: P]: P[(String, Option[String])]      = P(key ~ "=" ~ value.? ~ "\n")
   def head[T: P]: P[Seq[(String, Option[String])]] = P("\n".rep.? ~ pair.rep ~ "-".rep(2) ~ "\n")
 
   def showNotes[T: P]: P[String] = P(AnyChar.rep).!

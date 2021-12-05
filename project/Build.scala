@@ -19,8 +19,8 @@ object Build extends AutoPlugin {
       organization := "ru",
       licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0")),
       Compile / packageBin / mappings += (ThisBuild / baseDirectory).value / "LICENSE" -> "LICENSE",
-      scalaVersion := Version.Scala,
-      crossScalaVersions := Vector(scalaVersion.value),
+      scalaVersion                                                                     := Version.Scala,
+      crossScalaVersions                                                               := Vector(scalaVersion.value),
       scalacOptions ++= Vector(
         "-unchecked",
         "-deprecation",
@@ -32,7 +32,7 @@ object Build extends AutoPlugin {
         "UTF-8"
       ),
       Compile / unmanagedSourceDirectories := Vector((Compile / scalaSource).value),
-      Test / unmanagedSourceDirectories := Vector((Test / scalaSource).value),
+      Test / unmanagedSourceDirectories    := Vector((Test / scalaSource).value),
 
       // Git settings
       GitPlugin.autoImport.git.useGitDescribe := true,

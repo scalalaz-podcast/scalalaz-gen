@@ -24,8 +24,8 @@ object Pagination {
   sealed trait Button[+A]
   object Button {
     case class CurrentPage[A](value: A) extends Button[A]
-    case class Page[A](value: A) extends Button[A]
-    case object Ellipsis extends Button[Nothing]
+    case class Page[A](value: A)        extends Button[A]
+    case object Ellipsis                extends Button[Nothing]
   }
 
   case class Config(
@@ -62,12 +62,12 @@ object Pagination {
         allButtons
       } else {
         val (beforeCurrent, withCurrent) = allButtons.splitAt(currentPageIndex)
-        val afterCurrent = withCurrent.drop(1)
+        val afterCurrent                 = withCurrent.drop(1)
 
         val current: Button[A] = withCurrent.head
 
         val rightFragment = computeRightFragment(afterCurrent, config)
-        val leftFragment = computeRightFragment(beforeCurrent.reverse, config).reverse
+        val leftFragment  = computeRightFragment(beforeCurrent.reverse, config).reverse
 
         leftFragment ++ Vector(current) ++ rightFragment
       }

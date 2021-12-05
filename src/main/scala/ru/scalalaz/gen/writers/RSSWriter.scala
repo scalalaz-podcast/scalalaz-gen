@@ -58,7 +58,7 @@ object ITunesInfo {
 class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
 
   def write(episodes: Seq[EpisodeFile]): Unit = {
-    val xml = toXML(episodes.sortBy(_.episode.settings.title))
+    val xml  = toXML(episodes.sortBy(_.episode.settings.title))
     val path = Paths.get(dir, "feed.xml")
     Files.write(path, xml.getBytes)
   }
@@ -74,9 +74,9 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
     }
 
     val xml = tag("rss")(
-      attr("version") := "2.0",
+      attr("version")      := "2.0",
       attr("xmlns:itunes") := "http://www.itunes.com/dtds/podcast-1.0.dtd",
-      attr("xmlns:atom") := "http://www.w3.org/2005/Atom"
+      attr("xmlns:atom")   := "http://www.w3.org/2005/Atom"
     )(
       tag("channel")(
         tag("title")(title),
@@ -112,7 +112,7 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
              |${toXHTML(knockoff(e.content)).mkString}
              |</pre>]]>
              |</description>""".stripMargin),
-      tag("enclosure")(attr("url") := audio.url, attr("type") := audio.`type`, attr("length") := audio.length),
+      tag("enclosure")(attr("url")    := audio.url, attr("type") := audio.`type`, attr("length") := audio.length),
       tag("guid")(attr("isPermaLink") := "false", page),
       tag("pubDate")(RFCDate),
       tag("link")(page)

@@ -99,7 +99,7 @@ class PaginationSpec extends AnyFreeSpec {
         }).toIntOption.getOrElse(invalidPattern)
 
       val first: Int = toIntValue(expectedButtons.head)
-      val last: Int = toIntValue(expectedButtons.last)
+      val last: Int  = toIntValue(expectedButtons.last)
 
       val actual = Pagination.from(currentPageIndex, (first to last).toList.map(_.toString))
 
