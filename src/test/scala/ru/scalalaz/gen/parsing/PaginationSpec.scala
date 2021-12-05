@@ -70,11 +70,11 @@ class PaginationSpec extends AnyFreeSpec {
     }
   }
 
-  private def testPattern(expectedPattern: String): Unit = {
+  private def testPattern(expectedPattern: String): Unit =
     s"with pattern $expectedPattern" in {
       def invalidPattern = throw new RuntimeException(s"Invalid pattern: $expectedPattern")
 
-      val expectedButtons: Vector[Pagination.Button[String]] = {
+      val expectedButtons: Vector[Pagination.Button[String]] =
         expectedPattern.split('|').toVector.map { section =>
           if (section.endsWith("!")) {
             Pagination.Button.CurrentPage(section.dropRight(1))
@@ -84,19 +84,19 @@ class PaginationSpec extends AnyFreeSpec {
             Pagination.Button.Page(section)
           }
         }
-      }
 
-      val currentPageIndex = expectedButtons.collectFirst {
-        case Pagination.Button.CurrentPage(value) => value.toIntOption.getOrElse(invalidPattern) - 1
-      }.getOrElse(invalidPattern)
+      val currentPageIndex = expectedButtons
+        .collectFirst { case Pagination.Button.CurrentPage(value) =>
+          value.toIntOption.getOrElse(invalidPattern) - 1
+        }
+        .getOrElse(invalidPattern)
 
-      def toIntValue(button: Button[String]): Int = {
+      def toIntValue(button: Button[String]): Int =
         (button match {
           case Button.CurrentPage(value) => value
-          case Button.Page(value) => value
-          case Button.Ellipsis => invalidPattern
+          case Button.Page(value)        => value
+          case Button.Ellipsis           => invalidPattern
         }).toIntOption.getOrElse(invalidPattern)
-      }
 
       val first: Int = toIntValue(expectedButtons.head)
       val last: Int = toIntValue(expectedButtons.last)
@@ -105,5 +105,4 @@ class PaginationSpec extends AnyFreeSpec {
 
       assert(actual == Pagination(expectedButtons))
     }
-  }
 }

@@ -23,17 +23,16 @@ import org.scalatest.Inside
 class FormatParserSpec extends AnyFlatSpec with Matchers with Inside {
 
   val raw = """title=value
-      |key2=value2
-      |----
-      |### Yoyoyo!
-      |it is a new episode!""".stripMargin
+              |key2=value2
+              |----
+              |### Yoyoyo!
+              |it is a new episode!""".stripMargin
 
   it should "parse from string" in {
     val result = FormatParser.parseContent(raw)
-    inside(result) {
-      case Right(parsed) =>
-        parsed.header shouldBe Map("title" -> Some("value"), "key2" -> Some("value2"))
-        parsed.otherData shouldBe "### Yoyoyo!\nit is a new episode!"
+    inside(result) { case Right(parsed) =>
+      parsed.header shouldBe Map("title" -> Some("value"), "key2" -> Some("value2"))
+      parsed.otherData shouldBe "### Yoyoyo!\nit is a new episode!"
     }
   }
 
@@ -59,8 +58,7 @@ class FormatParserSpec extends AnyFlatSpec with Matchers with Inside {
 
   it should "parse more complicated case" in {
     val result = FormatParser.parseContent(raw2)
-    inside(result) {
-      case Right(parsed) =>
+    inside(result) { case Right(parsed) =>
     }
   }
 }

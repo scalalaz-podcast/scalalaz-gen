@@ -16,14 +16,14 @@
 
 package ru.scalalaz.gen
 
-import parsing._
-import writers._
+import parsing.*
+import writers.*
 
 import cats.data.Validated.{Invalid, Valid}
 import cats.data.{NonEmptyList, ValidatedNel}
-import cats.instances.list._
-import cats.syntax.traverse._
-import cats.syntax.either._
+import cats.instances.list.*
+import cats.syntax.traverse.*
+import cats.syntax.either.*
 
 import java.nio.file.{Files, Path}
 
@@ -51,50 +51,47 @@ trait GeneratorFs {
     Either.catchNonFatal(f) match {
       case Left(e) =>
         Left(
-            descr + "\n"
-              + e.toString + "\n"
-              + e.getStackTrace().mkString("", EOL, EOL)
+          descr + "\n"
+            + e.toString + "\n"
+            + e.getStackTrace().mkString("", EOL, EOL)
         )
       case Right(v) => Right(v)
     }
 }
 
-class Generator(settings: SiteSettings, source: Path, target: Path)
-    extends GeneratorFs {
+class Generator(settings: SiteSettings, source: Path, target: Path) extends GeneratorFs {
 
-  import ru.scalalaz.gen.parsing.EpisodeErrors._
+  import ru.scalalaz.gen.parsing.EpisodeErrors.*
 
   val targetRssPath = target.resolve("rss")
 
-  def generate(): Either[String, Unit] = {
+  def generate(): Either[String, Unit] =
     for {
-      _        <- prepare()
+      _ <- prepare()
       episodes <- parse()
-      _        <- eitherCatch(copyOther(), "Copy other resources: ")
-      _        <- generateHtml(episodes)
-      _        <- generateRss(episodes)
+      _ <- eitherCatch(copyOther(), "Copy other resources: ")
+      _ <- generateHtml(episodes)
+      _ <- generateRss(episodes)
     } yield Right(())
-  }
 
   /**
-    * чистим/создаем нужные директории
-    */
+   * чистим/создаем нужные директории
+   */
   def prepare(): Either[String, Unit] =
     for {
-      _    <- eitherCatch(fs.clean(target))
+      _ <- eitherCatch(fs.clean(target))
       last <- eitherCatch(fs.createDir(targetRssPath))
     } yield last
 
   /**
-    * копируем для лайка-генератора все обычные файлы
-    */
-  def copyOther(): Unit = {
-    Seq("img", "css/layouts", "js").foreach(d => {
+   * копируем для лайка-генератора все обычные файлы
+   */
+  def copyOther(): Unit =
+    Seq("img", "css/layouts", "js").foreach { d =>
       val from = source.resolve(d)
-      val to   = target.resolve(d)
+      val to = target.resolve(d)
       fs.copyDir(from, to)
-    })
-  }
+    }
 
   def parse(): Either[String, List[EpisodeFile]] =
     episodeFiles(source.resolve("episodes"))
@@ -104,12 +101,11 @@ class Generator(settings: SiteSettings, source: Path, target: Path)
       case Valid(ef)  => Right(ef)
     }
 
-  def generateHtml(episodes: List[EpisodeFile]): Either[String, Unit] = {
+  def generateHtml(episodes: List[EpisodeFile]): Either[String, Unit] =
     eitherCatch {
       val writer = new HTMLWriter(target.toString, settings.discusCode)
       writer.write(episodes)
     }
-  }
 
   def generateRss(eps: List[EpisodeFile]): Either[String, Unit] = {
     val writer = new RSSWriter(targetRssPath.toString, ITunesInfo.Scalalaz)
@@ -117,7 +113,7 @@ class Generator(settings: SiteSettings, source: Path, target: Path)
   }
 
   def parseEpisode(p: Path): ValidatedNel[EpisodeParseError, EpisodeFile] = {
-    val bytes   = Files.readAllBytes(p)
+    val bytes = Files.readAllBytes(p)
     val content = new String(bytes)
     EpisodeParser
       .fromString(content)
@@ -126,25 +122,23 @@ class Generator(settings: SiteSettings, source: Path, target: Path)
       .toValidatedNel
   }
 
-  def describeErrors(errors: NonEmptyList[EpisodeParseError]): String = {
+  def describeErrors(errors: NonEmptyList[EpisodeParseError]): String =
     errors
       .map(e => s"Error occurred while parsing file:\n\t $e")
       .toList
       .mkString("\n")
-  }
 
 }
 
 class SpecialPagesGenerator(source: Path, target: Path) extends GeneratorFs {
 
-  import ru.scalalaz.gen.parsing.SpecialPageErrors._
+  import ru.scalalaz.gen.parsing.SpecialPageErrors.*
 
-  def generate(): Either[String, Unit] = {
+  def generate(): Either[String, Unit] =
     for {
       pages <- parse()
-      _     <- generateHtml(pages)
+      _ <- generateHtml(pages)
     } yield Right(())
-  }
 
   def parse(): Either[String, List[PageFile]] =
     specialPagesFiles(source.resolve("pages"))
@@ -152,17 +146,16 @@ class SpecialPagesGenerator(source: Path, target: Path) extends GeneratorFs {
       .traverse(parsePage) match {
       case Invalid(e) => Left(describeErrors(e))
       case Valid(ef)  => Right(ef)
-      }
+    }
 
-  def generateHtml(pages: List[PageFile]): Either[String, Unit] = {
+  def generateHtml(pages: List[PageFile]): Either[String, Unit] =
     eitherCatch {
       val writer = new SpecialPagesHTMLWriter(target.toString)
       writer.write(pages)
     }
-  }
 
   def parsePage(p: Path): ValidatedNel[PageParseError, PageFile] = {
-    val bytes   = Files.readAllBytes(p)
+    val bytes = Files.readAllBytes(p)
     val content = new String(bytes)
     PageParser
       .fromString(content)
@@ -171,10 +164,9 @@ class SpecialPagesGenerator(source: Path, target: Path) extends GeneratorFs {
       .toValidatedNel
   }
 
-  def describeErrors(errors: NonEmptyList[PageParseError]): String = {
+  def describeErrors(errors: NonEmptyList[PageParseError]): String =
     errors
       .map(e => s"Error occurred while parsing file:\n\t $e")
       .toList
       .mkString("\n")
-  }
 }

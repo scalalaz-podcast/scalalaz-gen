@@ -21,7 +21,7 @@ import java.nio.file.Paths
 object Main extends App {
 
   val markdownDir = Paths.get("src/main/resources/md")
-  val targetPath  = Paths.get("target/site")
+  val targetPath = Paths.get("target/site")
 
   val siteSettings = SiteSettings()
 

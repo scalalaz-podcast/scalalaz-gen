@@ -17,20 +17,18 @@
 package ru.scalalaz.gen.parsing
 
 import cats.data.Validated
-import cats.implicits._
+import cats.implicits.*
 import ru.scalalaz.gen.Episode
 
 object EpisodeParser {
 
-  import ru.scalalaz.gen.parsing.EpisodeErrors._
+  import ru.scalalaz.gen.parsing.EpisodeErrors.*
 
   def fromString(content: String): Validated[EpisodeParseError, Episode] =
     FormatParser
       .parseContent(content)
       .toValidated
-      .leftMap(e => {
-        InvalidFormat(e.longAggregateMsg)
-      })
+      .leftMap(e => InvalidFormat(e.longAggregateMsg))
       .andThen(f => fromFormat(f))
 
   def fromFormat(format: FileFormat): Validated[EpisodeParseError, Episode] =
@@ -40,4 +38,3 @@ object EpisodeParser {
       .leftMap(list => ManyErrors(list))
 
 }
-

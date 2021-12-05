@@ -26,29 +26,28 @@ import org.scalatest.Inside
 class EpisodeParserSpec extends AnyFlatSpec with Matchers with Inside {
 
   val episodeStr = """
-      |title=Episode#1
-      |page=https://scalalaz.ru/series-01.html
-      |date=2016-11-28
-      |audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-1.mp3
-      |audio.length=6
-      |----
-      |### Yoyoyo!
-      |it is a new episode!""".stripMargin
+                     |title=Episode#1
+                     |page=https://scalalaz.ru/series-01.html
+                     |date=2016-11-28
+                     |audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-1.mp3
+                     |audio.length=6
+                     |----
+                     |### Yoyoyo!
+                     |it is a new episode!""".stripMargin
 
   it should "parse from string" in {
     val result = EpisodeParser.fromString(episodeStr)
-    inside(result) {
-      case Valid(episode) =>
-        episode.content shouldBe "### Yoyoyo!\nit is a new episode!"
+    inside(result) { case Valid(episode) =>
+      episode.content shouldBe "### Yoyoyo!\nit is a new episode!"
 
-        val rss = episode.settings
-        rss.title shouldBe "Episode#1"
-        rss.page shouldBe "https://scalalaz.ru/series-01.html"
+      val rss = episode.settings
+      rss.title shouldBe "Episode#1"
+      rss.page shouldBe "https://scalalaz.ru/series-01.html"
 
-        rss.date shouldBe LocalDate.of(2016, 11, 28)
+      rss.date shouldBe LocalDate.of(2016, 11, 28)
 
-        rss.audio.url shouldBe "https://scalalaz.ru/mp3/scalalaz-podcast-1.mp3"
-        rss.audio.length shouldBe 6
+      rss.audio.url shouldBe "https://scalalaz.ru/mp3/scalalaz-podcast-1.mp3"
+      rss.audio.length shouldBe 6
     }
   }
 

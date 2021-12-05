@@ -1,14 +1,15 @@
 import com.typesafe.sbt.GitPlugin
-import de.heikoseeberger.sbtheader.HeaderPlugin
+import de.heikoseeberger.sbtheader._
 import org.scalafmt.sbt._
 import play.twirl.sbt.SbtTwirl
 import sbt._
 import sbt.plugins.JvmPlugin
 import sbt.Keys._
+import java.time.Year
 
 object Build extends AutoPlugin {
 
-  override def requires = JvmPlugin && GitPlugin&& HeaderPlugin && SbtTwirl
+  override def requires = JvmPlugin && GitPlugin && HeaderPlugin && SbtTwirl
 
   override def trigger = allRequirements
 
@@ -25,6 +26,7 @@ object Build extends AutoPlugin {
         "-deprecation",
         "-feature",
         "-language:_",
+        "-Xsource:3",
         "-target:jvm-1.8",
         "-encoding",
         "UTF-8"
@@ -36,7 +38,15 @@ object Build extends AutoPlugin {
       GitPlugin.autoImport.git.useGitDescribe := true,
 
       // Header settings
-      HeaderPlugin.autoImport.headerLicense := Some(HeaderPlugin.autoImport.HeaderLicense.ALv2("2016", "Scalalaz Podcast Team"))
-
+      HeaderPlugin.autoImport.headerLicense := Some(HeaderPlugin.autoImport.HeaderLicense.ALv2(Year.now.getValue.toString, "Scalalaz Podcast Team")),
+      HeaderPlugin.autoImport.headerMappings := Map(
+        FileType.scala -> CommentStyle.cStyleBlockComment.copy(
+          commentCreator = { (text, existingText) =>
+            // preserve year of old headers
+            val newText = CommentStyle.cStyleBlockComment.commentCreator.apply(text, existingText)
+            existingText.flatMap(_ => existingText.map(_.trim)).getOrElse(newText)
+          }
+        )
+      )
     )
 }

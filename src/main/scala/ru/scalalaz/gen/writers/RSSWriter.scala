@@ -20,33 +20,37 @@ import ru.scalalaz.gen.{Episode, EpisodeFile}
 
 import knockoff.DefaultDiscounter.{knockoff, toXHTML}
 import scalatags.Text.TypedTag
-import scalatags.Text.all._
+import scalatags.Text.all.*
 
 import java.nio.file.{Files, Paths}
 
-case class ITunesInfo(title: String,
-                      link: String,
-                      description: String,
-                      language: String,
-                      atomLink: String,
-                      imageLink: String,
-                      ownerName: String,
-                      email: String,
-                      category: String)
+case class ITunesInfo(
+    title: String,
+    link: String,
+    description: String,
+    language: String,
+    atomLink: String,
+    imageLink: String,
+    ownerName: String,
+    email: String,
+    category: String
+)
 
 object ITunesInfo {
 
   val Scalalaz = {
     val url = "https://scalalaz.ru"
-    ITunesInfo(title = "Scalalaz Podcast",
-               link = url,
-               description = "Подкаст о программировании на языке Scala (16+)",
-               language = "ru-RU",
-               atomLink = s"$url/rss/feed.xml",
-               imageLink = s"$url/files/scalalaz.jpg",
-               ownerName = "Scalalaz Podcast",
-               email = "info@scalalaz.ru",
-               category = "Technology")
+    ITunesInfo(
+      title = "Scalalaz Podcast",
+      link = url,
+      description = "Подкаст о программировании на языке Scala (16+)",
+      language = "ru-RU",
+      atomLink = s"$url/rss/feed.xml",
+      imageLink = s"$url/files/scalalaz.jpg",
+      ownerName = "Scalalaz Podcast",
+      email = "info@scalalaz.ru",
+      category = "Technology"
+    )
   }
 
 }
@@ -54,7 +58,7 @@ object ITunesInfo {
 class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
 
   def write(episodes: Seq[EpisodeFile]): Unit = {
-    val xml  = toXML(episodes.sortBy(_.episode.settings.title))
+    val xml = toXML(episodes.sortBy(_.episode.settings.title))
     val path = Paths.get(dir, "feed.xml")
     Files.write(path, xml.getBytes)
   }
@@ -70,30 +74,30 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
     }
 
     val xml = tag("rss")(
-        attr("version") := "2.0",
-        attr("xmlns:itunes") := "http://www.itunes.com/dtds/podcast-1.0.dtd",
-        attr("xmlns:atom") := "http://www.w3.org/2005/Atom"
+      attr("version") := "2.0",
+      attr("xmlns:itunes") := "http://www.itunes.com/dtds/podcast-1.0.dtd",
+      attr("xmlns:atom") := "http://www.w3.org/2005/Atom"
     )(
-        tag("channel")(
-            tag("title")(title),
-            tag("link")(link),
-            tag("description")(description),
-            tag("language")(language),
-            raw(
-                s"""<atom:link href="$atomLink" rel="self" type="application/rss+xml" />"""
-            ),
-            raw(s"""<itunes:author>$ownerName</itunes:author>"""),
-            raw(s"""<itunes:image href="$imageLink" />"""),
-            raw(s"""<itunes:owner>
-              |  <itunes:name>$ownerName</itunes:name>
-              |  <itunes:email>$email</itunes:email>
-              |</itunes:owner>
+      tag("channel")(
+        tag("title")(title),
+        tag("link")(link),
+        tag("description")(description),
+        tag("language")(language),
+        raw(
+          s"""<atom:link href="$atomLink" rel="self" type="application/rss+xml" />"""
+        ),
+        raw(s"""<itunes:author>$ownerName</itunes:author>"""),
+        raw(s"""<itunes:image href="$imageLink" />"""),
+        raw(s"""<itunes:owner>
+               |  <itunes:name>$ownerName</itunes:name>
+               |  <itunes:email>$email</itunes:email>
+               |</itunes:owner>
            """.stripMargin),
-            raw(s"""<itunes:category text="$category" />"""),
-            raw(s"""<itunes:explicit>no</itunes:explicit>"""),
-            tag("managingEditor")(s"$email ($ownerName)"),
-            ep.filter(_.isRight).map(_.getOrElse(throw new Exception(s"toXML call failed for the following files: ${episodes.map(_.path)}")))
-        )
+        raw(s"""<itunes:category text="$category" />"""),
+        raw(s"""<itunes:explicit>no</itunes:explicit>"""),
+        tag("managingEditor")(s"$email ($ownerName)"),
+        ep.filter(_.isRight).map(_.getOrElse(throw new Exception(s"toXML call failed for the following files: ${episodes.map(_.path)}")))
+      )
     )
     head + xml.toString()
   }
@@ -101,18 +105,18 @@ class RSSWriter(dir: String, iTunesInfo: ITunesInfo) {
   private def toItem(e: Episode): TypedTag[String] = {
     import e.settings._
 
-    tag("item")(tag("title")(title),
-                raw(s"""<description>
-           |<![CDATA[<pre>
-           |${ toXHTML(knockoff(e.content)).mkString }
-           |</pre>]]>
-           |</description>""".stripMargin),
-                tag("enclosure")(attr("url") := audio.url,
-                                 attr("type") := audio.`type`,
-                                 attr("length") := audio.length),
-                tag("guid")(attr("isPermaLink") := "false", page),
-                tag("pubDate")(RFCDate),
-                tag("link")(page))
+    tag("item")(
+      tag("title")(title),
+      raw(s"""<description>
+             |<![CDATA[<pre>
+             |${toXHTML(knockoff(e.content)).mkString}
+             |</pre>]]>
+             |</description>""".stripMargin),
+      tag("enclosure")(attr("url") := audio.url, attr("type") := audio.`type`, attr("length") := audio.length),
+      tag("guid")(attr("isPermaLink") := "false", page),
+      tag("pubDate")(RFCDate),
+      tag("link")(page)
+    )
 
   }
 }

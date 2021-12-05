@@ -16,22 +16,19 @@
 
 package ru.scalalaz.gen.parsing
 
-
-import cats.implicits._
+import cats.implicits.*
 import cats.data.Validated
 import ru.scalalaz.gen.Page
 
 object PageParser {
 
-  import ru.scalalaz.gen.parsing.SpecialPageErrors._
+  import ru.scalalaz.gen.parsing.SpecialPageErrors.*
 
   def fromString(content: String): Validated[PageParseError, Page] =
     FormatParser
       .parseContent(content)
       .toValidated
-      .leftMap(e => {
-        InvalidFormat(e.longAggregateMsg)
-      })
+      .leftMap(e => InvalidFormat(e.longAggregateMsg))
       .andThen(f => fromFormat(f))
 
   def fromFormat(format: FileFormat): Validated[PageParseError, Page] =
