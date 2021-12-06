@@ -17,28 +17,28 @@
 package ru.scalalaz.gen.writers
 
 case class Pagination[A](
-  buttons: Seq[Pagination.Button[A]]
+    buttons: Seq[Pagination.Button[A]]
 )
 object Pagination {
 
   sealed trait Button[+A]
   object Button {
     case class CurrentPage[A](value: A) extends Button[A]
-    case class Page[A](value: A) extends Button[A]
-    case object Ellipsis extends Button[Nothing]
+    case class Page[A](value: A)        extends Button[A]
+    case object Ellipsis                extends Button[Nothing]
   }
 
   case class Config(
-    maxNextButtons: Int = 3,
-    maxEdgeButtons: Int = 2,
+      maxNextButtons: Int = 3,
+      maxEdgeButtons: Int = 2
   ) {
     def allFitsSize: Int = maxNextButtons + maxEdgeButtons + 2
   }
 
   def from[A](
-    currentPageIndex: Int,
-    allPages: Seq[A],
-    config: Config = Config(),
+      currentPageIndex: Int,
+      allPages: Seq[A],
+      config: Config = Config()
   ): Pagination[A] = {
     val size = allPages.size
 
@@ -62,12 +62,12 @@ object Pagination {
         allButtons
       } else {
         val (beforeCurrent, withCurrent) = allButtons.splitAt(currentPageIndex)
-        val afterCurrent = withCurrent.drop(1)
+        val afterCurrent                 = withCurrent.drop(1)
 
         val current: Button[A] = withCurrent.head
 
         val rightFragment = computeRightFragment(afterCurrent, config)
-        val leftFragment = computeRightFragment(beforeCurrent.reverse, config).reverse
+        val leftFragment  = computeRightFragment(beforeCurrent.reverse, config).reverse
 
         leftFragment ++ Vector(current) ++ rightFragment
       }
@@ -77,8 +77,8 @@ object Pagination {
   }
 
   private def computeRightFragment[A](
-    fragment: Vector[Button[A]],
-    config: Config,
+      fragment: Vector[Button[A]],
+      config: Config
   ): Vector[Button[A]] = {
     val (nextButtons, afterNextButtons) = fragment.splitAt(config.maxNextButtons)
 

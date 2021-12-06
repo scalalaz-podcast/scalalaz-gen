@@ -25,7 +25,7 @@ object Main extends App {
 
   val siteSettings = SiteSettings()
 
-  val gen = new Generator(siteSettings, markdownDir, targetPath)
+  val gen  = new Generator(siteSettings, markdownDir, targetPath)
   val pgen = new SpecialPagesGenerator(markdownDir, targetPath)
 
   gen.generate() match {

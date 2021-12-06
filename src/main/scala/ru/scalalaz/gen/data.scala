@@ -18,33 +18,28 @@ package ru.scalalaz.gen
 
 import java.nio.file.Path
 import java.time.format.DateTimeFormatter
-import java.time.{ LocalDate, ZoneOffset }
+import java.time.{LocalDate, ZoneOffset}
 
-import knockoff.DefaultDiscounter._
-import _root_.knockoff._
+import knockoff.DefaultDiscounter.*
+import _root_.knockoff.*
 
 /**
-  * Фигня с сылкой на запись, кол-вом байт и типом
-  */
+ * Фигня с сылкой на запись, кол-вом байт и типом
+ */
 case class Enclosure(url: String, length: Int, `type`: String = "audio/mpeg")
 
 /**
-  * То из чего собирается rss-кусок на каждый выпуск
-  */
-case class EpisodeSettings(title: String,
-                           description: String,
-                           audio: Enclosure,
-                           page: String,
-                           date: LocalDate) {
+ * То из чего собирается rss-кусок на каждый выпуск
+ */
+case class EpisodeSettings(title: String, description: String, audio: Enclosure, page: String, date: LocalDate) {
 
   def RFCDate: String = {
     val dateTime = date.atStartOfDay().atOffset(ZoneOffset.UTC)
     dateTime.format(DateTimeFormatter.RFC_1123_DATE_TIME)
   }
 
-  def ISODate: String = {
+  def ISODate: String =
     date.format(DateTimeFormatter.ISO_DATE)
-  }
 }
 
 case class Episode(settings: EpisodeSettings, content: String) {
@@ -60,9 +55,8 @@ case class Episode(settings: EpisodeSettings, content: String) {
 case class EpisodeFile(path: Path, episode: Episode)
 
 case class SpecialPageSettings(title: String, date: LocalDate) {
-  def ISODate: String = {
+  def ISODate: String =
     date.format(DateTimeFormatter.ISO_DATE)
-  }
 }
 
 case class Page(settings: SpecialPageSettings, content: String) {

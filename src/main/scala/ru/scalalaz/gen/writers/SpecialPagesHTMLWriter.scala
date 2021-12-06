@@ -18,23 +18,21 @@ package ru.scalalaz.gen.writers
 
 import java.nio.file.{Files, Path, Paths}
 
-import ru.scalalaz.gen.{PageFile, Page}
+import ru.scalalaz.gen.{Page, PageFile}
 
-import html._
-
+import html.*
 
 class SpecialPagesHTMLWriter(targetDir: String) {
 
   def write(pages: Seq[PageFile]): Unit = {
-    val pageUnits = pages.map(f => {
+    val pageUnits = pages.map { f =>
       val fName = f.path.getFileName.toString.replace(".md", ".html")
       SpecialPage(fName, f.page)
-    })
+    }
 
     pageUnits.foreach(_.write(targetDir))
   }
 }
-
 
 trait PageUnit {
 

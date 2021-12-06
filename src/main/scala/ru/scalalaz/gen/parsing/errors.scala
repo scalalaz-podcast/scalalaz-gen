@@ -30,11 +30,9 @@ object EpisodeErrors {
 
   case class InvalidFormat(explanation: String) extends EpisodeParseError
 
-  case class ManyErrors(list: NonEmptyList[EpisodeParseError])
-    extends EpisodeParseError
+  case class ManyErrors(list: NonEmptyList[EpisodeParseError]) extends EpisodeParseError
 
-  case class FileParseError(path: Path, manyErrors: EpisodeParseError)
-    extends EpisodeParseError
+  case class FileParseError(path: Path, manyErrors: EpisodeParseError) extends EpisodeParseError
 }
 
 object SpecialPageErrors {
@@ -47,10 +45,8 @@ object SpecialPageErrors {
 
   case class InvalidFormat(explanation: String) extends PageParseError
 
-  case class FileParseError(path: Path, manyErrors: PageParseError)
-    extends PageParseError
+  case class FileParseError(path: Path, manyErrors: PageParseError) extends PageParseError
 
-  case class ManyErrors(list: NonEmptyList[PageParseError])
-    extends PageParseError
+  case class ManyErrors(list: NonEmptyList[PageParseError]) extends PageParseError
 
 }

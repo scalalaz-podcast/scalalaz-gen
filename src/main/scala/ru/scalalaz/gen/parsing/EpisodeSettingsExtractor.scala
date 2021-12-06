@@ -17,20 +17,20 @@
 package ru.scalalaz.gen.parsing
 
 import java.time.LocalDate
-import java.time.format.{ DateTimeFormatter, DateTimeParseException }
+import java.time.format.{DateTimeFormatter, DateTimeParseException}
 
 import cats.Apply
 import cats.data.Validated.Valid
-import cats.data.{ Validated, ValidatedNel }
-import ru.scalalaz.gen.{ Enclosure, EpisodeSettings, SpecialPageSettings }
+import cats.data.{Validated, ValidatedNel}
+import ru.scalalaz.gen.{Enclosure, EpisodeSettings, SpecialPageSettings}
 
 object EpisodeSettingsExtractor {
 
-  import ru.scalalaz.gen.parsing.EpisodeErrors._
+  import ru.scalalaz.gen.parsing.EpisodeErrors.*
 
   /**
-    * Достаем title, enclosure, pageUrl, дату создания
-    */
+   * Достаем title, enclosure, pageUrl, дату создания
+   */
   def fromMap(
       map: Map[String, Option[String]]
   ): ValidatedNel[EpisodeParseError, EpisodeSettings] =
@@ -40,17 +40,16 @@ object EpisodeSettingsExtractor {
 
     def extract: ValidatedNel[EpisodeParseError, EpisodeSettings] =
       Apply[ValidatedNel[EpisodeParseError, *]].map6(
-          read("title").toValidatedNel,
-          optRead("description").toValidatedNel,
-          read("audio.url").toValidatedNel,
-          read("audio.length").toValidatedNel,
-          read("page").toValidatedNel,
-          read("date").andThen(parseDate).toValidatedNel
-      ) {
-        case (title, desrc, encUrl, encLength, page, date) =>
-          val enc =
-            Enclosure(encUrl, if (encLength != "") encLength.toInt else -1)
-          EpisodeSettings(title, desrc, enc, page, date)
+        read("title").toValidatedNel,
+        optRead("description").toValidatedNel,
+        read("audio.url").toValidatedNel,
+        read("audio.length").toValidatedNel,
+        read("page").toValidatedNel,
+        read("date").andThen(parseDate).toValidatedNel
+      ) { case (title, desrc, encUrl, encLength, page, date) =>
+        val enc =
+          Enclosure(encUrl, if (encLength != "") encLength.toInt else -1)
+        EpisodeSettings(title, desrc, enc, page, date)
       }
 
     private def read(key: String): Validated[EpisodeParseError, String] =
@@ -74,11 +73,11 @@ object EpisodeSettingsExtractor {
 
 object PageSettingsExtractor {
 
-  import ru.scalalaz.gen.parsing.SpecialPageErrors._
-  
+  import ru.scalalaz.gen.parsing.SpecialPageErrors.*
+
   /**
-    * Достаем title, дату создания
-    */
+   * Достаем title, дату создания
+   */
   def fromMap(
       map: Map[String, Option[String]]
   ): ValidatedNel[PageParseError, SpecialPageSettings] =
@@ -88,12 +87,11 @@ object PageSettingsExtractor {
 
     def extract: ValidatedNel[PageParseError, SpecialPageSettings] =
       Apply[ValidatedNel[PageParseError, *]].map2(
-          read("title").toValidatedNel,
-          read("date").andThen(parseDate).toValidatedNel
-      ) {
-        case (title, date) =>
-          //val enc = Enclosure(encUrl, if (encLength != "") encLength.toInt else -1)
-          SpecialPageSettings(title, date)
+        read("title").toValidatedNel,
+        read("date").andThen(parseDate).toValidatedNel
+      ) { case (title, date) =>
+        // val enc = Enclosure(encUrl, if (encLength != "") encLength.toInt else -1)
+        SpecialPageSettings(title, date)
       }
 
     private def read(key: String): Validated[PageParseError, String] =

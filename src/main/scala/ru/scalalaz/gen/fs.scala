@@ -16,9 +16,9 @@
 
 package ru.scalalaz.gen
 
-import java.nio.file.{ Files, Path }
+import java.nio.file.{Files, Path}
 
-import scala.jdk.CollectionConverters._
+import scala.jdk.CollectionConverters.*
 
 object fs {
 
@@ -34,9 +34,8 @@ object fs {
       file.delete()
   }
 
-  def createDir(path: Path): Unit = {
+  def createDir(path: Path): Unit =
     Files.createDirectories(path)
-  }
 
   def copyFile(from: Path, to: Path): Path = {
     val data = Files.readAllBytes(from)
@@ -49,7 +48,7 @@ object fs {
     if (!to.toFile.exists()) createDir(to)
     list(from)
       .filter(filter)
-      .foreach(p => {
+      .foreach { p =>
         if (p.toFile.isFile)
           copyFile(p, to.resolve(p.asScala.last))
         else {
@@ -57,7 +56,7 @@ object fs {
           createDir(next)
           copyDir(p, next, filter)
         }
-      })
+      }
   }
 
 }

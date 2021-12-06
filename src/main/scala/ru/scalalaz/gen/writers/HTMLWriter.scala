@@ -16,27 +16,27 @@
 
 package ru.scalalaz.gen.writers
 
-import java.nio.file._
+import java.nio.file.*
 
-import ru.scalalaz.gen._
+import ru.scalalaz.gen.*
 
-import html._
+import html.*
 
 class HTMLWriter(targetDir: String, discusCode: String) {
 
   val pageCount = 5
 
   def write(episodes: Seq[EpisodeFile]): Unit = {
-    val episodeUnits = episodes.map(f => {
+    val episodeUnits = episodes.map { f =>
       val sourceFileName = f.path.getFileName.toString
       val order = sourceFileName match {
         case s"series-$idx1-$idx2.md" => s"$idx1.$idx2".toDouble
-        case s"series-$idx.md" => idx.toDouble
-        case _ => throw new RuntimeException(s"Invalid episode file name: $sourceFileName")
+        case s"series-$idx.md"        => idx.toDouble
+        case _                        => throw new RuntimeException(s"Invalid episode file name: $sourceFileName")
       }
       val htmlFileName = sourceFileName.replace(".md", ".html")
       EpisodePage(order, htmlFileName, discusCode, f.episode)
-    })
+    }
 
     episodeUnits.foreach(_.write(targetDir))
 
@@ -50,12 +50,11 @@ class HTMLWriter(targetDir: String, discusCode: String) {
     val splittedOnPages: List[(Seq[EpisodePage], PageName)] = sorted
       .grouped(pageCount)
       .zipWithIndex
-      .map({
-        case (eps, i) =>
-          val order = i + 1
-          val file: FileName = if (i == 0) "index.html" else s"page-$order.html"
-          eps -> PageName(file, order)
-      })
+      .map { case (eps, i) =>
+        val order          = i + 1
+        val file: FileName = if (i == 0) "index.html" else s"page-$order.html"
+        eps -> PageName(file, order)
+      }
       .toList
 
     val allPages: List[PageName] = splittedOnPages.map { case (_, pageName) =>
@@ -68,7 +67,7 @@ class HTMLWriter(targetDir: String, discusCode: String) {
         episodes = episodes,
         pagination = Pagination.from(
           currentPageIndex = idx,
-          allPages = allPages,
+          allPages = allPages
         )
       )
     }
@@ -77,22 +76,18 @@ class HTMLWriter(targetDir: String, discusCode: String) {
 }
 
 case class PageName(
-  file: FileName,
-  order: Int,
+    file: FileName,
+    order: Int
 )
 
-case class EpisodePage(order: Double, fileName: FileName, disqusCode: String, episode: Episode)
-    extends PageUnit {
+case class EpisodePage(order: Double, fileName: FileName, disqusCode: String, episode: Episode) extends PageUnit {
 
   override def content: String =
     episode_page(episode, disqusCode).body
 
 }
 
-case class MainPage(fileName: FileName,
-                    episodes: Seq[EpisodePage],
-                    pagination: Pagination[PageName])
-    extends PageUnit {
+case class MainPage(fileName: FileName, episodes: Seq[EpisodePage], pagination: Pagination[PageName]) extends PageUnit {
 
   override def content: String =
     main_page("Scalalaz Podcast", episodes, pagination).body
