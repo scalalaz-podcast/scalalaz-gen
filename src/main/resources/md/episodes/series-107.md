@@ -1,10 +1,10 @@
-title=Выпуск 107 — TODO
+title=Выпуск 107 — Новогодний PHP-лаз
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-107.mp3
-audio.length=TODO
+audio.length=94540963
 page=https://scalalaz.ru/series-107.html
 date=2021-12-19
 ----
-![episode 107](/img/episode107.jpeg)
+![episode 107](/img/episode107.jpg)
 
 * 00:05:30 [LEGO Woof - Scala 3 logging library without reflection](https://medium.com/lego-engineering/announcing-woof-a-pure-scala-3-logging-library-2e8048868419)
 * 00:31:26 Опыт Фомкина со Scala 3
