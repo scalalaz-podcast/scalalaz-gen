@@ -6,7 +6,6 @@ date=2022-01-14
 ----
 ![episode 108](/img/episode108.jpg)
 
-* 00:47:15 [ENSIME Next Generation](https://contributors.scala-lang.org/t/ensime-the-next-generation/5474)
 
 * [Why Scala Is Seeing A Renewed Interest For Developing Enterprise Software](https://www.forbes.com/sites/forbestechcouncil/2021/12/22/why-scala-is-seeing-a-renewed-interest-for-developing-enterprise-software/?sh=3a1eb4976c1f)
 * [ENSIME The Next Generation](https://ensime.github.io/)
