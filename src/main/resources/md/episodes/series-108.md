@@ -1,6 +1,6 @@
 title=Выпуск 108 — 
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-108.mp3
-audio.length=91044526
+audio.length=92550106
 page=https://scalalaz.ru/series-108.html
 date=2022-01-14
 ----
