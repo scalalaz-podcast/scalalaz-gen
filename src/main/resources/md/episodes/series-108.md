@@ -1,4 +1,4 @@
-title=Выпуск 108 — 
+title=Выпуск 108 — Next Gen Штаны
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-108.mp3
 audio.length=92550106
 page=https://scalalaz.ru/series-108.html
