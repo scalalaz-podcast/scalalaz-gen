@@ -1,4 +1,4 @@
-title=Выпуск 109 — 
+title=Выпуск 109 — Путешествие морем в Скалу
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-109.mp3
 audio.length=88157590
 page=https://scalalaz.ru/series-109.html
@@ -18,4 +18,4 @@ date=2022-02-23
 [Юрий Бадальянц](https://twitter.com/lmnet89),
 [Евгений Токарев](https://twitter.com/strobegen),
 [Вадим Челышов](https://github.com/dos65),
-[Павел Попов]()
+[Павел Попов](https://github.com/ppopoff)
