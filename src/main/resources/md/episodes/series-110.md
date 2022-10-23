@@ -1,4 +1,4 @@
-title=Выпуск 110 — 
+title=Выпуск 110 - 3 кота и фронтенд
 audio.url=https://scalalaz.ru/mp3/scalalaz-podcast-110.mp3
 audio.length=89644913
 page=https://scalalaz.ru/series-110.html
