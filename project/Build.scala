@@ -1,4 +1,4 @@
-import com.typesafe.sbt.GitPlugin
+import com.github.sbt.git.GitPlugin
 import de.heikoseeberger.sbtheader._
 import org.scalafmt.sbt._
 import play.twirl.sbt.SbtTwirl
